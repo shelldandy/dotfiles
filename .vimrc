@@ -1,9 +1,37 @@
 " Make copy/paste great again
 set clipboard=unnamed
 
-
 " enter the current millenium
 set nocompatible 
+
+""""""""""""""""""""""""""""""""""
+"           VUNDLE               "
+""""""""""""""""""""""""""""""""""
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Ultimate Snippets
+" Track the engine.
+Plugin 'SirVer/ultisnips' "required
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+Plugin 'rstacruz/vim-hyperstyle'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+""""""""""""""""""""""""""""""""""
+"       END VUNDLE PLUGINS       "
+""""""""""""""""""""""""""""""""""
 
 " Colors
 syntax on
@@ -61,3 +89,19 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " - :edit a folder to open a file browser
 " - <CR>/v/t to open in an h-split/v-split/tab
 " - check |netrw-browse-maps| for more mappings
+
+" MISC PLUGINS:
+" VIM Hyperstyle FOR SASS CSS STYLUS:
+" Uncomment this if using Sass or Stylus
+" let g:hyperstyle_use_colon=0
+
+" ULTISNIPS PLUGIN:
+" Trigger configuration. Do not use <tab> if you use - https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"
+
+
