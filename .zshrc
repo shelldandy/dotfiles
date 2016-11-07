@@ -35,6 +35,9 @@ alias 0miedo="git clone git@github.com:mike3run/ground-zero.git; cd ground-zero"
 alias yS='yarn add '
 alias yD='yarn add --dev '
 
+# Quick git status
+alias gs='git status'
+
 # NVM all the way
 export NVM_DIR="/Users/imike/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
