@@ -50,7 +50,7 @@ set hidden
 syntax on
 
 " Numbers on rows
-set number
+" set number
 
 " Tabs situation
 set tabstop=2
@@ -60,6 +60,14 @@ set expandtab
 
 " NERDTree Quick Open with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+
+" Easier Split Navigation
+" Instead of doing CTRL-W + (h|j|k|l)
+" Just do CTRL-(h|j|k|l)
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " NERDTree File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
