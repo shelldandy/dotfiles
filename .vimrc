@@ -7,44 +7,6 @@ set nocompatible
 " Hidden Buffer files
 set hidden
 
-""""""""""""""""""""""""""""""""""
-"           VUNDLE               "
-""""""""""""""""""""""""""""""""""
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" Ultimate Snippets
-" Track the engine.
-Plugin 'SirVer/ultisnips' "required
-
-" Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
-Plugin 'rstacruz/vim-hyperstyle'
-" Ctrl P Fuzzy Finder
-Plugin 'ctrlpvim/ctrlp.vim'
-" NerdTree
-Plugin 'scrooloose/nerdtree'
-" Nerdtree with git situation
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-" Auto close brackets smartly
-Plugin 'jiangmiao/auto-pairs'
-" Colors in my Sass
-Plugin 'ap/vim-css-color'
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-""""""""""""""""""""""""""""""""""
-"       END VUNDLE PLUGINS       "
-""""""""""""""""""""""""""""""""""
 
 " Colors
 syntax on
@@ -92,3 +54,43 @@ let g:hyperstyle_use_colon=0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+""""""""""""""""""""""""""""""""""
+"           VUNDLE               "
+""""""""""""""""""""""""""""""""""
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Ultimate Snippets
+" Track the engine.
+Plugin 'SirVer/ultisnips' "required
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+Plugin 'rstacruz/vim-hyperstyle'
+" Ctrl P Fuzzy Finder
+Plugin 'ctrlpvim/ctrlp.vim'
+" NerdTree
+Plugin 'scrooloose/nerdtree'
+" Nerdtree with git situation
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Auto close brackets smartly
+Plugin 'jiangmiao/auto-pairs'
+" Colors in my Sass
+Plugin 'ap/vim-css-color'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+""""""""""""""""""""""""""""""""""
+"       END VUNDLE PLUGINS       "
+""""""""""""""""""""""""""""""""""
+
