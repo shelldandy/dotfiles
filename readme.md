@@ -17,3 +17,9 @@ In my current setup I'm using some themes and plugins to make the whole experien
 - [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
 - [Node version manager](https://github.com/creationix/nvm)
+
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+
+## To-Do
+
+- Small shell file to auto install/copy everything...

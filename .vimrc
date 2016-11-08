@@ -1,3 +1,6 @@
+" Enter the current millenium
+set nocompatible
+
 """"""""""""""""""""""""""""""""""
 "           VUNDLE               "
 """"""""""""""""""""""""""""""""""
@@ -27,7 +30,8 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jiangmiao/auto-pairs'
 " Colors in my Sass
 Plugin 'ap/vim-css-color'
-
+" Git Situation on my Lines like Atom
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,9 +44,6 @@ filetype plugin indent on    " required
 " Make copy/paste great again
 set clipboard=unnamed
 
-" enter the current millenium
-set nocompatible 
-
 " Hidden Buffer files
 set hidden
 
@@ -50,7 +51,7 @@ set hidden
 syntax on
 
 " Numbers on rows
-" set number
+set number
 
 " Tabs situation
 set tabstop=2
