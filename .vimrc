@@ -1,6 +1,5 @@
 " Enter the current millenium
 set nocompatible
-
 """"""""""""""""""""""""""""""""""
 "           VUNDLE               "
 """"""""""""""""""""""""""""""""""
@@ -32,6 +31,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ap/vim-css-color'
 " Git Situation on my Lines like Atom
 Plugin 'airblade/vim-gitgutter'
+" Pug Syntax Highlight
+Plugin 'digitaltoad/vim-pug'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,12 +47,24 @@ set clipboard=unnamed
 
 " Hidden Buffer files
 set hidden
+set noswapfile
+set nobackup
+set nowb
 
 " Colors
 syntax on
 
 " Numbers on rows
 set number
+
+" Mouse mode
+set mouse=a
+
+" Search Mode
+set incsearch       " Find the next match as we type the search
+set hlsearch        " Highlight searches by default
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...unless we type a capital
 
 " Tabs situation
 set tabstop=2
@@ -92,13 +105,13 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
   call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " CTRLP Ignore Hidden Missiles
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules)$'
 
 " MISC PLUGINS:
 " VIM Hyperstyle FOR SASS CSS STYLUS:
 " Uncomment this if using Sass or Stylus
-let g:hyperstyle_use_colon=0
+" let g:hyperstyle_use_colon=0
 
 " ULTISNIPS PLUGIN:
 " Trigger configuration. Do not use <tab> if you use - https://github.com/Valloric/YouCompleteMe.
