@@ -1,6 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/imike/.oh-my-zsh
 
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
+
+alias tmux="env TERM=xterm-256color-italic tmux"
+export TERM=xterm-256color-italic
+
 # Setting default editor for tmuxinator
 export EDITOR='vim'
 

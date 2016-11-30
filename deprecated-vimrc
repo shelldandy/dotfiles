@@ -44,6 +44,8 @@ Plugin 'mxw/vim-jsx'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
+" Oceanic Next
+Plugin 'mhartington/oceanic-next'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -65,8 +67,27 @@ set noswapfile
 set nobackup
 set nowb
 
+highlight Comment cterm=italic
+
 " Colors
-syntax on
+syntax enable
+" for vim 7
+set t_Co=256
+
+" for vim 8
+if (has("termguicolors"))
+ set termguicolors
+endif
+colorscheme OceanicNext
+
+" enable italics, disabled by default
+let g:oceanic_next_terminal_italic = 1
+
+" enable bold, disabled by default
+let g:oceanic_next_terminal_bold = 1"
+
+set background=dark
+
 
 " Numbers on rows
 set number
@@ -142,7 +163,9 @@ set autoread
 " JSX even on just JS
 let g:jsx_ext_required = 0
 
-" NeoVim
+"""""""""""""""""""""""""""""""""""""""""""
+"               NEOCOMPLETE               "
+"""""""""""""""""""""""""""""""""""""""""""
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -190,12 +213,6 @@ inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " AutoComplPop like behavior.
 "let g:neocomplete#enable_auto_select = 1
 
-" Shell like behavior(not recommended).
-"set completeopt+=longest
-"let g:neocomplete#enable_auto_select = 1
-"let g:neocomplete#disable_auto_complete = 1
-"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
-
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -207,9 +224,6 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
-"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
