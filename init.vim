@@ -69,8 +69,6 @@ highlight Comment cterm=italic
 
 " Colors
 syntax enable
-" for vim 7
-set t_Co=256
 set termguicolors
 
 colorscheme OceanicNext
@@ -79,7 +77,6 @@ let g:airline_theme='oceanicnext'
 let g:oceanic_next_terminal_italic = 1
 " enable bold, disabled by default
 let g:oceanic_next_terminal_bold = 1"
-set background=dark
 
 " Numbers on rows
 set number
