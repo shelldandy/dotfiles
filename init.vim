@@ -38,6 +38,8 @@ Plug '1995eaton/vim-better-javascript-completion'
 " A bunch of JS Syntax like JSX
 Plug 'sheerun/vim-polyglot'
 Plug 'mxw/vim-jsx'
+" Autoclose html tags
+Plug 'alvan/vim-closetag'
 " Oceanic Next
 Plug 'mhartington/oceanic-next'
 " Vim Airline
@@ -73,10 +75,6 @@ set termguicolors
 
 colorscheme OceanicNext
 let g:airline_theme='oceanicnext'
-" enable italics, disabled by default
-let g:oceanic_next_terminal_italic = 1
-" enable bold, disabled by default
-let g:oceanic_next_terminal_bold = 1"
 
 " Numbers on rows
 set number
@@ -148,3 +146,9 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Nerdcomment
 let mapleader=","
+
+" filenames like *.html, *js, *jsx ...
+let g:closetag_filenames = "*.html,*.js,*.jsx"
+
+" Vim Airline
+let g:airline_powerline_fonts = 1
