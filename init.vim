@@ -46,6 +46,8 @@ Plug 'mhartington/oceanic-next'
 Plug 'vim-airline/vim-airline'
 " Nerd Commenter
 Plug 'scrooloose/nerdcommenter'
+" Indent lines
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 filetype plugin indent on    " required
@@ -133,7 +135,7 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules)$'
 " StandardJS
 let g:syntastic_javascript_checkers = ['standard']
 " StandardJS autoformat on save: needs standard-format global npm package
-autocmd bufwritepost *.js silent !standard-format -w %
+autocmd bufwritepost *.js silent !standard --fix %
 set autoread
 
 " JSX even on just JS
@@ -152,3 +154,6 @@ let g:closetag_filenames = "*.html,*.js,*.jsx"
 
 " Vim Airline
 let g:airline_powerline_fonts = 1
+
+" Indent lines
+let g:indentLine_char = '┆'
