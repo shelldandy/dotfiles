@@ -32,7 +32,7 @@ Plug 'airblade/vim-gitgutter'
 " Pug Syntax Highlight
 Plug 'digitaltoad/vim-pug'
 " Syntastic for StandardJS
-Plug 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint' }
 " Extending OmniComplete for JS on Vim
 Plug '1995eaton/vim-better-javascript-completion'
 " A bunch of JS Syntax like JSX
@@ -157,3 +157,12 @@ let g:airline_powerline_fonts = 1
 
 " Indent lines
 let g:indentLine_char = '┆'
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
