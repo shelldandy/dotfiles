@@ -54,5 +54,6 @@ Plug 'scrooloose/nerdcommenter'
 " Indent lines
 Plug 'Yggdroot/indentLine'
 
+" Numbers craze
+Plug 'myusuf3/numbers.vim'
 call plug#end()
-
