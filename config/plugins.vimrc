@@ -53,7 +53,7 @@ let g:deoplete#omni#functions.javascript = [
 
 set completeopt=longest,menuone,preview
 let g:deoplete#sources = {}
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs', 'buffer']
 let g:tern#command = ['tern']
 let g:tern#arguments = ['--persistent']
 
