@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/imike/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
@@ -9,7 +9,7 @@ alias tmux="env TERM=xterm-256color-italic tmux"
 export TERM=xterm-256color-italic
 
 # Setting default editor for tmuxinator
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Theme to use see ~/.oh-my-zsh/themes
 # Bullet train theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
@@ -46,6 +46,6 @@ alias yD='yarn add --dev '
 alias gs='git status'
 
 # NVM all the way
-export NVM_DIR="/Users/imike/.nvm"
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
