@@ -83,3 +83,5 @@ let g:syntastic_check_on_wq = 0
 
 " Numbers exclude
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
+" Disable relative numbers by default
+let g:enable_numbers = 0
