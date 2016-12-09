@@ -66,9 +66,6 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " close the preview window when you're not using it
 let g:SuperTabClosePreviewOnPopupClose = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-" Nerdcomment
-let mapleader=","
-
 " filenames like *.html, *js, *jsx ...
 let g:closetag_filenames = "*.html,*.js,*.jsx"
 
