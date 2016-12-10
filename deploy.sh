@@ -6,4 +6,4 @@ cp {.gitignore_global,.tmux.conf,.zshrc,xterm-256color-italic.terminfo,colors.sh
 
 cp -R nvim/* ~/.config/nvim
 
-echo 'All done! That wasn\'t hard was it? 🍕'
+echo "All done! That wasn't hard was it?"
