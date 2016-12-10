@@ -1,5 +1,4 @@
-" Code Splitting Made Easy
-" Thanks GregJS
+" Neovim Config Files by Miguel Palau
 source $HOME/.config/nvim/config/init.vimrc
 source $HOME/.config/nvim/config/general.vimrc
 source $HOME/.config/nvim/config/plugins.vimrc
