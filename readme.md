@@ -17,9 +17,6 @@ In my current setup I'm using some themes and plugins to make the whole experien
 - [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 - [Bullet train zsh theme](https://github.com/caiogondim/bullet-train-oh-my-zsh-theme) with [maglev tmux theme](https://github.com/caiogondim/maglev)
-
-- [Vundle for Vim](https://github.com/VundleVim/Vundle.vim)
-
 - [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
 - [Node version manager](https://github.com/creationix/nvm)
