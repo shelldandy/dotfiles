@@ -2,26 +2,21 @@
 "           Vim Plug		 "
 """"""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
-
 "Deoplete AutoComplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Deoplete Ternjs for Smart JS
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' ,'for': ['javascript', 'javascript.jsx'] }
-" Syntax Highlight for Vim 
+" Syntax Highlight for Vim
 Plug 'othree/yajs.vim'
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
-
 " Tab autocomplete
 Plug 'ervandew/supertab'
-
 " Ultimate Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'rstacruz/vim-hyperstyle'
-
 Plug 'greg-js/vim-react-es6-snippets'
-
 " Ctrl P Fuzzy Finder
 Plug 'ctrlpvim/ctrlp.vim'
 " NerdTree
@@ -53,7 +48,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdcommenter'
 " Indent lines
 Plug 'Yggdroot/indentLine'
-
 " Numbers craze
 Plug 'myusuf3/numbers.vim'
+" JSDoc
+Plug 'heavenshell/vim-jsdoc'
 call plug#end()
