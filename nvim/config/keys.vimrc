@@ -22,6 +22,8 @@ nnoremap <Leader>ws :split<CR>
 nnoremap <Leader>wv :vsplit<CR>
 nnoremap <Leader>wx :close<CR>
 
+" window reordering
+nnoremap <Leader>r <C-W><C-R>
 " CtrlP
 nnoremap <Leader>p :CtrlP<CR>
 
