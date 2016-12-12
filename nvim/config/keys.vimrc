@@ -21,3 +21,9 @@ nnoremap <Leader>w+ <C-w>+
 nnoremap <Leader>ws :split<CR>
 nnoremap <Leader>wv :vsplit<CR>
 nnoremap <Leader>wx :close<CR>
+
+" CtrlP
+nnoremap <Leader>p :CtrlP<CR>
+
+" NerdTree
+nnoremap <Leader>n :NERDTreeToggle<CR>
