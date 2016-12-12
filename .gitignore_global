@@ -39,3 +39,6 @@ Thumbs.db
 *.swp
 *.swo
 *.tern-port
+
+# NodeJS
+node_modules
