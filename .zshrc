@@ -47,6 +47,8 @@ alias yD='yarn add --dev '
 # Quick git status
 alias gs='git status'
 
+# Quick clear
+alias c='clear'
 # NVM all the way
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
