@@ -52,4 +52,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'myusuf3/numbers.vim'
 " JSDoc
 Plug 'heavenshell/vim-jsdoc'
+" Vim Fugitive
+Plug 'tpope/vim-fugitive'
 call plug#end()
