@@ -36,12 +36,3 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
-
-
-" Easier Split Navigation
-" Instead of doing CTRL-W + (h|j|k|l)
-" Just do CTRL-(h|j|k|l)
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
