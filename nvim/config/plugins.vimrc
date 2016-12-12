@@ -85,3 +85,6 @@ let g:syntastic_check_on_wq = 0
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 " Disable relative numbers by default
 let g:enable_numbers = 0
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
