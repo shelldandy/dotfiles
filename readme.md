@@ -1,8 +1,7 @@
 # My dotfiles
 I first started using thoughtbots dotfiles but im not really that much of a power user of all the dot things so here's my take on dotfiles with stuff i actually use on a day to day basis.
 
-![HackrSkillz](http://media1.giphy.com/media/JmJMzlXOiI0dq/200w.gif)
-
+![HackrSkillz](vim.png)
 ## Works best with...
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
 
