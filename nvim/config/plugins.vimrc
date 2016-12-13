@@ -30,7 +30,7 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
 
 " CTRLP Ignore Hidden Missiles
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modulesi|bower)$'
 
 " StandardJS
 let g:syntastic_javascript_checkers = ['standard']
@@ -84,7 +84,5 @@ let g:syntastic_check_on_wq = 0
 " Numbers exclude
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 " Disable relative numbers by default
-let g:enable_numbers = 0
+" let g:enable_numbers = 0
 
-" Airline
-let g:airline#extensions#tabline#enabled = 1
