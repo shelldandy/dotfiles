@@ -30,7 +30,7 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
 
 " CTRLP Ignore Hidden Missiles
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modulesi|bower)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
 
 " StandardJS
 let g:syntastic_javascript_checkers = ['standard']
