@@ -86,3 +86,5 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 " Disable relative numbers by default
 " let g:enable_numbers = 0
 
+" Pug Auto Lint
+let g:syntastic_pug_checkers = ['pug_lint']
