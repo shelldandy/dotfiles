@@ -29,7 +29,7 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
   call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " CTRLP Ignore Hidden Missiles
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www,*/bower
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www,*/bower,*/dist
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
 
 " StandardJS
