@@ -17,7 +17,7 @@ export EDITOR='nvim'
 # Bullet train theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
 ZSH_THEME="bullet-train"
 # Specific bullet train things
-BULLETTRAIN_PROMPT_CHAR="🦁"
+BULLETTRAIN_PROMPT_CHAR="🔥"
 BULLETTRAIN_RUBY_SHOW=false
 BULLETTRAIN_NVM_SHOW=true
 
