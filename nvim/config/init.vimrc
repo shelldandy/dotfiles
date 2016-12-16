@@ -29,15 +29,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ap/vim-css-color'
 " Git Situation on my Lines like Atom
 Plug 'airblade/vim-gitgutter'
-" Pug Syntax Highlight
-Plug 'digitaltoad/vim-pug'
 " Syntastic for StandardJS
 Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint' }
 " Extending OmniComplete for JS on Vim
 Plug '1995eaton/vim-better-javascript-completion'
-" A bunch of JS Syntax like JSX
+" Syntax Highlight and Snippets for tons of languages
 Plug 'sheerun/vim-polyglot'
-Plug 'mxw/vim-jsx'
 " Autoclose html tags
 Plug 'alvan/vim-closetag'
 " Oceanic Next
