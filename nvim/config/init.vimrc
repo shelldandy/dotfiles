@@ -51,4 +51,6 @@ Plug 'myusuf3/numbers.vim'
 Plug 'heavenshell/vim-jsdoc'
 " Vim Fugitive
 Plug 'tpope/vim-fugitive'
+" Search and replace
+Plug 'brooth/far.vim'
 call plug#end()
