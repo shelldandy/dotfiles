@@ -53,4 +53,6 @@ Plug 'heavenshell/vim-jsdoc'
 Plug 'tpope/vim-fugitive'
 " Search and replace
 Plug 'brooth/far.vim'
+" Vim Icons
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
