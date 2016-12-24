@@ -88,3 +88,7 @@ let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
 
 " Pug Auto Lint
 let g:syntastic_pug_checkers = ['pug_lint']
+
+" Vim Devicons
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
