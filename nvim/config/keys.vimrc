@@ -30,13 +30,5 @@ nnoremap <Leader>p :CtrlP<CR>
 " NerdTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
-" Awesome tab switching
-nnoremap <Leader>1 AirlineSelectTab1
-nnoremap <Leader>2 AirlineSelectTab2
-nnoremap <Leader>3 AirlineSelectTab3
-nnoremap <Leader>4 AirlineSelectTab4
-nnoremap <Leader>5 AirlineSelectTab5
-nnoremap <Leader>6 AirlineSelectTab6
-nnoremap <Leader>7 AirlineSelectTab7
-nnoremap <Leader>8 AirlineSelectTab8
-nnoremap <Leader>9 AirlineSelectTab9
+" Tab Switching
+nnoremap <Leader>t :tabn<CR>
