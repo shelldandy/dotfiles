@@ -33,9 +33,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www,*/bower,*/dist
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
 
 " StandardJS
-let g:syntastic_javascript_checkers = ['standard']
+" let g:syntastic_javascript_checkers = ['standard']
 " StandardJS autoformat on save: needs standard-format global npm package
-autocmd bufwritepost *.js silent !standard --fix %
+" autocmd bufwritepost *.js silent !standard --fix %
 set autoread
 
 " JSX even on just JS
