@@ -1,5 +1,7 @@
 # Zsh Files of Miguel Palau
-export PATH="/usr/local/sbin:$PATH"
+
+# PHP Path
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
