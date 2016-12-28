@@ -24,7 +24,7 @@ BULLETTRAIN_RUBY_SHOW=false
 BULLETTRAIN_NVM_SHOW=true
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git)
+plugins=(git wp-cli)
 
 source $ZSH/oh-my-zsh.sh
 
