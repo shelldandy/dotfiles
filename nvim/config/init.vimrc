@@ -57,5 +57,10 @@ Plug 'brooth/far.vim'
 Plug 'ryanoasis/vim-devicons'
 " Vim For Humans Wisdom
 Plug 'sjbach/lusty', { 'do': 'gem install neovim' }
+"Ack Search Files on disk
+Plug 'mileszs/ack.vim', { 'do': 'brew install ack' }
 
+" Advanced Plugins (Vim for Humans)
+" Surround
+Plug 'tpope/vim-surround'
 call plug#end()

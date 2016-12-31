@@ -1,7 +1,7 @@
 " Remap ESC to something usable
 " Shift + Space
 :imap jj <Esc>
-
+" Set our Leader Key to something usable
 let mapleader=","
 " relative line numbers
 nnoremap <Leader>0 :NumbersToggle<CR>
@@ -40,3 +40,11 @@ nnoremap <Leader>b :bnext<CR>
 " Tab Switching
 nnoremap <Leader>t :tabn<CR>
 nnoremap <Leader>r :tabp<CR>
+
+" Default params for ack
+let g:ackprg="ack -H --nocolor --nogroup --column"
+" Add a mark and search
+nmap <leader>f mA:Ack<space>
+" Add a mark and search for the word under the cursor
+nmap <leader>fa mA:Ack "<C-r>=expand("<cword>")<cr>"
+nmap <leader>fA mA:Ack "<C-r>=expand("<cWORD>")<cr>”
