@@ -1,3 +1,7 @@
+" Remap ESC to something usable
+" Shift + Space
+:imap <S-Space> <Esc>
+
 let mapleader=","
 " relative line numbers
 nnoremap <Leader>0 :NumbersToggle<CR>
@@ -36,3 +40,14 @@ nnoremap <Leader>b :bnext<CR>
 " Tab Switching
 nnoremap <Leader>t :tabn<CR>
 nnoremap <Leader>r :tabp<CR>
+
+" Disabling the directional keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+

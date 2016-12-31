@@ -55,4 +55,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'brooth/far.vim'
 " Vim Icons
 Plug 'ryanoasis/vim-devicons'
+" Vim For Humans Wisdom
+Plug 'sjbach/lusty'
+
 call plug#end()
