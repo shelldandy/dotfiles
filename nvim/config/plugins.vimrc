@@ -92,3 +92,8 @@ let g:syntastic_pug_checkers = ['pug_lint']
 " Vim Devicons
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
+
+" Vdebug
+let g:vdebug_options = {
+\    "break_on_open" : 0,
+\}
