@@ -58,6 +58,10 @@ Plug 'mileszs/ack.vim', { 'do': 'brew install ack' }
 Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint' }
 " JSDoc
 Plug 'heavenshell/vim-jsdoc'
+""""""""""""""""""""""""""""""""""
+"      Debugging
+""""""""""""""""""""""""""""""""""
+Plug 'joonty/vdebug' " Multi-language DBGP debugger client for Vim (PHP, Python, Perl, Ruby, etc.)
 
 """"""""""""""""""""""""""""""""""
 "      Misc/LifeQuality

@@ -45,3 +45,17 @@ nmap <leader>f mA:Ack<space>
 " Add a mark and search for the word under the cursor
 nmap <leader>fa mA:Ack "<C-r>=expand("<cword>")<cr>"
 nmap <leader>fA mA:Ack "<C-r>=expand("<cWORD>")<cr>”
+
+" Disabling the directional keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" Debugger situation
+" Toggle a breakpoint
+nnoremap <Leader>db :Breakpoint<CR>
