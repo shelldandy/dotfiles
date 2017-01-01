@@ -19,10 +19,6 @@ Plug 'rstacruz/vim-hyperstyle'
 Plug 'greg-js/vim-react-es6-snippets'
 " Ctrl P Fuzzy Finder
 Plug 'ctrlpvim/ctrlp.vim'
-" NerdTree
-Plug 'scrooloose/nerdtree'
-" Nerdtree with git situation
-Plug 'Xuyuanp/nerdtree-git-plugin'
 " Auto close brackets smartly
 Plug 'jiangmiao/auto-pairs'
 " Colors in my Sass
