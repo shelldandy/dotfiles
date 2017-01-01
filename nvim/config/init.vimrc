@@ -73,4 +73,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'myusuf3/numbers.vim'
 " Surround
 Plug 'tpope/vim-surround'
+" Pencil / Write Mode
+Plug 'reedes/vim-pencil'
 call plug#end()
