@@ -1,9 +1,12 @@
 filetype plugin indent on
 
 " ColorScheme
+colorscheme OceanicNext
+
 function GeneralTheme()
   colorscheme OceanicNext
   AirlineTheme oceanicnext
+  AirlineRefresh
 endfunction
 
 autocmd BufEnter * call GeneralTheme()
