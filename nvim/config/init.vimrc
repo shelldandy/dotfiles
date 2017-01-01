@@ -17,7 +17,8 @@ Plug 'mhartington/oceanic-next'
 Plug 'ryanoasis/vim-devicons'
 " Syntax Highlight and Snippets for tons of languages
 Plug 'sheerun/vim-polyglot'
-
+" iaWriter Theme
+Plug 'reedes/vim-colors-pencil'
 """"""""""""""""""""""""""""""""""
 "      General/Movement
 """"""""""""""""""""""""""""""""""
