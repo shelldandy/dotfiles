@@ -11,30 +11,6 @@ endfunction
 
 autocmd BufEnter * call GeneralTheme()
 
-" NERDTree Quick Open with Ctrl+n
-map <C-n> :NERDTreeToggle<CR>
-
-" NERDTree File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-   exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-  endfunction
-
-  call NERDTreeHighlightFile('pug', 'green', 'none', 'green', '#151515')
-  call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-  call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-  call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-  call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-  call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-  call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-  call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-  call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-  call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-  call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-  call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-  call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-  call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
-
 " CTRLP Ignore Hidden Missiles
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www,*/bower,*/dist
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
