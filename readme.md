@@ -2,6 +2,12 @@
 I first started using thoughtbots dotfiles but im not really that much of a power user of all the dot things so here's my take on dotfiles with stuff i actually use on a day to day basis.
 
 ![HackrSkillz](vim.png)
+
+## Awesome perks
+I have setup my vim to change the color scheme and writing mode to use pencil here's a small gif that explains how that works... much wow!
+
+![Such Pencil Wow](pencil.gif)
+
 ## Works best with...
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
 
