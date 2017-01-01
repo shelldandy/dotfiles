@@ -1,8 +1,12 @@
 filetype plugin indent on
 
 " ColorScheme
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+function GeneralTheme()
+  colorscheme OceanicNext
+  AirlineTheme oceanicnext
+endfunction
+
+autocmd BufEnter * call GeneralTheme()
 
 " NERDTree Quick Open with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
