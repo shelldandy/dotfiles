@@ -45,7 +45,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " Search and replace
 Plug 'brooth/far.vim'
-
 " Keyboard based file explorer
 Plug 'sjbach/lusty', { 'do': 'gem install neovim' }
 "Ack Search Files on disk
@@ -54,7 +53,7 @@ Plug 'mileszs/ack.vim', { 'do': 'brew install ack' }
 """"""""""""""""""""""""""""""""""
 "      Linters/Standards
 """"""""""""""""""""""""""""""""""
-" Syntastic for StandardJS
+" Syntax checking hacks for vim (the do thing is for linting React)
 Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint' }
 " JSDoc
 Plug 'heavenshell/vim-jsdoc'
@@ -64,7 +63,6 @@ Plug 'heavenshell/vim-jsdoc'
 """"""""""""""""""""""""""""""""""
 " Autoclose html tags
 Plug 'alvan/vim-closetag'
-
 " Vim Airline
 Plug 'vim-airline/vim-airline'
 " Nerd Commenter
