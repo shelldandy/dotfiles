@@ -2,7 +2,7 @@
 """"""""""""""""""""""""""""""""""
 "           Vim Plug		 "
 """"""""""""""""""""""""""""""""""
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 
 """"""""""""""""""""""""""""""""""
 "      Colors and Theme          "
