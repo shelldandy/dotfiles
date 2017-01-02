@@ -6,7 +6,7 @@ export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 export ZSH=$HOME/.oh-my-zsh
 
 if type nvim > /dev/null 2>&1; then
-  alias vim='nvim'
+  alias v='nvim'
 fi
 
 alias tmux="env TERM=xterm-256color-italic tmux"
