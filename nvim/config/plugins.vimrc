@@ -2,15 +2,7 @@ filetype plugin indent on
 
 " ColorScheme
 colorscheme OceanicNext
-
-function GeneralTheme()
-  colorscheme OceanicNext
-  AirlineTheme oceanicnext
-  AirlineRefresh
-endfunction
-
-autocmd BufEnter * call GeneralTheme()
-
+let g:airline_theme='oceanicnext'
 " CTRLP Ignore Hidden Missiles
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/www,*/bower,*/dist
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
