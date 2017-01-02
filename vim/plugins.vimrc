@@ -1,5 +1,6 @@
 filetype plugin indent on
-
+set termguicolors
+set laststatus=2
 " ColorScheme
 colorscheme OceanicNext
 let g:airline_theme='oceanicnext'
