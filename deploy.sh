@@ -2,7 +2,10 @@
 
 echo "I'm about to copy all the files to their respective places hang tight..."
 
-cp -v {.gitignore_global,.tmux.conf,.zshrc,xterm-256color-italic.terminfo,colors.sh} ~
+cp -v gitignore_global ~/.gitignore_global
+cp -v tmux.conf ~/.tmux.conf
+cp -v zshrc ~/.zshrc
+cp -v vim.vimrc ~/.vimrc
 
 echo "Let's take care of our PHP debug situation now..."
 cp -v ext-xdebug.ini /usr/local/etc/php/5.6/conf.d
