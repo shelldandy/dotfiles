@@ -36,3 +36,8 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
+
+" Folding of text like on Sublime/Atom
+set foldmethod=indent
+set foldlevelstart=1
+set foldnestmax=2
