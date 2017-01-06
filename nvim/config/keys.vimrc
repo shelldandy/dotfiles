@@ -28,6 +28,10 @@ nnoremap <Leader>wx :close<CR>
 
 " window reordering
 nnoremap <Leader>r <C-W><C-R>
+
+" NerdTree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
 " CtrlP
 nnoremap <Leader>p :CtrlP<CR>
 

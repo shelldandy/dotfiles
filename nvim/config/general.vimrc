@@ -40,5 +40,5 @@ set expandtab
 " Folding of text like on Sublime/Atom
 set foldmethod=indent
 set foldlevelstart=1
-set foldnestmax=2
+set foldnestmax=4
 

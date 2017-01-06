@@ -36,6 +36,8 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'rstacruz/vim-hyperstyle'
 Plug 'greg-js/vim-react-es6-snippets'
+" NerdTree
+Plug 'scrooloose/nerdtree'
 " Ctrl P Fuzzy Finder
 Plug 'ctrlpvim/ctrlp.vim'
 " Auto close brackets smartly
