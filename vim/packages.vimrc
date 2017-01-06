@@ -40,6 +40,8 @@ Plug 'rstacruz/vim-hyperstyle'
 Plug 'greg-js/vim-react-es6-snippets'
 " Ctrl P Fuzzy Finder
 Plug 'ctrlpvim/ctrlp.vim'
+" NerdTree
+Plug 'scrooloose/nerdtree'
 " Auto close brackets smartly
 Plug 'jiangmiao/auto-pairs'
 " Git Situation on my Lines like Atom

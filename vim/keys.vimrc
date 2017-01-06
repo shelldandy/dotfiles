@@ -31,6 +31,9 @@ nnoremap <Leader>r <C-W><C-R>
 " CtrlP
 nnoremap <Leader>p :CtrlP<CR>
 
+" NerdTree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
 " Buffer Switching
 nnoremap <Leader>b :bnext<CR>
 
