@@ -4,6 +4,8 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+# Homebre cask
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
 
 if type nvim > /dev/null 2>&1; then
   alias v='nvim'
