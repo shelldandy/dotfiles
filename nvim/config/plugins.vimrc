@@ -8,7 +8,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
 
 " StandardJS
+let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_checkers = ['standard']
+
 " StandardJS autoformat on save: needs standard-format global npm package
 " autocmd bufwritepost *.js silent !standard --fix %
 set autoread
@@ -58,8 +60,6 @@ let g:syntastic_check_on_wq = 0
 
 " Numbers exclude
 let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
-" Disable relative numbers by default
-" let g:enable_numbers = 0
 
 " Pug Auto Lint
 let g:syntastic_pug_checkers = ['pug_lint']
