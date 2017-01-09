@@ -19,6 +19,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 " iaWriter Theme
 Plug 'reedes/vim-colors-pencil'
+" Vim Styled Components
+Plug 'fleischie/vim-styled-components'
 """"""""""""""""""""""""""""""""""
 "      General/Movement
 """"""""""""""""""""""""""""""""""
