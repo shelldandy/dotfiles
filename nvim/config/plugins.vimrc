@@ -7,11 +7,12 @@ let g:airline_theme='oceanicnext'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
 
-" StandardJS
+" Eslint Projects
 let g:syntastic_javascript_checkers = ['eslint']
-" let g:syntastic_javascript_checkers = ['standard']
+autocmd bufwritepost *.js silent !eslint --fix %
 
-" StandardJS autoformat on save: needs standard-format global npm package
+" StandardJS Projects
+" let g:syntastic_javascript_checkers = ['standard']
 " autocmd bufwritepost *.js silent !standard --fix %
 set autoread
 

@@ -59,7 +59,7 @@ Plug 'mileszs/ack.vim', { 'do': 'brew install ack' }
 "      Linters/Standards
 """"""""""""""""""""""""""""""""""
 " Syntax checking hacks for vim (the do thing is for linting React)
-Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint' }
+Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint eslint' }
 " JSDoc
 Plug 'heavenshell/vim-jsdoc'
 """"""""""""""""""""""""""""""""""
