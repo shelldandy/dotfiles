@@ -63,3 +63,6 @@ imap <right> <nop>
 " Debugger situation
 " Toggle a breakpoint
 nnoremap <Leader>db :Breakpoint<CR>
+
+" Clear Buffer Quickly
+nnoremap <Leader>cb :BufOnly<CR>

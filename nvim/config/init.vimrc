@@ -84,4 +84,6 @@ Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-surround'
 " Pencil / Write Mode
 Plug 'reedes/vim-pencil'
+" BufOnly - Clear buffers
+Plug 'vim-scripts/BufOnly.vim'
 call plug#end()
