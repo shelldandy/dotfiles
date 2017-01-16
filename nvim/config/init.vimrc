@@ -86,4 +86,6 @@ Plug 'tpope/vim-surround'
 Plug 'reedes/vim-pencil'
 " BufOnly - Clear buffers
 Plug 'vim-scripts/BufOnly.vim'
+" Lorem Ipsum Generator
+Plug 'vim-scripts/loremipsum'
 call plug#end()
