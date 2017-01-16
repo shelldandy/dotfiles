@@ -35,8 +35,6 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 " CtrlP
 nnoremap <Leader>p :CtrlP<CR>
 
-" Buffer Switching
-nnoremap <Leader>b :bnext<CR>
 
 " Tab Switching
 nnoremap <Leader>t :tabn<CR>
@@ -65,4 +63,7 @@ imap <right> <nop>
 nnoremap <Leader>db :Breakpoint<CR>
 
 " Clear Buffer Quickly
-nnoremap <Leader>b :BufOnly<CR>
+nnoremap <Leader>bc :BufOnly<CR>
+" Buffer Switching
+nnoremap <Leader>bn :bnext<CR>
+nnoremap <Leader>bp :bprevious<CR>
