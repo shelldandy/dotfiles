@@ -8,12 +8,12 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
 
 " Eslint Projects
-let g:syntastic_javascript_checkers = ['eslint']
-autocmd bufwritepost *.js silent !eslint --fix %
+"let g:syntastic_javascript_checkers = ['eslint']
+"autocmd bufwritepost *.js silent !eslint --fix %
 
 " StandardJS Projects
-" let g:syntastic_javascript_checkers = ['standard']
-" autocmd bufwritepost *.js silent !standard --fix %
+let g:syntastic_javascript_checkers = ['standard']
+autocmd bufwritepost *.js silent !standard --fix %
 set autoread
 
 " JSX even on just JS
