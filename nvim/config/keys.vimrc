@@ -65,4 +65,4 @@ imap <right> <nop>
 nnoremap <Leader>db :Breakpoint<CR>
 
 " Clear Buffer Quickly
-nnoremap <Leader>cb :BufOnly<CR>
+nnoremap <Leader>b :BufOnly<CR>
