@@ -67,3 +67,8 @@ nnoremap <Leader>bc :BufOnly<CR>
 " Buffer Switching
 nnoremap <Leader>bn :bnext<CR>
 nnoremap <Leader>bp :bprevious<CR>
+
+" Git Controls Flow
+nnoremap <Leader>gaa :Git add .<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gp :Gpush<CR>
