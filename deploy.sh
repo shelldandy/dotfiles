@@ -6,6 +6,7 @@ cp -v gitignore_global ~/.gitignore_global
 cp -v tmux.conf ~/.tmux.conf
 cp -v zshrc ~/.zshrc
 cp -v vim.vimrc ~/.vimrc
+cp -v zpreztorc ~/.zpreztorc
 
 echo "Let's take care of our PHP debug situation now..."
 cp -v ext-xdebug.ini /usr/local/etc/php/5.6/conf.d
