@@ -72,3 +72,4 @@ nnoremap <Leader>bp :bprevious<CR>
 nnoremap <Leader>gaa :Git add .<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gp :Gpush<CR>
+nnoremap <Leader>gs :Gstatus<CR>
