@@ -4,8 +4,8 @@ filetype plugin indent on
 colorscheme OceanicNext
 let g:airline_theme='oceanicnext'
 " CTRLP Ignore Hidden Missiles
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower)$'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public)$'
 
 " Eslint Projects
 "let g:syntastic_javascript_checkers = ['eslint']
