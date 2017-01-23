@@ -42,3 +42,6 @@ set foldmethod=indent
 set foldlevelstart=1
 set foldnestmax=4
 
+" Allow the use of per project .nvimrc files
+set exrc
+set secure
