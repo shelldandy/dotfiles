@@ -88,4 +88,6 @@ Plug 'reedes/vim-pencil'
 Plug 'vim-scripts/BufOnly.vim'
 " Lorem Ipsum Generator
 Plug 'vim-scripts/loremipsum'
+" Dash Documentation
+Plug 'rizzatti/dash.vim'
 call plug#end()
