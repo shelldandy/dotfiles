@@ -9,8 +9,10 @@ export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
 
 if type nvim > /dev/null 2>&1; then
-  alias v='nvim'
+  alias vim='nvim'
 fi
+
+alias v='nvim'
 
 alias tmux="env TERM=xterm-256color-italic tmux"
 export TERM=xterm-256color-italic
