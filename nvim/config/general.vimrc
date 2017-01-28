@@ -18,6 +18,9 @@ highlight Comment cterm=italic
 " Colors
 syntax enable
 set termguicolors
+" Colors transparent on non-fullscreen view
+highlight Normal guibg=none
+highlight NonText guibg=none
 
 " Numbers on rows
 set number
