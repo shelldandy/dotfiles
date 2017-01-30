@@ -2,13 +2,13 @@ filetype plugin indent on
 
 " ColorScheme
 "colorscheme OceanicNext
-"let g:airline_theme='oceanicnext'
+let g:airline_theme='oceanicnext'
 colorscheme one
+let g:one_allow_italics = 1
 set background=dark
-let g:airline_theme='one'
 " Colors transparent on non-fullscreen view
-highlight Normal guibg=none
-highlight NonText guibg=none
+"highlight Normal guibg=none
+"highlight NonText guibg=none
 " CTRLP Ignore Hidden Missiles
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public)$'
