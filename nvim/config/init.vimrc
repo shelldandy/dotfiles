@@ -21,6 +21,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'reedes/vim-colors-pencil'
 " Vim Styled Components
 Plug 'fleischie/vim-styled-components'
+" Vim ONE Syntax like Atom
+Plug 'rakr/vim-one'
 """"""""""""""""""""""""""""""""""
 "      General/Movement
 """"""""""""""""""""""""""""""""""

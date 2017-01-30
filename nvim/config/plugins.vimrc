@@ -1,8 +1,11 @@
 filetype plugin indent on
 
 " ColorScheme
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+"colorscheme OceanicNext
+"let g:airline_theme='oceanicnext'
+colorscheme one
+set background=dark
+let g:airline_theme='one'
 " Colors transparent on non-fullscreen view
 highlight Normal guibg=none
 highlight NonText guibg=none
