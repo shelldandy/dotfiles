@@ -5,6 +5,12 @@ export PATH="/usr/local/sbin:$PATH"
 # PHP Path
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
+# Android Tools for React Native
+# https://facebook.github.io/react-native/docs/getting-started.html
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
 # Homebre cask
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
 
