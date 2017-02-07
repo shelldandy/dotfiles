@@ -92,4 +92,6 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'vim-scripts/loremipsum'
 " Dash Documentation
 Plug 'rizzatti/dash.vim'
+" Per Project Vim Files
+Plug 'krisajenkins/vim-projectlocal'
 call plug#end()
