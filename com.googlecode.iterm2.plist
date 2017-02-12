@@ -1852,11 +1852,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>373 283 620 392 0 0 1366 768 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>448 134 918 512 0 0 1366 768 </string>
+	<string>448 109 796 473 0 0 1366 768 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>90 161 592 584 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>102 -43 1128 764 0 0 1366 768 </string>
+	<string>102 14 1128 728 0 0 1366 768 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>494 173 730 502 0 0 1366 745 </string>
 	<key>NeverWarnAboutShortLivedSessions_C41EA87F-76D4-4401-9B20-DB8833BE3028</key>
@@ -2451,7 +2451,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>36</integer>
+			<integer>38</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
