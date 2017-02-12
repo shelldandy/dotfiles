@@ -23,6 +23,7 @@ Plug 'reedes/vim-colors-pencil'
 Plug 'fleischie/vim-styled-components'
 " Vim ONE Syntax like Atom
 Plug 'rakr/vim-one'
+Plug 'mike3run/vim-monokai'
 """"""""""""""""""""""""""""""""""
 "      General/Movement
 """"""""""""""""""""""""""""""""""
@@ -76,6 +77,7 @@ Plug 'joonty/vdebug' " Multi-language DBGP debugger client for Vim (PHP, Python,
 Plug 'alvan/vim-closetag'
 " Vim Airline
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Nerd Commenter
 Plug 'scrooloose/nerdcommenter'
 " Indent lines
