@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>albumName</key>
+	<string>Converting Vegetarians</string>
+	<key>artistName</key>
+	<string>Infected Mushroom</string>
+	<key>coverURL</key>
+	<string>https://lastfm-img2.akamaized.net/i/u/174s/a014a535cdf744d09c82a4bfd5aa8fed.png</string>
+	<key>currentPosition</key>
+	<string>33.874000549316</string>
+	<key>songDuration</key>
+	<string>339.0</string>
+	<key>songName</key>
+	<string>Converting Vegetarians</string>
+	<key>songRating</key>
+	<string>☆☆☆☆☆</string>
+</dict>
+</plist>

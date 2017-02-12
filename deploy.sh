@@ -12,7 +12,9 @@ cp -v kwmrc ~/.kwm
 echo "Let's take care of our PHP debug situation now..."
 cp -v ext-xdebug.ini /usr/local/etc/php/5.6/conf.d
 
+echo "Let's widget some more 🔥"
+cp -R widgets /Users/$(whoami)/Library/Application\ Support/Übersicht
 echo '⏲.... Almost there'
-cp -Rv nvim/* ~/.config/nvim
+cp -R nvim/* ~/.config/nvim
 
 echo "🍕 🍺 All done! That wasn't that hard was it? 🎉"
