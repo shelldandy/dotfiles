@@ -13,7 +13,9 @@ echo "Let's take care of our PHP debug situation now..."
 cp -v ext-xdebug.ini /usr/local/etc/php/5.6/conf.d
 
 echo "Let's widget some more 🔥"
+rm -rf /Users/$(whoami)/Library/Application\ Support/Übersicht/widgets
 cp -R widgets /Users/$(whoami)/Library/Application\ Support/Übersicht
+
 echo '⏲.... Almost there'
 cp -R nvim/* ~/.config/nvim
 
