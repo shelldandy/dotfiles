@@ -1,10 +1,8 @@
 source ~/.zprezto/init.zsh
-
 # Zsh Files of Miguel Palau
 export PATH="/usr/local/sbin:$PATH"
 # PHP Path
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
-
 # Android Tools for React Native
 # https://facebook.github.io/react-native/docs/getting-started.html
 export ANDROID_HOME=${HOME}/Library/Android/sdk
@@ -57,3 +55,8 @@ alias c='clear'
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# RVM all the way
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+
+# Good ol' fun
+fortune | cowsay | lolcat
