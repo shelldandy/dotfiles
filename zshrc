@@ -45,6 +45,8 @@ alias i="itermocil "
 alias t="tmuxinator "
 # Quick ground-zero
 alias 0miedo="git clone git@github.com:mike3run/ground-zero.git; cd ground-zero"
+# Open apps quickly from the terminal
+alias oa="open -a "
 
 # Yarn Baby!
 alias yS='yarn add '
