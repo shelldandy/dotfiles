@@ -7,6 +7,7 @@ cp -v tmux.conf ~/.tmux.conf
 cp -v zshrc ~/.zshrc
 cp -v vim.vimrc ~/.vimrc
 cp -v zpreztorc ~/.zpreztorc
+cp -v kwmrc ~/.kwm
 
 echo "Let's take care of our PHP debug situation now..."
 cp -v ext-xdebug.ini /usr/local/etc/php/5.6/conf.d
