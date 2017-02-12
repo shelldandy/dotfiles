@@ -1,4 +1,10 @@
 source ~/.zprezto/init.zsh
+
+# Import all custom plugins and love
+for f in ~/git/dotfiles/plugins/*
+  do source $f
+done
+
 # Zsh Files of Miguel Palau
 export PATH="/usr/local/sbin:$PATH"
 # PHP Path
