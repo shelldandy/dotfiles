@@ -9,13 +9,15 @@ render: (output) -> """
 update: (output, domEl) ->
   data = JSON.parse(output)
   container = $(domEl).find('.google-play')
-  content =
-    """
-    <img src=#{data.song.albumArt} >
-    """
-  $(container).html content
+  if data.song.albumArt
+    content =
+      """
+      <img src=#{data.song.albumArt} >
+      """
+    $(container).html content
+  else
+    $(domEl).remove()
 
-# CSS Style
 style: """
   .google-play
     width: 176px
@@ -27,5 +29,4 @@ style: """
     object-fit: cover
 """
 afterRender: (domEl) ->
-
   $(domEl).parent('div').css('order', '10')
