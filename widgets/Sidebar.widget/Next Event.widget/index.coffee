@@ -4,7 +4,7 @@
 
 options =
   # Easily enable or disable the widget.
-  widgetEnable: true
+  widgetEnable: false
 
 command: "osascript 'Sidebar.widget/Next Event.widget/Next Event.applescript'"
 
