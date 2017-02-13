@@ -26,6 +26,7 @@ render: (output) ->
       flex-wrap: #{@flexWrap};
       justify-content: #{@justifyContent};
       font-family: system, -apple-system;
+      height: calc(100% - 25px);
     }
     #__uebersicht>div {
       width: auto;
