@@ -22,6 +22,7 @@ In my current setup I'm using some themes and plugins to make the whole experien
 
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
+- Google Play Music Desktop Player - With a custom widget made by me :D
 ## To-Do
 
 - Script to install everything from a first fresh run
