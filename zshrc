@@ -61,12 +61,6 @@ alias gp='git push'
 
 # Quick clear
 alias c='clear'
-# NVM all the way
-export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-# RVM all the way
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 # Good ol' fun
 fortune | cowsay | lolcat
