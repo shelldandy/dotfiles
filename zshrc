@@ -64,3 +64,6 @@ alias c='clear'
 
 # Good ol' fun
 fortune | cowsay | lolcat
+
+# Fuck autocorrect in zsh...
+setopt correct_all
