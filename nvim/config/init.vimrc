@@ -96,4 +96,6 @@ Plug 'vim-scripts/loremipsum'
 Plug 'rizzatti/dash.vim'
 " Per Project Vim Files
 Plug 'krisajenkins/vim-projectlocal'
+" EditorConfig
+Plug 'editorconfig/editorconfig-vim', { 'do': 'brew install editorconfig' }
 call plug#end()
