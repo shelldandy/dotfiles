@@ -75,3 +75,6 @@ let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
 let g:vdebug_options = {
 \    "break_on_open" : 0,
 \}
+
+" TwitVim
+let g:twitvim_enable_python3 = 1

@@ -98,4 +98,5 @@ Plug 'rizzatti/dash.vim'
 Plug 'krisajenkins/vim-projectlocal'
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim', { 'do': 'brew install editorconfig' }
+Plug 'vim-scripts/TwitVim'                        " Twitter inside vim lol
 call plug#end()
