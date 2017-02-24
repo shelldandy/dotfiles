@@ -3,7 +3,6 @@ filetype plugin indent on
 colorscheme monokai
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
-let g:airline_theme='powerlineish'
 
 " CTRLP Ignore Hidden Missiles
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
