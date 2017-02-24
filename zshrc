@@ -31,7 +31,6 @@ export TERM=xterm-256color-italic
 export EDITOR='nvim'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-alias moo='fortune | cowsay | lolcat'
 alias rst='exec zsh'
 # Run local npm packages
 alias npmL='PATH="$(npm bin)":"$PATH"'
@@ -62,8 +61,8 @@ alias gp='git push'
 # Quick clear
 alias c='clear'
 
-# Good ol' fun
-fortune | cowsay | lolcat
+# Get a random cow on login
+moo
 
 # Fuck autocorrect in zsh...
-setopt correct_all
+unsetopt correct_all
