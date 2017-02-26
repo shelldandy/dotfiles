@@ -15,7 +15,6 @@ set nocompatible                      " vim, not vi
 syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
 set encoding=utf8                     " Show all funky signs
-set clipboard=unnamed                 " Make copy/paste great again
 set backspace=indent,eol,start        " Make delete work on vim8
 
 " Hidden Buffer files
@@ -80,3 +79,24 @@ set nowrap                            " disable line wrapping
 
 " External vimrc files
 set exrc                              " Allow the use of per project .vimrc files
+
+" background processes
+set updatetime=1000                   " timeout for plugins like gitgutter etc.
+set autoread                          " update file when changed outside of vim
+set autoindent                        " copy indentation from the previous line for new line
+set clipboard=unnamed                 " use native clipboard
+set history=200                       " store last 200 commands as history
+set nobackup                          " don't save backups
+set noerrorbells                      " no error bells please
+set noswapfile                        " no swapfiles
+set nowritebackup                     " don't save a backup while editing
+set ttyfast                           " indicates a fast terminal connection
+set undodir=~/.config/nvim/undodir    " set undofile location
+set undofile                          " maintain undo history between sessions
+set undolevels=1000                   " store 1000 undos
+
+" adjust window size with arrow keys
+noremap <right> <C-w>5>
+noremap <left> <C-w>5<
+noremap <up> <C-w>5+
+noremap <down> <C-w>5-
