@@ -7,7 +7,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'othree/yajs.vim'                                              " Syntax Highlight for Vim
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'ap/vim-css-color'                                             " Colors in my Sass
-Plug 'ryanoasis/vim-devicons'                                       " Vim Icons
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'mike3run/vim-monokai'                                         " My Fork of Monokai Theme
@@ -26,6 +25,8 @@ Plug 'tpope/vim-fugitive'                                           " Vim Fugiti
 Plug 'brooth/far.vim'                                               " Search and replace
 Plug 'sjbach/lusty', { 'do': 'gem install neovim' }                 " Keyboard based file explorer
 Plug 'mileszs/ack.vim', { 'do': 'brew install ack' }                " Ack Search Files on disk
+Plug 'valloric/matchtagalways'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Linters
 Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint eslint' }
@@ -49,4 +50,5 @@ Plug 'rizzatti/dash.vim'                                            " Dash Docum
 Plug 'krisajenkins/vim-projectlocal'                                " Per Project Vim Files
 Plug 'editorconfig/editorconfig-vim', { 'do': 'brew install editorconfig' }
 Plug 'vim-scripts/TwitVim'                                          " Twitter inside vim lol
+Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 call plug#end()

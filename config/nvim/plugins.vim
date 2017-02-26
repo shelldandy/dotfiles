@@ -4,9 +4,11 @@ colorscheme monokai
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 
-" CTRLP Ignore Hidden Missiles
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public)$'
+if has_key(g:plugs, 'ctrlp.vim')
+  set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
+  let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public)$'
+  let g:ctrlp_show_hidden = 1
+endif
 
 " Eslint Projects
 "let g:syntastic_javascript_checkers = ['eslint']
