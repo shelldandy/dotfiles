@@ -93,3 +93,9 @@ noremap L $
 
 " press enter for newline without insert
 nnoremap <cr> o<esc>
+
+" reload vim config
+nnoremap <leader>r :source $MYVIMRC<CR>
+
+" clear search
+nnoremap <leader>c :let @/ = ""<CR>
