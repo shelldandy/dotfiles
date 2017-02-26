@@ -1,7 +1,7 @@
 source ~/.zprezto/init.zsh
 
 # Import all custom plugins and love
-for f in ~/git/dotfiles/zsh/*
+for f in ~/.zsh/*
   do source $f
 done
 
@@ -69,3 +69,7 @@ unsetopt correct_all
 LESSPIPE=`which src-hilite-lesspipe.sh`
 export LESSOPEN="| ${LESSPIPE} %s"
 export LESS=' -R -X -F '
+
+# Show or hide all files on the finder
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
