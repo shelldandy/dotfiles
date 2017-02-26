@@ -47,15 +47,18 @@ set wildmode=longest:full,full        " configure wildmenu
 set lazyredraw                        " don't draw everything
 highlight Comment cterm=italic
 
-" Mouse mode
-set mouse=a
-
 " Search Mode
 set incsearch                         " Find the next match as we type the search
 set hlsearch                          " Highlight searches by default
 set ignorecase                        " Ignore case when searching...
 set smartcase                         " ...unless we type a capital
 
+" interaction
+set backspace=2                       " make backspace work like most other apps
+set mouse=a                           " enable mouse support
+set mousehide                         " hide the mouse cursor while typing
+set whichwrap=b,s,h,l,<,>,[,]         " backspace and cursor keys wrap too
+set esckeys                           " allow cursor keys in insert mode
 
 " whitespace
 set expandtab                         " use tabs instead of spaces
