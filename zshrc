@@ -1,14 +1,12 @@
 source ~/.zprezto/init.zsh
 
 # Import all custom plugins and love
-for f in ~/git/dotfiles/plugins/*
+for f in ~/git/dotfiles/zsh/*
   do source $f
 done
 
 # Zsh Files of Miguel Palau
 export PATH="/usr/local/sbin:$PATH"
-# PHP Path
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 # Android Tools for React Native
 # https://facebook.github.io/react-native/docs/getting-started.html
 export ANDROID_HOME=${HOME}/Library/Android/sdk
@@ -66,3 +64,8 @@ moo
 
 # Fuck autocorrect in zsh...
 unsetopt correct_all
+
+# Highlight stuff with less
+LESSPIPE=`which src-hilite-lesspipe.sh`
+export LESSOPEN="| ${LESSPIPE} %s"
+export LESS=' -R -X -F '
