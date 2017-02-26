@@ -94,3 +94,22 @@ set ttyfast                           " indicates a fast terminal connection
 set undodir=~/.config/nvim/undodir    " set undofile location
 set undofile                          " maintain undo history between sessions
 set undolevels=1000                   " store 1000 undos
+
+" =================================================================================================
+" Autocommands
+" =================================================================================================
+augroup vimrcEx
+  autocmd!
+
+  " disable comment continuation
+  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+  " better syntax highlighting for eslintrc and babelrc
+  autocmd BufNewFile,BufRead *eslintrc,*babelrc setlocal syntax=json
+
+  " only show a cursorline in the active window
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter * set cursorline
+  autocmd InsertEnter * set nocursorline
+  autocmd InsertLeave * set cursorline
+augroup END

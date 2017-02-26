@@ -86,3 +86,10 @@ noremap <down> <C-w>5-
 " keep selection after indent
 vnoremap < <gv
 vnoremap > >gv
+
+" make moving to beginning and end of lines easier
+noremap H ^
+noremap L $
+
+" press enter for newline without insert
+nnoremap <cr> o<esc>
