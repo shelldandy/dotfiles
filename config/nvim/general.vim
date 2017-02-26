@@ -56,12 +56,19 @@ set hlsearch                          " Highlight searches by default
 set ignorecase                        " Ignore case when searching...
 set smartcase                         " ...unless we type a capital
 
-" Tabs situation
-set tabstop=2
-set shiftwidth=2
-set shiftround
-set expandtab                         " Actually print 2 spaces when hitting TAB
+
+" whitespace
+set expandtab                         " use tabs instead of spaces
+set nojoinspaces                      " use one space, not two, after punctuation
+set shiftround                        " shift to next tabstop
+set shiftwidth=2                      " amount of space used for indentation
+set softtabstop=2                     " appearance of tabs
+set tabstop=2                         " use two spaces for tabs
+
+" Folding
 set foldmethod=indent                 " The folds will happen by indentation like Atom
 set foldlevelstart=1                  " Start folding at the top of every function
 set foldnestmax=4                     " But just fold up to 4 levels
-set exrc                              " Allow the use of per project .nvimrc files
+
+" External vimrc files
+set exrc                              " Allow the use of per project .vimrc files
