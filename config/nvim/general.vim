@@ -70,5 +70,10 @@ set foldmethod=indent                 " The folds will happen by indentation lik
 set foldlevelstart=1                  " Start folding at the top of every function
 set foldnestmax=4                     " But just fold up to 4 levels
 
+" text appearance
+set list                              " show invisible characters
+set listchars=tab:>·,trail:·,nbsp:¬   " but only show useful chaaracters
+set nowrap                            " disable line wrapping
+
 " External vimrc files
 set exrc                              " Allow the use of per project .vimrc files
