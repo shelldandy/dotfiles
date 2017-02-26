@@ -94,9 +94,3 @@ set ttyfast                           " indicates a fast terminal connection
 set undodir=~/.config/nvim/undodir    " set undofile location
 set undofile                          " maintain undo history between sessions
 set undolevels=1000                   " store 1000 undos
-
-" adjust window size with arrow keys
-noremap <right> <C-w>5>
-noremap <left> <C-w>5<
-noremap <up> <C-w>5+
-noremap <down> <C-w>5-

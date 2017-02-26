@@ -76,3 +76,13 @@ nnoremap <Leader>gs :Gstatus<CR>
 
 " Dash docs
 nmap <Leader>fd :Dash<CR>
+
+" adjust window size with arrow keys
+noremap <right> <C-w>5>
+noremap <left> <C-w>5<
+noremap <up> <C-w>5+
+noremap <down> <C-w>5-
+
+" keep selection after indent
+vnoremap < <gv
+vnoremap > >gv
