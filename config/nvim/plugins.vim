@@ -10,6 +10,15 @@ if has_key(g:plugs, 'ctrlp.vim')
   let g:ctrlp_show_hidden = 1
 endif
 
+if has_key(g:plugs, 'matchtagalways')
+  let g:mta_filetypes = {
+    \ 'javascript.jsx': 1,
+    \ 'html' : 1,
+    \ 'xml' : 1,
+    \ 'liquid': 1,
+    \ }
+endif
+
 " Eslint Projects
 "let g:syntastic_javascript_checkers = ['eslint']
 "autocmd bufwritepost *.js silent !eslint --fix %
