@@ -9,7 +9,9 @@ Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'ap/vim-css-color'                                             " Colors in my Sass
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
-Plug 'mike3run/vim-monokai'                                         " My Fork of Monokai Theme
+Plug 'mhartington/oceanic-next'                                     " Oceanic Next
+"Plug 'mike3run/vim-monokai'                                         " My Fork of Monokai Theme
+"Plug 'vim-airline/vim-airline-themes'                               " Airline Themes
 
 " General/Movement
 Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS
@@ -38,7 +40,6 @@ Plug 'heavenshell/vim-jsdoc'
 " Life Quality Stuff
 Plug 'alvan/vim-closetag'                                           " Autoclose html tags
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
-Plug 'vim-airline/vim-airline-themes'                               " Airline Themes
 Plug 'scrooloose/nerdcommenter'                                     " Nerd Commenter
 Plug 'Yggdroot/indentLine'                                          " Show Indent lines
 Plug 'myusuf3/numbers.vim'                                          " Numbers craze

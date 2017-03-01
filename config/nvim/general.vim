@@ -26,7 +26,7 @@ set nowb
 " interface
 syntax enable
 set termguicolors
-set colorcolumn=100                   " show a column at 100 chars
+"set colorcolumn=100                   " show a column at 100 chars
 set cursorline                        " highlight current line
 set laststatus=2                      " enable airline on open
 set noshowmode                        " don't show mode as airline already does

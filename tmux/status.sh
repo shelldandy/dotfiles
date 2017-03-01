@@ -4,12 +4,12 @@ source "$HOME/.tmux/segment.sh"
 
 displayStatus() {
   if [[ $1 == "left" ]]; then
-    displaySegment "session" "#282828" "#a89984"
+    displaySegment "session" "#282828" "#6699cc"
   else
-    displaySegment "time" "#a89984" "#504945"
-    displaySegment "cpu" "#a89984" "#504945"
-    displaySegment "battery" "#a89984" "#504945"
-    displaySegment "hostname" "#3c3836" "#a89984"
+    displaySegment "time" "#ffffff" "#65737e"
+    displaySegment "cpu" "#ffffff" "#65737e"
+    displaySegment "battery" "#ffffff" "#65737e"
+    displaySegment "hostname" "#3c3836" "#6699cc"
   fi
 
   exit 0

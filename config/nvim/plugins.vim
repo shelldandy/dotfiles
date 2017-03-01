@@ -1,8 +1,15 @@
 filetype plugin indent on
 
-colorscheme monokai
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
+"colorscheme monokai
+"let g:monokai_term_italic = 1
+"let g:monokai_gui_italic = 1
+
+if has_key(g:plugs, 'oceanic-next')
+  colorscheme OceanicNext
+  if has_key(g:plugs, 'vim-airline')
+    let g:airline_theme='oceanicnext'
+  endif
+endif
 
 if has_key(g:plugs, 'ctrlp.vim')
   set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
