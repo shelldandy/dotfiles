@@ -9,6 +9,10 @@ if has_key(g:plugs, 'oceanic-next')
   if has_key(g:plugs, 'vim-airline')
     let g:airline_theme='oceanicnext'
   endif
+
+  " Pug Color Override
+  autocmd BufNewFile,BufRead *.pug hi htmlTagName guifg=#ec5f67 ctermfg=203
+
 endif
 
 if has_key(g:plugs, 'ctrlp.vim')
