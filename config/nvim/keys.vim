@@ -16,6 +16,10 @@ nnoremap <Leader>j <C-W><C-J>
 nnoremap <Leader>k <C-W><C-K>
 nnoremap <Leader>l <C-W><C-L>
 nnoremap <Leader>h <C-W><C-H>
+" Neovim fix to get CTRL-H Back 💁
+if has('nvim')
+  nmap <bs> <c-w>h
+endif
 
 " window keys
 nnoremap <Leader>w< <C-w><
