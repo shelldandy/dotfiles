@@ -10,8 +10,6 @@ Plug 'ap/vim-css-color'                                             " Colors in 
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'mhartington/oceanic-next'                                     " Oceanic Next
-"Plug 'mike3run/vim-monokai'                                         " My Fork of Monokai Theme
-"Plug 'vim-airline/vim-airline-themes'                               " Airline Themes
 
 " General/Movement
 Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS

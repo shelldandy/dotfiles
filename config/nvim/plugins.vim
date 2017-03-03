@@ -30,6 +30,11 @@ if has_key(g:plugs, 'matchtagalways')
     \ }
 endif
 
+if has_key(g:plugs, 'ultisnips')
+  let g:UltiSnipsJumpForwardTrigger="<c-b>"
+  let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+endif
+
 " Eslint Projects
 "let g:syntastic_javascript_checkers = ['eslint']
 "autocmd bufwritepost *.js silent !eslint --fix %
