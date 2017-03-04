@@ -36,10 +36,6 @@ alias npmL='PATH="$(npm bin)":"$PATH"'
 alias npmD="npm i -D "
 # Install Quickly with --save
 alias npmS="npm i -S "
-# iTermocil
-alias i="itermocil "
-# tmuxinator
-alias t="tmuxinator "
 # Quick ground-zero
 alias 0miedo="git clone git@github.com:mike3run/ground-zero.git; cd ground-zero"
 # Open apps quickly from the terminal
@@ -55,6 +51,8 @@ alias gs='git status'
 alias gaa='git add .'
 alias gc='git commit'
 alias gp='git push'
+alias gP='git pull'
+alias gr='git rebase'
 
 # Quick clear
 alias c='clear'
