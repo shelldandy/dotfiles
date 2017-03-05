@@ -105,7 +105,7 @@ augroup vimrcEx
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
   " better syntax highlighting for eslintrc and babelrc
-  autocmd BufNewFile,BufRead *eslintrc,*babelrc setlocal syntax=json
+  autocmd BufNewFile,BufRead *eslintrc,*babelrc,*tern-project setlocal syntax=json
 
   " only show a cursorline in the active window
   autocmd WinLeave * set nocursorline
