@@ -6,7 +6,7 @@ source "$HOME/.tmux/cache.sh"
 getTemperature() {
   temperature=$(
     # get weather report
-    curl -s wttr.in/Puebla
+    curl -s wttr.in/Puebla |
     # grep first mention of temperature
     grep -m 1 '°C' |
     # remove terminal escape sequences

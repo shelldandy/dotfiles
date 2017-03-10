@@ -8,6 +8,7 @@ displayStatus() {
   else
     displaySegment "time" "#d8dee9" "#65737e"
     displaySegment "cpu" "#d8dee9" "#65737e"
+    displaySegment "weather" "#d8dee9" "#65737e"
     displaySegment "battery" "#d8dee9" "#65737e"
     displaySegment "hostname" "#d8dee9" "#6699cc"
   fi
