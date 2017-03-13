@@ -61,7 +61,8 @@ alias c='clear'
 moo
 
 # Fuck autocorrect in zsh...
-unsetopt correct_all
+unsetopt correct
+setopt rm_star_silent
 
 # Highlight stuff with less
 LESSPIPE=`which src-hilite-lesspipe.sh`
