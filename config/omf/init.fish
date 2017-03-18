@@ -1,5 +1,4 @@
 # Disable initial Fish Greeting
-set fish_greeting
 
 # Exports
 set -x EDITOR nvim
@@ -49,3 +48,12 @@ end
 
 make_completion g 'git'
 make_completion v 'nvim'
+
+# Fun
+function moo
+  set cows_dir /usr/local/Cellar/cowsay/3.04/share/cows
+  set avatar (ls $cows_dir | gshuf -n1|cut -d'.' -f1)
+  fortune | cowsay -f $avatar | lolcat
+end
+
+function fish_greeting ; moo ; end
