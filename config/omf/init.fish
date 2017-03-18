@@ -20,7 +20,7 @@ function c        ; clear ; end
 
 # Utilities
 function rst      ; exec fish ; end
-function v        ; nvim ; end
+function v        ; nvim $argv ; end
 function g        ; git $argv ; end
 function tmux     ; command tmux -2 $argv ; end
 function gs       ; git status ; end
@@ -55,3 +55,6 @@ function moo # Random cowsay
   set avatar (ls $cows_dir | gshuf -n1|cut -d'.' -f1)
   fortune | cowsay -f $avatar | lolcat
 end
+
+# Fishy Fixes for the prompt with default theme
+set fish_pager_color_progress cyan
