@@ -1864,15 +1864,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>2704 437 228 297 1920 0 1920 1080 </string>
+	<string>438 136 228 297 0 0 1920 1080 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>3098 350 445 103 1920 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2377 309 796 473 1920 0 1920 1080 </string>
+	<string>2074 438 796 473 1920 0 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>2048 462 592 584 1920 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1937 301 1132 744 1920 0 1920 1080 </string>
+	<string>927 273 889 744 0 0 1920 1080 </string>
 	<key>NeverWarnAboutShortLivedSessions_C41EA87F-76D4-4401-9B20-DB8833BE3028</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_C41EA87F-76D4-4401-9B20-DB8833BE3028_selection</key>
@@ -2067,13 +2067,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.1731719970703125</real>
+				<real>0.20529249310493469</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14319989085197449</real>
+				<real>0.16849046945571899</real>
 				<key>Red Component</key>
-				<real>0.089916206896305084</real>
+				<real>0.10640717297792435</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -2551,13 +2551,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.17245659232139587</real>
+				<real>0.20529249310493469</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14339995384216309</real>
+				<real>0.16849046945571899</real>
 				<key>Red Component</key>
-				<real>0.087551243603229523</real>
+				<real>0.10640717297792435</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
