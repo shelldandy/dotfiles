@@ -10,12 +10,6 @@ set ANDROID_HOME $HOME/Library/Android/sdk
 set PATH $ANDROID_HOME/tools $PATH
 set PATH $ANDROID_HOME/platform-tools $PATH
 
-# Highlight stuff with less
-set hilite (which highlight)
-set -x LESSOPEN "| $hilite %s --out-format xterm256 --quiet --force "
-set -x LESS " -R"
-
-
 # Navigation
 function ..    ; cd .. ; end
 function ...   ; cd ../.. ; end
@@ -39,10 +33,6 @@ function oa       ; open -a $argv ; end
 
 function ys       ; yarn add $argv ; end
 function yd       ; yarn add --dev $argv ; end
-
-function less
-    command less -m -N -g -i -J --underline-special --SILENT $argv
-end
 
 # Completions
 function make_completion --argument-names alias command
