@@ -2,6 +2,7 @@
 I first started using thoughtbots dotfiles but im not really that much of a power user of all the dot things so here's my take on dotfiles with stuff i actually use on a day to day basis.
 
 ![My current terminal setup](desk.png)
+![My current terminal setup](neofetch.png)
 
 ## Works best with...
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
