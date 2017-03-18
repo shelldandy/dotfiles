@@ -1,19 +1,21 @@
-filetype plugin indent on
-
-"colorscheme monokai
-"let g:monokai_term_italic = 1
-"let g:monokai_gui_italic = 1
-
 if has_key(g:plugs, 'oceanic-next')
   colorscheme OceanicNext
+  " Airline Hacks
   if has_key(g:plugs, 'vim-airline')
     let g:airline_theme='oceanicnext'
   endif
-
   " Pug Color Override
   autocmd BufNewFile,BufRead *.pug hi htmlTagName guifg=#ec5f67 ctermfg=203
-  hi Comment guifg=#65737e ctermfg=243 gui=italic cterm=italic
-
+  " Force italics because we paid $200 for 'em
+  hi Comment gui=italic
+  " Color Overrides for awesome experience
+  hi Folded guibg=#1c2b34
+  hi LineNr guibg=#1c2b34
+  hi GitGutterAdd guibg=#1c2b34
+  hi GitGutterChange guibg=#1c2b34
+  hi GitGutterDelete guibg=#1c2b34
+  hi GitGutterChangeDelete guibg=#1c2b34
+  hi CursorLineNr guibg=#1c2b34
 endif
 
 if has_key(g:plugs, 'ctrlp.vim')
@@ -36,14 +38,9 @@ if has_key(g:plugs, 'ultisnips')
   let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 endif
 
-" Eslint Projects
-"let g:syntastic_javascript_checkers = ['eslint']
-"autocmd bufwritepost *.js silent !eslint --fix %
-
 " StandardJS Projects
 let g:syntastic_javascript_checkers = ['standard']
 autocmd bufwritepost *.js silent !standard --fix %
-set autoread
 
 " JSX even on just JS
 let g:jsx_ext_required = 0

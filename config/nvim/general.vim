@@ -26,7 +26,6 @@ set nowb
 " interface
 syntax enable
 set termguicolors
-"set colorcolumn=100                   " show a column at 100 chars
 set cursorline                        " highlight current line
 set laststatus=2                      " enable airline on open
 set noshowmode                        " don't show mode as airline already does
@@ -87,7 +86,7 @@ set autoindent                        " copy indentation from the previous line 
 set clipboard=unnamed                 " use native clipboard
 set history=200                       " store last 200 commands as history
 set nobackup                          " don't save backups
-set noerrorbells                      " no error bells please
+set noerrorbells visualbell t_vb=     " no error bells please
 set noswapfile                        " no swapfiles
 set nowritebackup                     " don't save a backup while editing
 set ttyfast                           " indicates a fast terminal connection
