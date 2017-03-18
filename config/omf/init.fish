@@ -1,6 +1,10 @@
 # Disable initial Fish Greeting
 set fish_greeting
 
+# Disable fish underline prompt
+# To re-enable do set fish_color_valid_path --underline
+set fish_color_valid_path
+
 # Exports
 set -x EDITOR nvim
 set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications --caskroom=/etc/Caskroom'
@@ -25,10 +29,10 @@ function g        ; git $argv ; end
 function tmux     ; command tmux -2 $argv ; end
 function gs       ; git status ; end
 function gaa      ; git add . ; end
-function gc       ; git commit ; end
-function gp       ; git push ; end
-function gP       ; git pull ; end
-function gr       ; gir rebase ; end
+function gc       ; git commit $argv ; end
+function gp       ; git push $argv ; end
+function gP       ; git pull $argv ; end
+function gr       ; gir rebase $argv ; end
 function oa       ; open -a $argv ; end
 
 function ys       ; yarn add $argv ; end
