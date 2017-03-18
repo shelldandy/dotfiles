@@ -1,4 +1,3 @@
-package brew
 package foreign-env
 package git-flow
 package license

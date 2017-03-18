@@ -1,4 +1,5 @@
 # Disable initial Fish Greeting
+set fish_greeting
 
 # Exports
 set -x EDITOR nvim
@@ -8,6 +9,11 @@ set -x TERM xterm-256color-italic
 set ANDROID_HOME $HOME/Library/Android/sdk
 set PATH $ANDROID_HOME/tools $PATH
 set PATH $ANDROID_HOME/platform-tools $PATH
+
+# Highlight stuff with less
+set hilite (which highlight)
+set -x LESSOPEN "| $hilite %s --out-format xterm256 --quiet --force "
+set -x LESS " -R"
 
 
 # Navigation
@@ -34,6 +40,10 @@ function oa       ; open -a $argv ; end
 function ys       ; yarn add $argv ; end
 function yd       ; yarn add --dev $argv ; end
 
+function less
+    command less -m -N -g -i -J --underline-special --SILENT $argv
+end
+
 # Completions
 function make_completion --argument-names alias command
     echo "
@@ -50,10 +60,8 @@ make_completion g 'git'
 make_completion v 'nvim'
 
 # Fun
-function moo
+function moo # Random cowsay
   set cows_dir /usr/local/Cellar/cowsay/3.04/share/cows
   set avatar (ls $cows_dir | gshuf -n1|cut -d'.' -f1)
   fortune | cowsay -f $avatar | lolcat
 end
-
-function fish_greeting ; moo ; end
