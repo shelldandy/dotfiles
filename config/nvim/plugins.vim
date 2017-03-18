@@ -12,6 +12,7 @@ if has_key(g:plugs, 'oceanic-next')
 
   " Pug Color Override
   autocmd BufNewFile,BufRead *.pug hi htmlTagName guifg=#ec5f67 ctermfg=203
+  hi Comment guifg=#65737e ctermfg=243 gui=italic cterm=italic
 
 endif
 
