@@ -7,8 +7,8 @@ set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications --caskroom=/etc/Caskroom'
 set -x TERM xterm-256color-italic
 
 set ANDROID_HOME $HOME/Library/Android/sdk
-set PATH $ANDROID_HOME/tools $PATH
-set PATH $ANDROID_HOME/platform-tools $PATH
+test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
+test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH
 
 # Navigation
 function ..    ; cd .. ; end
