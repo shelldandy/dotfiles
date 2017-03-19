@@ -15,12 +15,18 @@ test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
 test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH
 
 # Navigation
-function ..    ; cd .. ; end
-function ...   ; cd ../.. ; end
-function ....  ; cd ../../.. ; end
-function ..... ; cd ../../../.. ; end
-function ll    ; tree --dirsfirst -ChFupDaLg 1 $argv ; end
+function ..       ; cd .. ; end
+function ...      ; cd ../.. ; end
+function ....     ; cd ../../.. ; end
+function .....    ; cd ../../../.. ; end
+function ll       ; tree --dirsfirst -ChFupDaLg 1 $argv ; end
 function c        ; clear ; end
+
+# Abbreviations
+abbr gc git commit
+abbr gp git push
+abbr gP git pull
+abbr gr git rebase
 
 # Utilities
 function rst      ; exec fish ; end
@@ -29,10 +35,6 @@ function g        ; git $argv ; end
 function tmux     ; command tmux -2 $argv ; end
 function gs       ; git status ; end
 function gaa      ; git add . ; end
-function gc       ; git commit $argv ; end
-function gp       ; git push $argv ; end
-function gP       ; git pull $argv ; end
-function gr       ; gir rebase $argv ; end
 function oa       ; open -a $argv ; end
 
 function ys       ; yarn add $argv ; end
