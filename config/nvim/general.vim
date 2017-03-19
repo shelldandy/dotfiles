@@ -11,6 +11,7 @@
 " =================================================================================================
 
 " Base Situation
+language en_US                        " Base Language
 set nocompatible                      " vim, not vi
 syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
