@@ -18,8 +18,6 @@ filetype plugin indent on             " try to recognise filetype and load plugi
 set encoding=utf8                     " Show all funky signs
 set backspace=indent,eol,start        " Make delete work on vim8
 
-set shell=fish
-
 " Hidden Buffer files
 set hidden
 set noswapfile

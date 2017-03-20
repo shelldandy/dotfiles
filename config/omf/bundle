@@ -5,7 +5,6 @@ package node-binpath
 package nvm
 package rvm
 package wttr
-theme agnoster
 theme cbjohnson
 theme default
 theme ocean
