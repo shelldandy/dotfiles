@@ -74,7 +74,7 @@ set foldnestmax=4                     " But just fold up to 4 levels
 
 " text appearance
 set list                              " show invisible characters
-set listchars=tab:>·,trail:·,nbsp:¬   " but only show useful chaaracters
+set listchars=tab:>·,trail:·          " but only show useful chaaracters
 set nowrap                            " disable line wrapping
 
 " External vimrc files
