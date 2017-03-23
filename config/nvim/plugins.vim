@@ -81,12 +81,6 @@ endif
 
 
 if has_key(g:plugs, 'supertab')
-  inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-  let g:SuperTabDefaultCompletionType = "<c-n>"
-  autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-  autocmd FileType scss let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-  autocmd FileType sass let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-  autocmd FileType css let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
   " close the preview window when you're not using it
   let g:SuperTabClosePreviewOnPopupClose = 1
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif

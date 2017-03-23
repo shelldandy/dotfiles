@@ -16,7 +16,7 @@ Plug '1995eaton/vim-better-javascript-completion'                   " Extending 
 Plug 'ervandew/supertab'                                            " Tab autocomplete
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
 Plug 'honza/vim-snippets'
-Plug 'rstacruz/vim-hyperstyle'
+" Plug 'rstacruz/vim-hyperstyle'
 Plug 'scrooloose/nerdtree'                                          " NerdTree
 Plug 'ctrlpvim/ctrlp.vim'                                           " Ctrl P Fuzzy Finder
 Plug 'jiangmiao/auto-pairs'                                         " Auto close brackets smartly
