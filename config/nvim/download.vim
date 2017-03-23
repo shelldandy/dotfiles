@@ -31,8 +31,8 @@ Plug 'christoomey/vim-tmux-navigator'
 " Linters
 Plug 'vim-syntastic/syntastic', { 'do': 'npm install -g standard babel-eslint eslint' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }       " Deoplete AutoComplete
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] } " Deoplete Ternjs for Smart JS
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' ,'for': ['javascript', 'javascript.jsx'] }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'}     " Deoplete Ternjs for Smart JS
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install'}
 Plug 'heavenshell/vim-jsdoc'
 
 " Life Quality Stuff

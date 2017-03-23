@@ -103,3 +103,7 @@ nnoremap <leader>r :source $MYVIMRC<CR>
 
 " clear search
 nnoremap <leader>c :let @/ = ""<CR>
+
+if has_key(g:plugs, 'deoplete-ternjs')
+  inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+endif
