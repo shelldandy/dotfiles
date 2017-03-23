@@ -39,27 +39,30 @@ if has_key(g:plugs, 'ultisnips')
   let g:UltiSnipsExpandTrigger="<C-j>"
 endif
 
-if has_key(g:plugs, 'deoplete-ternjs')
+if has_key(g:plugs, 'tern_for_vim')
   let g:tern_request_timeout = 1
-  let g:tern_show_signature_in_pum = '0'
-  let g:deoplete#enable_at_startup = 1
-  autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
+  let g:tern_show_signature_in_pum = 1
+  let g:tern#command = ["tern"]
+  let g:tern#arguments = ["--persistent"]
+  let g:tern_show_argument_hints = 'on_move'
+  autocmd FileType javascript setlocal omnifunc=tern#Complete
+endif
 
+if has_key(g:plugs, 'deoplete-ternjs')
+  let g:deoplete#enable_at_startup = 1
+  if !exists('g:deoplete#omni#input_patterns')
+    let g:deoplete#omni#input_patterns = {}
+  endif
+  autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
   let g:deoplete#omni#functions = {}
   let g:deoplete#omni#functions.javascript = [
     \ 'tern#Complete',
     \ 'jspc#omni'
   \]
-
   let g:deoplete#sources = {}
   let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs', 'buffer']
   autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
-
-  if has_key(g:plugs, 'tern_for_vim')
-    let g:tern#command = ["tern"]
-    let g:tern#arguments = ["--persistent"]
-    let g:tern_show_argument_hints = 'on_move'
-  endif
+  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
 
 if has_key(g:plugs, 'syntastic')
@@ -83,7 +86,6 @@ endif
 if has_key(g:plugs, 'supertab')
   " close the preview window when you're not using it
   let g:SuperTabClosePreviewOnPopupClose = 1
-  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
 
 
