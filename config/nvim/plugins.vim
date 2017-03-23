@@ -62,7 +62,6 @@ if has_key(g:plugs, 'deoplete-ternjs')
   endif
 endif
 
-" StandardJS Projects
 if has_key(g:plugs, 'syntastic')
   let g:syntastic_javascript_checkers = ['standard']
   autocmd bufwritepost *.js silent !standard --fix %
@@ -94,30 +93,19 @@ if has_key(g:plugs, 'supertab')
 endif
 
 
-" filenames like *.html, *js, *jsx ...
 if has_key(g:plugs, 'vim-closetag')
   let g:closetag_filenames = "*.html,*.js,*.jsx"
 endif
 
-" Indent lines
 if has_key(g:plugs, 'indentLine')
   let g:indentLine_char = '│'
 endif
 
-
-" Numbers exclude
-if has_key(g:plugs, 'numbers.vim')
-  let g:numbers_exclude = ['tagbar', 'gundo', 'minibufexpl', 'nerdtree']
-endif
-
-
-" Vim Devicons
 if has_key(g:plugs, 'vim-devicons')
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
 endif
 
-" TwitVim
 if has_key(g:plugs, 'TwitVim')
   let g:twitvim_enable_python3 = 1
 endif
