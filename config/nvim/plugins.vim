@@ -67,7 +67,7 @@ endif
 
 if has_key(g:plugs, 'syntastic')
   let g:syntastic_javascript_checkers = ['standard']
-  let g:syntastic_javascript_checkers = ['w3']
+  let g:syntastic_javascript_checkers = ['HTMLHint']
   autocmd bufwritepost *.js silent !standard --fix %
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
