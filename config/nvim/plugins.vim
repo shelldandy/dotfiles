@@ -44,7 +44,7 @@ if has_key(g:plugs, 'tern_for_vim')
   let g:tern_show_signature_in_pum = 1
   let g:tern#command = ["tern"]
   let g:tern#arguments = ["--persistent"]
-  let g:tern_show_argument_hints = 'on_move'
+  let g:tern_show_argument_hints = 'on_hold'
   autocmd FileType javascript setlocal omnifunc=tern#Complete
 endif
 
@@ -67,6 +67,7 @@ endif
 
 if has_key(g:plugs, 'syntastic')
   let g:syntastic_javascript_checkers = ['standard']
+  let g:syntastic_javascript_checkers = ['w3']
   autocmd bufwritepost *.js silent !standard --fix %
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
@@ -94,7 +95,7 @@ if has_key(g:plugs, 'vim-closetag')
 endif
 
 if has_key(g:plugs, 'indentLine')
-  let g:indentLine_char = '│'
+  let g:indentLine_char = '┆'
 endif
 
 if has_key(g:plugs, 'vim-devicons')
