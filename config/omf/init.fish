@@ -62,10 +62,3 @@ function moo # Random cowsay
   fortune | cowsay -f $avatar | lolcat
 end
 
-# Fishy Fixes for the prompt with default theme
-set fish_pager_color_progress cyan
-function fish_right_prompt
-  set_color white
-  date "+%H:%M:%S"
-  set_color normal
-end
