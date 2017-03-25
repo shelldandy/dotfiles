@@ -67,7 +67,8 @@ endif
 
 if has_key(g:plugs, 'syntastic')
   let g:syntastic_javascript_checkers = ['standard']
-  let g:syntastic_javascript_checkers = ['HTMLHint']
+  let g:syntastic_html_checkers = ['HTMLHint']
+  let g:syntastic_pug_checkers = ['pug_lint']
   autocmd bufwritepost *.js silent !standard --fix %
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
@@ -76,7 +77,6 @@ if has_key(g:plugs, 'syntastic')
   let g:syntastic_auto_loc_list = 1
   let g:syntastic_check_on_open = 1
   let g:syntastic_check_on_wq = 0
-  let g:syntastic_pug_checkers = ['pug_lint']
 endif
 
 if has_key(g:plugs, 'vim-jsx')
