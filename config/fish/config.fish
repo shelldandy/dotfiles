@@ -1,3 +1,12 @@
+# Exports
+set -x EDITOR nvim
+set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications --caskroom=/etc/Caskroom'
+set -x TERM xterm-256color-italic
+
+set ANDROID_HOME $HOME/Library/Android/sdk
+test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
+test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH
+
 # Making syntax highlight work with Fish
 set hilite (which src-hilite-lesspipe.sh)
 set -x LESSOPEN "| $hilite %s"

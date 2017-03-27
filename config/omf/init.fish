@@ -5,15 +5,6 @@ set fish_greeting
 # To re-enable do set fish_color_valid_path --underline
 set fish_color_valid_path
 
-# Exports
-set -x EDITOR nvim
-set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications --caskroom=/etc/Caskroom'
-set -x TERM xterm-256color-italic
-
-set ANDROID_HOME $HOME/Library/Android/sdk
-test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
-test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH
-
 # Navigation
 function ..       ; cd .. ; end
 function ...      ; cd ../.. ; end
