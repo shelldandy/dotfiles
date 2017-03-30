@@ -87,6 +87,7 @@ endif
 if has_key(g:plugs, 'supertab')
   " close the preview window when you're not using it
   let g:SuperTabClosePreviewOnPopupClose = 1
+  let g:SuperTabDefaultCompletionType = "<c-n>"
 endif
 
 
