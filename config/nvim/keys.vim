@@ -37,7 +37,10 @@ nnoremap <Leader>r <C-W><C-R>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " CtrlP
-nnoremap <Leader>p :CtrlPClearCache<bar>CtrlP<CR>
+"nnoremap <Leader>p :CtrlPClearCache<bar>CtrlP<CR>
+nnoremap <Leader>p :e **/*
+nnoremap <Leader>v :vsplit **/*
+nnoremap <Leader>s :split **/*
 
 
 " Tab Switching
