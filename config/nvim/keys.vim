@@ -31,7 +31,7 @@ nnoremap <Leader>wv :vsplit<CR>
 nnoremap <Leader>wx :close<CR>
 
 " window reordering
-nnoremap <Leader>r <C-W><C-R>
+nnoremap <Leader>wr <C-W><C-R>
 
 " NerdTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
@@ -103,6 +103,7 @@ nnoremap <cr> o<esc>
 
 " reload vim config
 nnoremap <leader>r :source $MYVIMRC<CR>
+nnoremap <Leader>ar :AirlineRefresh<Cr>
 
 " clear search
 nnoremap <leader>c :let @/ = ""<CR>

@@ -44,6 +44,13 @@ set splitright                        " create new splits to the right
 set termguicolors                     " enable true colors
 set wildmenu                          " enable wildmenu
 set wildmode=longest:full,full        " configure wildmenu
+set wildignore+=*.bmp,*.gif,*.ico     " Ignore all the stuff
+set wildignore+=*.jpg,*.png,*.psd
+set wildignore+=*.pdf,*.psd,*.zip
+set wildignore+=node_modules/*
+set wildignore+=bower_components/*
+set wildignore+=dist/*,*/public
+set wildignore+=*/tmp/*,*.so,*.swp
 set lazyredraw                        " don't draw everything
 highlight Comment cterm=italic
 

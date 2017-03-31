@@ -18,15 +18,6 @@ if has_key(g:plugs, 'oceanic-next')
   hi CursorLineNr guibg=#1c2b34
 endif
 
-if has_key(g:plugs, 'ctrlp.vim')
-  set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
-  set wildignore+=*.pdf,*.psd
-  set wildignore+=node_modules/*,bower_components/*,dist/*,*/public
-  set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-  let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public)$'
-  let g:ctrlp_show_hidden = 1
-endif
-
 if has_key(g:plugs, 'matchtagalways')
   let g:mta_filetypes = {
     \ 'javascript.jsx': 1,
