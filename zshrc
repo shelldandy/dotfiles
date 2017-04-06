@@ -72,3 +72,5 @@ export LESS=' -R -X -F '
 # Show or hide all files on the finder
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

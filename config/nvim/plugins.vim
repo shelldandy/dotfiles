@@ -18,6 +18,12 @@ if has_key(g:plugs, 'oceanic-next')
   hi CursorLineNr guibg=#1c2b34
 endif
 
+if has_key(g:plugs, 'ctrlp.vim')
+  set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
+  let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public)$'
+  let g:ctrlp_show_hidden = 1
+endif
+
 if has_key(g:plugs, 'matchtagalways')
   let g:mta_filetypes = {
     \ 'javascript.jsx': 1,
