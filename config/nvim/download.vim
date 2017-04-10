@@ -49,4 +49,5 @@ Plug 'krisajenkins/vim-projectlocal'                                " Per Projec
 Plug 'editorconfig/editorconfig-vim', { 'do': 'brew install editorconfig' }
 Plug 'vim-scripts/TwitVim'                                          " Twitter inside vim lol
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
+Plug 'dodie/vim-disapprove-deep-indentation'                        " ಠ_ಠ
 call plug#end()

@@ -83,13 +83,11 @@ if has_key(g:plugs, 'vim-jsx')
   let g:jsx_ext_required = 0
 endif
 
-
 if has_key(g:plugs, 'supertab')
   " close the preview window when you're not using it
   let g:SuperTabClosePreviewOnPopupClose = 1
   let g:SuperTabDefaultCompletionType = "<c-n>"
 endif
-
 
 if has_key(g:plugs, 'vim-closetag')
   let g:closetag_filenames = "*.html,*.js,*.jsx"
