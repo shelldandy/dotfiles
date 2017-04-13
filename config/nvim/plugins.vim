@@ -19,8 +19,8 @@ if has_key(g:plugs, 'oceanic-next')
 endif
 
 if has_key(g:plugs, 'ctrlp.vim')
-  set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public
-  let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public)$'
+  set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public,*/.next
+  let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public|next)$'
   let g:ctrlp_show_hidden = 1
 endif
 

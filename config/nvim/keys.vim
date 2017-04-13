@@ -107,3 +107,17 @@ nnoremap <leader>c :let @/ = ""<CR>
 if has_key(g:plugs, 'deoplete-ternjs')
   inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 endif
+
+
+
+
+" React Magic HTML Format
+function ReactFormatMagic()
+  %s/src='img/src='\/static\/img/g
+  %s/class=/className=/g
+  %s/xlink\:href/xlinkHref/g
+endfunction
+
+com -nargs=0 ReactFormatMagic call ReactFormatMagic()
+
+nnoremap <Leader>m :silent! ReactFormatMagic<CR>
