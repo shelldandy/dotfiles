@@ -54,5 +54,5 @@ function moo # Random cowsay
 end
 
 function pmosh
-  man -t $argv | open -f-a /Applications/Preview.app
+  man -t $argv | open -f -a /Applications/Preview.app
 end
