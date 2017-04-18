@@ -53,3 +53,6 @@ function moo # Random cowsay
   fortune | cowsay -f $avatar | lolcat
 end
 
+function pmosh
+  man -t $argv | open -f-a /Applications/Preview.app
+end
