@@ -117,6 +117,7 @@ function ReactFormatMagic()
   %s/class=/className=/g
   %s/xlink\:href/xlinkHref/g
   %s/background="../background="\/static/g
+  %s/background='../background='\/static/g
 endfunction
 
 com -nargs=0 ReactFormatMagic call ReactFormatMagic()
