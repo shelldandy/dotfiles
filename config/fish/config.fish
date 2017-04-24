@@ -7,12 +7,8 @@ set -x TERM xterm-256color-italic
 set -gx TTC_BOTS 'tinycarebot,selfcare_bot,magicrealismbot'
 set -gx TTC_REPOS '~/git'
 set -gx TTC_WEATHER 'Puebla'
-set -gx TTC_APIKEYS true
+set -gx TTC_APIKEYS false
 set -gx TTC_UPDATE_INTERVAL 20
-set -gx TTC_CONSUMER_KEY 'SbnhGktoAiPwZtBuT21ifwUgY'
-set -gx TTC_CONSUMER_SECRET 'tIZMJeNfvtEI85MUiLC2F84b4fsXYrk05xTkmSg1i2H1LxAPsI'
-set -gx TTC_CONSUMER_TOKEN '15959467-2YBgPhnCkKgqJhAjOhS7TnNeLmG1f9t7dfIrNfkbj'
-set -gx TTC_CONSUMER_TOKEN_SECRET '4vFU1jXqfrfpSm16zXfNSW96BPAlSROSr7GTEdDMfomWI'
 
 set ANDROID_HOME $HOME/Library/Android/sdk
 test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
