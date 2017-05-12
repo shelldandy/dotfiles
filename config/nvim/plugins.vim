@@ -79,6 +79,14 @@ if has_key(g:plugs, 'syntastic')
   let g:syntastic_check_on_wq = 0
 endif
 
+if has_key(g:plugs, 'ale')
+  let g:ale_linters = {
+  \   'javascript': ['standard'],
+  \}
+  autocmd bufwritepost *.js silent !standard --fix %
+  set statusline+=%{ALEGetStatusLine()}
+endif
+
 if has_key(g:plugs, 'vim-jsx')
   let g:jsx_ext_required = 0
 endif
