@@ -65,26 +65,19 @@ if has_key(g:plugs, 'deoplete-ternjs')
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
 
-if has_key(g:plugs, 'syntastic')
-  let g:syntastic_javascript_checkers = ['standard']
-  let g:syntastic_html_checkers = ['HTMLHint']
-  let g:syntastic_pug_checkers = ['pug_lint']
-  autocmd bufwritepost *.js silent !standard --fix %
-  set statusline+=%#warningmsg#
-  set statusline+=%{SyntasticStatuslineFlag()}
-  set statusline+=%*
-  let g:syntastic_always_populate_loc_list = 1
-  let g:syntastic_auto_loc_list = 1
-  let g:syntastic_check_on_open = 1
-  let g:syntastic_check_on_wq = 0
-endif
-
 if has_key(g:plugs, 'ale')
   let g:ale_linters = {
   \   'javascript': ['standard'],
   \}
   autocmd bufwritepost *.js silent !standard --fix %
+  set statusline+=%#warningmsg#
   set statusline+=%{ALEGetStatusLine()}
+  set statusline+=%*
+  let g:ale_open_list = 1
+  highlight clear ALEErrorSign
+  highlight clear ALEWarningSign
+  hi ALEWarningSign guifg=red
+  hi ALEErrorSign guifg=red
 endif
 
 if has_key(g:plugs, 'vim-jsx')
