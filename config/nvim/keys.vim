@@ -119,7 +119,12 @@ function ReactFormatMagic()
   %s/background="../background="\/static/g
   %s/background='../background='\/static/g
 endfunction
-
 com -nargs=0 ReactFormatMagic call ReactFormatMagic()
-
 nnoremap <Leader>m :silent! ReactFormatMagic<CR>
+
+" Auto fix javascript with StandardJS
+function FixJavascript()
+  autocmd bufwritepost *.js silent !standard --fix %
+endfunction
+com -nargs=0 FixJavascript call FixJavascript()
+nnoremap <Leader>js FixJavascript<CR>
