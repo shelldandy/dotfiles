@@ -108,9 +108,6 @@ if has_key(g:plugs, 'deoplete-ternjs')
   inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 endif
 
-
-
-
 " React Magic HTML Format
 function ReactFormatMagic()
   %s/src='img/src='\/static\/img/g
@@ -124,7 +121,12 @@ nnoremap <Leader>m :silent! ReactFormatMagic<CR>
 
 " Auto fix javascript with StandardJS
 function FixJavascript()
-  autocmd bufwritepost *.js silent !standard --fix %
+  write
+  silent !standard --fix %
+  if has_key(g:plugs, 'ale')
+    ALELint
+  endif
 endfunction
 com -nargs=0 FixJavascript call FixJavascript()
-nnoremap <Leader>js FixJavascript<CR>
+nnoremap <Leader>js :silent! FixJavascript<CR>
+
