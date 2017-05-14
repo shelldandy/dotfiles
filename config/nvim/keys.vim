@@ -130,3 +130,8 @@ endfunction
 com -nargs=0 FixJavascript call FixJavascript()
 nnoremap <Leader>js :silent! FixJavascript<CR>
 
+if has_key(g:plugs, 'ale')
+  nnoremap <Leader>at :ALEToggle<Cr>
+  nnoremap <Leader>an :ALENext<Cr>
+  nnoremap <Leader>ap :ALEPrevious<Cr>
+endif
