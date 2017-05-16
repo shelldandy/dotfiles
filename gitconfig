@@ -1,3 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+  name = Miguel Palau
+  email = mpalauzarza@gmail.com
+[core]
+  excludesfile = /Users/imike/.gitignore_global
+  editor = nvim
+[init]
+  templatedir = ~/.git_template
 [alias]
   lg = !"git lg1"
   lg1 = !"git lg1-specific --all"
