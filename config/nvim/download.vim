@@ -6,10 +6,10 @@ call plug#begin('~/.config/nvim/plugged')
 " Colors
 Plug 'othree/yajs.vim'                                              " Syntax Highlight for Vim
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'ap/vim-css-color'                                             " Colors in my Sass
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'mhartington/oceanic-next'                                     " Oceanic Next
+Plug 'shmargum/vim-sass-colors'                                     " Colors in my Sass
 
 " General/Movement
 Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS
