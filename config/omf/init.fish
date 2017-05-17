@@ -18,6 +18,7 @@ abbr gc git commit
 abbr gp git push
 abbr gP git pull
 abbr gr git rebase
+abbr gl git lg
 
 # Utilities
 function rst      ; exec fish ; end
