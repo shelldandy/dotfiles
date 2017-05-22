@@ -26,6 +26,11 @@ Plug 'sjbach/lusty', { 'do': 'gem install neovim' }                 " Keyboard b
 Plug 'mileszs/ack.vim', { 'do': 'brew install ack' }                " Ack Search Files on disk
 Plug 'valloric/matchtagalways'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', {
+ \    'dir': '~/.fzf',
+ \    'do': './install --bin'
+ \    }
+Plug 'junegunn/fzf.vim'
 
 " Linters
 Plug 'w0rp/ale',

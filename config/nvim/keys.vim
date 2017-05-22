@@ -37,7 +37,13 @@ nnoremap <Leader>wr <C-W><C-R>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " CtrlP
-nnoremap <Leader>p :CtrlPClearCache<bar>CtrlP<CR>
+nnoremap <Leader>P :CtrlPClearCache<bar>CtrlP<CR>
+nnoremap <Leader>p :CtrlP<CR>
+
+" FZF
+nnoremap <Leader>ff :Files<CR>
+nnoremap <Leader>fgf :Files<CR>
+nnoremap <Leader>fb Files<CR>
 
 " Tab Switching
 nnoremap <Leader>t :tabn<CR>

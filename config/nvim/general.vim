@@ -17,7 +17,7 @@ syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
 set encoding=utf8                     " Show all funky signs
 set backspace=indent,eol,start        " Make delete work on vim8
-set shell=/bin/zsh                    " Specify a POSIX shell since vim don't like 🐟
+set shell=bash                        " Specify a POSIX shell since vim don't like 🐟
 
 " Hidden Buffer files
 set hidden
