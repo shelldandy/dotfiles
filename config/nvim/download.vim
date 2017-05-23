@@ -54,8 +54,12 @@ Plug 'vim-scripts/BufOnly.vim'                                      " Clear buff
 Plug 'vim-scripts/loremipsum'                                       " Lorem Ipsum Generator
 Plug 'rizzatti/dash.vim'                                            " Dash Documentation
 Plug 'krisajenkins/vim-projectlocal'                                " Per Project Vim Files
-Plug 'editorconfig/editorconfig-vim', { 'do': 'brew install editorconfig' }
+Plug 'editorconfig/editorconfig-vim', {
+ \    'do': 'brew install editorconfig'
+ \    }
 Plug 'vim-scripts/TwitVim'                                          " Twitter inside vim lol
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 Plug 'dodie/vim-disapprove-deep-indentation'                        " ಠ_ಠ
+Plug 'junegunn/goyo.vim'                                            " Focus mode like iA Writer
+
 call plug#end()
