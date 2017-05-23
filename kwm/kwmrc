@@ -55,7 +55,7 @@ kwmc rule owner="iTerm2" properties={role="AXDialog"}
 // Enable border for focused window
 kwmc config border focused on
 kwmc config border focused size 2
-kwmc config border focused color 0xFFFFFFFF
+kwmc config border focused color 0xFF6699cc
 kwmc config border focused radius 6
 
 // Enable border for marked window
