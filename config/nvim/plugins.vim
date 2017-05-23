@@ -143,8 +143,6 @@ if has_key(g:plugs, 'goyo.vim')
     set noshowmode
     set noshowcmd
     set scrolloff=999
-    Limelight
-    " ...
   endfunction
 
   function! s:goyo_leave()
@@ -153,7 +151,6 @@ if has_key(g:plugs, 'goyo.vim')
     set showmode
     set showcmd
     set scrolloff=5
-    Limelight!
     call OceanicColorsOverride()
     " ...
   endfunction
