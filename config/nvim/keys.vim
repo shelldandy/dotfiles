@@ -141,3 +141,5 @@ if has_key(g:plugs, 'ale')
   nnoremap <Leader>an :ALENext<Cr>
   nnoremap <Leader>ap :ALEPrevious<Cr>
 endif
+
+nnoremap <Leader>gg :Goyo<CR>

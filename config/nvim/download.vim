@@ -47,7 +47,6 @@ Plug 'alvan/vim-closetag'                                           " Autoclose 
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
 Plug 'scrooloose/nerdcommenter'                                     " Nerd Commenter
 Plug 'Yggdroot/indentLine'                                          " Show Indent lines
-Plug 'myusuf3/numbers.vim'                                          " Numbers craze
 Plug 'tpope/vim-surround'                                           " Quickly change parens quotes, etc
 Plug 'reedes/vim-pencil'                                            " Pencil / Write Mode
 Plug 'vim-scripts/BufOnly.vim'                                      " Clear buffers
@@ -61,5 +60,6 @@ Plug 'vim-scripts/TwitVim'                                          " Twitter in
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 Plug 'dodie/vim-disapprove-deep-indentation'                        " ಠ_ಠ
 Plug 'junegunn/goyo.vim'                                            " Focus mode like iA Writer
+Plug 'junegunn/limelight.vim'                                       " Limelight
 
 call plug#end()

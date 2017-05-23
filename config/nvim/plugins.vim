@@ -4,18 +4,21 @@ if has_key(g:plugs, 'oceanic-next')
   if has_key(g:plugs, 'vim-airline')
     let g:airline_theme='oceanicnext'
   endif
-  " Pug Color Override
-  autocmd BufNewFile,BufRead *.pug hi htmlTagName guifg=#ec5f67 ctermfg=203
-  " Force italics because we paid $200 for 'em
-  hi Comment gui=italic
-  " Color Overrides for awesome experience
-  hi Folded guibg=#1c2b34
-  hi LineNr guibg=#1c2b34
-  hi GitGutterAdd guibg=#1c2b34
-  hi GitGutterChange guibg=#1c2b34
-  hi GitGutterDelete guibg=#1c2b34
-  hi GitGutterChangeDelete guibg=#1c2b34
-  hi CursorLineNr guibg=#1c2b34
+  function OceanicColorsOverride()
+    " Pug Color Override
+    autocmd BufNewFile,BufRead *.pug hi htmlTagName guifg=#ec5f67 ctermfg=203
+    " Force italics because we paid $200 for 'em
+    hi Comment gui=italic
+    " Color Overrides for awesome experience
+    hi Folded guibg=#1c2b34
+    hi LineNr guibg=#1c2b34
+    hi GitGutterAdd guibg=#1c2b34
+    hi GitGutterChange guibg=#1c2b34
+    hi GitGutterDelete guibg=#1c2b34
+    hi GitGutterChangeDelete guibg=#1c2b34
+    hi CursorLineNr guibg=#1c2b34
+  endfunction
+  call OceanicColorsOverride()
 endif
 
 if has_key(g:plugs, 'ctrlp.vim')
@@ -131,4 +134,30 @@ if has_key(g:plugs, 'fzf.vim')
   " previous-history instead of down and up. If you don't like the change,
   " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
   let g:fzf_history_dir = '~/.local/share/fzf-history'
+endif
+
+if has_key(g:plugs, 'goyo.vim')
+  function! s:goyo_enter()
+    silent !tmux set status off
+    silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
+    set noshowmode
+    set noshowcmd
+    set scrolloff=999
+    Limelight
+    " ...
+  endfunction
+
+  function! s:goyo_leave()
+    silent !tmux set status on
+    silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
+    set showmode
+    set showcmd
+    set scrolloff=5
+    Limelight!
+    call OceanicColorsOverride()
+    " ...
+  endfunction
+
+  autocmd! User GoyoEnter nested call <SID>goyo_enter()
+  autocmd! User GoyoLeave nested call <SID>goyo_leave()
 endif
