@@ -10,6 +10,7 @@ Plug 'sheerun/vim-polyglot'                                         " Syntax Hig
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'mhartington/oceanic-next'                                     " Oceanic Next
 Plug 'shmargum/vim-sass-colors'                                     " Colors in my Sass
+Plug 'mike3run/kwm.vim'
 
 " General/Movement
 Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS
