@@ -94,7 +94,7 @@ if has_key(g:plugs, 'supertab')
 endif
 
 if has_key(g:plugs, 'vim-closetag')
-  let g:closetag_filenames = "*.html,*.js,*.jsx,*.liquid"
+  let g:closetag_filenames = "*.html,*.js,*.jsx,*.liquid,*.php"
 endif
 
 if has_key(g:plugs, 'indentLine')
