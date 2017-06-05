@@ -33,6 +33,7 @@ if has_key(g:plugs, 'matchtagalways')
     \ 'html' : 1,
     \ 'xml' : 1,
     \ 'liquid': 1,
+    \ 'php': 1,
     \ }
 endif
 
