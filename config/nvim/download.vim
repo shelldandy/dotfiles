@@ -59,7 +59,6 @@ Plug 'editorconfig/editorconfig-vim', {
  \    }
 Plug 'vim-scripts/TwitVim'                                          " Twitter inside vim lol
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
-Plug 'dodie/vim-disapprove-deep-indentation'                        " ಠ_ಠ
 Plug 'junegunn/goyo.vim'                                            " Focus mode like iA Writer
 Plug 'junegunn/limelight.vim'                                       " Limelight
 
