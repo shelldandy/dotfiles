@@ -7,6 +7,7 @@
 brew tap neovim/neovim
 brew tap thoughtbot/formulae
 brew tap caskroom/cask
+brew tap caskroom/versions
 
 # Installs
 brew install 'ack'
@@ -51,17 +52,18 @@ brew install 'youtube-dl'
 
 # Casks
 brew cask install 'android-studio'
+brew cask install 'dashlane'
 brew cask install 'dropbox'
 brew cask install 'firefox'
 brew cask install 'flux'
-brew cask install 'franz'
 brew cask install 'google-chrome'
 brew cask install 'google-play-music-desktop-player'
-brew cask install 'iterm2'
-brew cask install 'ubersicht'
+brew cask install 'iterm2-nightly'
 brew cask install 'rightfont'
 brew cask install 'sketch'
+brew cask install 'slack'
 brew cask install 'subtitles'
+brew cask install 'telegram'
 
 # Mas Will install my apps from the App Store for me
 mas install 497799835         # Xcode (8.2.1)
@@ -82,5 +84,4 @@ mas install 1031163338        # GIFHunter (1.0.12)
 mas install 638332853         # Logitech Camera Settings (3.31.623)
 mas install 948176063         # Boom 2 (1.6)
 mas install 1035350363        # Teeny Tokyo (1.2)
-mas install 872515009         # Pomodoro Timer (1.5)
 mas install 969418666         # ColorSnapper2 (1.3.1)
