@@ -1,6 +1,6 @@
 # Exports
 set -x EDITOR nvim
-set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications --caskroom=/etc/Caskroom'
+set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications'
 set -x TERM xterm-256color-italic
 
 # Tiny Care Terminal
