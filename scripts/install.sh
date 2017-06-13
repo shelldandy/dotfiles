@@ -28,3 +28,9 @@ source ./ruby.sh
 
 # install tmux plugins
 source ./tmux.sh
+
+# install wp-cli
+source ./wp-cli.sh
+
+# install fish
+source ./fish.sh
