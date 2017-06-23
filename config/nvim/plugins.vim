@@ -112,8 +112,9 @@ endif
 
 if has_key(g:plugs, 'fzf.vim')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden -l -g ""'
+  " https://github.com/junegunn/fzf/blob/master/man/man1/fzf.1#L211
   let g:fzf_files_options =
-    \ '--preview "rougify {} 2> /dev/null"'
+    \ '--color "border:#6699cc,info:#fabd2f" --preview "rougify {} 2> /dev/null"'
 
   " Customize fzf colors to match your color scheme
   let g:fzf_colors =
