@@ -43,7 +43,10 @@ if has_key(g:plugs, 'ctrlp.vim')
 endif
 
 " FZF
-nnoremap <Leader>p :Files<CR>
+if has_key(g:plugs, 'fzf.vim')
+  nnoremap <Leader>p :Files<CR>
+  nnoremap <Leader>f :Ag<CR>
+endif
 
 " Tab Switching
 nnoremap <Leader>t :tabn<CR>
