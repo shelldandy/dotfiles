@@ -18,7 +18,6 @@ Plug 'ervandew/supertab'                                            " Tab autoco
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'                                          " NerdTree
-Plug 'ctrlpvim/ctrlp.vim'                                           " Ctrl P Fuzzy Finder
 Plug 'jiangmiao/auto-pairs'                                         " Auto close brackets smartly
 Plug 'airblade/vim-gitgutter'                                       " Git Situation on my Lines like Atom
 Plug 'tpope/vim-fugitive'                                           " Vim Fugitive Awesome git shortcuts on vim

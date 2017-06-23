@@ -36,9 +36,11 @@ nnoremap <Leader>wr <C-W><C-R>
 " NerdTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
-" CtrlP
-nnoremap <Leader>FF :CtrlPClearCache<bar>CtrlP<CR>
-nnoremap <Leader>ff :CtrlP<CR>
+if has_key(g:plugs, 'ctrlp.vim')
+  " CtrlP
+  nnoremap <Leader>FF :CtrlPClearCache<bar>CtrlP<CR>
+  nnoremap <Leader>ff :CtrlP<CR>
+endif
 
 " FZF
 nnoremap <Leader>p :Files<CR>
@@ -73,7 +75,7 @@ nnoremap <Leader>db :Breakpoint<CR>
 nnoremap <Leader>bc :BufOnly<CR>
 " Buffer Switching
 nnoremap <Leader>bn :bnext<CR>
-nnoremap <Leader>bp :bprevious<CR>
+nnoremap <Leader>bv :bprevious<CR>
 
 " Git Controls Flow
 nnoremap <Leader>gaa :Git add .<CR>
@@ -104,6 +106,7 @@ nnoremap <cr> o<esc>
 " reload vim config
 nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <Leader>ar :AirlineRefresh<Cr>
+nnoremap <leader>R :mode<CR>
 
 " clear search
 nnoremap <leader>c :let @/ = ""<CR>
@@ -140,4 +143,6 @@ if has_key(g:plugs, 'ale')
   nnoremap <Leader>ap :ALEPrevious<Cr>
 endif
 
-nnoremap <Leader>gg :Goyo<CR>
+if has_key(g:plugs, 'goyo.vim')
+  nnoremap <Leader>gg :Goyo<CR>
+endif
