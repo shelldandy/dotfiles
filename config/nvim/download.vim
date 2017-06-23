@@ -22,8 +22,6 @@ Plug 'jiangmiao/auto-pairs'                                         " Auto close
 Plug 'airblade/vim-gitgutter'                                       " Git Situation on my Lines like Atom
 Plug 'tpope/vim-fugitive'                                           " Vim Fugitive Awesome git shortcuts on vim
 Plug 'brooth/far.vim'                                               " Search and replace
-Plug 'sjbach/lusty', { 'do': 'gem install neovim' }                 " Keyboard based file explorer
-Plug 'mileszs/ack.vim', { 'do': 'brew install ack' }                " Ack Search Files on disk
 Plug 'valloric/matchtagalways'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', {
