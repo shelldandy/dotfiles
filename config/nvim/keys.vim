@@ -52,14 +52,6 @@ endif
 nnoremap <Leader>t :tabn<CR>
 nnoremap <Leader>r :tabp<CR>
 
-" Default params for ack
-let g:ackprg="ack -H --nocolor --nogroup --column"
-" Add a mark and search
-nmap <leader>f mA:Ack<space>
-" Add a mark and search for the word under the cursor
-nmap <leader>fa mA:Ack "<C-r>=expand("<cword>")<cr>"
-nmap <leader>fA mA:Ack "<C-r>=expand("<cWORD>")<cr>”
-
 " Disabling the directional keys
 map <up> <nop>
 map <down> <nop>
@@ -107,9 +99,13 @@ noremap L $
 nnoremap <cr> o<esc>
 
 " reload vim config
-nnoremap <leader>r :source $MYVIMRC<CR>
-nnoremap <Leader>ar :AirlineRefresh<Cr>
-nnoremap <leader>R :mode<CR>
+function HardReload()
+  source $MYVIMRC
+  AirlineRefresh
+  mode
+endfunction
+com -nargs=0 HardReload call HardReload()
+nnoremap <Leader>r :silent! HardReload<CR>
 
 " clear search
 nnoremap <leader>c :let @/ = ""<CR>
