@@ -5,6 +5,7 @@
 let mapleader=","
 
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>wq :wq<CR>
 
 " relative line numbers
 nnoremap <Leader>0 :NumbersToggle<CR>
