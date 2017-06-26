@@ -3,6 +3,9 @@
 :imap jj <Esc>
 " Set our Leader Key to something usable
 let mapleader=","
+
+nnoremap <Leader>w :w<CR>
+
 " relative line numbers
 nnoremap <Leader>0 :NumbersToggle<CR>
 
