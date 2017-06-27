@@ -24,6 +24,35 @@ In my current setup I'm using some themes and plugins to make the whole experien
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
 - Google Play Music Desktop Player - With a custom widget made by me :D
-## To-Do
 
-- Script to install everything from a first fresh run
+## Installing Everything from Scratch
+
+- First log into your AppStore and download X-Code we will need this for git and other maybe important tools.
+- Now git clone the repo
+
+```
+$ git clone https://github.com/mike3run/dotfiles.git
+```
+
+- Now cd into `scripts`
+
+```
+$ chmod +x install.sh
+$ ./install.sh
+```
+
+- Sit back and enjoy
+- Note: The last part of the `brew.sh` script will only work if you have also purchased those apps so you might want to edit that part or delete it totally
+- I'm talking about all the commands that start with `mas install XXXXX`
+
+- Now cd outside of the dotfiles folder and run
+
+```
+$ rcup -d dotfiles -v
+```
+
+- That will sync the actual dotfiles in your system and you can git pull for life and be in sync.
+
+- Enjoy
+
+💕💕💕
