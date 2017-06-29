@@ -55,6 +55,13 @@ function moo # Random cowsay
   fortune | cowsay -f $avatar | lolcat
 end
 
+# PMosh open man pages in pdf format
 function pmosh
   man -t $argv | open -f -a /Applications/Preview.app
+end
+
+# gif2mp4
+# https://rigor.com/blog/2015/12/optimizing-animated-gifs-with-html5-video
+function gif2mp4
+  ffmpeg -i $argv -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" $argv.mp4
 end
