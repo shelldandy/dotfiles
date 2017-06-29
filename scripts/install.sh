@@ -11,6 +11,9 @@ source ./vim.sh
 # install with brew
 source ./brew.sh
 
+# install app store apps with mas
+source ./mas.sh
+
 # update terminal
 source ./term.sh
 
