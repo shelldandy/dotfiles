@@ -39,6 +39,9 @@ $ git clone https://github.com/mike3run/dotfiles.git
 ```
 $ chmod +x install.sh
 $ ./install.sh
+# If you want my AppStore downloads
+# They only work if you had downloaded them too before
+$ ./install.sh --mas-install
 ```
 
 - Sit back and enjoy
