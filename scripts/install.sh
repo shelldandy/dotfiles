@@ -35,5 +35,8 @@ source ./tmux.sh
 # install wp-cli
 source ./wp-cli.sh
 
+# Neovim
+source ./nvim.sh
+
 # install fish
 source ./fish.sh

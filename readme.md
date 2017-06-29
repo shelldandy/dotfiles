@@ -53,14 +53,6 @@ $ rcup -d dotfiles -v
 
 - That will sync the actual dotfiles in your system and you can git pull for life and be in sync.
 
-- For neovim powers just open neovim and then do
-
-```
-:PlugInstall
-```
-
-- And restart neovim!
-
 - Enjoy
 
 - Remember to pull from time to time and in neovim run `:PlugUpdate`
