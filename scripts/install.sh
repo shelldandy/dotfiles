@@ -12,7 +12,22 @@ source ./vim.sh
 source ./brew.sh
 
 # install app store apps with mas
-source ./mas.sh
+while test $# -gt 0; do
+  case "$1" in
+    -m|--mas-install)
+      echo "Now installing purchased App Store Items"
+      source ./mas.sh
+      break
+      ;;
+    *)
+      echo "You're missing out App Store Goodies"
+      echo "Run"
+      echo "./install.sh --mas-install"
+      echo "To get them..."
+      break
+      ;;
+  esac
+done
 
 # update terminal
 source ./term.sh
