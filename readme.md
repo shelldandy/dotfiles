@@ -1,8 +1,11 @@
 # My dotfiles
 I first started using thoughtbots dotfiles but im not really that much of a power user of all the dot things so here's my take on dotfiles with stuff i actually use on a day to day basis.
 
-![My current terminal setup](desk.png)
 ![My current terminal setup](neofetch.png)
+My current terminal setup
+
+![An example tmux session with ssh](tmux.png)
+An example tmux session with ssh
 
 ## Works best with...
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
@@ -13,7 +16,7 @@ In my current setup I'm using some themes and plugins to make the whole experien
 
 - Uses vim-plug for plugin management on neovim
 
-- Also remember to enable true colors on your terminal and italics support to use with the OceanicNext theme and Operator Mono font. [Read More](https://bruinsslot.jp/post/how-to-enable-true-color-for-neovim-tmux-and-gnome-terminal/)
+- Also remember to enable true colors on your terminal and italics support to use with the OceanicNext theme and Operator Mono font. If you use the install script then all is made for you. [Read More](https://bruinsslot.jp/post/how-to-enable-true-color-for-neovim-tmux-and-gnome-terminal/)
 
 - reattach-to-user-namespace install with brew install reattach-to-user-namespace this is to make copy and paste great again on mac
 
@@ -22,8 +25,6 @@ In my current setup I'm using some themes and plugins to make the whole experien
 - [Node version manager](https://github.com/creationix/nvm)
 
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
-
-- Google Play Music Desktop Player - With a custom widget made by me :D
 
 ## Installing Everything from Scratch
 
@@ -45,7 +46,7 @@ $ ./install.sh --mas-install
 ```
 
 - Sit back and enjoy
-- Note: The last part of the `brew.sh` script will only work if you have also purchased those apps so you might want to edit that part or delete it totally
+- Note: `mas.sh` script will only work if you have also purchased those apps so you might want to edit that part or delete it totally
 - I'm talking about all the commands that start with `mas install XXXXX`
 
 - Now cd outside of the dotfiles folder and run
