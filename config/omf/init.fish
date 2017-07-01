@@ -10,6 +10,7 @@ function ..       ; cd .. ; end
 function ...      ; cd ../.. ; end
 function ....     ; cd ../../.. ; end
 function .....    ; cd ../../../.. ; end
+function ......   ; cd ../../../../.. ; end
 function ll       ; tree --dirsfirst -ChFupDaLg 1 $argv ; end
 function c        ; clear ; end
 
@@ -20,6 +21,9 @@ abbr gP git pull
 abbr gr git rebase
 abbr gl git lg
 abbr ll ls -lah
+
+abbr nI npm install --save
+abbr nD npm install --save-dev
 
 # Utilities
 function rst      ; exec fish ; end
