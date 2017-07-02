@@ -22,6 +22,15 @@ if has_key(g:plugs, 'oceanic-next')
     hi javascriptFuncKeyword gui=italic guifg=#c594c5
     hi Type gui=italic
     hi htmlArg gui=italic
+
+    " Let's improve javascript a bit shall we?
+    hi javascriptFuncCallArg guifg=#6699cc
+    hi javascriptMethod guifg=#6699cc
+    hi javascriptBlock guifg=#6699cc
+    hi javascriptImport guifg=#c594c5
+    hi javascriptExport guifg=#c594c5
+    hi javascriptNodeGlobal guifg=#cdd3d3
+    hi javascriptIdentifier gui=italic guifg=#ec5f67
   endfunction
 
   call OceanicColorsOverride()

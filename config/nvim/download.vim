@@ -9,7 +9,7 @@ Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'mhartington/oceanic-next'                                     " Oceanic Next
-Plug 'gko/vim-coloresque'                                           " Colors in my Sass
+Plug 'shmargum/vim-sass-colors'                                           " Colors in my Sass
 Plug 'mike3run/kwm.vim'
 
 " General/Movement
