@@ -9,3 +9,4 @@ nvm install 6.11.0
 # install global npm packages
 npm i -g npm
 npm i -g yarn
+npm i -g npm-check-updates
