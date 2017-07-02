@@ -4,11 +4,10 @@ if has_key(g:plugs, 'oceanic-next')
   if has_key(g:plugs, 'vim-airline')
     let g:airline_theme='oceanicnext'
   endif
+
   function OceanicColorsOverride()
     " Pug Color Override
     autocmd BufNewFile,BufRead *.pug hi htmlTagName guifg=#ec5f67 ctermfg=203
-    " Force italics because we paid $200 for 'em
-    hi Comment gui=italic
     " Color Overrides for awesome experience
     hi Folded guibg=#1c2b34
     hi LineNr guibg=#1c2b34
@@ -17,7 +16,14 @@ if has_key(g:plugs, 'oceanic-next')
     hi GitGutterDelete guibg=#1c2b34
     hi GitGutterChangeDelete guibg=#1c2b34
     hi CursorLineNr guibg=#1c2b34
+
+    " Force italics because we paid $200 for 'em
+    hi Comment gui=italic
+    hi javascriptFuncKeyword gui=italic guifg=#c594c5
+    hi Type gui=italic
+    hi htmlArg gui=italic
   endfunction
+
   call OceanicColorsOverride()
 endif
 
