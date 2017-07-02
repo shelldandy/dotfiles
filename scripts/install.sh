@@ -55,3 +55,6 @@ source ./nvim.sh
 
 # install fish
 source ./fish.sh
+
+# Miscellaneus fixes
+source ./misc.sh
