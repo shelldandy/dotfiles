@@ -149,3 +149,11 @@ endif
 if has_key(g:plugs, 'goyo.vim')
   nnoremap <Leader>gg :Goyo<CR>
 endif
+
+nmap <leader>hi :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
