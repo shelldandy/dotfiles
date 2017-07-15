@@ -3,7 +3,7 @@
   name = Miguel Palau
   email = mpalauzarza@gmail.com
 [core]
-  excludesfile = /Users/imike/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = nvim
 [init]
   templatedir = ~/.git_template
