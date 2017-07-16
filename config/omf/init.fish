@@ -72,3 +72,7 @@ end
 function gif2mp4
   ffmpeg -i $argv -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" $argv.mp4
 end
+
+function mov2mp4
+  ffmpeg -i $argv -vcodec copy -acodec copy $argv.mp4
+end
