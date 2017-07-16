@@ -25,7 +25,8 @@ abbr ll ls -lah
 abbr nI npm install --save
 abbr nD npm install --save-dev
 
-abbr nvu nvim -c 'PlugInstall'
+abbr nvi nvim -c 'PlugInstall'
+abbr nvu nvim -c 'PlugUpdate'
 
 # Utilities
 function rst      ; exec fish ; end
