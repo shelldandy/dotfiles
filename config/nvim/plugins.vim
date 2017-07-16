@@ -156,6 +156,7 @@ if has_key(g:plugs, 'fzf.vim')
 endif
 
 if has_key(g:plugs, 'goyo.vim')
+  let g:goyo_height = '100%'
   function! s:goyo_enter()
     silent !tmux set status off
     silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
@@ -175,5 +176,5 @@ if has_key(g:plugs, 'goyo.vim')
   endfunction
 
   autocmd! User GoyoEnter nested call <SID>goyo_enter()
-  autocmd! User GoyoLeave nested call <SID>goyo_leave()
+  autocmd! User GoyoLeaver nested call <SID>goyo_leave()
 endif
