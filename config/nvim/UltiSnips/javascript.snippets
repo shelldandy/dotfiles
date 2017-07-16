@@ -23,3 +23,12 @@ export default () => (
 $0
 )
 endsnippet
+
+snippet sasstest "Sass Test with Jest" b
+const path = require('path')
+const sassTrue = require('sass-true')
+
+const sassFile = path.join(__dirname, '$0.test.scss')
+
+sassTrue.runSass({ file: sassFile }, describe, test)
+endsnippet
