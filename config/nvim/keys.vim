@@ -1,5 +1,4 @@
 " Remap ESC to something usable
-" Shift + Space
 :imap jj <Esc>
 " Set our Leader Key to something usable
 let mapleader=","
