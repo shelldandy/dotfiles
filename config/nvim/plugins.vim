@@ -87,6 +87,7 @@ endif
 if has_key(g:plugs, 'ale')
   let g:ale_linters = {
   \   'javascript': ['standard'],
+  \   'html': ['htmlhint'],
   \}
   set statusline+=%#warningmsg#
   set statusline+=%{ALEGetStatusLine()}

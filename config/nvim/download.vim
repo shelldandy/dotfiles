@@ -33,7 +33,7 @@ Plug 'junegunn/fzf.vim'
 " Linters
 Plug 'w0rp/ale',
   \   {
-  \   'do': 'npm install -g standard babel-eslint eslint'
+  \   'do': 'npm install -g standard babel-eslint eslint htmlhint'
   \   }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }       " Deoplete AutoComplete
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'}     " Deoplete Ternjs for Smart JS
