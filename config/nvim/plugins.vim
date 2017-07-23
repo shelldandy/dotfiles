@@ -1,4 +1,6 @@
 if has_key(g:plugs, 'oceanic-next')
+  let g:oceanic_next_terminal_bold = 1
+  let g:oceanic_next_terminal_italic = 1
   colorscheme OceanicNext
   " Airline Hacks
   if has_key(g:plugs, 'vim-airline')
