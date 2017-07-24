@@ -28,6 +28,8 @@ abbr nD npm install --save-dev
 abbr nvi nvim -c 'PlugInstall' -c 'qa'
 abbr nvu nvim -c 'PlugUpdate' -c 'qa'
 
+abbr bru brew update; brew upgrade; brew cleanup
+
 # Utilities
 function rst      ; exec fish ; end
 function v        ; nvim $argv ; end
