@@ -28,6 +28,8 @@ abbr nD npm install --save-dev
 abbr nvi nvim -c 'PlugInstall' -c 'qa'
 abbr nvu nvim -c 'PlugUpdate' -c 'qa'
 
+abbr t tmuxinator
+
 # Utilities
 function rst      ; exec fish ; end
 function v        ; nvim $argv ; end
@@ -71,6 +73,10 @@ end
 # https://rigor.com/blog/2015/12/optimizing-animated-gifs-with-html5-video
 function gif2mp4
   ffmpeg -i $argv -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" $argv.mp4
+end
+
+function removeSound
+  ffmpeg -i $argv -vcodec copy -an muted.$argv
 end
 
 function mov2mp4
