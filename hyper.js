@@ -35,10 +35,11 @@ module.exports = {
     'hyper-font-smoothing',
     'hyperterm-working-directory',
     'hyperterm-visor',
-    'hyperterm-cursor',
     'hyper-nobold',
     'hyperterm-alternatescroll',
-    'hyperborder'
+    'hyperborder',
+    'hyper-hide-title',
+    'hyperterm-cursor'
   ],
   localPlugins: []
 }
