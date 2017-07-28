@@ -33,6 +33,20 @@ if has_key(g:plugs, 'oceanic-next')
     hi javascriptExport guifg=#c594c5
     hi javascriptNodeGlobal guifg=#cdd3d3
     hi javascriptIdentifier gui=italic guifg=#ec5f67
+
+    " Hyper Vibrancy
+    if $HYPERTERM == 'vibrancy'
+      hi Normal guibg=NONE
+      hi LineNr guibg=NONE
+      hi Folded guibg=NONE
+      hi LineNr guibg=NONE
+      hi GitGutterAdd guibg=NONE
+      hi GitGutterChange guibg=NONE
+      hi GitGutterDelete guibg=NONE
+      hi GitGutterChangeDelete guibg=NONE
+      hi CursorLineNr guibg=NONE
+      hi CursorLine guibg=NONE
+    endif
   endfunction
 
   call OceanicColorsOverride()
