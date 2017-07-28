@@ -1,3 +1,6 @@
+# Colors
+set -x THEME_COLORS 'gruvbox'
+
 # Exports
 set -x EDITOR nvim
 set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications'
