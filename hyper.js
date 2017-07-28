@@ -22,7 +22,7 @@ module.exports = {
     copyOnSelect: false,
     workingDirectory: '~/git',
     visor: {
-      hotkey: 'CommandOrControl+Shift+Z'
+      hotkey: 'CommandOrControl+Space'
     },
     hyperBorder: {
       borderColors: ['#fc1da7', '#fba506'],
