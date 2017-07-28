@@ -33,6 +33,17 @@ if has_key(g:plugs, 'oceanic-next')
     hi javascriptExport guifg=#c594c5
     hi javascriptNodeGlobal guifg=#cdd3d3
     hi javascriptIdentifier gui=italic guifg=#ec5f67
+
+    if $THEME == 'oceanic-next'
+      hi Normal guibg=#1d313b
+      hi Folded guibg=#1d313b
+      hi LineNr guibg=#1d313b
+      hi GitGutterAdd guibg=#1d313b
+      hi GitGutterChange guibg=#1d313b
+      hi GitGutterDelete guibg=#1d313b
+      hi GitGutterChangeDelete guibg=#1d313b
+      hi CursorLineNr guibg=#1d313b
+    endif
   endfunction
 
   call OceanicColorsOverride()

@@ -1,45 +1,56 @@
+// Theme pimping situation
+const CURRENT_THEME = 'oceanic-next'
+let themeName
+
+switch (CURRENT_THEME) {
+  case 'spacegray':
+    themeName = 'hyperterm-spacegray'
+    break
+  case 'oceanic-next':
+    themeName = 'hyperterm-oceanic-next'
+    break
+  default: themeName = ''
+}
+
 module.exports = {
   config: {
     fontSize: 14,
     fontFamily: 'OperatorMonoSSm Nerd Font',
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgba(255,255,255,0.5)',
     cursorShape: 'BLOCK',
     cursorBlink: false,
     foregroundColor: '#fff',
-    backgroundColor: 'rgba(0,0,0,0.2)',
+    backgroundColor: '#1d313b',
     vibrancy: '',
     borderColor: '#333',
-    css: '',
-    termCSS: 'x-row {font-weight: 200}',
+    css: ``,
+    termCSS: ``,
     padding: '12px 14px',
     colors: {},
     shell: '',
     shellArgs: ['--login'],
     env: {
-      THEME: 'oceanic-next'
+      THEME: CURRENT_THEME
     },
     bell: 'SOUND',
     copyOnSelect: false,
     workingDirectory: '~/git',
     visor: {
       hotkey: 'CommandOrControl+Space'
-    },
-    hyperBorder: {
-      borderColors: ['#fc1da7', '#fba506'],
-      borderWidth: '5px'
     }
   },
 
   plugins: [
-    'hyperterm-oceanic-next',
+    themeName,
     'hyper-font-smoothing',
     'hyperterm-working-directory',
     'hyperterm-visor',
     'hyper-nobold',
     'hyperterm-alternatescroll',
-    'hyperborder',
     'hyper-hide-title',
-    'hyperterm-cursor'
+    'hyperterm-cursor',
+    'hyper-statusline',
+    'hyperterm-safepaste'
   ],
   localPlugins: []
 }
