@@ -55,10 +55,6 @@ if has_key(g:plugs, 'ale')
   set statusline+=%{ALEGetStatusLine()}
   set statusline+=%*
   let g:ale_open_list = 1
-  highlight clear ALEErrorSign
-  highlight clear ALEWarningSign
-  hi ALEWarningSign guifg=#f7c862
-  hi ALEErrorSign guifg=#ec5f67
 endif
 
 if has_key(g:plugs, 'vim-jsx')

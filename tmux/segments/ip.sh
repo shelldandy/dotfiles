@@ -1,7 +1,7 @@
 #!/bin/bash
 
-source "$HOME/.tmux/online.sh"
-source "$HOME/.tmux/cache.sh"
+source "$HOME/.tmux/helpers/online.sh"
+source "$HOME/.tmux/helpers/cache.sh"
 
 runSegment() {
   local cacheFile="$HOME/.current-ip"

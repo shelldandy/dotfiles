@@ -1,5 +1,6 @@
 # Colors
-set -x THEME_COLORS 'gruvbox'
+source ~/.themes/gruvbox-dark.sh
+# source ~/.themes/oceanic-next.sh
 
 # Exports
 set -x EDITOR nvim
