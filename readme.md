@@ -1,11 +1,14 @@
 # My dotfiles
 I first started using thoughtbots dotfiles but im not really that much of a power user of all the dot things so here's my take on dotfiles with stuff i actually use on a day to day basis.
 
-![My current terminal setup](neofetch.png)
+![My current terminal setup](images/neofetch.png)
 My current terminal setup
 
-![An example tmux session with ssh](tmux.png)
+![An example tmux session with ssh](images/tmux.png)
 An example tmux session with ssh
+
+![Now with themes!](images/terminals.gif)
+Now with themes!
 
 ## Works best with...
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
