@@ -92,6 +92,23 @@ if $THEME_COLORS == 'gruvbox-dark'
   endif
 endif
 
+if $THEME_COLORS == 'gruvbox-light'
+  if has_key(g:plugs, 'gruvbox')
+    let g:gruvbox_italic = 1
+    colorscheme gruvbox
+    set background=light
+  endif
+
+  if has_key(g:plugs, 'vim-airline')
+    let g:airline_theme='gruvbox'
+  endif
+
+  if has_key(g:plugs, 'ale')
+    exe 'highlight ALEErrorSign guifg=' . $VIM_ALE_ERROR_FG 'guibg=' . $VIM_ALE_ERROR_BG
+    exe 'highlight ALEWarningSign guifg=' . $VIM_ALE_WARNING_FG 'guibg=' . $VIM_ALE_WARNING_BG
+  endif
+endif
+
 if $THEME_COLORS == 'gotham'
   if has_key(g:plugs, 'vim-gotham')
     colorscheme gotham
