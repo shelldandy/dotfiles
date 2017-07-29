@@ -3,13 +3,17 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
 
-" Colors
+" Themes
+Plug 'mhartington/oceanic-next'                                     " Oceanic Next
+Plug 'morhetz/gruvbox'                                              " Gruvbox
+Plug 'whatyouhide/vim-gotham'
+Plug 'sonph/onehalf', { 'rtp': 'vim/' }
+
+" Syntax Highlights
 Plug 'othree/yajs.vim'                                              " Syntax Highlight for Vim
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
-Plug 'mhartington/oceanic-next'                                     " Oceanic Next
-Plug 'morhetz/gruvbox'                                              " Gruvbox
 Plug 'gko/vim-coloresque'                                           " Colors in my Sass
 Plug 'mike3run/kwm.vim'
 

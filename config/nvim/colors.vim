@@ -91,3 +91,20 @@ if $THEME_COLORS == 'gruvbox-dark'
     exe 'highlight ALEWarningSign guifg=' . $VIM_ALE_WARNING_FG 'guibg=' . $VIM_ALE_WARNING_BG
   endif
 endif
+
+if $THEME_COLORS == 'gotham'
+  if has_key(g:plugs, 'vim-gotham')
+    colorscheme gotham
+  endif
+endif
+
+
+if $THEME_COLORS == 'onehalf-dark'
+  if has_key(g:plugs, 'onehalf')
+    colorscheme onehalfdark
+  endif
+
+  if has_key(g:plugs, 'vim-airline')
+    let g:airline_theme='onehalfdark'
+  endif
+endif
