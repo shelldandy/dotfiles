@@ -8,6 +8,7 @@ brew tap neovim/neovim
 brew tap thoughtbot/formulae
 brew tap caskroom/cask
 brew tap caskroom/versions
+brew tap eddieantonio/eddieantonio
 
 # Installs
 brew install 'ack'
@@ -27,6 +28,7 @@ brew install 'git-standup'
 brew install 'go'
 brew install 'grip'
 brew install 'iandrewt/tap/gpmdp-remote'
+brew install 'imgcat'
 brew install 'jp2a'
 brew install 'koekeishiya/formulae/kwm'
 brew install 'libksba'
