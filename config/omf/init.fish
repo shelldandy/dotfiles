@@ -17,6 +17,7 @@ function c        ; clear ; end
 # Abbreviations
 abbr gc git commit
 abbr gp git push
+abbr gpt git push --tags
 abbr gP git pull
 abbr gr git rebase
 abbr gl git lg
