@@ -33,7 +33,8 @@ const sassFile = path.join(__dirname, '$0.test.scss')
 sassTrue.runSass({ file: sassFile }, describe, test)
 endsnippet
 
-snippet snapshotTest "React test with snapshot" b
+snippet snapshotTest "React test with jest snapshot" b
+/* eslint-env jest */
 import React from 'react'
 import renderer from 'react-test-renderer'
 
