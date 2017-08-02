@@ -14,6 +14,7 @@ Plug 'othree/yajs.vim'                                              " Syntax Hig
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
+Plug 'alampros/vim-styled-jsx'
 Plug 'gko/vim-coloresque'                                           " Colors in my Sass
 Plug 'mike3run/kwm.vim'
 
