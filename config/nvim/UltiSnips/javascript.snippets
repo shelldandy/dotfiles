@@ -32,3 +32,18 @@ const sassFile = path.join(__dirname, '$0.test.scss')
 
 sassTrue.runSass({ file: sassFile }, describe, test)
 endsnippet
+
+snippet snapshotTest "React test with snapshot" b
+import React from 'react'
+import renderer from 'react-test-renderer'
+
+import ${1:Component} from '${2:./index}'
+
+describe('$1 Component', () => {
+  test('$1 Passes the snapshot', () => {
+    const component = renderer.create(<$1 />)
+    const tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})
+endsnippet
