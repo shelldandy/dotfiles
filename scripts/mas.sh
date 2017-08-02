@@ -1,5 +1,4 @@
 # Mas Will install my apps from the App Store for me
-# mas install 497799835         # Xcode (8.2.1)
 mas install 409183694         # Keynote (7.0.5)
 mas install 409201541         # Pages (6.0.5)
 mas install 409203825         # Numbers (4.0.5)
