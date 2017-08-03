@@ -48,3 +48,12 @@ describe('$1 Component', () => {
   })
 })
 endsnippet
+
+snippet styled "Styled Component" b
+import styled from 'styled-components'
+
+const ${1:Component} = styled.${2:div}`
+  $0
+`
+export default $1
+endsnippet
