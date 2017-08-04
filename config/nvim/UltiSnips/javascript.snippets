@@ -37,14 +37,15 @@ snippet snapshotTest "React test with jest snapshot" b
 /* eslint-env jest */
 import React from 'react'
 import renderer from 'react-test-renderer'
+import { shallow } from 'enzyme'
+import 'jest-styled-components'
 
 import ${1:Component} from '${2:./index}'
 
 describe('$1 Component', () => {
-  test('$1 Passes the snapshot', () => {
-    const component = renderer.create(<$1 />)
-    const tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
+  test('$1 Passes shallow snapshot', () => {
+    const wrapper = shallow(<$1 />)
+    expect(wrapper).toMatchSnapshot()
   })
 })
 endsnippet
@@ -52,8 +53,9 @@ endsnippet
 snippet styled "Styled Component" b
 import styled from 'styled-components'
 
-const ${1:Component} = styled.${2:div}`
+const ${1:Component} = styled.${2:div}\`
   $0
-`
+\`
+
 export default $1
 endsnippet
