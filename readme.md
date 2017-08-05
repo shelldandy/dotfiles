@@ -34,13 +34,13 @@ In my current setup I'm using some themes and plugins to make the whole experien
 - First log into your AppStore and download X-Code we will need this for git and other maybe important tools.
 - Now git clone the repo
 
-```
+```sh
 $ git clone https://github.com/mike3run/dotfiles.git
 ```
 
 - Now cd into `scripts`
 
-```
+```sh
 $ chmod +x install.sh
 $ ./install.sh
 # If you want my AppStore downloads
@@ -54,7 +54,7 @@ $ ./install.sh --mas-install
 
 - Now cd outside of the dotfiles folder and run
 
-```
+```sh
 $ rcup -d dotfiles -v
 ```
 

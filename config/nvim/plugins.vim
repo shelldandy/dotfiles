@@ -137,3 +137,7 @@ if has_key(g:plugs, 'goyo.vim')
   autocmd! User GoyoEnter nested call <SID>goyo_enter()
   autocmd! User GoyoLeaver nested call <SID>goyo_leave()
 endif
+
+if has_key(g:plugs, 'vim-polyglot')
+  let g:polyglot_disabled = ['markdown']
+endif

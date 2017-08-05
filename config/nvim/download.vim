@@ -18,6 +18,9 @@ Plug 'alampros/vim-styled-jsx'
 Plug 'gko/vim-coloresque'                                           " Colors in my Sass
 Plug 'mike3run/kwm.vim'
 
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 " General/Movement
 Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS
 Plug 'ervandew/supertab'                                            " Tab autocomplete
