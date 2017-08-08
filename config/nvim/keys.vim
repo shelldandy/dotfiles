@@ -37,7 +37,11 @@ nnoremap <Leader>wx :close<CR>
 nnoremap <Leader>wr <C-W><C-R>
 
 " NerdTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
+
+if has_key(g:plugs, 'nerdtree')
+  nnoremap <Leader>n :NERDTreeToggle<CR>
+  nnoremap <Leader>N :NERDTreeFind<CR>
+endif
 
 if has_key(g:plugs, 'ctrlp.vim')
   " CtrlP
