@@ -1,8 +1,6 @@
 snippet jqueryfunction "Self executing jquery function" b
 ;(function ($) {
-
   $0
-
 })(jQuery)
 endsnippet
 
@@ -19,6 +17,8 @@ console.log($0)
 endsnippet
 
 snippet reactstateless "A basic stateless placeholder" b
+import React from 'react'
+
 export default () => (
 $0
 )
@@ -50,6 +50,7 @@ describe('$1 Component', () => {
 endsnippet
 
 snippet sc "Styled Component" b
+import React from 'react'
 import styled from 'styled-components'
 
 const ${1:Component} = styled.${2:div}\`
@@ -57,4 +58,8 @@ const ${1:Component} = styled.${2:div}\`
 \`
 
 export default $1
+endsnippet
+
+snippet im "import local"
+import ${1:Module} from './$1'
 endsnippet
