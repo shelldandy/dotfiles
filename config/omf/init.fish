@@ -83,3 +83,9 @@ end
 function mov2mp4
   ffmpeg -i $argv -vcodec copy -acodec copy $argv.mp4
 end
+
+# Add an extra slot in the dock for management purposes
+function dockspacer
+  defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+  killall Dock
+end
