@@ -42,6 +42,12 @@ if has_key(g:plugs, 'deoplete-ternjs')
   \]
   let g:deoplete#sources = {}
   let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs', 'buffer']
+  let g:deoplete#sources#ternjs#filetypes = [
+    \ 'javascript',
+    \ 'jsx',
+    \ 'javascript.jsx',
+    \ 'vue',
+  \ ]
   autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
