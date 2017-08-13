@@ -11,7 +11,10 @@ Plug 'sonph/onehalf', { 'rtp': 'vim/' }
 
 " Syntax Highlights
 Plug 'othree/yajs.vim'                                              " Syntax Highlight for Vim
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/jspc.vim', {
+  \   'for':
+  \   ['javascript', 'javascript.jsx']
+  \   }
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'gko/vim-coloresque'                                           " Colors in my Sass
@@ -45,7 +48,8 @@ Plug 'w0rp/ale',
   \   }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }       " Deoplete AutoComplete
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'}     " Deoplete Ternjs for Smart JS
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install'}
+Plug 'ternjs/tern_for_vim',
+  \   { 'do': 'npm install --no-package-lock'}
 Plug 'heavenshell/vim-jsdoc'
 
 " Life Quality Stuff

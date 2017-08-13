@@ -34,7 +34,6 @@ if has_key(g:plugs, 'deoplete-ternjs')
   if !exists('g:deoplete#omni#input_patterns')
     let g:deoplete#omni#input_patterns = {}
   endif
-  autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
   let g:deoplete#omni#functions = {}
   let g:deoplete#omni#functions.javascript = [
     \ 'tern#Complete',
