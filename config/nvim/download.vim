@@ -10,16 +10,16 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'sonph/onehalf', { 'rtp': 'vim/' }
 
 " Syntax Highlights
-Plug 'othree/yajs.vim'                                              " Syntax Highlight for Vim
+Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'othree/jspc.vim', {
   \   'for':
   \   ['javascript', 'javascript.jsx']
   \   }
-Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'gko/vim-coloresque'                                           " Colors in my Sass
 Plug 'mike3run/kwm.vim'
-
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
