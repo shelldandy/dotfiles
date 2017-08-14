@@ -35,12 +35,6 @@ if has_key(g:plugs, 'indentLine')
   let g:indentLine_char = '┆'
 endif
 
-if has_key(g:plugs, 'vim-devicons')
-  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
-  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
-  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = ' '
-endif
-
 if has_key(g:plugs, 'TwitVim')
   let g:twitvim_enable_python3 = 1
 endif

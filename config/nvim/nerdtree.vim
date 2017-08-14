@@ -32,3 +32,10 @@ if has_key(g:plugs, 'vim-nerdtree-syntax-highlight')
   let g:NERDTreeExtensionHighlightColor['gif'] = s:blue
   let g:NERDTreeExtensionHighlightColor['jpg'] = s:blue
 endif
+
+if has_key(g:plugs, 'vim-devicons')
+  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
+  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = ''
+endif
+
