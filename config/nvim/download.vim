@@ -61,7 +61,7 @@ Plug 'wesQ3/vim-windowswap'
 " Linters
 Plug 'w0rp/ale',
   \   {
-  \   'do': 'npm install -g standard babel-eslint eslint htmlhint'
+  \   'do': 'npm i -g standard eslint htmlhint stylelint'
   \   }
 
 " Life Quality Stuff
