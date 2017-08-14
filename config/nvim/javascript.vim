@@ -56,7 +56,6 @@ if has_key(g:plugs, 'ale')
   let g:ale_fixers = {}
   let g:ale_fixers['javascript'] = ['standard']
   let g:ale_fixers['scss'] = ['stylelint']
-  nnoremap <Leader>js :ALEFix<CR>
 endif
 
 if has_key(g:plugs, 'supertab')
@@ -70,9 +69,4 @@ augroup FiletypeGroup
   autocmd!
   au BufNewFile,BufRead *.js set filetype=javascript.jsx
 augroup END
-
-augroup omnifuncs
-  autocmd!
-  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-augroup end
+nnoremap <Leader>js :set filetype=javascript<CR>
