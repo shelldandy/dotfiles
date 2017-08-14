@@ -15,6 +15,7 @@ language en_US                        " Base Language
 set nocompatible                      " vim, not vi
 syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
+set omnifunc=syntaxcomplete#Complete  " Addind omnifunc dics in general
 set encoding=utf8                     " Show all funky signs
 set backspace=indent,eol,start        " Make delete work on vim8
 set shell=bash                        " Specify a POSIX shell since vim don't like 🐟
