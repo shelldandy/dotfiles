@@ -11,23 +11,39 @@ Plug 'sonph/onehalf', { 'rtp': 'vim/' }
 
 " Syntax Highlights
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'othree/jspc.vim', {
-  \   'for':
-  \   ['javascript', 'javascript.jsx']
-  \   }
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'gko/vim-coloresque'                                           " Colors in my Sass
 Plug 'mike3run/kwm.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+" Deoplete
+Plug 'Shougo/deoplete.nvim', {
+  \   'do': ':UpdateRemotePlugins'
+  \   }
+
+" Javascript
+Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
+Plug 'honza/vim-snippets'
+Plug 'ternjs/tern_for_vim', {
+  \   'do': 'npm install --no-package-lock',
+  \   'for': ['Javascript', 'javascript.jsx']
+  \   }
+Plug 'carlitux/deoplete-ternjs', {
+  \   'do': 'npm install -g tern',
+  \   'for': ['Javascript', 'javascript.jsx']
+  \   }
+Plug 'othree/jspc.vim', {
+  \   'for': ['javascript', 'javascript.jsx']
+  \   }
+Plug 'heavenshell/vim-jsdoc'
 
 " General/Movement
 Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS
 Plug 'ervandew/supertab'                                            " Tab autocomplete
-Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
-Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'                                          " NerdTree
 Plug 'jiangmiao/auto-pairs'                                         " Auto close brackets smartly
 Plug 'airblade/vim-gitgutter'                                       " Git Situation on my Lines like Atom
@@ -40,17 +56,13 @@ Plug 'junegunn/fzf', {
  \    'do': './install --bin'
  \    }
 Plug 'junegunn/fzf.vim'
+Plug 'wesQ3/vim-windowswap'
 
 " Linters
 Plug 'w0rp/ale',
   \   {
   \   'do': 'npm install -g standard babel-eslint eslint htmlhint'
   \   }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }       " Deoplete AutoComplete
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern'}     " Deoplete Ternjs for Smart JS
-Plug 'ternjs/tern_for_vim',
-  \   { 'do': 'npm install --no-package-lock'}
-Plug 'heavenshell/vim-jsdoc'
 
 " Life Quality Stuff
 Plug 'alvan/vim-closetag'                                           " Autoclose html tags
@@ -66,9 +78,8 @@ Plug 'krisajenkins/vim-projectlocal'                                " Per Projec
 Plug 'editorconfig/editorconfig-vim', {
  \    'do': 'brew install editorconfig'
  \    }
-Plug 'vim-scripts/TwitVim'                                          " Twitter inside vim lol
-Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 Plug 'junegunn/goyo.vim'                                            " Focus mode like iA Writer
 Plug 'junegunn/limelight.vim'                                       " Limelight
 
+Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 call plug#end()

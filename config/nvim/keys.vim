@@ -109,6 +109,7 @@ nnoremap <cr> o<esc>
 function HardReload()
   source $MYVIMRC
   AirlineRefresh
+  call webdevicons#softRefresh()
   mode
 endfunction
 com -nargs=0 HardReload call HardReload()
@@ -116,10 +117,6 @@ nnoremap <Leader>r :silent! HardReload<CR>
 
 " clear search
 nnoremap <leader>c :let @/ = ""<CR>
-
-if has_key(g:plugs, 'deoplete-ternjs')
-  inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-endif
 
 " React Magic HTML Format
 function ReactFormatMagic()
@@ -134,7 +131,6 @@ nnoremap <Leader>m :silent! ReactFormatMagic<CR>
 
 " Auto fix javascript with StandardJS
 function FixJavascript()
-  write
   silent !standard --fix %
   if has_key(g:plugs, 'ale')
     ALELint
