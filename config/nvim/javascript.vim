@@ -46,7 +46,7 @@ endif
 if has_key(g:plugs, 'ale')
   let g:ale_linters = {
   \   'javascript': ['standard'],
-  \   'jsx': ['standard'],
+  \   'jsx': ['standard', 'stylelint'],
   \   'scss': ['stylelint'],
   \   'html': ['htmlhint'],
   \}
