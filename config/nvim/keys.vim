@@ -129,20 +129,11 @@ endfunction
 com -nargs=0 ReactFormatMagic call ReactFormatMagic()
 nnoremap <Leader>m :silent! ReactFormatMagic<CR>
 
-" Auto fix javascript with StandardJS
-function FixJavascript()
-  silent !standard --fix %
-  if has_key(g:plugs, 'ale')
-    ALELint
-  endif
-endfunction
-com -nargs=0 FixJavascript call FixJavascript()
-nnoremap <Leader>js :silent! FixJavascript<CR>
-
 if has_key(g:plugs, 'ale')
   nnoremap <Leader>at :ALEToggle<Cr>
   nnoremap <Leader>an :ALENext<Cr>
   nnoremap <Leader>ap :ALEPrevious<Cr>
+  nnoremap <Leader>af :ALEFix<CR>
 endif
 
 if has_key(g:plugs, 'goyo.vim')

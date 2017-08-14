@@ -51,6 +51,10 @@ if has_key(g:plugs, 'ale')
   \   'html': ['htmlhint'],
   \}
   let g:ale_linter_aliases = {'jsx': 'css'}
+  let g:ale_fixers = {}
+  let g:ale_fixers['javascript'] = ['standard']
+  let g:ale_fixers['scss'] = ['stylelint']
+  nnoremap <Leader>js :ALEFix<CR>
 endif
 
 if has_key(g:plugs, 'supertab')
