@@ -27,6 +27,7 @@ Plug 'Shougo/deoplete.nvim', {
 Plug 'fszymanski/deoplete-emoji'
 Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neco-vim'
+Plug 'othree/csscomplete.vim'
 
 " Javascript
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
@@ -62,11 +63,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'wesQ3/vim-windowswap'
 
 " Linters
-Plug 'w0rp/ale',
-  \   {
-  \   'do': 'npm i -g standard eslint htmlhint stylelint'
-  \   }
-
+Plug 'w0rp/ale'
 " Life Quality Stuff
 Plug 'alvan/vim-closetag'                                           " Autoclose html tags
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
