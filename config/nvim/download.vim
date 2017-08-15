@@ -24,6 +24,8 @@ Plug 'mxw/vim-jsx'
 Plug 'Shougo/deoplete.nvim', {
   \   'do': ':UpdateRemotePlugins'
   \   }
+Plug 'fszymanski/deoplete-emoji'
+Plug 'Shougo/neco-syntax'
 
 " Javascript
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
