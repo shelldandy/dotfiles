@@ -19,6 +19,11 @@ if has_key(g:plugs, 'deoplete-ternjs')
     \ 'tern#Complete',
     \ 'jspc#omni'
   \]
+  let g:deoplete#omni#functions['javascript.jsx'] = [
+    \ 'tern#Complete',
+    \ 'jspc#omni',
+    \ 'csscomplete#CompleteCSS'
+  \]
   let g:deoplete#sources = {}
   let g:deoplete#sources['javascript'] = ['file', 'ultisnips', 'ternjs', 'buffer']
   autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>

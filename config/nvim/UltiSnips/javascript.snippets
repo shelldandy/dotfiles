@@ -24,6 +24,26 @@ $0
 )
 endsnippet
 
+snippet react "Stateful react snippet" b
+import React, { Component } from 'react'
+import autobind from 'class-autobind'
+
+class ${1:MyComponent} extends Component {
+  constructor () {
+    super(...arguments)
+    autobind(this)
+  }
+
+  render () {
+    return (
+    $2
+        )
+  }
+}
+
+export default $1
+endsnippet
+
 snippet sasstest "Sass Test with Jest" b
 const path = require('path')
 const sassTrue = require('sass-true')
