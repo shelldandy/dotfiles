@@ -2,6 +2,7 @@ if has_key(g:plugs, 'ultisnips')
   let g:UltiSnipsJumpForwardTrigger="<c-b>"
   let g:UltiSnipsJumpBackwardTrigger="<c-z>"
   let g:UltiSnipsExpandTrigger="<C-j>"
+  :imap ,us <C-J>
 endif
 
 if has_key(g:plugs, 'deoplete.nvim')
