@@ -1,4 +1,4 @@
-# Mike3run's Dotfiles
+# Mike3run's Dotfiles :computer:
 
 ![Now with themes!](images/terminals.gif)
 
