@@ -118,6 +118,6 @@ augroup END
 
 augroup omnifuncs
   autocmd!
-  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType html,markdown,liquid setlocal omnifunc=htmlcomplete#CompleteTags
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS noci
 augroup end

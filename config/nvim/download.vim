@@ -81,5 +81,7 @@ Plug 'editorconfig/editorconfig-vim', {
 Plug 'junegunn/goyo.vim'                                            " Focus mode like iA Writer
 Plug 'junegunn/limelight.vim'                                       " Limelight
 
+Plug 'mattn/emmet-vim'
+
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 call plug#end()

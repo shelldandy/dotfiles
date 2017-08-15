@@ -94,3 +94,8 @@ if has_key(g:plugs, 'goyo.vim')
   autocmd! User GoyoEnter nested call <SID>goyo_enter()
   autocmd! User GoyoLeaver nested call <SID>goyo_leave()
 endif
+
+if has_key(g:plugs, 'emmet-vim')
+  let g:user_emmet_install_global = 0
+  autocmd FileType html,css,liquid EmmetInstall
+endif

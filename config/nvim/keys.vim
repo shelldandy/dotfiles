@@ -147,3 +147,9 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+if has_key(g:plugs, 'emmet-vim')
+  let g:user_emmet_leader_key='<C-Y>'
+  nnoremap <Leader>em :call emmet#expandAbbr(0, "")<CR>
+  :imap ,em <C-Y>,
+endif
