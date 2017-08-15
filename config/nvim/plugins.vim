@@ -22,9 +22,11 @@ if has_key(g:plugs, 'ale')
 endif
 
 if has_key(g:plugs, 'supertab')
-  " close the preview window when you're not using it
-  let g:SuperTabClosePreviewOnPopupClose = 1
   let g:SuperTabDefaultCompletionType = "<c-n>"
+endif
+
+if has_key(g:plugs, 'ultisnips')
+  let g:UltiSnipsExpandTrigger="<C-j>"
 endif
 
 if has_key(g:plugs, 'vim-closetag')
