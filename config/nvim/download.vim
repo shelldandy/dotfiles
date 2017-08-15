@@ -26,6 +26,7 @@ Plug 'Shougo/deoplete.nvim', {
   \   }
 Plug 'fszymanski/deoplete-emoji'
 Plug 'Shougo/neco-syntax'
+Plug 'Shougo/neco-vim'
 
 " Javascript
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
