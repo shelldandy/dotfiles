@@ -1,5 +1,7 @@
 " Remap ESC to something usable
 :imap jj <Esc>
+" Save right from insert mode
+:imap ,w <Esc>:w<CR>
 " Set our Leader Key to something usable
 let mapleader=","
 
