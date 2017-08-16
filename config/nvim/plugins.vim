@@ -35,6 +35,8 @@ endif
 
 if has_key(g:plugs, 'indentLine')
   let g:indentLine_char = '┆'
+  let g:indentLine_fileTypeExclude = ['help']
+  let g:indentLine_bufNameExclude = ['NERD_tree.*']
 endif
 
 if has_key(g:plugs, 'TwitVim')
