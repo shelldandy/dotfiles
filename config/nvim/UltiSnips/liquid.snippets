@@ -2,8 +2,12 @@ snippet ass "quick image add" w
 {{ '$1' | asset_url }}
 endsnippet
 
-snippet if "if block"
+snippet if "if block" w
 {% if $1 %}
   $2
 {% endif %}
+endsnippet
+
+snippet inc "include a file" w
+{% include '$1' %}
 endsnippet
