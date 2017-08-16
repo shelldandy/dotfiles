@@ -42,7 +42,6 @@ module.exports = {
 
   plugins: [
     themeName,
-    'hyper-font-smoothing',
     'hyperterm-working-directory',
     'hyperterm-visor',
     'hyper-nobold',
