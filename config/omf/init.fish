@@ -31,6 +31,10 @@ abbr nvu nvim -c 'PlugUpdate' -c 'qa'
 
 abbr t tmuxinator
 
+# Repeated paths
+abbr df cd ~/git/dotfiles
+abbr gf cd ~/git
+
 # Utilities
 function rst      ; exec fish ; end
 function v        ; nvim $argv ; end
