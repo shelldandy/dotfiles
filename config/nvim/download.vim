@@ -17,6 +17,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ap/vim-css-color'
 Plug 'shmargum/vim-sass-colors'
 Plug 'mike3run/kwm.vim'
+" Plug '~/git/shopify.vim'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', {
@@ -28,8 +29,10 @@ Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
 
 " Javascript
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'othree/yajs.vim'
+Plug 'othree/es.next.syntax.vim'
+Plug 'othree/jsdoc-syntax.vim'
+Plug 'elzr/vim-json'
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets

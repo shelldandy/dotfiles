@@ -8,6 +8,46 @@ snippet if "if block" w
 {% endif %}
 endsnippet
 
+snippet else "else" w
+{% else %}
+  $1
+endsnippet
+
+snippet elsif "else" w
+{% elsif $1 %}
+  $2
+endsnippet
+
 snippet inc "include a file" w
 {% include '$1' %}
+endsnippet
+
+snippet sec "a section" w
+{% section '$1' %}
+endsnippet
+
+snippet schema "define a schema"
+{% schema %}
+  {
+    "name": "$1",
+    "settings": [
+      $2
+    ]
+  }
+{% endschema %}
+endsnippet
+
+snippet type "type object for settings and schema" w
+{
+  "id": "$1",
+  "type": "$2",
+  "label": "$3",
+  "default": "$4"
+}
+endsnippet
+
+snippet for "for loop" w
+{% for $1 in $2 %}
+  $3
+{% endfor %}
 endsnippet

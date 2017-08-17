@@ -27,6 +27,7 @@ abbr nI npm install --save
 abbr nD npm install --save-dev
 
 abbr nvi nvim -c 'PlugInstall' -c 'qa'
+abbr nvc nvim -c 'PlugClean' -c 'qa'
 abbr nvu nvim -c 'PlugUpdate' -c 'qa'
 
 abbr t tmuxinator
