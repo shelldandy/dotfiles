@@ -11,13 +11,10 @@ Plug 'sonph/onehalf', { 'rtp': 'vim/' }
 
 " Syntax Highlights
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
-Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
-Plug 'gko/vim-coloresque'                                           " Colors in my Sass
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'ap/vim-css-color'
 Plug 'shmargum/vim-sass-colors'
 Plug 'mike3run/kwm.vim'
 
@@ -31,6 +28,10 @@ Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
 
 " Javascript
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
+
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
 Plug 'honza/vim-snippets'
 Plug 'ternjs/tern_for_vim', {
