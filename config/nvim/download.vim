@@ -13,12 +13,13 @@ Plug 'sonph/onehalf', { 'rtp': 'vim/' }
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 Plug 'gko/vim-coloresque'                                           " Colors in my Sass
-Plug 'mike3run/kwm.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'shmargum/vim-sass-colors'
+Plug 'mike3run/kwm.vim'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', {
