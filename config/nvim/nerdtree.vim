@@ -6,6 +6,12 @@ if has_key(g:plugs, 'nerdtree')
   endfunction
 endif
 
+if has_key(g:plugs, 'vim-devicons')
+  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
+  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = ''
+endif
+
 if has_key(g:plugs, 'vim-nerdtree-syntax-highlight')
   let s:brown = "905532"
   let s:aqua =  "3AFFDB"
@@ -32,10 +38,3 @@ if has_key(g:plugs, 'vim-nerdtree-syntax-highlight')
   let g:NERDTreeExtensionHighlightColor['gif'] = s:blue
   let g:NERDTreeExtensionHighlightColor['jpg'] = s:blue
 endif
-
-if has_key(g:plugs, 'vim-devicons')
-  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
-  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
-  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = ''
-endif
-

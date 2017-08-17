@@ -109,9 +109,6 @@ nnoremap <cr> o<esc>
 
 " reload vim config
 function HardReload()
-  source $MYVIMRC
-  AirlineRefresh
-  call webdevicons#softRefresh()
   mode
 endfunction
 com -nargs=0 HardReload call HardReload()
