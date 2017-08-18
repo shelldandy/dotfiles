@@ -2,6 +2,10 @@ snippet ass "quick image add" w
 {{ '$1' | asset_url }}
 endsnippet
 
+snippet img "image in section" w
+{{ ${1:element}.settings.${2:image} | img_url: '${3:master}' }}
+endsnippet
+
 snippet if "if block" w
 {% if $1 %}
   $2
