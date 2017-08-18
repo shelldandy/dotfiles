@@ -27,13 +27,12 @@ print_info() {
     info "CPU" cpu
     info "GPU" gpu
     info "Memory" memory
-
-    # info "CPU Usage" cpu_usage
+    info "Local IP" local_ip
+    info "CPU Usage" cpu_usage
     # info "Disk" disk
     # info "Battery" battery
     # info "Font" font
     # info "Song" song
-    # info "Local IP" local_ip
     # info "Public IP" public_ip
     # info "Users" users
     # info "Install Date" install_date
@@ -191,7 +190,7 @@ cpu_cores="logical"
 # C:   'Intel i7-6500U (4) @ 3.1GHz [27.2°C]'
 # F:   'Intel i7-6500U (4) @ 3.1GHz [82.0°F]'
 # off: 'Intel i7-6500U (4) @ 3.1GHz'
-cpu_temp="off"
+cpu_temp="C"
 
 
 # GPU
@@ -240,7 +239,7 @@ gpu_type="all"
 # Example:
 # on:  '1920x1080 @ 60Hz'
 # off: '1920x1080'
-refresh_rate="off"
+refresh_rate="on"
 
 
 # Gtk Theme / Icons / Font
