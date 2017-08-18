@@ -25,14 +25,14 @@ print_info() {
     info "Terminal" term
     info "Terminal Font" term_font
     info "CPU" cpu
+    info "CPU Usage" cpu_usage
     info "GPU" gpu
     info "Memory" memory
+    info "Now Playing" song
     info "Local IP" local_ip
-    info "CPU Usage" cpu_usage
     # info "Disk" disk
     # info "Battery" battery
     # info "Font" font
-    # info "Song" song
     # info "Public IP" public_ip
     # info "Users" users
     # info "Install Date" install_date
@@ -431,7 +431,7 @@ underline_char="-"
 #
 # Display colors 0-15 in the blocks. (16 colors)
 # neofetch --block_range 0 15
-block_range=(0 7)
+block_range=(0 15)
 
 # Toggle color blocks
 #
