@@ -19,11 +19,8 @@ Plug 'mike3run/kwm.vim'
 Plug 'mike3run/shopify.vim'
 
 " Deoplete
-Plug 'Shougo/deoplete.nvim', {
-  \   'do': ':UpdateRemotePlugins'
-  \   }
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'fszymanski/deoplete-emoji'
-Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
 
@@ -45,9 +42,7 @@ Plug 'ternjs/tern_for_vim', {
   \   'do': 'npm install --no-package-lock',
   \   'for': ['Javascript', 'javascript.jsx']
   \   }
-Plug 'othree/jspc.vim', {
-  \   'for': ['javascript', 'javascript.jsx']
-  \   }
+Plug 'othree/jspc.vim'
 Plug 'carlitux/deoplete-ternjs', {
   \   'do': 'npm install -g tern',
   \   'for': ['Javascript', 'javascript.jsx']
@@ -55,7 +50,6 @@ Plug 'carlitux/deoplete-ternjs', {
 Plug 'heavenshell/vim-jsdoc'                                        " JSDocs on Demand
 
 " General/Movement
-Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS
 Plug 'ervandew/supertab'                                            " Tab autocomplete
 Plug 'scrooloose/nerdtree'                                          " NerdTree
 Plug 'jiangmiao/auto-pairs'                                         " Auto close brackets smartly
@@ -73,6 +67,7 @@ Plug 'wesQ3/vim-windowswap'
 
 " Linters
 Plug 'w0rp/ale'
+
 " Life Quality Stuff
 Plug 'alvan/vim-closetag'                                           " Autoclose html tags
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
@@ -89,6 +84,7 @@ Plug 'editorconfig/editorconfig-vim', {
  \    }
 Plug 'junegunn/goyo.vim'                                            " Focus mode like iA Writer
 Plug 'junegunn/limelight.vim'                                       " Limelight
+Plug 'metakirby5/codi.vim'
 
 Plug 'mattn/emmet-vim'
 
