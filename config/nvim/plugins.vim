@@ -103,3 +103,7 @@ if has_key(g:plugs, 'emmet-vim')
   let g:user_emmet_settings = {}
   let g:user_emmet_settings['javascript.jsx'] = { 'extends': 'css' }
 endif
+
+if has_key(g:plugs, 'vim-polyglot')
+  let g:polyglot_disabled = ['javascript', 'json', 'jsx', 'markdown']
+endif

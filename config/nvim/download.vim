@@ -28,26 +28,31 @@ Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
 
 " Javascript
+" JS Syntax
 Plug 'othree/yajs.vim'
+Plug 'othree/xml.vim'
 Plug 'othree/es.next.syntax.vim'
 Plug 'othree/jsdoc-syntax.vim'
+Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json'
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 
+Plug 'gavocanov/vim-js-indent'
+" JS Tools
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
 Plug 'honza/vim-snippets'
 Plug 'ternjs/tern_for_vim', {
   \   'do': 'npm install --no-package-lock',
   \   'for': ['Javascript', 'javascript.jsx']
   \   }
+Plug 'othree/jspc.vim', {
+  \   'for': ['javascript', 'javascript.jsx']
+  \   }
 Plug 'carlitux/deoplete-ternjs', {
   \   'do': 'npm install -g tern',
   \   'for': ['Javascript', 'javascript.jsx']
   \   }
-Plug 'othree/jspc.vim', {
-  \   'for': ['javascript', 'javascript.jsx']
-  \   }
-Plug 'heavenshell/vim-jsdoc'
+Plug 'heavenshell/vim-jsdoc'                                        " JSDocs on Demand
 
 " General/Movement
 Plug '1995eaton/vim-better-javascript-completion'                   " Extending OmniComplete for JS

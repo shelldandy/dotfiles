@@ -1,3 +1,7 @@
+if has_key(g:plugs, 'vim-javascript')
+  let g:javascript_plugin_jsdoc = 1
+endif
+
 if has_key(g:plugs, 'ultisnips')
   let g:UltiSnipsJumpForwardTrigger="<c-b>"
   let g:UltiSnipsJumpBackwardTrigger="<c-z>"
