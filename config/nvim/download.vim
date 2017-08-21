@@ -11,6 +11,7 @@ Plug 'sonph/onehalf', { 'rtp': 'vim/' }
 
 " Syntax Highlights
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
+Plug 'hail2u/vim-css3-syntax'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
