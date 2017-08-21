@@ -62,6 +62,7 @@ endif
 
 if has_key(g:plugs, 'supertab')
   autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+  autocmd FileType javascript.jsx let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 endif
 
 nnoremap <Leader>js :set filetype=javascript<CR>

@@ -72,7 +72,7 @@ Plug 'w0rp/ale'
 Plug 'alvan/vim-closetag'                                           " Autoclose html tags
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
 Plug 'scrooloose/nerdcommenter'                                     " Nerd Commenter
-Plug 'Yggdroot/indentLine'                                          " Show Indent lines
+"Plug 'Yggdroot/indentLine'                                          " Show Indent lines
 Plug 'tpope/vim-surround'                                           " Quickly change parens quotes, etc
 Plug 'reedes/vim-pencil'                                            " Pencil / Write Mode
 Plug 'vim-scripts/BufOnly.vim'                                      " Clear buffers

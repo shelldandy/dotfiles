@@ -39,10 +39,6 @@ if has_key(g:plugs, 'indentLine')
   let g:indentLine_bufNameExclude = ['NERD_tree.*']
 endif
 
-if has_key(g:plugs, 'TwitVim')
-  let g:twitvim_enable_python3 = 1
-endif
-
 if has_key(g:plugs, 'fzf.vim')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden -l -g ""'
   " https://github.com/junegunn/fzf/blob/master/man/man1/fzf.1#L211
@@ -105,5 +101,5 @@ if has_key(g:plugs, 'emmet-vim')
 endif
 
 if has_key(g:plugs, 'vim-polyglot')
-  let g:polyglot_disabled = ['javascript', 'json', 'jsx', 'markdown', 'xml']
+  let g:polyglot_disabled = ['javascript', 'javascript.jsx', 'json', 'jsx', 'markdown', 'xml']
 endif
