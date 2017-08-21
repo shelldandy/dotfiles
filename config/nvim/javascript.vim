@@ -1,6 +1,9 @@
-if has_key(g:plugs, 'vim-polyglot')
-  let g:javascript_plugin_jsdoc = 1
+if has_key(g:plugs, 'vim-jsx')
   let g:jsx_ext_required = 0
+endif
+
+if has_key(g:plugs, 'vim-javascript')
+  let g:javascript_plugin_jsdoc = 1
 endif
 
 if has_key(g:plugs, 'ultisnips')
@@ -45,10 +48,6 @@ if has_key(g:plugs, 'tern_for_vim')
   " Helpful commands from the docs
   nnoremap <Leader>td :TernDoc<CR>
   nnoremap <Leader>tb :TernDocBrowse<CR>
-endif
-
-if has_key(g:plugs, 'vim-jsx')
-  let g:jsx_ext_required = 0
 endif
 
 if has_key(g:plugs, 'ale')

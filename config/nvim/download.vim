@@ -25,9 +25,9 @@ Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
 
 " Javascript
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
-
-Plug 'gavocanov/vim-js-indent'
 " JS Tools
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
 Plug 'honza/vim-snippets'
