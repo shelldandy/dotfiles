@@ -105,5 +105,5 @@ if has_key(g:plugs, 'emmet-vim')
 endif
 
 if has_key(g:plugs, 'vim-polyglot')
-  let g:polyglot_disabled = ['javascript', 'json', 'jsx', 'markdown']
+  let g:polyglot_disabled = ['javascript', 'json', 'jsx', 'markdown', 'xml']
 endif
