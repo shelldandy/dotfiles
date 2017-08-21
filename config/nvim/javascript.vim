@@ -1,7 +1,3 @@
-if has_key(g:plugs, 'vim-javascript')
-  let g:javascript_plugin_jsdoc = 1
-endif
-
 if has_key(g:plugs, 'ultisnips')
   let g:UltiSnipsJumpForwardTrigger="<c-b>"
   let g:UltiSnipsJumpBackwardTrigger="<c-z>"
@@ -14,6 +10,8 @@ if has_key(g:plugs, 'deoplete.nvim')
   let g:deoplete#enable_at_startup = 1
   " Autocomplete from files now works from current buffer
   let g:deoplete#file#enable_buffer_path = 1
+  " Close the preview window automatically after completion is done
+  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
 
 if has_key(g:plugs, 'deoplete-ternjs')
@@ -21,20 +19,15 @@ if has_key(g:plugs, 'deoplete-ternjs')
     let g:deoplete#omni#input_patterns = {}
   endif
   let g:deoplete#omni#functions = {}
-  let g:deoplete#omni#functions.javascript = [
-    \ 'tern#Complete',
-    \ 'jspc#omni'
-  \]
-  let g:deoplete#omni#functions['javascript.jsx'] = [
-    \ 'tern#Complete',
-    \ 'jspc#omni',
-    \ 'csscomplete#CompleteCSS'
-  \]
+  "let g:deoplete#omni#functions.javascript = [
+    "\ 'tern#Complete',
+    "\ 'jspc#omni'
+  "\]
   let g:deoplete#sources = {}
   let g:deoplete#sources['javascript'] = ['file', 'ultisnips', 'ternjs', 'buffer']
+  let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs', 'buffer']
   autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
   autocmd FileType javascript.jsx nnoremap <silent> <buffer> gb :TernDef<CR>
-  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
 
 if has_key(g:plugs, 'tern_for_vim')
@@ -63,6 +56,7 @@ if has_key(g:plugs, 'ale')
   let g:ale_linter_aliases = {'jsx': 'css'}
   let g:ale_fixers = {}
   let g:ale_fixers['javascript'] = ['standard']
+  let g:ale_fixers['jsx'] = ['standard']
   let g:ale_fixers['scss'] = ['stylelint']
 endif
 

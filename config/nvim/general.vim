@@ -83,7 +83,7 @@ set nowrap                            " disable line wrapping
 set exrc                              " Allow the use of per project .vimrc files
 
 " background processes
-set updatetime=1000                   " timeout for plugins like gitgutter etc.
+set updatetime=250                    " timeout for plugins like gitgutter etc.
 set autoread                          " update file when changed outside of vim
 set autoindent                        " copy indentation from the previous line for new line
 set clipboard=unnamed                 " use native clipboard
