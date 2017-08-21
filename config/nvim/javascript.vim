@@ -1,3 +1,8 @@
+if has_key(g:plugs, 'vim-polyglot')
+  let g:javascript_plugin_jsdoc = 1
+  let g:jsx_ext_required = 0
+endif
+
 if has_key(g:plugs, 'vim-jsx')
   let g:jsx_ext_required = 0
 endif
