@@ -25,13 +25,6 @@ Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
 
 " Javascript
-" JS Syntax
-Plug 'othree/yajs.vim'
-Plug 'othree/xml.vim'
-Plug 'othree/es.next.syntax.vim'
-Plug 'othree/jsdoc-syntax.vim'
-Plug 'mxw/vim-jsx'
-Plug 'elzr/vim-json'
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
 
 Plug 'gavocanov/vim-js-indent'
