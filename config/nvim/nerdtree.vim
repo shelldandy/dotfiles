@@ -7,10 +7,13 @@ if has_key(g:plugs, 'nerdtree')
 endif
 
 if has_key(g:plugs, 'vim-devicons')
+  " If you need to add an unicode first use like this: "\uE275"
+  " then copy and paste the resulting one
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = ''
-endif
+  let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['liquid'] = ''
+  endif
 
 if has_key(g:plugs, 'vim-nerdtree-syntax-highlight')
   let s:brown = "905532"
@@ -37,4 +40,5 @@ if has_key(g:plugs, 'vim-nerdtree-syntax-highlight')
   let g:NERDTreeExtensionHighlightColor['png'] = s:blue
   let g:NERDTreeExtensionHighlightColor['gif'] = s:blue
   let g:NERDTreeExtensionHighlightColor['jpg'] = s:blue
+  let g:NERDTreeExtensionHighlightColor['liquid'] = s:blue
 endif
