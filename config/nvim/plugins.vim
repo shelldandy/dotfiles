@@ -95,8 +95,9 @@ endif
 
 if has_key(g:plugs, 'emmet-vim')
   let g:user_emmet_install_global = 0
-  autocmd FileType html,css,liquid,scss,javascript.jsx EmmetInstall
+  autocmd FileType html,css,liquid,scss,javascript.jsx,javascript EmmetInstall
   let g:user_emmet_settings = {}
+  let g:user_emmet_settings['javascript'] = { 'extends': 'css' }
   let g:user_emmet_settings['javascript.jsx'] = { 'extends': 'css' }
 endif
 
