@@ -99,6 +99,10 @@ if has_key(g:plugs, 'emmet-vim')
   let g:user_emmet_settings = {}
   let g:user_emmet_settings['javascript'] = { 'extends': 'css' }
   let g:user_emmet_settings['javascript.jsx'] = { 'extends': 'css' }
+  let g:user_emmet_settings['liquid'] = {}
+  let g:user_emmet_settings['liquid']['default_attributes'] = {}
+  let g:user_emmet_settings['liquid']['default_attributes']['a'] = { 'href': '#' }
+  let g:user_emmet_settings['liquid']['default_attributes']['img'] = { 'src': '' }
 endif
 
 if has_key(g:plugs, 'vim-polyglot')
