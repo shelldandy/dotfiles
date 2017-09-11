@@ -53,17 +53,19 @@ if has_key(g:plugs, 'tern_for_vim')
 endif
 
 if has_key(g:plugs, 'ale')
-  let g:ale_linters = {
-  \   'javascript': ['standard'],
-  \   'jsx': ['standard', 'stylelint'],
-  \   'scss': ['stylelint'],
-  \   'html': ['htmlhint'],
-  \}
-  let g:ale_linter_aliases = {'jsx': 'css'}
+  let g:ale_linters = {}
+  let g:ale_linters['javascript'] = ['standard']
+  let g:ale_linters['jsx'] = ['standard']
+  let g:ale_linters['scss'] = ['stylelint']
+  let g:ale_linters['html'] = ['htmlhint']
+
   let g:ale_fixers = {}
   let g:ale_fixers['javascript'] = ['standard']
   let g:ale_fixers['jsx'] = ['standard']
   let g:ale_fixers['scss'] = ['stylelint']
+  " Uncomment and use per project with styled-components
+  "let g:ale_linters['jsx'] = ['standard', 'stylelint']
+  "let g:ale_linter_aliases = {'jsx': 'css'}
 endif
 
 if has_key(g:plugs, 'supertab')
