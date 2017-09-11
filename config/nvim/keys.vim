@@ -9,7 +9,7 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>wq :wq<CR>
 
 " Quickly re-open a buffer for syntax reasons like styled-components
-nnoremap <Leader>e :e!<CR>
+nnoremap <Leader>e :w<CR>:e!<CR>
 
 " relative line numbers
 nnoremap <Leader>0 :NumbersToggle<CR>
