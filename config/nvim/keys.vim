@@ -117,17 +117,6 @@ nnoremap <Leader>r :silent! HardReload<CR>
 " clear search
 nnoremap <leader>c :let @/ = ""<CR>
 
-" React Magic HTML Format
-function ReactFormatMagic()
-  %s/src='img/src='\/static\/img/g
-  %s/class=/className=/g
-  %s/xlink\:href/xlinkHref/g
-  %s/background="../background="\/static/g
-  %s/background='../background='\/static/g
-endfunction
-com -nargs=0 ReactFormatMagic call ReactFormatMagic()
-nnoremap <Leader>m :silent! ReactFormatMagic<CR>
-
 if has_key(g:plugs, 'ale')
   nnoremap <Leader>at :ALEToggle<Cr>
   nnoremap <Leader>an :ALENext<Cr>
