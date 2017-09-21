@@ -63,9 +63,6 @@ if has_key(g:plugs, 'ale')
   let g:ale_fixers['javascript'] = ['standard']
   let g:ale_fixers['jsx'] = ['standard']
   let g:ale_fixers['scss'] = ['stylelint']
-  " Uncomment and use per project with styled-components
-  "let g:ale_linters['jsx'] = ['standard', 'stylelint']
-  "let g:ale_linter_aliases = {'jsx': 'css'}
 endif
 
 if has_key(g:plugs, 'supertab')

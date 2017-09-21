@@ -80,8 +80,6 @@ if $THEME_COLORS == 'gruvbox-dark'
     let g:gruvbox_italic = 1
     colorscheme gruvbox
     set background=dark
-    " JSX Fix
-    "hi xmlTagN guifg=#
   endif
 
   if has_key(g:plugs, 'vim-airline')
