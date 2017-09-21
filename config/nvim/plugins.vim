@@ -28,6 +28,7 @@ endif
 
 if has_key(g:plugs, 'vim-closetag')
   let g:closetag_filenames = "*.html,*.js,*.jsx,*.liquid,*.php"
+  let g:closetag_emptyTags_caseSensitive = 1
 endif
 
 if has_key(g:plugs, 'indentLine')
