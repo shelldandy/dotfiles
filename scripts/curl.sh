@@ -18,5 +18,4 @@ done
 chsh -s /bin/zsh
 
 # Install RVM
-curl -sSL https://get.rvm.io | bash -s stable
-rvm install 2.4.2
+curl -sSL https://get.rvm.io | bash -s stable --ruby
