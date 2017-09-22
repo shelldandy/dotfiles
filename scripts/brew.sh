@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install RVM
+curl -sSL https://get.rvm.io | bash -s stable --ruby
+
 # Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 

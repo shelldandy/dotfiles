@@ -16,6 +16,3 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 # 4. Set zsh as your default shell
 chsh -s /bin/zsh
-
-# Install RVM
-curl -sSL https://get.rvm.io | bash -s stable --ruby
