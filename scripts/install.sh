@@ -11,6 +11,9 @@ source ./vim.sh
 # install with brew
 source ./brew.sh
 
+# install ruby gems
+source ./ruby.sh
+
 # install app store apps with mas
 while test $# -gt 0; do
   case "$1" in
@@ -40,9 +43,6 @@ source ./npm.sh
 
 # install python packages
 source ./pip.sh
-
-# install ruby gems
-source ./ruby.sh
 
 # install tmux plugins
 source ./tmux.sh
