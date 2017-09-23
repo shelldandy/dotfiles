@@ -31,3 +31,9 @@
 # Easier markdown toggle
 'atom-workspace, atom-workspace atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
+
+# Git Shortcuts
+'.workspace':
+  ', g p': 'github:push'
+  ', g P': 'github:pull'
+  ', g c': 'github:commit'
