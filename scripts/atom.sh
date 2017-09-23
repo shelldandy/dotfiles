@@ -17,6 +17,6 @@ apm install linter-js-standard
 apm install linter-stylelint
 apm install linter-ui-default
 apm install no-title-bar
+apm install project-manager
 apm install relative-numbers
 apm install vim-mode-plus
-apm install project-manager

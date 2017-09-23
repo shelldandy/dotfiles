@@ -3,6 +3,7 @@
     disabledPackages: [
       "whitespace"
     ]
+    projectHome: "~/git"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -18,6 +19,8 @@
   "linter-js-standard":
     checkStyleDevDependencies: true
     showEslintRules: true
+  "project-manager":
+    includeGitRepositories: true
   "tree-view":
     hideIgnoredNames: true
   welcome:
