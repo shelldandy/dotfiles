@@ -10,7 +10,6 @@
   ', n': 'tree-view:toggle'
   ', N': 'tree-view:reveal-active-file'
   ', p': 'fuzzy-finder:toggle-file-finder'
-  'ctrl-l': 'tree-view:toggle-focus'
 
 # NerdTree Keys
 '.tree-view':
@@ -22,6 +21,7 @@
   'S': 'tree-view:open-selected-entry-left'
   'i': 'tree-view:open-selected-entry-down'
   'I': 'tree-view:open-selected-entry-up'
+  'ctrl-l': 'tree-view:toggle-focus'
 
 # Ctrl-hjkl for movement between panes
 'body':

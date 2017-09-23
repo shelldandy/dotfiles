@@ -1,5 +1,8 @@
 "*":
   core:
+    disabledPackages: [
+      "whitespace"
+    ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -19,9 +22,3 @@
     hideIgnoredNames: true
   welcome:
     showOnStartup: false
-  whitespace:
-    ensureSingleTrailingNewline: false
-    ignoreWhitespaceOnCurrentLine: false
-    removeTrailingWhitespace: false
-    insert_final_newline: false
-    trim_trailing_whitespace: false
