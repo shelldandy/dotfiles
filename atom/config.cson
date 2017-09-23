@@ -1,0 +1,27 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "gruvbox"
+    ]
+    titleBar: "custom"
+  editor:
+    fontFamily: "OperatorMonoSSm Nerd Font"
+    scrollPastEnd: true
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "63c15804-b048-805f-a7ad-8a071e072139"
+  "linter-js-standard":
+    checkStyleDevDependencies: true
+    showEslintRules: true
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+    removeTrailingWhitespace: false
+    insert_final_newline: false
+    trim_trailing_whitespace: false

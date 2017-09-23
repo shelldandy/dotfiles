@@ -1,0 +1,31 @@
+# Vim escape in insert mode
+'atom-text-editor.vim-mode-plus:not(.normal-mode)':
+  'j j': 'vim-mode-plus:activate-normal-mode'
+
+'atom-text-editor[mini]':
+  'j j': 'core:cancel'
+
+# Overall <Leader> ports from Vim
+'.platform-darwin':
+  ', n': 'tree-view:toggle'
+  ', N': 'tree-view:reveal-active-file'
+  ', p': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-l': 'tree-view:toggle-focus'
+
+# NerdTree Keys
+'.tree-view':
+  'o': 'tree-view:open-selected-entry'
+  'x': 'tree-view:collapse-directory'
+
+'.platform-darwin .tree-view':
+  's': 'tree-view:open-selected-entry-right'
+  'S': 'tree-view:open-selected-entry-left'
+  'i': 'tree-view:open-selected-entry-down'
+  'I': 'tree-view:open-selected-entry-up'
+
+# Ctrl-hjkl for movement between panes
+'body':
+  'ctrl-l': 'window:focus-pane-on-right'
+  'ctrl-h': 'window:focus-pane-on-left'
+  'ctrl-k': 'window:focus-pane-above'
+  'ctrl-j': 'window:focus-pane-below'

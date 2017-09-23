@@ -55,6 +55,7 @@ brew install 'youtube-dl'
 
 # Casks
 brew cask install 'android-studio'
+brew cask install 'atom'
 brew cask install 'coda'
 brew cask install 'dash'
 brew cask install 'dashlane'
