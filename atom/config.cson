@@ -3,6 +3,7 @@
     disabledPackages: [
       "whitespace"
     ]
+    packagesWithKeymapsDisabled: []
     projectHome: "~/git"
     telemetryConsent: "limited"
     themes: [

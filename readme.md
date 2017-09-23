@@ -65,3 +65,6 @@ $ rcup -d dotfiles -v
 - Remember to pull from time to time and in neovim run `:PlugUpdate`
 
 💕💕💕
+
+## Newer version
+Working now to implement Atom with full Vim Glory
