@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apm install atom-clock
 apm install atom-ternjs
 apm install autocomplete-modules
