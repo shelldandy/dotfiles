@@ -37,3 +37,4 @@
   ', g p': 'github:push'
   ', g P': 'github:pull'
   ', g c': 'github:commit'
+  ', g t': 'github:toggle-git-tab'
