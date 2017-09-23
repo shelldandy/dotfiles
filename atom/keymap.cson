@@ -3,10 +3,12 @@
   'j j': 'vim-mode-plus:activate-normal-mode'
 'atom-text-editor[mini]':
   'j j': 'core:cancel'
+
 # Movement
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'L': 'vim-mode-plus:move-to-last-character-of-line'
   'H': 'vim-mode-plus:move-to-beginning-of-line'
+
 # Overall <Leader> ports from Vim
 '.platform-darwin':
   ', n': 'tree-view:toggle'
