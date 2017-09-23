@@ -1,7 +1,6 @@
 # Vim escape in insert mode
 'atom-text-editor.vim-mode-plus:not(.normal-mode)':
   'j j': 'vim-mode-plus:activate-normal-mode'
-
 'atom-text-editor[mini]':
   'j j': 'core:cancel'
 
@@ -15,7 +14,6 @@
 '.tree-view':
   'o': 'tree-view:open-selected-entry'
   'x': 'tree-view:collapse-directory'
-
 '.platform-darwin .tree-view':
   's': 'tree-view:open-selected-entry-right'
   'S': 'tree-view:open-selected-entry-left'
@@ -29,3 +27,7 @@
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-j': 'window:focus-pane-below'
+
+# Easier markdown toggle
+'atom-workspace, atom-workspace atom-text-editor':
+  'ctrl-m': 'markdown-preview:toggle'
