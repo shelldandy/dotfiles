@@ -1,0 +1,12 @@
+{
+    "html": {
+      "tag_case": "lower",
+      "attr_quotes": "single",
+      "self_closing_tag": true
+    },
+    "jsx": {
+      "tag_case": "lower",
+      "attr_quotes": "single",
+      "self_closing_tag": "true"
+    }
+}

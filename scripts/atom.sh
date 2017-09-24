@@ -5,6 +5,7 @@ apm install atom-ternjs
 apm install autocomplete-modules
 apm install autocomplete-paths
 apm install busy-signal
+apm install double-tag
 apm install editorconfig
 apm install emmet
 apm install file-icons

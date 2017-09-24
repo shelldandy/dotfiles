@@ -1,4 +1,10 @@
 "*":
+  "atom-clock":
+    showClockIcon: true
+    showTooltip: true
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+    useCoreMovementCommands: false
   core:
     disabledPackages: [
       "whitespace"

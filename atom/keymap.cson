@@ -45,3 +45,8 @@
   ', g t': 'github:toggle-git-tab'
   ', g a': 'github:stage-all-changes'
   ', g A': 'github:unstage-all-changes'
+
+# Autocomplete
+'body atom-text-editor.autocomplete-active':
+  'shift-tab': 'autocomplete-plus:move-up'
+  'tab': 'autocomplete-plus:move-down'
