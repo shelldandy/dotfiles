@@ -32,6 +32,11 @@
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-j': 'window:focus-pane-below'
+  # Fuzzy Finder
+  'ctrl-v': 'pane:split-right-and-copy-active-item'
+  'ctrl-V': 'pane:split-left-and-copy-active-item'
+  'ctrl-x': 'pane:split-down-and-copy-active-item'
+  'ctrl-X': 'pane:split-up-and-copy-active-item'
 
 # Easier markdown toggle
 'atom-workspace, atom-workspace atom-text-editor':
