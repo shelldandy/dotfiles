@@ -13,8 +13,8 @@
     projectHome: "~/git"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "gruvbox"
+      "bliss-ui"
+      "bliss-syntax"
     ]
     titleBar: "custom"
   editor:
