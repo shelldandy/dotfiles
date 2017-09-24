@@ -19,4 +19,5 @@ apm install linter-ui-default
 apm install no-title-bar
 apm install project-manager
 apm install relative-numbers
+apm install termination
 apm install vim-mode-plus

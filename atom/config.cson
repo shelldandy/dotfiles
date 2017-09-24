@@ -22,6 +22,9 @@
     showEslintRules: true
   "project-manager":
     includeGitRepositories: true
+  termination:
+    style:
+      theme: "one-dark"
   "tree-view":
     hideIgnoredNames: true
   welcome:
