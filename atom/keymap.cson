@@ -50,3 +50,7 @@
 'body atom-text-editor.autocomplete-active':
   'shift-tab': 'autocomplete-plus:move-up'
   'tab': 'autocomplete-plus:move-down'
+
+# Toggle Terminal
+'.platform-darwin atom-workspace':
+  'cmd-t': 'termination:toggle'
