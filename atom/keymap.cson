@@ -9,6 +9,9 @@
   'L': 'vim-mode-plus:move-to-last-character-of-line'
   'H': 'vim-mode-plus:move-to-beginning-of-line'
 
+'atom-text-editor':
+  'ctrl-k': 'unset!'
+
 # Overall <Leader> ports from Vim
 '.platform-darwin':
   ', n': 'tree-view:toggle'
