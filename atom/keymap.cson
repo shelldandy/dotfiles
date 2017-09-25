@@ -26,6 +26,7 @@
   'I': 'tree-view:open-selected-entry-up'
   'ctrl-l': 'tree-view:toggle-focus'
   'r': 'tree-view:show-in-file-manager'
+  'd': 'tree-view:remove'
 
 # Ctrl-hjkl for movement between panes
 'body':
