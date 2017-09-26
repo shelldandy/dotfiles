@@ -30,7 +30,7 @@
     includeGitRepositories: true
   termination:
     style:
-      theme: "one-dark"
+      theme: "gruvbox"
   "tree-view":
     hideIgnoredNames: true
   welcome:

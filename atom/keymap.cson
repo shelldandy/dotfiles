@@ -8,6 +8,11 @@
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'L': 'vim-mode-plus:move-to-last-character-of-line'
   'H': 'vim-mode-plus:move-to-beginning-of-line'
+  # Disable arrow keys
+  'up': 'unset!'
+  'down': 'unset!'
+  'left': 'unset!'
+  'right': 'unset!'
 
 'atom-text-editor':
   'ctrl-k': 'unset!'
@@ -42,6 +47,11 @@
   'ctrl-V': 'pane:split-left-and-copy-active-item'
   'ctrl-x': 'pane:split-down-and-copy-active-item'
   'ctrl-X': 'pane:split-up-and-copy-active-item'
+  # Disable arrow keys
+  'up': 'unset!'
+  'down': 'unset!'
+  'left': 'unset!'
+  'right': 'unset!'
 
 '.command-palette atom-text-editor,
 .fuzzy-finder atom-text-editor':
@@ -71,3 +81,10 @@
 # Toggle Terminal
 '.platform-darwin atom-workspace':
   'cmd-t': 'termination:toggle'
+
+# Resize panes with arrows
+'atom-workspace atom-pane':
+  'down': 'pane:decrease-size'
+  'up': 'pane:increase-size'
+  'left': 'pane:decrease-size'
+  'right': 'pane:increase-size'
