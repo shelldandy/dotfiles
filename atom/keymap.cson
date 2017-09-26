@@ -43,6 +43,13 @@
   'ctrl-x': 'pane:split-down-and-copy-active-item'
   'ctrl-X': 'pane:split-up-and-copy-active-item'
 
+'.command-palette atom-text-editor,
+.fuzzy-finder atom-text-editor':
+  'ctrl-k': 'core:move-up'
+  'ctrl-j': 'core:move-down'
+  'ctrl-h': 'core:move-left'
+  'ctrl-l': 'core:move-right'
+
 # Easier markdown toggle
 'atom-workspace, atom-workspace atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
