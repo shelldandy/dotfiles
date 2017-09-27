@@ -2,6 +2,8 @@
   "atom-clock":
     showClockIcon: true
     showTooltip: true
+  "atom-easy-jsdoc":
+    useReturns: true
   "autocomplete-plus":
     confirmCompletion: "enter"
     useCoreMovementCommands: false

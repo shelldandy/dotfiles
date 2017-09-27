@@ -13,6 +13,7 @@
   'down': 'unset!'
   'left': 'unset!'
   'right': 'unset!'
+  ', d': 'jsdoc:block'
 
 'atom-text-editor':
   'ctrl-k': 'unset!'
