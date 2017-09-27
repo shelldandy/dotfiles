@@ -5,6 +5,7 @@ package node-binpath
 package nvm
 package rvm
 package wttr
+package z
 theme cbjohnson
 theme default
 theme ocean
