@@ -27,6 +27,7 @@ apm install no-title-bar
 apm install pigments
 apm install project-manager
 apm install relative-numbers
+apm install standard-formatter
 apm install termination
 apm install vim-mode-plus
 apm install vim-mode-plus-keymaps-for-surround

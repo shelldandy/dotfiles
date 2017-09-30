@@ -14,6 +14,7 @@
   'left': 'unset!'
   'right': 'unset!'
   ', d': 'jsdoc:block'
+  ', j s': 'standard-formatter:format'
 
 'atom-text-editor':
   'ctrl-k': 'unset!'
