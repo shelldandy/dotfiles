@@ -1,12 +1,24 @@
 "*":
+  Zen:
+    fullscreen: false
+    typewriter: true
   "atom-clock":
     showClockIcon: true
     showTooltip: true
   "atom-easy-jsdoc":
     useReturns: true
+  "atom-focus-mode":
+    whenFocusModeIsActivated:
+      centerEditor: "afm-center-editor-width-github"
+      enterFullScreen: false
+      hideFooterBar: false
+      hideLineWrapGuide: true
+      useTypeWriterMode: true
   "autocomplete-plus":
     confirmCompletion: "enter"
     useCoreMovementCommands: false
+  autosave:
+    enabled: true
   core:
     disabledPackages: [
       "whitespace"
