@@ -1,5 +1,7 @@
 # Mike3run's Dotfiles :computer:
 
+**Note**: Currently starting to move towards Atom and deprecating Vim/Neovim
+
 ![Now with themes!](images/terminals.gif)
 
 ![My current terminal setup](images/neofetch.png)
