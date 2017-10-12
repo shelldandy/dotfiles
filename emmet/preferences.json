@@ -1,6 +1,4 @@
 {
-  "css": {
-    "floatUnit": "px",
-    "autoInsertVendorPrefixes": false
-  }
+  "css.floatUnit": "px",
+  "css.autoInsertVendorPrefixes": false
 }
