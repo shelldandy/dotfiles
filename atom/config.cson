@@ -22,6 +22,7 @@
   core:
     disabledPackages: [
       "whitespace"
+      "autosave"
     ]
     packagesWithKeymapsDisabled: []
     projectHome: "~/git"
@@ -40,6 +41,7 @@
   "linter-js-standard":
     checkStyleDevDependencies: true
     showEslintRules: true
+  "linter-ui-default": {}
   "project-manager":
     includeGitRepositories: true
   termination:
@@ -47,5 +49,7 @@
       theme: "gruvbox"
   "tree-view":
     hideIgnoredNames: true
+  "vim-mode-plus":
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   welcome:
     showOnStartup: false

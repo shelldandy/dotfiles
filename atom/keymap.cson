@@ -4,6 +4,10 @@
 'atom-text-editor[mini]':
   'j j': 'core:cancel'
 
+# Expand Emmet
+'atom-text-editor:not([mini])':
+  ', e m': 'emmet:expand-abbreviation'
+
 # Movement
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'L': 'vim-mode-plus:move-to-last-character-of-line'
