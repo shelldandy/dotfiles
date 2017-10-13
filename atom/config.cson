@@ -36,6 +36,8 @@
     fontFamily: "OperatorMonoSSm Nerd Font"
     scrollPastEnd: true
     showIndentGuide: true
+  emmet:
+    extensionsPath: "~/.emmet"
   "exception-reporting":
     userId: "63c15804-b048-805f-a7ad-8a071e072139"
   "linter-js-standard":
