@@ -15,6 +15,7 @@ brew tap eddieantonio/eddieantonio
 
 # Installs
 brew install 'automake'
+brew install 'asciinema'
 brew install 'calc'
 brew install 'cmake'
 brew install 'coreutils'

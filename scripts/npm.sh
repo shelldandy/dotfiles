@@ -12,3 +12,4 @@ npm i -g yarn
 npm i -g npm-check-updates
 npm i -g now
 npm i -g tern
+npm i -g trash-cli
