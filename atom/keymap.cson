@@ -32,6 +32,13 @@
   ', n': 'tree-view:toggle'
   ', N': 'tree-view:reveal-active-file'
   ', p': 'fuzzy-finder:toggle-file-finder'
+  # Quickly install a package
+  # https://github.com/atom/settings-view/blob/master/menus/settings-view.cson
+  ', v k': 'settings-view:show-keybindings'
+  ', i p': 'settings-view:install-packages-and-themes'
+  ', u p': 'settings-view:check-for-package-updates'
+  ', v p': 'settings-view:uninstall-packages'
+  ', v t': 'settings-view:uninstall-themes'
 
 # NerdTree Keys
 '.tree-view':
