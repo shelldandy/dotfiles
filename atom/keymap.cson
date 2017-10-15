@@ -23,6 +23,8 @@
   'q': 'atom-keyboard-macros-vim:toggle_record_macro_vim'
   '@': 'atom-keyboard-macros-vim:execute_macro_vim'
   'Q': 'atom-keyboard-macros:call_last_kbd_macro'
+  # Lazy motion search
+  '/': 'lazy-motion:forward'
 
 'atom-text-editor':
   'ctrl-k': 'unset!'
