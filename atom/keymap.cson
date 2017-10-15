@@ -19,6 +19,10 @@
   'right': 'unset!'
   ', d': 'jsdoc:block'
   ', j s': 'standard-formatter:format'
+  # Vim macros
+  'q': 'atom-keyboard-macros-vim:toggle_record_macro_vim'
+  '@': 'atom-keyboard-macros-vim:execute_macro_vim'
+  'Q': 'atom-keyboard-macros:call_last_kbd_macro'
 
 'atom-text-editor':
   'ctrl-k': 'unset!'
