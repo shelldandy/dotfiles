@@ -102,3 +102,7 @@ function dockspacer
   defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
   killall Dock
 end
+
+function yu
+  curl -o- -L https://yarnpkg.com/install.sh | bash
+end
