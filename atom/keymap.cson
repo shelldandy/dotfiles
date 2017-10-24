@@ -54,6 +54,7 @@
   'ctrl-l': 'tree-view:toggle-focus'
   'r': 'tree-view:show-in-file-manager'
   'd': 'tree-view:remove'
+  'c': 'tree-view:duplicate'
 
 # Ctrl-hjkl for movement between panes
 'body':
