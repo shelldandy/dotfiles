@@ -53,6 +53,7 @@ brew install 'trash'
 brew install 'tree'
 brew install 'watchman'
 brew install 'youtube-dl'
+brew install 'yarn' --without-node
 
 # Casks
 brew cask install 'android-studio'

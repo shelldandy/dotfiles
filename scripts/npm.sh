@@ -8,7 +8,6 @@ nvm install '8.5.0'
 
 # install global npm packages
 npm i -g npm
-npm i -g yarn
 npm i -g npm-check-updates
 npm i -g now
 npm i -g tern

@@ -104,5 +104,5 @@ function dockspacer
 end
 
 function yu
-  curl -o- -L https://yarnpkg.com/install.sh | bash
+  brew upgrade yarn
 end
