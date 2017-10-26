@@ -106,3 +106,9 @@ end
 function yu
   brew upgrade yarn
 end
+
+# Brew update and cleanup
+function bu
+  brew upgrade
+  brew cleanup
+end
