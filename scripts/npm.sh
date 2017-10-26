@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Install nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 
-nvm install '8.5.0'
+nvm install '8.8.1'
 
 
 # install global npm packages
