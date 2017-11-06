@@ -41,6 +41,9 @@ source ./curl.sh
 # install npm packages
 source ./npm.sh
 
+# install yarn global packages
+source ./yarn.sh
+
 # install python packages
 source ./pip.sh
 
