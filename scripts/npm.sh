@@ -6,7 +6,6 @@ nvm install '9.0.0'
 
 # install global npm packages
 npm install -g 'npm'
-npm install -g 'npm-check-updates'
-npm install -g 'now'
-npm install -g 'tern'
-npm install -g 'trash-cli'
+npm install -g 'generator-odin-scss'
+npm install -g 'generator-pixel2html-shopify'
+npm install -g 'yo'
