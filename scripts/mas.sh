@@ -2,7 +2,6 @@
 mas install 443987910         # 1Password (6.8)
 mas install 937984704         # Amphetamine (3.0.2)
 mas install 425264550         # Blackmagic Disk Speed Test (3.1)
-mas install 948176063         # Boom 2 (1.6.1)
 mas install 417602904         # CloudApp (4.2.5)
 mas install 969418666         # ColorSnapper2 (1.5.0)
 mas install 1031163338        # GIFHunter (1.0.12)

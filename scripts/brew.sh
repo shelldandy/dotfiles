@@ -58,6 +58,7 @@ brew install 'yarn' --without-node
 # Casks
 brew cask install 'android-studio'
 brew cask install 'atom'
+brew cask install 'boom-3d'
 brew cask install 'coda'
 brew cask install 'dash'
 brew cask install 'dashlane'
