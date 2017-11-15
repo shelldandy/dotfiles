@@ -40,11 +40,11 @@
     extensionsPath: "~/.emmet"
   "exception-reporting":
     userId: "63c15804-b048-805f-a7ad-8a071e072139"
+  "linter-eslint": {}
   "linter-js-standard":
     checkStyleDevDependencies: true
     showEslintRules: true
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "project-manager":
     includeGitRepositories: true
   termination:
@@ -52,8 +52,7 @@
       theme: "gruvbox"
   "tree-view":
     hideIgnoredNames: true
-  "vim-mode-plus":
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
+  "vim-mode-plus": {}
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   welcome:
