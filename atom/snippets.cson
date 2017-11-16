@@ -5,3 +5,7 @@
   'import':
     'prefix': 'imp'
     'body': "import $1 from '$2'"
+'.source.scss':
+  'breakpoint':
+    'prefix': 'break'
+    'body': "@include breakpoint(${1:desktop}) {\n\t$2\n}"
