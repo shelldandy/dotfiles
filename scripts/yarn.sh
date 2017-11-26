@@ -9,3 +9,4 @@ yarn global add 'depcheck' \
   'tern' \
   'tiny-care-terminal' \
   'trash-cli' \
+  'empty-trash-cli' \
