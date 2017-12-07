@@ -18,7 +18,8 @@
   'left': 'unset!'
   'right': 'unset!'
   ', d': 'jsdoc:block'
-  ', j s': 'standard-formatter:format'
+  ', s f': 'standard-formatter:format'
+  ', e f': 'linter-eslint:fix-file'
   # Vim macros
   'q': 'atom-keyboard-macros-vim:toggle_record_macro_vim'
   '@': 'atom-keyboard-macros-vim:execute_macro_vim'
