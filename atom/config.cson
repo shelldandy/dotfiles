@@ -44,7 +44,8 @@
   "linter-js-standard":
     checkStyleDevDependencies: true
     showEslintRules: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "project-manager":
     includeGitRepositories: true
   termination:

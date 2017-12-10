@@ -20,6 +20,7 @@
   ', d': 'jsdoc:block'
   ', s f': 'standard-formatter:format'
   ', e f': 'linter-eslint:fix-file'
+  ', j p': 'pretty-json:prettify'
   # Vim macros
   'q': 'atom-keyboard-macros-vim:toggle_record_macro_vim'
   '@': 'atom-keyboard-macros-vim:execute_macro_vim'
