@@ -5,6 +5,9 @@
   'import':
     'prefix': 'imp'
     'body': "import $1 from '$2'"
+  'jquery quick import':
+    'prefix': 'jq'
+    'body': "import $ from 'jquery'"
 '.source.scss':
   'breakpoint':
     'prefix': 'break'
