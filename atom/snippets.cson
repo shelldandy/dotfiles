@@ -2,6 +2,9 @@
   'export default as':
     'prefix': 'eas'
     'body': "export { default as ${1:Component} } from './$1'"
+  'export default':
+    'prefix': 'ed'
+    'body': "export default $1"
   'import':
     'prefix': 'imp'
     'body': "import $1 from '$2'"
