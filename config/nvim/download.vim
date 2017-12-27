@@ -35,7 +35,7 @@ Plug 'ternjs/tern_for_vim', {
   \   }
 Plug 'othree/jspc.vim'
 Plug 'carlitux/deoplete-ternjs', {
-  \   'do': 'npm install -g tern',
+  \   'do': 'yarn global add tern',
   \   'for': ['Javascript', 'javascript.jsx']
   \   }
 Plug 'heavenshell/vim-jsdoc'                                        " JSDocs on Demand
