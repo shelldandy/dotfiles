@@ -5,6 +5,7 @@ yarn global add 'depcheck' \
   'git-standup' \
   'now' \
   'npm' \
+  'pxl-cli' \
   'npm-check-updates' \
   'tern' \
   'tiny-care-terminal' \
