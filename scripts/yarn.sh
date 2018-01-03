@@ -6,6 +6,7 @@ yarn global add 'depcheck' \
   'now' \
   'npm' \
   'pxl-cli' \
+  'release' \
   'npm-check-updates' \
   'tern' \
   'tiny-care-terminal' \
