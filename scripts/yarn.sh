@@ -8,6 +8,7 @@ yarn global add 'depcheck' \
   'pxl-cli' \
   'release' \
   'npm-check-updates' \
+  'moneda-cli' \
   'tern' \
   'tiny-care-terminal' \
   'trash-cli' \
