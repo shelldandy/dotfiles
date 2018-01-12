@@ -54,14 +54,14 @@ endif
 
 if has_key(g:plugs, 'ale')
   let g:ale_linters = {}
-  let g:ale_linters['javascript'] = ['standard']
-  let g:ale_linters['jsx'] = ['standard']
+  let g:ale_linters['javascript'] = ['eslint']
+  let g:ale_linters['jsx'] = ['eslint']
   let g:ale_linters['scss'] = ['stylelint']
   let g:ale_linters['html'] = ['htmlhint']
 
   let g:ale_fixers = {}
-  let g:ale_fixers['javascript'] = ['standard']
-  let g:ale_fixers['jsx'] = ['standard']
+  let g:ale_fixers['javascript'] = ['eslint']
+  let g:ale_fixers['jsx'] = ['eslint']
   let g:ale_fixers['scss'] = ['stylelint']
 endif
 
