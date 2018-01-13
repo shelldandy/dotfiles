@@ -23,6 +23,11 @@ abbr gr git rebase
 abbr gl git lg
 abbr ll ls -lah
 
+# git add remote
+# for pushing to 2 remotes at once
+# https://stackoverflow.com/questions/14290113/git-pushing-code-to-two-remotes#14290145
+abbr gar git remote set-url --add --push origin
+
 abbr nI npm install --save
 abbr nD npm install --save-dev
 
