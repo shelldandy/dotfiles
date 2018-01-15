@@ -13,7 +13,11 @@ if has_key(g:plugs, 'vim-devicons')
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sass'] = ''
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['svg'] = ''
   let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['liquid'] = ''
+  if exists("g:loaded_webdevicons")
+    call webdevicons#refresh()
   endif
+
+endif
 
 if has_key(g:plugs, 'vim-nerdtree-syntax-highlight')
   let s:brown = "905532"
