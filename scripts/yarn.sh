@@ -10,6 +10,7 @@ yarn global add 'depcheck' \
   'npm-check-updates' \
   'moneda-cli' \
   'tern' \
+  'lighthouse' \
   'tiny-care-terminal' \
   'trash-cli' \
   'empty-trash-cli' \
