@@ -7,7 +7,6 @@ yarn global add \
   'generator-odin-scss' \
   'lighthouse' \
   'moneda-cli' \
-  'now' \
   'npm' \
   'npm-check-updates' \
   'pxl-cli' \
