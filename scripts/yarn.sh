@@ -1,16 +1,18 @@
 #!/bin/bash
 
 # install global npm packages
-yarn global add 'depcheck' \
-  'git-standup' \
+yarn global add \
+  'depcheck' \
+  'empty-trash-cli' \
+  'generator-odin-scss' \
+  'lighthouse' \
+  'moneda-cli' \
   'now' \
   'npm' \
+  'npm-check-updates' \
   'pxl-cli' \
   'release' \
-  'npm-check-updates' \
-  'moneda-cli' \
+  'serve' \
   'tern' \
-  'lighthouse' \
-  'tiny-care-terminal' \
   'trash-cli' \
-  'empty-trash-cli' \
+  'yo' \
