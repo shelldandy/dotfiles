@@ -54,7 +54,7 @@ Plug 'junegunn/fzf', {
  \    'do': './install --bin'
  \    }
 Plug 'junegunn/fzf.vim'
-Plug 'wesQ3/vim-windowswap'
+Plug 'wesQ3/vim-windowswap'                                         " Quickly swap panes <Leader>ww
 
 " Linters
 Plug 'w0rp/ale'
