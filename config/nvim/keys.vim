@@ -144,3 +144,6 @@ if has_key(g:plugs, 'emmet-vim')
   nnoremap <Leader>em :call emmet#expandAbbr(0, "")<CR>
   :imap ,em <C-Y>,
 endif
+
+" Autocomplete Paths
+imap ,p <plug>(fzf-complete-file-ag)

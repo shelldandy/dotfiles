@@ -14,6 +14,8 @@
       hideFooterBar: false
       hideLineWrapGuide: true
       useTypeWriterMode: true
+  "atom-ternjs":
+    useSnippets: true
   "autocomplete-plus":
     confirmCompletion: "enter"
     useCoreMovementCommands: false
