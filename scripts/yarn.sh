@@ -5,6 +5,7 @@ yarn global add \
   'depcheck' \
   'empty-trash-cli' \
   'generator-odin-scss' \
+  'localtunnel' \
   'lighthouse' \
   'moneda-cli' \
   'npm' \
