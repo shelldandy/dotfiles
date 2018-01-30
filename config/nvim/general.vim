@@ -47,6 +47,7 @@ set wildmenu                          " enable wildmenu
 set wildmode=longest:full,full        " configure wildmenu
 set lazyredraw                        " don't draw everything
 highlight Comment cterm=italic
+set colorcolumn=100                   " show a column at 100 chars
 
 " Search Mode
 set incsearch                         " Find the next match as we type the search
@@ -76,6 +77,7 @@ set foldnestmax=4                     " But just fold up to 4 levels
 
 " text appearance
 set list                              " show invisible characters
+set synmaxcol=200                     " stop syntax highlighting after 200 columns
 set listchars=tab:>·,trail:·          " but only show useful chaaracters
 set nowrap                            " disable line wrapping
 
@@ -96,6 +98,11 @@ set ttyfast                           " indicates a fast terminal connection
 set undodir=~/.config/nvim/undodir    " set undofile location
 set undofile                          " maintain undo history between sessions
 set undolevels=1000                   " store 1000 undos
+
+" character encoding
+if !&readonly && &modifiable
+  set fileencoding=utf-8              " the encoding written to file
+endif
 
 " =================================================================================================
 " Autocommands
@@ -121,3 +128,18 @@ augroup omnifuncs
   autocmd FileType html,markdown,liquid setlocal omnifunc=htmlcomplete#CompleteTags
   autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS noci
 augroup end
+
+" ==================================================================================================
+" Searching
+" ==================================================================================================
+
+if executable('ag')
+  " use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " define Ag command
+  command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+
+  " bind \ to grep shortcut
+  nnoremap \ :Ag<SPACE>
+endif
