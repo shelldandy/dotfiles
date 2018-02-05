@@ -21,6 +21,7 @@ abbr gpt git push --tags
 abbr gP git pull
 abbr gr git rebase
 abbr gl git lg
+abbr gd git diff
 abbr ll ls -lah
 
 # git add remote

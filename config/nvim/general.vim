@@ -47,7 +47,7 @@ set wildmenu                          " enable wildmenu
 set wildmode=longest:full,full        " configure wildmenu
 set lazyredraw                        " don't draw everything
 highlight Comment cterm=italic
-set colorcolumn=100                   " show a column at 100 chars
+" set colorcolumn=100                   " show a column at 100 chars
 
 " Search Mode
 set incsearch                         " Find the next match as we type the search
