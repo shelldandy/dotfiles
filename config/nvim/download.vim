@@ -39,6 +39,7 @@ Plug 'carlitux/deoplete-ternjs', {
   \   'for': ['Javascript', 'javascript.jsx']
   \   }
 Plug 'heavenshell/vim-jsdoc'                                        " JSDocs on Demand
+Plug 'rhysd/vim-fixjson'                                            " Autofix json
 
 " General/Movement
 Plug 'ervandew/supertab'                                            " Tab autocomplete

@@ -3,6 +3,7 @@
 # install global npm packages
 yarn global add \
   'depcheck' \
+  'fixjson' \
   'empty-trash-cli' \
   'generator-odin-scss' \
   'localtunnel' \
