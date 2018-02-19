@@ -9,6 +9,8 @@ set -x EDITOR nvim
 set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications'
 set -x TERM xterm-256color-italic
 
+set -x RANGER_LOAD_DEFAULT_RC FALSE
+
 set ANDROID_HOME $HOME/Library/Android/sdk
 test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
 test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH
