@@ -20,6 +20,10 @@ set hilite (which src-hilite-lesspipe.sh)
 set -x LESSOPEN "| $hilite %s"
 set -x LESS " -R -X -F "
 
+# Fuck!
+# https://github.com/nvbn/thefuck
+thefuck --alias | source
+
 # Fishy Fixes for the prompt with default theme
 set fish_pager_color_progress cyan
 function fish_right_prompt
