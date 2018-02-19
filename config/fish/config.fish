@@ -9,13 +9,6 @@ set -x EDITOR nvim
 set -x HOMEBREW_CASK_OPTS '--appdir=~/Applications'
 set -x TERM xterm-256color-italic
 
-# Tiny Care Terminal
-set -gx TTC_BOTS 'tinycarebot,selfcare_bot,magicrealismbot'
-set -gx TTC_REPOS '~/git'
-set -gx TTC_WEATHER 'Puebla'
-set -gx TTC_APIKEYS false
-set -gx TTC_UPDATE_INTERVAL 20
-
 set ANDROID_HOME $HOME/Library/Android/sdk
 test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
 test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH

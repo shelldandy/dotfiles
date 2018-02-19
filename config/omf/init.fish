@@ -24,6 +24,8 @@ abbr gl git lg
 abbr gd git diff
 abbr ll exa -lah
 
+abbr r ranger
+
 # git add remote
 # for pushing to 2 remotes at once
 # https://stackoverflow.com/questions/14290113/git-pushing-code-to-two-remotes#14290145
