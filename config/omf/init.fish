@@ -22,8 +22,7 @@ abbr gP git pull
 abbr gr git rebase
 abbr gl git lg
 abbr gd git diff
-abbr ll ls -lah
-abbr lc colorls -lA --sd
+abbr ll exa -lah
 
 # git add remote
 # for pushing to 2 remotes at once
