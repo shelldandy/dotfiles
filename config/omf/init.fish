@@ -23,6 +23,7 @@ abbr gr git rebase
 abbr gl git lg
 abbr gd git diff
 abbr ll ls -lah
+abbr lc colorls -lA --sd
 
 # git add remote
 # for pushing to 2 remotes at once
