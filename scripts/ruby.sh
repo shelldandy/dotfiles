@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # install neovim provider
-gem install 'ggl'
-gem install 'rouge'
-gem install 'neovim'
-gem install 'lolcat'
-gem install 'tmuxinator'
-gem install 'jekyll'
 gem install 'bundler'
+gem install 'colorls'
 gem install 'github-markdown-preview'
+gem install 'jekyll'
+gem install 'lolcat'
+gem install 'neovim'
+gem install 'rouge'
+gem install 'tmuxinator'
