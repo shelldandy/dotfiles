@@ -14,6 +14,7 @@ yarn global add \
   'pxl-cli' \
   'release' \
   'serve' \
+  'svg-term-cli' \
   'tern' \
   'trash-cli' \
   'yo' \
