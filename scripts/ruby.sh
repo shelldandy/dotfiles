@@ -2,7 +2,6 @@
 
 # install neovim provider
 gem install 'bundler'
-gem install 'github-markdown-preview'
 gem install 'jekyll'
 gem install 'lolcat'
 gem install 'neovim'

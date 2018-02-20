@@ -27,7 +27,7 @@ brew install 'ffmpeg'
 brew install 'fortune'
 brew install 'git'
 brew install 'git-flow'
-brew install 'grip'
+brew install 'grip'       # Github Readme Instant Preview
 brew install 'go'
 brew install 'imgcat'
 brew install 'jp2a'
