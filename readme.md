@@ -1,8 +1,8 @@
 # Mike3run's Dotfiles :computer:
 
-**Note**: Currently starting to move towards Atom and deprecating Vim/Neovim
+![Ranger and Tmux Glory](images/tour.svg)
 
-![Now with themes!](images/terminals.gif)
+SVG created with [asciinema](https://asciinema.org) and [SVG-Term](https://github.com/marionebl/svg-term-cli)
 
 ![My current terminal setup](images/neofetch.png)
 
@@ -11,6 +11,8 @@ My current terminal setup
 ![An example tmux session with ssh](images/tmux.png)
 
 An example tmux session with ssh
+
+Check more images in the images folder :nail_care:
 
 ## Works best with...
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
@@ -67,6 +69,3 @@ $ rcup -d dotfiles -v
 - Remember to pull from time to time and in neovim run `:PlugUpdate`
 
 💕💕💕
-
-## Newer version
-Working now to implement Atom with full Vim Glory
