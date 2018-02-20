@@ -80,5 +80,9 @@ Plug 'metakirby5/codi.vim'
 
 Plug 'mattn/emmet-vim'
 
+" Vim Ranger
+Plug 'rbgrouleff/bclose.vim'
+Plug 'francoiscabrol/ranger.vim'
+
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 call plug#end()

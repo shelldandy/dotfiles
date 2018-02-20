@@ -145,5 +145,10 @@ if has_key(g:plugs, 'emmet-vim')
   :imap ,em <C-Y>,
 endif
 
+if has_key(g:plugs, 'ranger.vim')
+  let g:ranger_map_keys = 0
+  map <leader>P :Ranger<CR>
+endif
+
 " Autocomplete Paths
 imap ,p <plug>(fzf-complete-file-ag)
