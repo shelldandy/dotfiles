@@ -25,6 +25,7 @@ abbr gd git diff
 abbr ll exa -lah
 
 abbr r ranger
+abbr f fuck
 
 # git add remote
 # for pushing to 2 remotes at once
