@@ -23,6 +23,7 @@ abbr gr git rebase
 abbr gl git lg
 abbr gd git diff
 abbr ll exa -lah
+abbr x exit
 
 abbr r ranger
 abbr f fuck
