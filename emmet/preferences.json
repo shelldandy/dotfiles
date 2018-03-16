@@ -1,4 +1,5 @@
 {
   "css.floatUnit": "px",
-  "css.autoInsertVendorPrefixes": false
+  "css.autoInsertVendorPrefixes": false,
+  "css.unitlessProperties": "font-weight, z-index, opacity"
 }
