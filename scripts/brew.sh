@@ -31,6 +31,7 @@ brew install 'git-flow'
 brew install 'glances'    # A cooler top (to see which app is using resources)
 brew install 'grip'       # Github Readme Instant Preview
 brew install 'go'
+brew install 'highlight'
 brew install 'imgcat'
 brew install 'jp2a'
 brew install 'koekeishiya/formulae/kwm'
