@@ -2,7 +2,6 @@
 [user]
   name = "Miguel Palau Zarza"
   email = "mpalauzarza@gmail.com"
-  signinkey = "8989005E5E3F386E"
 [core]
   excludesfile = ~/.gitignore_global
   editor = nvim
