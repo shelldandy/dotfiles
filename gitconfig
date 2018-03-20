@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
-  name = Miguel Palau
-  email = mpalauzarza@gmail.com
-  signinkey = 8989005E5E3F386E
+  name = "Miguel Palau Zarza"
+  email = "mpalauzarza@gmail.com"
+  signinkey = "8989005E5E3F386E"
 [core]
   excludesfile = ~/.gitignore_global
   editor = nvim
@@ -20,3 +20,5 @@
 
 [merge]
   ff = false
+[commit]
+  gpgsign = true
