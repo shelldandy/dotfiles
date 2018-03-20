@@ -1,5 +1,13 @@
 #!/bin/bash
 
+########  ########  ######## ##      ##
+##     ## ##     ## ##       ##  ##  ##
+##     ## ##     ## ##       ##  ##  ##
+########  ########  ######   ##  ##  ##
+##     ## ##   ##   ##       ##  ##  ##
+##     ## ##    ##  ##       ##  ##  ##
+########  ##     ## ########  ###  ###
+
 # Install RVM
 curl -sSL https://get.rvm.io | bash -s stable --ruby
 
@@ -7,58 +15,67 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Taps
-brew tap neovim/neovim
-brew tap thoughtbot/formulae
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap eddieantonio/eddieantonio
+brew tap 'neovim/neovim'
+brew tap 'thoughtbot/formulae'
+brew tap 'caskroom/cask'
+brew tap 'caskroom/versions'
+brew tap 'eddieantonio/eddieantonio'
 
 # Installs
-brew install 'automake'
-brew install 'asciinema'
-brew install 'calc'
-brew install 'cmake'
-brew install 'cmatrix'
-brew install 'coreutils'
-brew install 'cowsay'
-brew install 'ctags'
-brew install 'editorconfig'
-brew install 'exa'
-brew install 'ffmpeg'
-brew install 'fortune'
-brew install 'git'
-brew install 'git-flow'
-brew install 'glances'    # A cooler top (to see which app is using resources)
-brew install 'grip'       # Github Readme Instant Preview
-brew install 'go'
-brew install 'highlight'
-brew install 'imgcat'
-brew install 'jp2a'
-brew install 'koekeishiya/formulae/kwm'
-brew install 'libksba'
-brew install 'lua'
-brew install 'less'
-brew install 'mas'
+brew install 'ack'                        # A faster grep
+brew install 'asciinema'                  # Record videos of the terminal
+brew install 'atool'                      # ranger dep for zip
+brew install 'automake'                   # Make but Mac lol
+brew install 'calc'                       # Simple calculator
+brew install 'cmake'                      # More make tools
+brew install 'cmatrix'                    # There is no spoon!
+brew install 'coreutils'                  # The basics from GNU
+brew install 'cowsay'                     # Moo!
+brew install 'ctags'                      # For use in Vim, search by tags, etc
+brew install 'editorconfig'               # Standarize Editor Configs
+brew install 'exa'                        # Fancy ls with colors
+brew install 'exiftool'                   # Learn about what you place online
+brew install 'ffmpeg'                     # Tool used for video conversion
+brew install 'figlet'                     # Use it to write cool banners
+brew install 'fortune'                    # What does the future hold??
+brew install 'fzf'                        # Fuzzy finder
+brew install 'git'                        # Cooler newer fresher git
+brew install 'git-flow'                   # Feature branch development
+brew install 'glances'                    # A cooler top (to see which app is using resources)
+brew install 'gnupg'                      # gpg for secure life
+brew install 'go'                         # gogogogogo
+brew install 'grip'                       # Github Readme Instant Preview
+brew install 'highlight'                  # Highlight text (used in fzf-vim preview)
+brew install 'htop'                       # top and nano finally together
+brew install 'imagemagick'                # Convert images like a boss
+brew install 'imgcat'                     # images in the terminal lol
+brew install 'jp2a'                       # jpg2ascii (make signatures lol)
+brew install 'jq'                         # parser for json https://stedolan.github.io/jq/
+brew install 'less'                       # less is more
+brew install 'libcaca'                    # jp2 but with colors lol
+brew install 'libyaml'                    # yaml parser
+brew install 'mas'                        # Mac App Store
 brew install 'mongodb'
 brew install 'mysql'
-brew install 'neofetch'
-brew install 'neovim/neovim/neovim'
+brew install 'neovim'
+brew install 'openssl@1.1'                # used for self-signed certificates
 brew install 'perl'
-brew install 'python'
-brew install 'python3'
-brew install 'reattach-to-user-namespace'
-brew install 'ranger'
-brew install 'rcm'
-brew install 'source-highlight'
-brew install 'thefuck'
-brew install 'the_silver_searcher'
-brew install 'thoughtbot/formulae/rcm'
+brew install 'pinentry-mac'               # Nicer gpg password entry situation
+brew install 'ranger'                     # Like vim but for the finder
+brew install 'rcm'                        # dotfile management tools
+brew install 'reattach-to-user-namespace' # make clipboard on tmux great again
+brew install 'rust'
+brew install 'source-highlight'           # to give less highlight powers
+brew install 'the_silver_searcher'        # ag (used in fzf-vim)
+brew install 'thefuck'                    # for when you fuck up
 brew install 'tmux'
-brew install 'trash'
-brew install 'tree'
-brew install 'watchman'
-brew install 'youtube-dl'
-brew install 'yarn' --without-node
+brew install 'trash'                      # Send to the trash via cli
+brew install 'tree'                       # See file structure
+brew install 'utf8proc'                   # Unicode normalization
+brew install 'w3m'                        # ranger dep for images
+brew install 'watchman'                   # Watches files triggers actions
+brew install 'yarn' --without-node        # faster npm
+brew install 'youtube-dl'                 # Download stuff from the online
 
 # Casks
 brew cask install 'android-studio'
