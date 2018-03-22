@@ -1,5 +1,5 @@
 // Theme pimping situation
-const CURRENT_THEME = 'oceanic-next'
+const CURRENT_THEME = 'gruvbox'
 let themeName
 
 switch (CURRENT_THEME) {
@@ -9,7 +9,12 @@ switch (CURRENT_THEME) {
   case 'oceanic-next':
     themeName = 'hyperterm-oceanic-next'
     break
-  default: themeName = ''
+  case 'gruvbox':
+    themeName = 'hyperterm-gruvbox-dark'
+    break
+  default:
+    themeName = ''
+    break
 }
 
 module.exports = {
@@ -19,12 +24,13 @@ module.exports = {
     cursorColor: 'rgba(255,255,255,0.5)',
     cursorShape: 'BLOCK',
     cursorBlink: false,
-    foregroundColor: '#fff',
-    backgroundColor: '#1d313b',
     vibrancy: '',
-    borderColor: '#333',
     css: ``,
-    termCSS: ``,
+    termCSS: `
+      x-screen x-row {
+        line-height: initial;
+      }
+    `,
     padding: '12px 14px',
     colors: {},
     shell: '',
@@ -37,7 +43,7 @@ module.exports = {
     workingDirectory: '~/git',
     visor: {
       hotkey: 'CommandOrControl+Space'
-    }
+    },
   },
 
   plugins: [
@@ -49,7 +55,8 @@ module.exports = {
     'hyper-hide-title',
     'hyperterm-cursor',
     'hyper-statusline',
-    'hyperterm-safepaste'
+    'hyperterm-safepaste',
+    // 'hyperborder',
   ],
   localPlugins: []
 }
