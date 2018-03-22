@@ -26,11 +26,7 @@ module.exports = {
     cursorBlink: false,
     vibrancy: '',
     css: ``,
-    termCSS: `
-      x-screen x-row {
-        line-height: initial;
-      }
-    `,
+    termCSS: ``,
     padding: '12px 14px',
     colors: {},
     shell: '',
@@ -50,7 +46,7 @@ module.exports = {
     themeName,
     'hyperterm-working-directory',
     'hyperterm-visor',
-    // 'hyper-nobold',
+    'hyper-nobold',
     'hyperterm-alternatescroll',
     'hyper-hide-title',
     'hyperterm-cursor',
