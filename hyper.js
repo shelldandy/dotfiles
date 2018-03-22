@@ -50,13 +50,12 @@ module.exports = {
     themeName,
     'hyperterm-working-directory',
     'hyperterm-visor',
-    'hyper-nobold',
+    // 'hyper-nobold',
     'hyperterm-alternatescroll',
     'hyper-hide-title',
     'hyperterm-cursor',
     'hyper-statusline',
     'hyperterm-safepaste',
-    // 'hyperborder',
   ],
   localPlugins: []
 }
