@@ -144,7 +144,7 @@ endfunc
 if has_key(g:plugs, 'emmet-vim')
   let g:user_emmet_leader_key='<C-M>'
   nnoremap <Leader>em :call emmet#expandAbbr(0, "")<CR>
-  :imap ,m <C-M>,
+  :imap ,e <C-M>,
 endif
 
 if has_key(g:plugs, 'ranger.vim')
