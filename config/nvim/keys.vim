@@ -41,8 +41,10 @@ nnoremap <Leader>wx :close<CR>
 " window reordering
 nnoremap <Leader>wr <C-W><C-R>
 
-" NerdTree
+" Quickly wrap or unwrap text
+nnoremap <Leader>W :set wrap!<CR>
 
+" NerdTree
 if has_key(g:plugs, 'nerdtree')
   nnoremap <Leader>n :NERDTreeToggle<CR>
   nnoremap <Leader>N :NERDTreeFind<CR>
