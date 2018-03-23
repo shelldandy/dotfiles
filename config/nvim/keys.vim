@@ -142,9 +142,9 @@ function! <SID>SynStack()
 endfunc
 
 if has_key(g:plugs, 'emmet-vim')
-  let g:user_emmet_leader_key='<C-Y>'
+  let g:user_emmet_leader_key='<C-M>'
   nnoremap <Leader>em :call emmet#expandAbbr(0, "")<CR>
-  :imap ,em <C-Y>,
+  :imap ,m <C-M>,
 endif
 
 if has_key(g:plugs, 'ranger.vim')
