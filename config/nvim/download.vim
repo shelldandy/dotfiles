@@ -48,6 +48,7 @@ Plug 'scrooloose/nerdtree'                                          " NerdTree
 Plug 'jiangmiao/auto-pairs'                                         " Auto close brackets smartly
 Plug 'airblade/vim-gitgutter'                                       " Git Situation on my Lines like Atom
 Plug 'tpope/vim-fugitive'                                           " Vim Fugitive Awesome git shortcuts on vim
+Plug 'gregsexton/gitv', {'on': ['Gitv']}                            " Vim Fugitive Git Log Extension
 Plug 'tpope/vim-unimpaired'                                         " Quickly move around buffers etc
 Plug 'brooth/far.vim'                                               " Search and replace
 Plug 'valloric/matchtagalways'
