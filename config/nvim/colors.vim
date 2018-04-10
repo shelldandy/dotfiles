@@ -129,6 +129,7 @@ if $THEME_COLORS == 'vim-one'
   if has_key(g:plugs, 'vim-one')
     colorscheme one
     set background=dark
+    let g:one_allow_italics = 1
   endif
 
   if has_key(g:plugs, 'vim-airline')
