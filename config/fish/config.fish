@@ -3,6 +3,7 @@ source ~/.themes/gruvbox-dark.sh
 # source ~/.themes/oceanic-next.sh
 # source ~/.themes/gotham.sh
 # source ~/.themes/onehalf.sh
+# source ~/.themes/vim-one.sh
 
 # Exports
 set -x EDITOR nvim

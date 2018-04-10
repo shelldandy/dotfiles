@@ -115,7 +115,6 @@ if $THEME_COLORS == 'gotham'
   endif
 endif
 
-
 if $THEME_COLORS == 'onehalf-dark'
   if has_key(g:plugs, 'onehalf')
     colorscheme onehalfdark
@@ -123,5 +122,16 @@ if $THEME_COLORS == 'onehalf-dark'
 
   if has_key(g:plugs, 'vim-airline')
     let g:airline_theme='onehalfdark'
+  endif
+endif
+
+if $THEME_COLORS == 'vim-one'
+  if has_key(g:plugs, 'vim-one')
+    colorscheme one
+    set background=dark
+  endif
+
+  if has_key(g:plugs, 'vim-airline')
+    let g:airline_theme='one'
   endif
 endif

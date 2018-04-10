@@ -8,6 +8,7 @@ Plug 'mhartington/oceanic-next'                                     " Oceanic Ne
 Plug 'morhetz/gruvbox'                                              " Gruvbox
 Plug 'whatyouhide/vim-gotham'
 Plug 'sonph/onehalf', { 'rtp': 'vim/' }
+Plug 'rakr/vim-one'
 
 " Syntax Highlights
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
