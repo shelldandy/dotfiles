@@ -43,7 +43,7 @@ abbr nvu nvim -c 'PlugUpdate' -c 'qa'
 abbr t tmuxinator
 
 # Repeated paths
-abbr df cd ~/git/dotfiles
+abbr df cd ~/.dotfiles
 abbr gf cd ~/git
 
 # Utilities
@@ -128,4 +128,8 @@ end
 # https://github.com/creationix/nvm#install-script
 function nvm-update
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+end
+
+function cleanup
+  find . -type f -name '*.DS_Store' -ls -delete
 end
