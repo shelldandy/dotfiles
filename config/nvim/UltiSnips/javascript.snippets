@@ -19,24 +19,19 @@ endsnippet
 snippet reactstateless "A basic stateless placeholder" b
 import React from 'react'
 
-export default () => (
-$0
-)
+const ${1:MyComponent} = () =>
+${2:<h1>Hello World</h1}
+
+export default $1
 endsnippet
 
 snippet react "Stateful react snippet" b
 import React, { Component } from 'react'
-import autobind from 'class-autobind'
 
 class ${1:MyComponent} extends Component {
-  constructor () {
-    super(...arguments)
-    autobind(this)
-  }
-
   render () {
     return (
-      $2
+      ${2:<h1>Hello</h1>}
     )
   }
 }
