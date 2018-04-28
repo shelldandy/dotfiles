@@ -140,9 +140,11 @@ function shadow
     case disable
       defaults write com.apple.screencapture disable-shadow -bool TRUE
       killall SystemUIServer
+      echo '😵 Shadows have been disabled for screenshots'
     case enable
       defaults write com.apple.screencapture disable-shadow -bool FALSE
       killall SystemUIServer
+      echo '👻 Shadows have been enabled for screenshots'
     case '*'
       echo 'Provide argument enable or disable'
   end
