@@ -133,3 +133,17 @@ end
 function cleanup
   find . -type f -name '*.DS_Store' -ls -delete
 end
+
+# Enable/disable Shadow on screenshots
+function shadow
+  switch (echo $argv)
+    case disable
+      defaults write com.apple.screencapture disable-shadow -bool TRUE
+      killall SystemUIServer
+    case enable
+      defaults write com.apple.screencapture disable-shadow -bool FALSE
+      killall SystemUIServer
+    case '*'
+      echo 'Provide argument enable or disable'
+  end
+end
