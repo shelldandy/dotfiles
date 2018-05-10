@@ -12,6 +12,8 @@
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'L': 'vim-mode-plus:move-to-last-character-of-line'
   'H': 'vim-mode-plus:move-to-beginning-of-line'
+  'Z Z': 'vim-mode-zz:saveAndClose'
+  'Z Q': 'vim-mode-zz:close'
   # Disable arrow keys
   'up': 'unset!'
   'down': 'unset!'

@@ -39,6 +39,7 @@ apm install 'relative-numbers'
 apm install 'standard-formatter'
 apm install 'termination'
 apm install 'vim-mode-plus'
+apm install 'vim-mode-zz'
 apm install 'vim-mode-plus-keymaps-for-surround'
 apm install 'warn-before-quitting'
 
