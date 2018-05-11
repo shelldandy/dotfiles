@@ -34,6 +34,10 @@ Plug 'ternjs/tern_for_vim', {
   \   'do': 'npm install --no-package-lock',
   \   'for': ['Javascript', 'javascript.jsx']
   \   }
+" Wanna be autocomplete-paths
+Plug 'Galooshi/vim-import-js', {
+  \   'do': 'yarn global add import-js'
+  \   }
 Plug 'othree/jspc.vim'
 Plug 'carlitux/deoplete-ternjs', {
   \   'do': 'yarn global add tern',
