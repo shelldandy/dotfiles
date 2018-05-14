@@ -149,3 +149,18 @@ function shadow
       echo 'Provide argument enable or disable'
   end
 end
+
+function focus
+  open focus://focus
+  switch (echo $argv)
+    case enable
+      open focus://focus
+      echo '🧐  You have focused...'
+    case disable
+      open focus://unfocus
+      echo '🐔 You have unfocused...'
+    case '*'
+      open focus://toggle
+      echo '🚀 Toggled focus...'
+  end
+end
