@@ -16,8 +16,8 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ap/vim-css-color'
-Plug 'mike3run/kwm.vim'
-Plug 'mike3run/shopify.vim'
+Plug 'shelldandy/kwm.vim'
+Plug 'shelldandy/shopify.vim'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
