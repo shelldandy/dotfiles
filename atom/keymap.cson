@@ -6,7 +6,7 @@
 
 # Expand Emmet
 'atom-text-editor:not([mini])':
-  ', e m': 'emmet:expand-abbreviation'
+  ', e': 'emmet:expand-abbreviation'
 
 # Movement
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
@@ -29,6 +29,7 @@
   'Q': 'atom-keyboard-macros:call_last_kbd_macro'
   # Lazy motion search
   '/': 'lazy-motion:forward'
+  ', j s': 'linter-eslint:fix-file'
 
 'atom-text-editor':
   'ctrl-k': 'unset!'
