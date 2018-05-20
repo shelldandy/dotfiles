@@ -52,19 +52,6 @@ if has_key(g:plugs, 'tern_for_vim')
   nnoremap <Leader>tb :TernDocBrowse<CR>
 endif
 
-if has_key(g:plugs, 'ale')
-  let g:ale_linters = {}
-  let g:ale_linters['javascript'] = ['eslint']
-  let g:ale_linters['jsx'] = ['eslint']
-  let g:ale_linters['scss'] = ['stylelint']
-  let g:ale_linters['html'] = ['htmlhint']
-
-  let g:ale_fixers = {}
-  let g:ale_fixers['javascript'] = ['eslint']
-  let g:ale_fixers['jsx'] = ['eslint']
-  let g:ale_fixers['scss'] = ['stylelint']
-endif
-
 if has_key(g:plugs, 'supertab')
   autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
   autocmd FileType javascript.jsx let g:SuperTabDefaultCompletionType = "<c-x><c-o>"

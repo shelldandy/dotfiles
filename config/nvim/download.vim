@@ -19,6 +19,7 @@ Plug 'ap/vim-css-color'
 Plug 'shelldandy/kwm.vim'
 Plug 'shelldandy/shopify.vim'
 Plug 'ianks/vim-tsx'                                                " Typescript
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'Quramy/vim-js-pretty-template'
 
@@ -27,7 +28,7 @@ Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'fszymanski/deoplete-emoji'
 Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
-Plug 'Quramy/tsuquyomi', { 'do': 'yarn global add typescript' }
+Plug 'mhartington/nvim-typescript'
 
 " Javascript
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
