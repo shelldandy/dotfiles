@@ -9,6 +9,7 @@ yarn global add \
   'localtunnel' \
   'lighthouse' \
   'moneda-cli' \
+  'neovim' \
   'npm' \
   'npm-check-updates' \
   'pxl-cli' \
