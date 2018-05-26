@@ -1,0 +1,28 @@
+#!/bin/bash
+
+file=".tmuxinator.yml"
+if [ -e "$file" ]; then
+echo We already have a tmuxinator file...
+exit 0
+
+else
+echo This is a super minimal tmux file setup...
+
+echo Let\'s get it!
+
+read -p "Project name? " name
+
+name=${name:-awesome}
+
+read -p "Main command (yarn code) " comm
+
+comm=${comm:-yarn\ code}
+
+#define the template.
+cat  << EOF > .tmuxinator.yml
+name: $name
+windows:
+  - editor: eval \$EDITOR
+  - main: $comm
+EOF
+fi

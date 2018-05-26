@@ -3,9 +3,11 @@
 # install global npm packages
 yarn global add \
   'depcheck' \
-  'fixjson' \
   'empty-trash-cli' \
+  'fixjson' \
+  'gatsby-cli' \
   'generator-odin-scss' \
+  'lerna' \
   'localtunnel' \
   'lighthouse' \
   'moneda-cli' \
