@@ -15,6 +15,8 @@ set ANDROID_HOME $HOME/Library/Android/sdk
 test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
 test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH
 
+test -d $HOME/.bin ; and set PATH $HOME/.bin $PATH
+
 # Making syntax highlight work with Fish
 set hilite (which src-hilite-lesspipe.sh)
 set -x LESSOPEN "| $hilite %s"
