@@ -12,7 +12,7 @@ snippet scf "Self executing normal function" b
 })()
 endsnippet
 
-snippet log "console log the things" b
+snippet log "console log the things" w
 console.log($0)
 endsnippet
 
@@ -90,5 +90,11 @@ endsnippet
 snippet eo "export object"
 export {
   $1
+}
+endsnippet
+
+snippet mq "media query" w
+@media(${1:min}-width: ${2:720}px) {
+  $0
 }
 endsnippet
