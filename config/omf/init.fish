@@ -164,3 +164,7 @@ function focus
       echo '🚀 Toggled focus...'
   end
 end
+
+function simulator
+  oa Simulator
+end
