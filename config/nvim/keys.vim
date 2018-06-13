@@ -155,3 +155,13 @@ endif
 " Autocomplete Paths
 imap ,p <plug>(fzf-complete-file-ag)
 imap <c-x><c-f> <plug>(fzf-complete-path)
+
+function TabToggle()
+  if &expandtab
+    set noexpandtab
+  else
+    set expandtab
+  endif
+endfunction
+
+nnoremap <Leader><Tab> :call TabToggle()<CR>
