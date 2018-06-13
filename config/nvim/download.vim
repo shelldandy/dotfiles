@@ -81,6 +81,7 @@ Plug 'reedes/vim-pencil'                                            " Pencil / W
 Plug 'vim-scripts/BufOnly.vim'                                      " Clear buffers
 Plug 'vim-scripts/loremipsum'                                       " Lorem Ipsum Generator
 Plug 'rizzatti/dash.vim'                                            " Dash Documentation
+Plug 'krisajenkins/vim-projectlocal'                                " Per Project Vim Files
 Plug 'editorconfig/editorconfig-vim', {
  \    'do': 'brew install editorconfig'
  \    }
