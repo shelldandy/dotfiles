@@ -45,4 +45,7 @@ if has_key(g:plugs, 'vim-nerdtree-syntax-highlight')
   let g:NERDTreeExtensionHighlightColor['gif'] = s:blue
   let g:NERDTreeExtensionHighlightColor['jpg'] = s:blue
   let g:NERDTreeExtensionHighlightColor['liquid'] = s:blue
+
+  " Show hidden files
+  let NERDTreeShowHidden=1
 endif
