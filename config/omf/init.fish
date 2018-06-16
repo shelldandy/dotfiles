@@ -91,7 +91,8 @@ end
 
 # PMosh open man pages in pdf format
 function pmosh
-  man -t $argv | open -f -a /Applications/Preview.app
+  man -t $argv | ps2pdf - /tmp/$argv.pdf
+  open /tmp/$argv.pdf
 end
 
 # gif2mp4

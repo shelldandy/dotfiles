@@ -44,6 +44,7 @@ brew install 'git-flow'                   # Feature branch development
 brew install 'glances'                    # A cooler top (to see which app is using resources)
 brew install 'gnupg'                      # gpg for secure life
 brew install 'go'                         # gogogogogo
+brew install 'gs'                         # GhostScript for PDF tooling
 brew install 'grip'                       # Github Readme Instant Preview
 brew install 'highlight'                  # Highlight text (used in fzf-vim preview)
 brew install 'htop'                       # top and nano finally together
@@ -55,8 +56,6 @@ brew install 'less'                       # less is more
 brew install 'libcaca'                    # jp2 but with colors lol
 brew install 'libyaml'                    # yaml parser
 brew install 'mas'                        # Mac App Store
-brew install 'mongodb'
-brew install 'mysql'
 brew install 'neovim'
 brew install 'openssl@1.1'                # used for self-signed certificates
 brew install 'perl'
