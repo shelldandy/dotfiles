@@ -87,10 +87,16 @@ nnoremap <Leader>bn :bnext<CR>
 nnoremap <Leader>bp :bprevious<CR>
 
 " Git Controls Flow
-nnoremap <Leader>gaa :! git add .<CR>
-nnoremap <Leader>gc :Gcommit<CR>
-nnoremap <Leader>gp :Gpush<CR>
-nnoremap <Leader>gs :Gstatus<CR>
+if has_key(g:plugs, 'vim-fugitive')
+  nnoremap <Leader>gaa :! git add .<CR>
+  nnoremap <Leader>gc :Gcommit<CR>
+  nnoremap <Leader>gp :Gpush<CR>
+  nnoremap <Leader>gs :Gstatus<CR>
+  nnoremap <Leader>gb :Gblame<CR>
+  nnoremap <Leader>gd :Gdiff<CR>
+  nnoremap <Leader>gvd :Gvdiff<CR>
+  nnoremap <Leader>gw :Gwrite<CR>
+endif
 
 " Dash docs
 nmap <Leader>fd :Dash<CR>
