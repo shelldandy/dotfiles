@@ -27,7 +27,7 @@ Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'fszymanski/deoplete-emoji'
 Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
-Plug 'mhartington/nvim-typescript'
+" Plug 'mhartington/nvim-typescript'
 
 " Javascript
 Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
