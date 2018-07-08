@@ -72,6 +72,23 @@ export const ${1:Component} = styled.${2:div}\`
 \`
 endsnippet
 
+snippet styled-test "Styled Component Test" b
+import React from 'react'
+import styled from 'styled-components'
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
+import { ${1:Component} } from '..'
+
+test('$1 works!', () => {
+  const Test = styled.div\`
+    \${$1}
+  \`
+  const tree = renderer.create(<Test />).toJSON()
+  expect(tree).toMatchSnapshot()
+  expect(tree).toHaveStyleRule('$2', '$3')
+})
+endsnippet
+
 snippet sc "Styled Component" b
 export const ${1:Component} = styled.${2:div}\`
   $0
