@@ -89,6 +89,10 @@ test('$1 works!', () => {
 })
 endsnippet
 
+snippet expect-style "Styled Component" w
+expect(tree).toHaveStyleRule('$1', '$2')
+endsnippet
+
 snippet sc "Styled Component" b
 export const ${1:Component} = styled.${2:div}\`
   $0
