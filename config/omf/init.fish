@@ -50,6 +50,7 @@ abbr gf cd ~/git
 function rst      ; exec fish ; end
 function v        ; nvim $argv ; end
 function g        ; git $argv ; end
+function dc       ; docker-compose $argv ; end
 function tmux     ; command tmux -2 $argv ; end
 function gs       ; git status ; end
 function gaa      ; git add . ; end
@@ -74,6 +75,7 @@ end
 
 make_completion g 'git'
 make_completion v 'nvim'
+make_completion dc 'docker-compose'
 
 # Fun
 function moo # Random cowsay

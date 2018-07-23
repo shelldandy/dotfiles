@@ -25,6 +25,7 @@
     disabledPackages: [
       "whitespace"
       "autosave"
+      "autoclose"
     ]
     packagesWithKeymapsDisabled: []
     projectHome: "~/git"
