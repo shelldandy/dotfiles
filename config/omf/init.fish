@@ -11,7 +11,6 @@ function ...      ; cd ../.. ; end
 function ....     ; cd ../../.. ; end
 function .....    ; cd ../../../.. ; end
 function ......   ; cd ../../../../.. ; end
-function ll       ; tree --dirsfirst -ChFupDaLg 1 $argv ; end
 function c        ; clear ; end
 
 # Abbreviations

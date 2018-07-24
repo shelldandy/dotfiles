@@ -13,7 +13,7 @@ export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
-# Homebre cask
+# Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
 
 if type nvim > /dev/null 2>&1; then
@@ -21,6 +21,8 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 alias v='nvim'
+alias dc='docker-compose'
+alias x='exit'
 
 alias tmux="env TERM=xterm-256color-italic tmux"
 export TERM=xterm-256color-italic
@@ -36,8 +38,6 @@ alias npmL='PATH="$(npm bin)":"$PATH"'
 alias npmD="npm i -D "
 # Install Quickly with --save
 alias npmS="npm i -S "
-# Quick ground-zero
-alias 0miedo="git clone git@github.com:mike3run/ground-zero.git; cd ground-zero"
 # Open apps quickly from the terminal
 alias oa="open -a "
 
@@ -56,6 +56,8 @@ alias gr='git rebase'
 
 # Quick clear
 alias c='clear'
+
+alias ll='exa -lah'
 
 # Get a random cow on login
 moo
