@@ -23,6 +23,8 @@ fi
 alias v='nvim'
 alias dc='docker-compose'
 alias x='exit'
+alias df='cd ~/dotfiles'
+alias gf='cd ~/git'
 
 alias tmux="env TERM=xterm-256color-italic tmux"
 export TERM=xterm-256color-italic
