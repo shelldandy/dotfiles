@@ -49,6 +49,9 @@ Plug 'carlitux/deoplete-ternjs', {
   \   }
 Plug 'heavenshell/vim-jsdoc'                                        " JSDocs on Demand
 Plug 'rhysd/vim-fixjson'                                            " Autofix json
+Plug 'yardnsm/vim-import-cost', {
+  \  'do': 'npm install'
+  \ }
 
 " General/Movement
 Plug 'ervandew/supertab'                                            " Tab autocomplete
