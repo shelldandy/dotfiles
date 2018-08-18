@@ -59,6 +59,7 @@ function rm       ; trash $argv ; end
 
 function ys       ; yarn add $argv ; end
 function yd       ; yarn add --dev $argv ; end
+function ydl      ; youtube-dl $argv ; end
 
 # Completions
 function make_completion --argument-names alias command
@@ -75,6 +76,7 @@ end
 make_completion g 'git'
 make_completion v 'nvim'
 make_completion dc 'docker-compose'
+make_completion ydl 'youtube-dl'
 
 # Fun
 function moo # Random cowsay
