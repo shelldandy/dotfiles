@@ -30,7 +30,10 @@ Plug 'othree/csscomplete.vim'
 " Plug 'mhartington/nvim-typescript'
 
 " Javascript
-Plug 'fleischie/vim-styled-components'                              " Vim Styled Components
+Plug 'styled-components/vim-styled-components'                      " Vim Styled Components
+Plug 'styled-components/vim-styled-components', {
+  \   'branch': 'main'
+  \   }
 " JS Tools
 Plug 'SirVer/ultisnips'                                             " Ultimate Snippets
 Plug 'honza/vim-snippets'
