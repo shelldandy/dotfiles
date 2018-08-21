@@ -122,3 +122,8 @@ endif
 if has_key(g:plugs, 'vim-markdown')
   let g:vim_markdown_folding_disabled = 1
 endif
+
+if has_key(g:plugs, 'vim-localvimrc')
+  " Don't ask me each time I load a lvimrc file
+  let g:localvimrc_ask = 0
+endif
