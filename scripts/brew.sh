@@ -32,6 +32,7 @@ brew install 'cmatrix'                    # There is no spoon!
 brew install 'coreutils'                  # The basics from GNU
 brew install 'cowsay'                     # Moo!
 brew install 'ctags'                      # For use in Vim, search by tags, etc
+brew install 'docker-compose'             # Coordinate docker stuff
 brew install 'editorconfig'               # Standarize Editor Configs
 brew install 'exa'                        # Fancy ls with colors
 brew install 'exiftool'                   # Learn about what you place online
@@ -80,9 +81,9 @@ brew install 'youtube-dl'                 # Download stuff from the online
 brew cask install 'android-studio'
 brew cask install 'atom'
 brew cask install 'boom-3d'
-brew cask install 'coda'
 brew cask install 'dash'
 brew cask install 'dashlane'
+brew cask install 'docker'
 brew cask install 'dropbox'
 brew cask install 'firefox'
 brew cask install 'flux'
@@ -97,8 +98,10 @@ brew cask install 'rocket'
 brew cask install 'sketch'
 brew cask install 'skype'
 brew cask install 'slack'
+brew cask install 'spotify'
 brew cask install 'subtitles'
 brew cask install 'telegram'
 brew cask install 'toggl'
 brew cask install 'ubar'
 brew cask install 'vanilla'
+brew cask install 'whatsapp'
