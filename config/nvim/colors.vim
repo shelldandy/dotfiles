@@ -80,6 +80,8 @@ if $THEME_COLORS == 'gruvbox-dark'
     let g:gruvbox_italic = 1
     colorscheme gruvbox
     set background=dark
+    " https://github.com/morhetz/gruvbox/issues/179
+    hi! link xmlTagN GruvboxBlue
   endif
 
   if has_key(g:plugs, 'vim-airline')
