@@ -18,6 +18,8 @@ abbr gc git commit
 abbr gp git push
 abbr gpt git push --tags
 abbr gP git pull
+abbr gb git branch
+abbr gco git checkout
 abbr gr git rebase
 abbr gl git lg
 abbr gd git diff
