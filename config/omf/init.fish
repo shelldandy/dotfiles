@@ -130,7 +130,7 @@ function nvm-update
 end
 
 function update
-  echo 'Updating homebrew stuf...' | cowsay | lolcat -t
+  echo 'Updating homebrew stuff...' | cowsay | lolcat -t
   brew update
   brew upgrade
   brew cleanup
@@ -141,7 +141,7 @@ function update
   cd ~/.config/yarn/global
   ncu -a
   yarn
-  echo 'Back to business lets get it!' | cowsay | lolcat -t
+  echo 'Back to business lets get it! #HUSTLE' | cowsay | lolcat -t
   cd $currentPath
 end
 
