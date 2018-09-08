@@ -119,9 +119,6 @@ noremap L $
 nnoremap <cr> o<esc>
 
 " reload vim config
-function HardReload()
-  mode
-endfunction
 com -nargs=0 HardReload call HardReload()
 nnoremap <Leader>r :silent! HardReload<CR>
 
@@ -140,12 +137,6 @@ if has_key(g:plugs, 'goyo.vim')
 endif
 
 nmap <leader>hi :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
 
 if has_key(g:plugs, 'emmet-vim')
   let g:user_emmet_leader_key='<C-M>'
@@ -161,13 +152,5 @@ endif
 " Autocomplete Paths
 imap ,p <plug>(fzf-complete-file-ag)
 imap <c-x><c-f> <plug>(fzf-complete-path)
-
-function TabToggle()
-  if &expandtab
-    set noexpandtab
-  else
-    set expandtab
-  endif
-endfunction
 
 nnoremap <Leader><Tab> :call TabToggle()<CR>
