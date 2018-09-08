@@ -144,7 +144,6 @@ if $THEME_COLORS == 'iawriter'
     colorscheme pencil
     set background=light
     " Neutral code background
-    let g:pencil_neutral_code_bg = 1
     let g:pencil_terminal_italics = 1
     let g:airline_theme = 'pencil'
   endif
