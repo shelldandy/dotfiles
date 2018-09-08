@@ -1,5 +1,6 @@
 # Colors
-source ~/.themes/gruvbox-dark.sh
+# source ~/.themes/gruvbox-dark.sh
+source ~/.themes/iawriter.sh
 # source ~/.themes/oceanic-next.sh
 # source ~/.themes/gotham.sh
 # source ~/.themes/onehalf.sh
