@@ -61,8 +61,7 @@ alias c='clear'
 
 alias ll='exa -lah'
 
-# Get a random cow on login
-moo
+alias x='exit'
 
 # Fuck autocorrect in zsh...
 unsetopt correct
