@@ -58,6 +58,7 @@ brew install 'libcaca'                    # jp2 but with colors lol
 brew install 'libyaml'                    # yaml parser
 brew install 'mas'                        # Mac App Store
 brew install 'neovim'
+brew install 'neofetch'
 brew install 'openssl@1.1'                # used for self-signed certificates
 brew install 'perl'
 brew install 'pinentry-mac'               # Nicer gpg password entry situation
