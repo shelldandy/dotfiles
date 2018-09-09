@@ -158,5 +158,5 @@ nnoremap <Leader>wm :call WriteMode()<CR>
 nnoremap <Leader>bt :call BackgroundToggle()<CR>
 
 " Focus mode (like iaWriter)
-nnoremap <Leader>ll Limelight!!<CR>
-nnoremap <Leader>fm Limelight!!<CR>
+nnoremap <Leader>ll :Limelight!!<CR>
+nnoremap <Leader>fm :Limelight!!<CR>
