@@ -1,10 +1,5 @@
 # Colors
-# source ~/.themes/gruvbox-dark.sh
-source ~/.themes/iawriter.sh
-# source ~/.themes/oceanic-next.sh
-# source ~/.themes/gotham.sh
-# source ~/.themes/onehalf.sh
-# source ~/.themes/vim-one.sh
+source ~/.themes/gruvbox-dark.sh
 
 # Exports
 set -x EDITOR nvim
