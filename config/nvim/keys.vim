@@ -152,6 +152,7 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 nnoremap <Leader><Tab> :call TabToggle()<CR>
 nnoremap <Leader>wm :call WriteMode()<CR>
 nnoremap <Leader>bt :call BackgroundToggle()<CR>
+nnoremap <Leader>pt :PencilToggle <CR>
 
 " Focus mode (like iaWriter)
 nnoremap <Leader>ll :Limelight!!<CR>
