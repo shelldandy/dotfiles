@@ -111,10 +111,6 @@ noremap <down> <C-w>5-
 vnoremap < <gv
 vnoremap > >gv
 
-" make moving to beginning and end of lines easier
-noremap H ^
-noremap L $
-
 " press enter for newline without insert
 nnoremap <cr> o<esc>
 
@@ -162,5 +158,9 @@ nnoremap <Leader>ll :Limelight!!<CR>
 nnoremap <Leader>fm :Limelight!!<CR>
 
 " Navigate between same lines
-nnoremap J gj
-nnoremap K gk
+nnoremap j gj
+nnoremap k gk
+
+" make moving to beginning and end of lines easier
+noremap H g^
+noremap L g$
