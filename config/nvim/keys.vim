@@ -160,3 +160,7 @@ nnoremap <Leader>bt :call BackgroundToggle()<CR>
 " Focus mode (like iaWriter)
 nnoremap <Leader>ll :Limelight!!<CR>
 nnoremap <Leader>fm :Limelight!!<CR>
+
+" Navigate between same lines
+nnoremap J gj
+nnoremap K gk
