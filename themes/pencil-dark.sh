@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Vim
-export THEME_COLORS="pencil"
+export THEME_COLORS="pencil-dark"
 
 export VIM_ALE_ERROR_FG="#fb4934"
 export VIM_ALE_ERROR_BG="#3c3836"

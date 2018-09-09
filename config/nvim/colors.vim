@@ -139,10 +139,20 @@ if $THEME_COLORS == 'vim-one'
   endif
 endif
 
-if $THEME_COLORS == 'iawriter'
+if $THEME_COLORS == 'pencil'
   if has_key(g:plugs, 'vim-colors-pencil')
     colorscheme pencil
     set background=light
+    " Neutral code background
+    let g:pencil_terminal_italics = 1
+    let g:airline_theme = 'pencil'
+  endif
+endif
+
+if $THEME_COLORS == 'pencil-dark'
+  if has_key(g:plugs, 'vim-colors-pencil')
+    colorscheme pencil
+    set background=dark
     " Neutral code background
     let g:pencil_terminal_italics = 1
     let g:airline_theme = 'pencil'
