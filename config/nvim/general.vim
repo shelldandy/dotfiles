@@ -107,6 +107,7 @@ endif
 " =================================================================================================
 " Autocommands
 " =================================================================================================
+
 augroup vimrcEx
   autocmd!
 
@@ -128,6 +129,9 @@ augroup omnifuncs
   autocmd FileType html,markdown,liquid setlocal omnifunc=htmlcomplete#CompleteTags
   autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS noci
 augroup end
+
+" Sometimes deoplete dies on my MBP
+" autocmd FileType vim call deoplete#custom#buffer_option('auto_complete', v:false)
 
 " ==================================================================================================
 " Searching

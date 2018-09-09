@@ -195,8 +195,8 @@ cpu_cores="logical"
 #       coretemp kernel module. This only supports newer Intel processors.
 #
 # Example:
-# C:   'Intel i7-6500U (4) @ 3.1GHz [27.2¡C]'
-# F:   'Intel i7-6500U (4) @ 3.1GHz [82.0¡F]'
+# C:   'Intel i7-6500U (4) @ 3.1GHz [27.2Â¡C]'
+# F:   'Intel i7-6500U (4) @ 3.1GHz [82.0Â¡F]'
 # off: 'Intel i7-6500U (4) @ 3.1GHz'
 cpu_temp="off"
 
@@ -594,7 +594,7 @@ disk_display="off"
 # Default:  'ascii'
 # Values:   'ascii', 'caca', 'catimg', 'jp2a', 'iterm2', 'off', 'termpix', 'pixterm', 'tycat', 'w3m'
 # Flag:     --backend
-image_backend="ascii"
+image_backend="iterm2"
 
 # Image Source
 #

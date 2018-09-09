@@ -154,3 +154,5 @@ imap ,p <plug>(fzf-complete-file-ag)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 
 nnoremap <Leader><Tab> :call TabToggle()<CR>
+nnoremap <Leader>wm :call WriteMode()<CR>
+nnoremap <Leader>bt :call BackgroundToggle()<CR>
