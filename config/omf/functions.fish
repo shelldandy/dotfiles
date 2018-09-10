@@ -153,3 +153,7 @@ end
 function leepaste
   pbpaste | leeme
 end
+
+function man
+  command man $argv | bat
+end
