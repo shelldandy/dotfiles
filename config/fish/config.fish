@@ -6,6 +6,10 @@ set -x EDITOR nvim
 set -x HOMEBREW_CASK_OPTS '--appdir=/Applications'
 set -x TERM xterm-256color-italic
 set -x GPG_TTY (tty)
+# No quiero git en español perros
+set -x NO_GETTEXT en_US.utf8
+set -x LANG en_US.utf8
+set -x LC_CTYPE en_US.utf8
 
 set ANDROID_HOME $HOME/Library/Android/sdk
 test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
