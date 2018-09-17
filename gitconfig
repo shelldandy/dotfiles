@@ -24,6 +24,7 @@
   br = branch
   unstage = reset HEAD --
   last = log -1 HEAD
+  history = !"git lg --follow -p --"
 [merge]
   ff = false
 [commit]
