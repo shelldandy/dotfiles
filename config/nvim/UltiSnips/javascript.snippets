@@ -17,26 +17,27 @@ console.log($0)
 endsnippet
 
 snippet reactstateless "A basic stateless placeholder" b
-import React from 'react'
+import React from 'react';
 
-const ${1:MyComponent} = () =>
-${2:<div>$1</div>}
+const ${1:MyComponent} = () => (
+  ${2:<div>$1</div>}
+    );
 
-export default $1
+export default $1;
 endsnippet
 
 snippet react "Stateful react snippet" b
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class ${1:MyComponent} extends Component {
   render () {
     return (
       ${2:<h1>Hello</h1>}
-    )
+    );
   }
 }
 
-export default $1
+export default $1;
 endsnippet
 
 snippet sasstest "Sass Test with Jest" b
@@ -65,11 +66,11 @@ describe('$1 Component', () => {
 endsnippet
 
 snippet styled "Styled Component" b
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ${1:Component} = styled.${2:div}\`
   $0
-\`
+\`;
 endsnippet
 
 snippet styled-test "Styled Component Test" b
@@ -94,31 +95,31 @@ expect(tree).toHaveStyleRule('$1', '$2')
 endsnippet
 
 snippet sc "Styled Component" b
-export const ${1:Component} = styled.${2:div}\`
+export const ${1:Component} = styled.${2:div}\`;
   $0
 \`
 endsnippet
 
 snippet im "import local"
-import ${1:Module} from './$1'
+import ${1:Module} from './$1';
 endsnippet
 
 snippet eda "export default as"
-export { default as ${1:Module} } from './$1'
+export { default as ${1:Module} } from './$1';
 endsnippet
 
 snippet edf "export default from"
-export { default } from './$1'
+export { default } from './$1';
 endsnippet
 
 snippet ex "export default"
-export default $1
+export default $1;
 endsnippet
 
 snippet eo "export object"
 export {
   $1
-}
+};
 endsnippet
 
 snippet mq "media query" w
