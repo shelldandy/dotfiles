@@ -17,7 +17,10 @@ function theme
     case pencil-dark
       changeIterm pencil-dark
       changeShellTheme pencil-dark
+    case oceanic-next
+      changeIterm oceanic-next
+      changeShellTheme oceanic-next
     case '*'
-      echo 'Pick between gruvbox pencil or pencil-dark' | lolcat
+      echo 'Pick between gruvbox pencil pencil-dark or oceanic-next' | lolcat
   end
 end
