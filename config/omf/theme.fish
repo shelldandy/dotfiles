@@ -20,7 +20,10 @@ function theme
     case oceanic-next
       changeIterm oceanic-next
       changeShellTheme oceanic-next
+    case one
+      changeIterm one
+      changeShellTheme vim-one
     case '*'
-      echo 'Pick between gruvbox pencil pencil-dark or oceanic-next' | lolcat
+      echo 'Pick between gruvbox pencil pencil-dark oceanic-next one' | lolcat
   end
 end
