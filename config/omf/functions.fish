@@ -82,6 +82,8 @@ function update
   echo 'Updating Neovim...' | cowsay | lolcat -t
   nvim -c 'PlugUpdate' -c 'qa'
   set currentPath (pwd)
+  echo 'Updating gems' | cowsay | lolcat -t
+  gem update
   echo 'Updating Yarn Packages...' | cowsay | lolcat -t
   cd ~/.config/yarn/global
   ncu -a
