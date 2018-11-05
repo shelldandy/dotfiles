@@ -104,4 +104,6 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
 
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
+
+Plug 'reedes/vim-lexical'                                           " Spellcheck powers
 call plug#end()

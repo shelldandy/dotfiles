@@ -165,3 +165,7 @@ nnoremap k gk
 " make moving to beginning and end of lines easier
 noremap H g^
 noremap L g$
+
+" Spellcheck lang
+nnoremap <Leader>es :setlocal spell spelllang=es_mx<cr>
+nnoremap <Leader>en :setlocal spell spelllang=en_en<cr>

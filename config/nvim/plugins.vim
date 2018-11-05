@@ -136,3 +136,7 @@ if has_key(g:plugs, 'vim-localvimrc')
   " Don't ask me each time I load a lvimrc file
   let g:localvimrc_ask = 0
 endif
+
+if has_key(g:plugs, 'vim-lexical')
+  autocmd FileType markdown,mkd call lexical#init()
+endif
