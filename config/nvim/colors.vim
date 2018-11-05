@@ -143,10 +143,6 @@ if $THEME_COLORS == 'pencil'
   if has_key(g:plugs, 'vim-colors-pencil')
     colorscheme pencil
     set background=light
-    " Neutral code background
-    let g:pencil_terminal_italics = 1
-    let g:airline_theme = 'pencil'
-    let g:pencil#wrapModeDefault = 'soft'
   endif
 endif
 
@@ -154,9 +150,18 @@ if $THEME_COLORS == 'pencil-dark'
   if has_key(g:plugs, 'vim-colors-pencil')
     colorscheme pencil
     set background=dark
-    " Neutral code background
-    let g:pencil_terminal_italics = 1
-    let g:airline_theme = 'pencil'
-    let g:pencil#wrapModeDefault = 'soft'
   endif
+endif
+
+if has_key(g:plugs, 'vim-colors-pencil')
+  " Neutral code background
+  let g:pencil_terminal_italics = 1
+  let g:airline_theme = 'pencil'
+  let g:pencil#wrapModeDefault = 'soft'
+  let g:pencil_spell_undercurl = 0
+  " Add underlines to spellcheck errors
+  hi SpellBad gui=underline
+  hi SpellCap gui=underline
+  hi SpellRare gui=underline
+  hi SpellLocal gui=underline
 endif
