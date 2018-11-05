@@ -30,10 +30,8 @@ endfunction
 
 function WriteMode()
   if &wrap
-    set textwidth=0
-    set nowrap nolinebreak list
+    set nowrap nolinebreak
   else
-    set textwidth=79
-    set wrap linebreak nolist
+    set wrap linebreak
   endif
 endfunction

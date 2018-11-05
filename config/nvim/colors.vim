@@ -147,7 +147,6 @@ if $THEME_COLORS == 'pencil'
     let g:pencil_terminal_italics = 1
     let g:airline_theme = 'pencil'
     let g:pencil#wrapModeDefault = 'soft'
-    call WriteMode()
   endif
 endif
 
@@ -159,6 +158,5 @@ if $THEME_COLORS == 'pencil-dark'
     let g:pencil_terminal_italics = 1
     let g:airline_theme = 'pencil'
     let g:pencil#wrapModeDefault = 'soft'
-    call WriteMode()
   endif
 endif

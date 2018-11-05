@@ -82,6 +82,7 @@ Plug 'w0rp/ale'
 Plug 'alvan/vim-closetag'                                           " Autoclose html tags
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
 Plug 'scrooloose/nerdcommenter'                                     " Nerd Commenter
+Plug 'tpope/vim-repeat'
 "Plug 'Yggdroot/indentLine'                                          " Show Indent lines
 Plug 'tpope/vim-surround'                                           " Quickly change parens quotes, etc
 Plug 'reedes/vim-pencil'                                            " Pencil / Write Mode
@@ -105,5 +106,7 @@ Plug 'francoiscabrol/ranger.vim'
 
 Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 
-Plug 'reedes/vim-lexical'                                           " Spellcheck powers
+" Spellcheck powers
+Plug 'reedes/vim-lexical'
+Plug 'arecarn/vim-spell-utils'
 call plug#end()
