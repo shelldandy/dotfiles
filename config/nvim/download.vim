@@ -10,6 +10,7 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'sonph/onehalf', { 'rtp': 'vim/' }
 Plug 'rakr/vim-one'
 Plug 'reedes/vim-colors-pencil'                                     " iA Writer mode
+Plug 'junegunn/seoul256.vim'
 
 " Syntax Highlights
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages

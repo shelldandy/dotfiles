@@ -153,6 +153,21 @@ if $THEME_COLORS == 'pencil-dark'
   endif
 endif
 
+if $THEME_COLORS == 'seoul'
+  if has_key(g:plugs, 'seoul256.vim')
+    colorscheme seoul256-light
+    set background=light
+  endif
+endif
+
+if $THEME_COLORS == 'seoul-dark'
+  if has_key(g:plugs, 'seoul256.vim')
+    let g:seoul256_background = 235
+    colorscheme seoul256
+    set background=dark
+  endif
+endif
+
 if has_key(g:plugs, 'vim-colors-pencil')
   " Neutral code background
   let g:pencil_terminal_italics = 1

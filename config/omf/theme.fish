@@ -23,7 +23,13 @@ function theme
     case one
       changeIterm one
       changeShellTheme vim-one
+    case seoul
+      changeIterm seoul
+      changeShellTheme seoul
+    case seoul-dark
+      changeIterm seoul-dark
+      changeShellTheme seoul-dark
     case '*'
-      echo 'Pick between gruvbox pencil pencil-dark oceanic-next one' | lolcat
+      echo 'Pick between gruvbox pencil pencil-dark oceanic-next one seoul seoul-dark' | lolcat
   end
 end
