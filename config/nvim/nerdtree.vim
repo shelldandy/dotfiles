@@ -5,7 +5,7 @@ if has_key(g:plugs, 'nerdtree')
     exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
   endfunction
   " Ignore annoying files
-  let NERDTreeIgnore=['\.pyc$', '\.DS_Store$', '\~$']
+  let NERDTreeIgnore=['\.pyc$', '\.DS_Store$', 'tmp$[[dir]]', '\~$']
 endif
 
 if has_key(g:plugs, 'vim-devicons')
