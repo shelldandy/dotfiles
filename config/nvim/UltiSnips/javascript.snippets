@@ -1,13 +1,13 @@
 snippet jqueryfunction "Self executing jquery function" b
 ;(function ($) {
-  $0
+	$0
 })(jQuery)
 endsnippet
 
 snippet scf "Self executing normal function" b
 ;(function () {
 
-  $0
+	$0
 
 })()
 endsnippet
@@ -20,8 +20,8 @@ snippet reactstateless "A basic stateless placeholder" b
 import React from 'react';
 
 const ${1:MyComponent} = () => (
-  ${2:<div>$1</div>}
-    );
+	${2:<div>$1</div>}
+);
 
 export default $1;
 endsnippet
@@ -30,11 +30,25 @@ snippet react "Stateful react snippet" b
 import React, { Component } from 'react';
 
 class ${1:MyComponent} extends Component {
-  render () {
-    return (
-      ${2:<h1>Hello</h1>}
-    );
-  }
+	render () {
+		return (
+			${2:<h1>Hello</h1>}
+		);
+	}
+}
+
+export default $1;
+endsnippet
+
+snippet pureReact "Stateful react snippet" b
+import React, { PureComponent } from 'react';
+
+class ${1:MyComponent} extends PureComponent {
+	render () {
+		return (
+			${2:<h1>Hello</h1>}
+		);
+	}
 }
 
 export default $1;
@@ -58,10 +72,10 @@ import 'jest-styled-components'
 import ${1:Component} from '${2:./index}'
 
 describe('$1 Component', () => {
-  test('$1 Passes shallow snapshot', () => {
-    const wrapper = shallow(<$1 />)
-    expect(wrapper).toMatchSnapshot()
-  })
+	test('$1 Passes shallow snapshot', () => {
+		const wrapper = shallow(<$1 />)
+		expect(wrapper).toMatchSnapshot()
+	})
 })
 endsnippet
 
@@ -69,7 +83,7 @@ snippet styled "Styled Component" b
 import styled from 'styled-components';
 
 export const ${1:Component} = styled.${2:div}\`
-  $0
+	$0
 \`;
 endsnippet
 
@@ -81,12 +95,12 @@ import 'jest-styled-components'
 import { ${1:Component} } from '..'
 
 test('$1 works!', () => {
-  const Test = styled.div\`
-    \${$1}
-  \`
-  const tree = renderer.create(<Test />).toJSON()
-  expect(tree).toMatchSnapshot()
-  expect(tree).toHaveStyleRule('$2', '$3')
+	const Test = styled.div\`
+		\${$1}
+	\`
+	const tree = renderer.create(<Test />).toJSON()
+	expect(tree).toMatchSnapshot()
+	expect(tree).toHaveStyleRule('$2', '$3')
 })
 endsnippet
 
@@ -96,7 +110,7 @@ endsnippet
 
 snippet sc "Styled Component" b
 export const ${1:Component} = styled.${2:div}\`
-  $0
+	$0
 \`;
 endsnippet
 
@@ -118,12 +132,12 @@ endsnippet
 
 snippet eo "export object"
 export {
-  $1
+	$1
 };
 endsnippet
 
 snippet mq "media query" w
 @media (${1:min}-width: ${2:768}px) {
-  $0
+	$0
 }
 endsnippet
