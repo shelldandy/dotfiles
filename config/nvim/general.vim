@@ -63,7 +63,7 @@ set whichwrap=b,s,h,l,<,>,[,]         " backspace and cursor keys wrap too
 set completeopt=longest,menuone,preview
 
 " whitespace
-set expandtab                         " use tabs instead of spaces
+" set expandtab                         " use spaces instead of tabs
 set nojoinspaces                      " use one space, not two, after punctuation
 set shiftround                        " shift to next tabstop
 set shiftwidth=2                      " amount of space used for indentation
