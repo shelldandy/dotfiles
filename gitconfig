@@ -24,7 +24,7 @@
   br = branch
   unstage = reset HEAD --
   last = log -1 HEAD
-  empty = commit --allow-empty -m "Empty Commit"
+  empty = commit --allow-empty
   # Show the changes over time of a specific file
   history = !"git lg --follow -p --"
 [merge]
