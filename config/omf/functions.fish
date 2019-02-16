@@ -156,6 +156,11 @@ function leepaste
   pbpaste | leeme
 end
 
+function ydp
+  set url (pbpaste)
+  youtube-dl $url
+end
+
 function man
   command man $argv | bat
 end
