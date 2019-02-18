@@ -161,6 +161,11 @@ function ydp
   youtube-dl $url
 end
 
+function yda
+  set url (pbpaste)
+  youtube-dl $url -x
+end
+
 function man
   command man $argv | bat
 end
