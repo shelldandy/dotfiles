@@ -11,9 +11,6 @@ nnoremap <Leader>wq :wq<CR>
 " Quickly re-open a buffer for syntax reasons like styled-components
 nnoremap <Leader>e :filetype detect<CR>
 
-" relative line numbers
-nnoremap <Leader>0 :NumbersToggle<CR>
-
 " jsdoc
 nnoremap <Leader>d :JsDoc<CR>
 
@@ -169,3 +166,6 @@ noremap L g$
 " Spellcheck lang
 nnoremap <Leader>es :setlocal spell spelllang=es_mx<cr>
 nnoremap <Leader>en :setlocal spell spelllang=en_en<cr>
+
+" relative line numbers
+nnoremap <Leader>0 :call NumbersToggle()<CR>

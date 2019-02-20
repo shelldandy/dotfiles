@@ -35,3 +35,11 @@ function WriteMode()
     set wrap linebreak
   endif
 endfunction
+
+function NumbersToggle()
+  if &relativenumber
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunction
