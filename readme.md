@@ -1,9 +1,5 @@
 # Mike3run's Dotfiles :computer:
 
-![Ranger and Tmux Glory](images/tour.svg)
-
-SVG created with [asciinema](https://asciinema.org) and [SVG-Term](https://github.com/marionebl/svg-term-cli)
-
 ![My current terminal setup](images/neofetch.png)
 
 My current terminal setup
