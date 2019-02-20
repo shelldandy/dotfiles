@@ -157,13 +157,19 @@ function leepaste
 end
 
 function ydp
+  set currentPath (pwd)
   set url (pbpaste)
+  cd ~/Downloads
   youtube-dl $url
+  cd $currentPath
 end
 
 function yda
+  set currentPath (pwd)
   set url (pbpaste)
+  cd ~/Downloads
   youtube-dl $url -x
+  cd $currentPath
 end
 
 function man
