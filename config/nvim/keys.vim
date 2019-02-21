@@ -169,3 +169,6 @@ nnoremap <Leader>en :setlocal spell spelllang=en_en<cr>
 
 " relative line numbers
 nnoremap <Leader>0 :call NumbersToggle()<CR>
+
+" Search with // visually selected text
+vnoremap // y/<C-R>"<CR>
