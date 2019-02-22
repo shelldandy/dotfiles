@@ -66,8 +66,6 @@ snippet for "for loop" w
 {%- endfor -%}
 endsnippet
 
-
-
 snippet section_conditional_pic "conditional section picture" w
 {%- capture ${1:pic_url} -%}
   {%- if section.settings.${2:image_to_look_for} -%}
@@ -77,3 +75,83 @@ snippet section_conditional_pic "conditional section picture" w
   {%- endif -%}
 {%- endcapture -%}
 endsnippet
+
+snippet ssi "section settings item" w
+{{ section.settings.$1 }}
+endsnippet
+
+snippet schema_text "text" w
+{
+  "id": "$1",
+  "type": "text",
+  "label": "$2",
+  "default": "$3"
+},
+endsnippet
+
+snippet schema_textarea "textarea" w
+{
+  "id": "$1",
+  "type": "textarea",
+  "label": "$2",
+  "default": "$3"
+},
+endsnippet
+
+snippet schema_image_picker "image_picker" w
+{
+  "id": "$1",
+  "type": "image_picker",
+  "label": "$2"
+},
+endsnippet
+
+snippet schema_radio "radio" w
+{
+  "type": "radio",
+  "id": "$1",
+  "label": "$2",
+  "default": "$3"
+  "options": [
+     { "value": "$4", "label": "$5" },
+     { "value": "$6", "label": "$7" }
+   ]
+},
+endsnippet
+
+snippet schema_select "dropdown" w
+{
+  "type": "select",
+  "id": "$1",
+  "options": [
+    { "value": "$2", "label": "$3"},
+    { "value": "$4", "label": "$5"}
+  ],
+  "label": "$6"
+},
+endsnippet
+
+snippet schema_checkbox "checkbox" w
+{
+  "type": "checkbox",
+  "id": "$1",
+  "default": true,
+  "label": "$2"
+},
+endsnippet
+
+snippet schema_range "slider" w
+{
+  "type":      "range",
+  "id":        "$1",
+  "min":       ${2:12},
+  "max":        ${3:20},
+  "step":       1,
+  "unit":       "${4:px}",
+  "label":     "${5:Font Size}",
+  "default":   ${6:16}
+},
+endsnippet
+
+# Do it l8r...
+# https://help.shopify.com/en/themes/development/theme-editor/settings-schema
