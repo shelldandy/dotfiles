@@ -70,10 +70,10 @@ endsnippet
 
 snippet section_conditional_pic "conditional section picture" w
 {%- capture ${1:pic_url} -%}
-  {%- if ${2:condition} -%}
-  {{ section.settings.${3:image_to_look_for} | img_url: 'master' }}
+  {%- if section.settings.${2:image_to_look_for} -%}
+  {{ section.settings.$2 | img_url: 'master' }}
   {%- else -%}
-  {{ '${4:fallback}' | asset_url }}
+  {{ '${3:fallback}' | asset_url }}
   {%- endif -%}
 {%- endcapture -%}
 endsnippet
