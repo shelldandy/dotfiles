@@ -2,36 +2,42 @@ snippet ass "quick image add" w
 {{ '$1' | asset_url }}
 endsnippet
 
-snippet assign "assign styff" w
+snippet assign "assign stuff" w
 {% assign $1 = $2 %}
 endsnippet
 
-snippet img "image in section" w
+snippet capture "capture stuff" w
+{%- capture ${1:variable} -%}
+  $2
+{%- endcapture -%}
+endsnippet
+
+snippet section_img "image in section" w
 {{ ${1:element}.settings.${2:image} | img_url: '${3:master}' }}
 endsnippet
 
 snippet if "if block" w
-{% if $1 %}
+{%- if $1 -%}
   $2
-{% endif %}
+{%- endif -%}
 endsnippet
 
 snippet else "else" w
-{% else %}
+{%- else -%}
   $1
 endsnippet
 
 snippet elsif "else" w
-{% elsif $1 %}
+{%- elsif $1 -%}
   $2
 endsnippet
 
 snippet inc "include a file" w
-{% include '$1' %}
+{%- include '$1' -%}
 endsnippet
 
 snippet sec "a section" w
-{% section '$1' %}
+{%- section '$1' -%}
 endsnippet
 
 snippet schema "define a schema"
@@ -55,7 +61,19 @@ snippet type "type object for settings and schema" w
 endsnippet
 
 snippet for "for loop" w
-{% for $1 in $2 %}
+{%- for $1 in $2 -%}
   $3
-{% endfor %}
+{%- endfor -%}
+endsnippet
+
+
+
+snippet section_conditional_pic "conditional section picture" w
+{%- capture ${1:pic_url} -%}
+  {%- if ${2:condition} -%}
+  {{ section.settings.${3:image_to_look_for} | img_url: 'master' }}
+  {%- else -%}
+  {{ '${4:fallback}' | asset_url }}
+  {%- endif -%}
+{%- endcapture -%}
 endsnippet
