@@ -84,7 +84,6 @@ Plug 'alvan/vim-closetag'                                           " Autoclose 
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
 Plug 'scrooloose/nerdcommenter'                                     " Nerd Commenter
 Plug 'tpope/vim-repeat'
-"Plug 'Yggdroot/indentLine'                                          " Show Indent lines
 Plug 'tpope/vim-surround'                                           " Quickly change parens quotes, etc
 Plug 'reedes/vim-pencil'                                            " Pencil / Write Mode
 Plug 'vim-scripts/BufOnly.vim'                                      " Clear buffers

@@ -57,6 +57,7 @@ endif
 if has_key(g:plugs, 'fzf.vim')
   nnoremap <Leader>p :Files<CR>
   nnoremap <Leader>f :Ag<CR>
+  nnoremap <Leader>h :History<CR>
 endif
 
 " Tab Switching
