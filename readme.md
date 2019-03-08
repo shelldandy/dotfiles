@@ -1,4 +1,4 @@
-# Mike3run's Dotfiles :computer:
+# Shelldandy's Dotfiles :computer:
 
 ![My current terminal setup](images/neofetch.png)
 

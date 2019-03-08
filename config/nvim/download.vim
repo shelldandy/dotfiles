@@ -15,7 +15,6 @@ Plug 'junegunn/seoul256.vim'
 " Syntax Highlights
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ap/vim-css-color'
 Plug 'shelldandy/kwm.vim'
@@ -23,6 +22,8 @@ Plug 'shelldandy/shopify.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'Quramy/vim-js-pretty-template'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}

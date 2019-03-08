@@ -109,19 +109,6 @@ if has_key(g:plugs, 'vim-polyglot')
   let g:polyglot_disabled = ['markdown']
 endif
 
-if has_key(g:plugs, 'vim-markdown')
-  let g:vim_markdown_folding_disabled = 1
-  let g:vim_markdown_fenced_languages = [
-        \ 'csharp=cs',
-        \ 'bash=sh',
-        \ 'ini=dosini',
-        \ 'js=javascript',
-        \ 'viml=vim'
-        \]
-  let g:vim_markdown_frontmatter = 1
-  let g:vim_markdown_new_list_item_indent = 0
-endif
-
 if has_key(g:plugs, 'vim-localvimrc')
   " Don't ask me each time I load a lvimrc file
   let g:localvimrc_ask = 0
@@ -129,4 +116,31 @@ endif
 
 if has_key(g:plugs, 'vim-lexical')
   autocmd FileType markdown,mkd call lexical#init()
+endif
+
+if has_key(g:plugs, 'vim-pandoc')
+  " deleted the `folding` one
+  let g:pandoc#modules#enabled = [
+      \ "formatting",
+      \ "bibliographies",
+      \ "completion",
+      \ "metadata",
+      \ "menu",
+      \ "keyboard",
+      \ "toc",
+      \ "chdir",
+      \ "spell",
+      \ "hypertext",
+  \ ]
+endif
+
+if has_key(g:plugs, 'vim-pandoc-syntax')
+  let g:pandoc#syntax#codeblocks#embeds#langs = [
+    \ 'csharp=cs',
+    \ 'bash=sh',
+    \ 'sh=bash',
+    \ 'ini=dosini',
+    \ 'js=javascript',
+    \ 'viml=vim',
+  \]
 endif
