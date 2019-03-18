@@ -86,7 +86,7 @@ function update
   gem update
   echo 'Updating Yarn Packages...' | cowsay | lolcat -t
   cd ~/.config/yarn/global
-  ncu -a
+  ncu -u
   yarn
   echo 'Back to business lets get it! #HUSTLE' | cowsay | lolcat -t
   cd $currentPath
