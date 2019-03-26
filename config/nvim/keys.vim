@@ -61,10 +61,6 @@ if has_key(g:plugs, 'fzf.vim')
   nnoremap <Leader>b :Buffers<CR>
 endif
 
-" Tab Switching
-nnoremap <Leader>t :tabn<CR>
-nnoremap <Leader>r :tabp<CR>
-
 " Disabling the directional keys
 map <up> <nop>
 map <down> <nop>
@@ -174,3 +170,9 @@ nnoremap <Leader>0 :call NumbersToggle()<CR>
 
 " Search with // visually selected text
 vnoremap // y/<C-R>"<CR>
+
+if has_key(g:plugs, 'split-term.vim')
+  nnoremap <Leader>t :Term<CR>
+  nnoremap <Leader>vt :VTerm<CR>
+  nnoremap <Leader>tt :TTerm<CR>
+endif
