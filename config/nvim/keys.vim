@@ -174,5 +174,7 @@ vnoremap // y/<C-R>"<CR>
 if has_key(g:plugs, 'split-term.vim')
   nnoremap <Leader>t :Term<CR>
   nnoremap <Leader>vt :VTerm<CR>
+  nnoremap <Leader>t- :Term<CR>
+  nnoremap <Leader>t\| :VTerm<CR>
   nnoremap <Leader>tt :TTerm<CR>
 endif
