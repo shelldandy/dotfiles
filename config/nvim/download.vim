@@ -98,6 +98,7 @@ Plug 'editorconfig/editorconfig-vim', {
 Plug 'junegunn/goyo.vim'                                            " Focus mode like iA Writer
 Plug 'junegunn/limelight.vim'                                       " Limelight
 Plug 'metakirby5/codi.vim'
+Plug 'vimlab/split-term.vim'
 
 Plug 'mattn/emmet-vim'
 
