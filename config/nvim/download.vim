@@ -99,16 +99,19 @@ Plug 'junegunn/goyo.vim'                                            " Focus mode
 Plug 'junegunn/limelight.vim'                                       " Limelight
 Plug 'metakirby5/codi.vim'
 Plug 'vimlab/split-term.vim'
-
+Plug 'iamcco/markdown-preview.nvim', {
+  \   'do': 'cd app & yarn install'
+  \   }
 Plug 'mattn/emmet-vim'
+Plug 'godlygeek/tabular'
 
 " Vim Ranger
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
 
-Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
-
 " Spellcheck powers
 Plug 'reedes/vim-lexical'
 Plug 'arecarn/vim-spell-utils'
+
+Plug 'ryanoasis/vim-devicons'                                       " Vim Icons Load LAST
 call plug#end()
