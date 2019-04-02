@@ -47,12 +47,6 @@ if has_key(g:plugs, 'nerdtree')
   nnoremap <Leader>N :NERDTreeFind<CR>
 endif
 
-if has_key(g:plugs, 'ctrlp.vim')
-  " CtrlP
-  nnoremap <Leader>FF :CtrlPClearCache<bar>CtrlP<CR>
-  nnoremap <Leader>ff :CtrlP<CR>
-endif
-
 " FZF
 if has_key(g:plugs, 'fzf.vim')
   nnoremap <Leader>p :Files<CR>
