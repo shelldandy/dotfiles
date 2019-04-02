@@ -72,11 +72,9 @@ if has_key(g:plugs, 'fzf.vim')
   let g:fzf_history_dir = '~/.local/share/fzf-history'
   " Custom Ag command with preview window
   command! -bang -nargs=* Ag
-    \ call fzf#vim#ag(
-    \ <q-args>,
-    \ ' --color-path 35 --color-match "1;35" --color-line-number 32',
-    \ fzf#vim#with_preview(),
-    \ <bang>0)
+    \ call fzf#vim#ag(<q-args>,
+    \                 fzf#vim#with_preview('right:45%'),
+    \                 <bang>0)
 endif
 
 if has_key(g:plugs, 'goyo.vim')
