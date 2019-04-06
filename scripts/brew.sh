@@ -20,6 +20,7 @@ brew tap 'thoughtbot/formulae'
 brew tap 'caskroom/cask'
 brew tap 'caskroom/versions'
 brew tap 'eddieantonio/eddieantonio'
+brew tap 'koekeishiya/formulae'
 
 # Installs
 brew install 'ack'                        # A faster grep
@@ -27,6 +28,7 @@ brew install 'asciinema'                  # Record videos of the terminal
 brew install 'atool'                      # ranger dep for zip
 brew install 'automake'                   # Make but Mac lol
 brew install 'calc'                       # Simple calculator
+brew install 'chunkwm'                    # Window manager
 brew install 'cmake'                      # More make tools
 brew install 'cmatrix'                    # There is no spoon!
 brew install 'coreutils'                  # The basics from GNU
