@@ -18,6 +18,9 @@ set ANDROID_HOME $HOME/Library/Android/sdk
 test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH
 test -d $ANDROID_HOME/platform-tools ; and set PATH $ANDROID_HOME/platform-tools $PATH
 
+set PYTHON /usr/local/Cellar/python
+test -d $PYTHON ; and set PATH $PYTHON $PATH
+
 test -d $HOME/.bin ; and set PATH $HOME/.bin $PATH
 
 # Making syntax highlight work with Fish

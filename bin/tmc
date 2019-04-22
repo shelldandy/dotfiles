@@ -16,7 +16,7 @@ name=${name:-awesome}
 
 read -p "Main command (yarn code) " comm
 
-comm=${comm:-yarn\ code}
+comm=${comm:-npm\ run\ start}
 
 #define the template.
 cat  << EOF > .tmuxinator.yml
