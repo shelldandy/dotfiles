@@ -18,7 +18,7 @@ if has_key(g:plugs, 'ale')
   let g:airline#extensions#ale#enabled = 1
 
   let g:ale_linters = {}
-  let g:ale_linters['javascript'] = ['eslint', 'stylelint']
+  let g:ale_linters['javascript'] = ['eslint', 'stylelint', 'jshint']
   let g:ale_linters['jsx'] = ['eslint']
   let g:ale_linters['scss'] = ['stylelint']
   let g:ale_linters['html'] = ['htmlhint']
