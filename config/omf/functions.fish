@@ -13,7 +13,6 @@ function rst      ; exec fish ; end
 function v        ; nvim $argv ; end
 function g        ; git $argv ; end
 function dc       ; docker-compose $argv ; end
-function tmux     ; command tmux -2 $argv ; end
 function gs       ; git status ; end
 function gaa      ; git add . ; end
 function gh       ; git log --follow -p --stat --abbrev-commit --decorate -- $argv; end

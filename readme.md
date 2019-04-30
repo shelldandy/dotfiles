@@ -4,10 +4,6 @@
 
 My current terminal setup
 
-![An example tmux session with ssh](images/tmux.png)
-
-An example tmux session with ssh
-
 Check more images in the images folder :nail_care:
 
 ## Works best with...
@@ -19,15 +15,7 @@ In my current setup I'm using some themes and plugins to make the whole experien
 
 - Uses vim-plug for plugin management on neovim
 
-- Also remember to enable true colors on your terminal and italics support to use with the OceanicNext theme and Operator Mono font. If you use the install script then all is made for you. [Read More](https://bruinsslot.jp/post/how-to-enable-true-color-for-neovim-tmux-and-gnome-terminal/)
-
-- reattach-to-user-namespace install with brew install reattach-to-user-namespace this is to make copy and paste great again on mac
-
-- [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
-
 - [Node version manager](https://github.com/creationix/nvm)
-
-- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
 ## Installing Everything from Scratch
 

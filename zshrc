@@ -26,10 +26,7 @@ alias x='exit'
 alias df='cd ~/dotfiles'
 alias gf='cd ~/git'
 
-alias tmux="env TERM=xterm-256color-italic tmux"
 export TERM=xterm-256color-italic
-
-# Setting default editor for tmuxinator
 export EDITOR='nvim'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,

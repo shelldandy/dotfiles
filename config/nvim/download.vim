@@ -69,7 +69,6 @@ Plug 'gregsexton/gitv', {'on': ['Gitv']}                            " Vim Fugiti
 Plug 'tpope/vim-unimpaired'                                         " Quickly move around buffers etc
 Plug 'brooth/far.vim'                                               " Search and replace
 Plug 'valloric/matchtagalways'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', {
  \    'dir': '~/.fzf',
  \    'do': './install --bin'

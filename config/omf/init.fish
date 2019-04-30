@@ -35,8 +35,6 @@ abbr nvi nvim -c 'PlugInstall' -c 'qa'
 abbr nvc nvim -c 'PlugClean' -c 'qa'
 abbr nvu nvim -c 'PlugUpdate' -c 'qa'
 
-abbr t tmuxinator
-
 # Repeated paths
 abbr df cd ~/dotfiles
 abbr gf cd ~/git
