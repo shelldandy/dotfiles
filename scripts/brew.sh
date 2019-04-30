@@ -15,10 +15,10 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Taps
-brew tap 'neovim/neovim' # wakala
-brew tap 'thoughtbot/formulae'# ke ez ezo?
+brew tap 'neovim/neovim' 
+brew tap 'thoughtbot/formulae'
 brew tap 'caskroom/cask'
-brew tap 'caskroom/versions' # ke ez ezo?
+brew tap 'caskroom/versions' 
 brew tap 'eddieantonio/eddieantonio'
 brew tap 'koekeishiya/formulae'
 
