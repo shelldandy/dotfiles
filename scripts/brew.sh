@@ -66,12 +66,10 @@ brew install 'perl'
 brew install 'pinentry-mac'               # Nicer gpg password entry situation
 brew install 'ranger'                     # Like vim but for the finder
 brew install 'rcm'                        # dotfile management tools
-brew install 'reattach-to-user-namespace' # make clipboard on tmux great again
 brew install 'rust'
 brew install 'source-highlight'           # to give less highlight powers
 brew install 'the_silver_searcher'        # ag (used in fzf-vim)
 brew install 'thefuck'                    # for when you fuck up
-brew install 'tmux'
 brew install 'trash'                      # Send to the trash via cli
 brew install 'tree'                       # See file structure
 brew install 'utf8proc'                   # Unicode normalization
