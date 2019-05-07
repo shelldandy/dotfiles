@@ -72,8 +72,11 @@ nnoremap <Leader>db :Breakpoint<CR>
 " Clear Buffer Quickly
 nnoremap <Leader>bc :BufOnly<CR>
 " Buffer Switching
-nnoremap <Leader>bn :bnext<CR>
-nnoremap <Leader>bp :bprevious<CR>
+nnoremap <Leader>l :bnext<CR>
+nnoremap <Leader>h :bprevious<CR>
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nnoremap <leader>bq :bp <BAR> bd #<CR>
 
 " Git Controls Flow
 if has_key(g:plugs, 'vim-fugitive')
