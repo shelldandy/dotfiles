@@ -1,9 +1,3 @@
-if has_key(g:plugs, 'ctrlp.vim')
-  set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules,*/bower,*/dist,*/public,*/.next,*/theme,*/wp-admin,*/wp-includes
-  let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower|public|next|theme)$'
-  let g:ctrlp_show_hidden = 1
-endif
-
 if has_key(g:plugs, 'matchtagalways')
   let g:mta_filetypes = {
     \ 'javascript.jsx': 1,
@@ -117,26 +111,13 @@ if has_key(g:plugs, 'vim-lexical')
 endif
 
 if has_key(g:plugs, 'vim-pandoc')
-  " deleted the `folding` one
-  let g:pandoc#modules#enabled = [
-      \ "formatting",
-      \ "bibliographies",
-      \ "completion",
-      \ "metadata",
-      \ "menu",
-      \ "keyboard",
-      \ "toc",
-      \ "chdir",
-      \ "spell",
-      \ "hypertext",
-  \ ]
+  let g:pandoc#modules#disabled = ["folding"]
 endif
 
 if has_key(g:plugs, 'vim-pandoc-syntax')
   let g:pandoc#syntax#codeblocks#embeds#langs = [
     \ 'csharp=cs',
     \ 'bash=sh',
-    \ 'sh=bash',
     \ 'ini=dosini',
     \ 'js=javascript',
     \ 'viml=vim',

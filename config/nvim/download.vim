@@ -22,8 +22,8 @@ Plug 'shelldandy/shopify.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'Quramy/vim-js-pretty-template'
-Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-pandoc'
 
 " Deoplete
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
