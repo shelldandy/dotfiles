@@ -118,6 +118,10 @@ snippet im "import local"
 import ${1:Module} from './$1';
 endsnippet
 
+snippet in "import named"
+import { ${1:Module} } from './$1';
+endsnippet
+
 snippet eda "export default as"
 export { default as ${1:Module} } from './$1';
 endsnippet
@@ -143,5 +147,5 @@ snippet mq "media query" w
 endsnippet
 
 snippet thp "theme prop" w
-${({${1:someProp}}) => $1 $0}
+${({ ${1:someProp}} ) => $1 $0}
 endsnippet
