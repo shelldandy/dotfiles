@@ -147,3 +147,6 @@ if executable('ag')
   " bind \ to grep shortcut
   nnoremap \ :Ag<SPACE>
 endif
+
+let g:python_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
