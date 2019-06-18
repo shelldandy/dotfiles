@@ -42,7 +42,7 @@ Plug 'SirVer/ultisnips'                                             " Ultimate S
 Plug 'honza/vim-snippets'
 Plug 'ternjs/tern_for_vim', {
   \   'do': 'npm install --no-package-lock',
-  \   'for': ['Javascript', 'javascript.jsx']
+  \   'for': ['javascript', 'javascript.jsx']
   \   }
 " Wanna be autocomplete-paths
 Plug 'Galooshi/vim-import-js', {
