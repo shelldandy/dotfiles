@@ -6,9 +6,7 @@ endsnippet
 
 snippet scf "Self executing normal function" b
 ;(function () {
-
 	$0
-
 })()
 endsnippet
 
@@ -18,16 +16,22 @@ endsnippet
 
 snippet reactstateless "A basic stateless placeholder" b
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ${1:MyComponent} = () => (
 	${2:<div>$1</div>}
 );
+
+${1}.propTypes = {};
+
+${1}.defaultProps = {};
 
 export default $1;
 endsnippet
 
 snippet react "Stateful react snippet" b
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ${1:MyComponent} extends Component {
 	render () {
@@ -35,6 +39,10 @@ class ${1:MyComponent} extends Component {
 			${2:<h1>$1</h1>}
 		);
 	}
+
+  static propTypes = {}
+
+  static defaultProps = {}
 }
 
 export default $1;
@@ -42,6 +50,7 @@ endsnippet
 
 snippet pureReact "Pure react component snippet" b
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
 class ${1:MyComponent} extends PureComponent {
 	render () {
@@ -49,6 +58,10 @@ class ${1:MyComponent} extends PureComponent {
 			${2:<h1>$1</h1>}
 		);
 	}
+
+  static propTypes = {}
+
+  static defaultProps = {}
 }
 
 export default $1;

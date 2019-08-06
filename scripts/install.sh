@@ -47,9 +47,6 @@ source ./yarn.sh
 # install python packages
 source ./pip.sh
 
-# install wp-cli
-source ./wp-cli.sh
-
 # Neovim
 source ./nvim.sh
 
