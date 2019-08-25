@@ -51,6 +51,10 @@ function mov2mp4
   ffmpeg -i $argv -vcodec copy -acodec copy $argv.mp4
 end
 
+function mp3extract
+  ffmpeg -i $argv $argv.mp3
+end
+
 # Add an extra slot in the dock for management purposes
 function dockspacer
   defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
@@ -169,7 +173,7 @@ function yda
   set currentPath (pwd)
   set url (pbpaste)
   cd ~/Downloads
-  youtube-dl $url -x
+  youtube-dl $url -x --audio-format mp3 --audio-quality 0
   cd $currentPath
 end
 
