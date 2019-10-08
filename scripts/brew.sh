@@ -15,10 +15,10 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Taps
-brew tap 'neovim/neovim' 
+brew tap 'neovim/neovim'
 brew tap 'thoughtbot/formulae'
 brew tap 'caskroom/cask'
-brew tap 'caskroom/versions' 
+brew tap 'caskroom/versions'
 brew tap 'eddieantonio/eddieantonio'
 brew tap 'koekeishiya/formulae'
 
@@ -33,7 +33,7 @@ brew install 'pinentry-mac'               # Nicer gpg password entry situation
 brew install 'glances'                    # A cooler top (to see which app is using resources)
 brew install 'htop'                       # top and nano finally together
 
-## Commands 
+## Commands
 brew install 'perl'
 brew install 'tree'                       # See file structure
 brew install 'exa'                        # Fancy ls with colors
@@ -92,22 +92,16 @@ brew install 'rust'
 brew install 'go'                         # gogogogogo
 
 # Casks
-brew cask install 'android-studio'
-brew cask install 'atom'
-brew cask install 'boom-3d'
 brew cask install 'dash'
 brew cask install 'dashlane'
 brew cask install 'docker'
 brew cask install 'dropbox'
 brew cask install 'firefox'
-brew cask install 'flux'
+brew cask install 'figma'
 brew cask install 'focus'
 brew cask install 'google-chrome'
 brew cask install 'google-play-music-desktop-player'
 brew cask install 'iterm2-nightly'
-brew cask install 'journey'
-brew cask install 'little-snitch'
-brew cask install 'micro-snitch'
 brew cask install 'rocket'
 brew cask install 'sketch'
 brew cask install 'skype'
@@ -115,7 +109,5 @@ brew cask install 'slack'
 brew cask install 'spotify'
 brew cask install 'subtitles'
 brew cask install 'telegram'
-brew cask install 'toggl'
-brew cask install 'ubar'
 brew cask install 'vanilla'
 brew cask install 'whatsapp'
