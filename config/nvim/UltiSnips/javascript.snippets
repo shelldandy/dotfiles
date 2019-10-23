@@ -10,11 +10,17 @@ snippet scf "Self executing normal function" b
 })()
 endsnippet
 
+snippet asynciffi "Self executing async function" b
+;(async () => {
+	$0
+})()
+endsnippet
+
 snippet log "console log the things" w
 console.log($0)
 endsnippet
 
-snippet reactstateless "A basic stateless placeholder" b
+snippet stateless "A basic stateless placeholder" b
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -154,16 +160,16 @@ export {
 endsnippet
 
 snippet mq "media query" w
-@media (${1:min}-width: ${2:768}px) {
+@media (${1:min}-width: ${2:1024}px) {
 	$0
 }
 endsnippet
 
 snippet thp "theme prop" w
-${({ ${1:someProp}} ) => $1 $0}
+${({ ${1:someProp} }) => $1 $0}
 endsnippet
 
 # Work stuff
 snippet gc "getColor"
-import { getColor } from 'core/utils/Styles';
+import { getColor } from 'core/utils';
 endsnippet
