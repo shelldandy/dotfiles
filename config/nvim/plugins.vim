@@ -22,6 +22,7 @@ if has_key(g:plugs, 'ale')
   let g:ale_fixers['jsx'] = ['eslint']
   let g:ale_fixers['scss'] = ['stylelint']
   let g:ale_fixers['typescript'] = ['tslint']
+  let g:ale_fixers['python'] = ['black']
 endif
 
 if has_key(g:plugs, 'supertab')
