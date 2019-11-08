@@ -14,6 +14,7 @@ abbr gpt git push --tags
 abbr gP git pull
 abbr gb git branch
 abbr gco git checkout
+abbr gxo git checkout
 abbr gr git rebase
 abbr gl git lg
 abbr gd git diff
