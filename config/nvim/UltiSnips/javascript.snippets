@@ -170,6 +170,14 @@ ${({ ${1:someProp} }) => $1 $0}
 endsnippet
 
 # Work stuff
-snippet gc "getColor"
-import { getColor } from 'core/utils';
+snippet getColor "getColor"
+import { getColor, typeScale } from 'core/utils';
+endsnippet
+
+snippet gc "quick getColor" w
+${getColor("$1")}
+endsnippet
+
+snippet ts "quick typeScale" w
+${typeScale($1)}
 endsnippet
