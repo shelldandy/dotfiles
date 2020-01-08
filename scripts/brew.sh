@@ -46,7 +46,6 @@ brew install 'calc'                       # Simple calculator
 brew install 'mas'                        # Mac App Store
 
 # visual arts
-brew install 'chunkwm'                    # Window manager
 brew install 'cmatrix'                    # There is no spoon!
 brew install 'cowsay'                     # Moo!
 brew install 'figlet'                     # Use it to write cool banners
@@ -92,6 +91,7 @@ brew install 'rust'
 brew install 'go'                         # gogogogogo
 
 # Casks
+brew cask install 'contexts'
 brew cask install 'dash'
 brew cask install 'dashlane'
 brew cask install 'docker'
