@@ -73,11 +73,11 @@ set tabstop=2                         " use two spaces for tabs
 " Folding
 set foldmethod=indent                 " The folds will happen by indentation like Atom
 set foldlevelstart=1                  " Start folding at the top of every function
-set foldnestmax=12                     " But just fold up to 12 levels
+set foldnestmax=20                     " But just fold up to 20 levels
 
 " text appearance
 set list                              " show invisible characters
-set synmaxcol=200                     " stop syntax highlighting after 200 columns
+set synmaxcol=500                     " stop syntax highlighting after 500 columns
 set listchars=tab:>·,trail:·          " but only show useful chaaracters
 set nowrap                            " disable line wrapping
 
