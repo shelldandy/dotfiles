@@ -65,6 +65,7 @@ brew install 'editorconfig'               # Standarize Editor Configs
 brew install 'docker-compose'             # Coordinate docker stuff
 brew install 'git'                        # Cooler newer fresher git
 brew install 'git-flow'                   # Feature branch development
+brew install 'httpie'                     # POSTMan Killer
 
 ### Vim Stuff
 brew install 'neovim'
