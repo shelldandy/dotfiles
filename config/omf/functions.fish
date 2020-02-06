@@ -161,6 +161,14 @@ function leepaste
   pbpaste | leeme
 end
 
+function read2me
+  say -v Samantha $argv
+end
+
+function readpaste
+  pbpaste | read2me
+end
+
 function ydp
   set currentPath (pwd)
   set url (pbpaste)
