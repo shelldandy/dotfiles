@@ -89,6 +89,9 @@ function update
   set currentPath (pwd)
   echo 'Updating gems' | cowsay | lolcat -t
   gem update
+  echo 'Updating pips' | cowsay | lolcat -t
+  pip list -o | cut -d " " -f 1 | tail -n +3 | xargs pip install -U
+  pip3 list -o | cut -d " " -f 1 | tail -n +3 | xargs pip3 install -U
   echo 'Updating Yarn Packages...' | cowsay | lolcat -t
   cd ~/.config/yarn/global
   ncu -u

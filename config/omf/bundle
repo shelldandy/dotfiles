@@ -2,7 +2,6 @@ package foreign-env
 package git-flow
 package license
 package node-binpath
-package nvm
 package rvm
 package wttr
 package z

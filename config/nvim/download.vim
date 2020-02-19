@@ -25,8 +25,14 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-pandoc'
 
-" Deoplete
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 Plug 'fszymanski/deoplete-emoji'
 Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
