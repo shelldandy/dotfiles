@@ -4834,7 +4834,7 @@ Split Vertically with Current Profile</string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 708 400 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-1270 498 620 392 -1920 0 1920 1057 </string>
+	<string>650 511 620 392 0 0 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>268 261 606 469 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
@@ -10187,81 +10187,109 @@ Split Vertically with Current Profile</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.20190725-nightly</string>
-		<string>3.3.20190824-nightly</string>
-		<string>3.3.20190623-nightly</string>
-		<string>3.3.20190920-nightly</string>
-		<string>3.3.20191110-nightly</string>
-		<string>3.3.20190722-nightly</string>
-		<string>3.3.20191208-nightly</string>
-		<string>3.3.20191106-nightly</string>
-		<string>3.3.20190616-nightly</string>
-		<string>3.3.20190715-nightly</string>
-		<string>3.3.20191004-nightly</string>
-		<string>3.3.20190613-nightly</string>
-		<string>3.3.20191202-nightly</string>
-		<string>3.3.20190909-nightly</string>
-		<string>3.3.20190610-nightly</string>
-		<string>3.3.20190906-nightly</string>
-		<string>3.3.20191230-nightly</string>
-		<string>3.3.20190606-nightly</string>
-		<string>3.3.20191127-nightly</string>
-		<string>3.3.20191226-nightly</string>
-		<string>3.3.20200121-nightly</string>
-		<string>3.3.20191220-nightly</string>
-		<string>3.3.20191018-nightly</string>
-		<string>3.3.20190729-nightly</string>
-		<string>3.3.20191114-nightly</string>
-		<string>3.3.20191213-nightly</string>
-		<string>3.3.20191111-nightly</string>
-		<string>3.3.20191209-nightly</string>
-		<string>3.3.20191210-nightly</string>
-		<string>3.3.20190719-nightly</string>
-		<string>3.3.20191107-nightly</string>
-		<string>3.3.20190818-nightly</string>
-		<string>3.3.20190617-nightly</string>
-		<string>3.3.20190914-nightly</string>
-		<string>3.3.20190815-nightly</string>
-		<string>3.3.20191203-nightly</string>
-		<string>3.3.20190614-nightly</string>
-		<string>3.3.20191104-nightly</string>
-		<string>3.3.20200101-nightly</string>
-		<string>3.3.20191101-nightly</string>
-		<string>3.3.20191030-nightly</string>
-		<string>3.3.20190802-nightly</string>
-		<string>3.3.20191125-nightly</string>
-		<string>3.3.20191224-nightly</string>
-		<string>3.3.20191023-nightly</string>
-		<string>3.3.20191122-nightly</string>
-		<string>3.3.20190731-nightly</string>
-		<string>3.3.20190829-nightly</string>
-		<string>3.3.20191020-nightly</string>
-		<string>3.3.20191118-nightly</string>
-		<string>3.3.20190826-nightly</string>
 		<string>3.3.20191115-nightly</string>
-		<string>3.3.20191016-nightly</string>
-		<string>3.3.20190625-nightly</string>
+		<string>3.3.20190829-nightly</string>
+		<string>3.3.20200301-nightly</string>
+		<string>3.3.20190610-nightly</string>
+		<string>3.3.20191122-nightly</string>
+		<string>3.3.20190802-nightly</string>
+		<string>3.3.20200306-nightly</string>
+		<string>3.3.20191127-nightly</string>
+		<string>3.3.20200212-nightly</string>
+		<string>3.3.20200313-nightly</string>
 		<string>3.3.20191112-nightly</string>
-		<string>3.3.20191013-nightly</string>
-		<string>3.3.20190820-nightly</string>
-		<string>3.3.20200112-nightly</string>
-		<string>3.3.20191108-nightly</string>
-		<string>3.3.20191207-nightly</string>
-		<string>3.3.20190717-nightly</string>
-		<string>3.3.20190816-nightly</string>
-		<string>3.3.20191204-nightly</string>
+		<string>3.3.20190826-nightly</string>
+		<string>3.3.20200217-nightly</string>
+		<string>3.3.20191213-nightly</string>
+		<string>3.3.20190617-nightly</string>
+		<string>3.3.20200205-nightly</string>
+		<string>3.3.20191004-nightly</string>
+		<string>3.3.20191220-nightly</string>
+		<string>3.3.20191023-nightly</string>
 		<string>3.3.20191105-nightly</string>
 		<string>3.3.20190912-nightly</string>
-		<string>3.3.20190809-nightly</string>
-		<string>3.3.20190810-nightly</string>
-		<string>3.3.20190905-nightly</string>
-		<string>3.3.20191126-nightly</string>
-		<string>3.3.20190930-nightly</string>
-		<string>3.3.20191120-nightly</string>
 		<string>3.3.20191218-nightly</string>
-		<string>3.3.20190827-nightly</string>
+		<string>3.3.20190725-nightly</string>
+		<string>3.3.20191030-nightly</string>
+		<string>3.3.20191203-nightly</string>
+		<string>3.3.20200310-nightly</string>
+		<string>3.3.20191016-nightly</string>
+		<string>3.3.20191107-nightly</string>
+		<string>3.3.20200101-nightly</string>
+		<string>3.3.20190905-nightly</string>
+		<string>3.3.20191210-nightly</string>
+		<string>3.3.20190614-nightly</string>
+		<string>3.3.20191208-nightly</string>
+		<string>3.3.20190809-nightly</string>
+		<string>3.3.20200315-nightly</string>
+		<string>3.3.20191114-nightly</string>
+		<string>3.3.20190715-nightly</string>
+		<string>3.3.20200221-nightly</string>
+		<string>3.3.20191020-nightly</string>
+		<string>3.3.20191018-nightly</string>
+		<string>3.3.20190816-nightly</string>
 		<string>3.3.20191215-nightly</string>
+		<string>3.3.20200207-nightly</string>
+		<string>3.3.20190722-nightly</string>
+		<string>3.3.20200226-nightly</string>
 		<string>3.3.20190626-nightly</string>
+		<string>3.3.20190914-nightly</string>
+		<string>3.3.20191013-nightly</string>
+		<string>3.3.20190820-nightly</string>
+		<string>3.3.20191126-nightly</string>
+		<string>3.3.20200211-nightly</string>
+		<string>3.3.20200305-nightly</string>
+		<string>3.3.20200312-nightly</string>
+		<string>3.3.20191111-nightly</string>
+		<string>3.3.20191224-nightly</string>
+		<string>3.3.20190731-nightly</string>
+		<string>3.3.20190616-nightly</string>
+		<string>3.3.20200122-nightly</string>
+		<string>3.3.20200204-nightly</string>
+		<string>3.3.20190717-nightly</string>
+		<string>3.3.20200223-nightly</string>
+		<string>3.3.20190623-nightly</string>
+		<string>3.3.20191104-nightly</string>
+		<string>3.3.20200127-nightly</string>
+		<string>3.3.20190818-nightly</string>
+		<string>3.3.20200209-nightly</string>
+		<string>3.3.20200228-nightly</string>
+		<string>3.3.20191202-nightly</string>
+		<string>3.3.20200307-nightly</string>
+		<string>3.3.20191106-nightly</string>
+		<string>3.3.20190729-nightly</string>
+		<string>3.3.20190613-nightly</string>
+		<string>3.3.20190810-nightly</string>
+		<string>3.3.20191207-nightly</string>
+		<string>3.3.20191226-nightly</string>
+		<string>3.3.20190827-nightly</string>
+		<string>3.3.20190909-nightly</string>
+		<string>3.3.20191101-nightly</string>
+		<string>3.3.20190930-nightly</string>
+		<string>3.3.20190815-nightly</string>
+		<string>3.3.20200218-nightly</string>
+		<string>3.3.20191120-nightly</string>
+		<string>3.3.20190606-nightly</string>
+		<string>3.3.20190719-nightly</string>
+		<string>3.3.20191118-nightly</string>
+		<string>3.3.20200112-nightly</string>
+		<string>3.3.20190625-nightly</string>
+		<string>3.3.20200225-nightly</string>
+		<string>3.3.20200129-nightly</string>
+		<string>3.3.20200304-nightly</string>
+		<string>3.3.20191125-nightly</string>
+		<string>3.3.20200210-nightly</string>
+		<string>3.3.20190920-nightly</string>
+		<string>3.3.20191204-nightly</string>
+		<string>3.3.20191110-nightly</string>
+		<string>3.3.20200309-nightly</string>
+		<string>3.3.20190824-nightly</string>
+		<string>3.3.20191108-nightly</string>
+		<string>3.3.20190906-nightly</string>
+		<string>3.3.20200121-nightly</string>
+		<string>3.3.20191209-nightly</string>
+		<string>3.3.20191230-nightly</string>
+		<string>3.3.20200203-nightly</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -10286,7 +10314,7 @@ Split Vertically with Current Profile</string>
 	<key>NoSyncInstallationId</key>
 	<string>1E6FE2C1-D203-4C53-98CB-12134D0DAE65</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>343</integer>
+	<integer>424</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -11003,6 +11031,8 @@ Split Vertically with Current Profile</string>
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncRestoreWindowsCount</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>519032728.68973899</real>
 	<key>NoSyncTurnOffBracketedPasteOnHostChange</key>
@@ -11069,9 +11099,11 @@ Split Vertically with Current Profile</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-21T15:05:41Z</date>
+	<date>2020-03-17T15:52:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>3487171054</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -11123,7 +11155,7 @@ Split Vertically with Current Profile</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.20200121-nightly</string>
+	<string>3.3.20200315-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

@@ -176,7 +176,7 @@ function ydp
   set currentPath (pwd)
   set url (pbpaste)
   cd ~/Downloads
-  youtube-dl $url --format mp4
+  youtube-dl $url
   cd $currentPath
 end
 
