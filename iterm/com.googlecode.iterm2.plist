@@ -4834,13 +4834,13 @@ Split Vertically with Current Profile</string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 708 400 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 511 620 392 0 0 1920 1057 </string>
+	<string>650 516 620 392 0 0 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>268 261 606 469 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>901 564 796 486 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>226 130 1079 665 0 0 1920 1080 </string>
+	<string>226 181 1079 665 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2307 248 674 568 1920 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_C41EA87F-76D4-4401-9B20-DB8833BE3028</key>
@@ -10189,6 +10189,7 @@ Split Vertically with Current Profile</string>
 	<array>
 		<string>3.3.20191115-nightly</string>
 		<string>3.3.20190829-nightly</string>
+		<string>3.3.20200323-nightly</string>
 		<string>3.3.20200301-nightly</string>
 		<string>3.3.20190610-nightly</string>
 		<string>3.3.20191122-nightly</string>
@@ -10209,6 +10210,7 @@ Split Vertically with Current Profile</string>
 		<string>3.3.20191105-nightly</string>
 		<string>3.3.20190912-nightly</string>
 		<string>3.3.20191218-nightly</string>
+		<string>3.3.20200325-nightly</string>
 		<string>3.3.20190725-nightly</string>
 		<string>3.3.20191030-nightly</string>
 		<string>3.3.20191203-nightly</string>
@@ -10314,7 +10316,7 @@ Split Vertically with Current Profile</string>
 	<key>NoSyncInstallationId</key>
 	<string>1E6FE2C1-D203-4C53-98CB-12134D0DAE65</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>424</integer>
+	<integer>437</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -11084,6 +11086,8 @@ Split Vertically with Current Profile</string>
 	<string>/Volumes/Seagate/mike3run/dotfiles/iterm</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<false/>
+	<key>PreventEscapeSequenceFromClearingHistory</key>
+	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>RightCommand</key>
@@ -11099,11 +11103,13 @@ Split Vertically with Current Profile</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-17T15:52:15Z</date>
+	<date>2020-03-26T16:57:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUSkippedVersion</key>
+	<string>3.3.20200326-nightly</string>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>3487171054</integer>
+	<integer>2287297958</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -11138,6 +11144,8 @@ Split Vertically with Current Profile</string>
 	<integer>22</integer>
 	<key>TerminalVMargin</key>
 	<integer>18</integer>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1585121280</real>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
@@ -11155,7 +11163,7 @@ Split Vertically with Current Profile</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.20200315-nightly</string>
+	<string>3.3.20200325-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

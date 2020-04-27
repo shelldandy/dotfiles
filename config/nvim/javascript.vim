@@ -20,23 +20,20 @@ if has_key(g:plugs, 'ultisnips')
 endif
 
 if has_key(g:plugs, 'deoplete.nvim')
-  let g:deoplete#enable_at_startup = 1
-  " Autocomplete from files now works from current buffer
-  let g:deoplete#file#enable_buffer_path = 1
+  " Enable deoplete when InsertEnter.
+  let g:deoplete#enable_at_startup = 0
+  autocmd InsertEnter * call deoplete#enable()
   " Close the preview window automatically after completion is done
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
 
 if has_key(g:plugs, 'deoplete-ternjs')
-  if !exists('g:deoplete#omni#input_patterns')
-    let g:deoplete#omni#input_patterns = {}
-  endif
-  let g:deoplete#omni#functions = {}
-  let g:deoplete#sources = {}
-  let g:deoplete#sources['javascript'] = ['file', 'ultisnips', 'ternjs', 'buffer']
-  let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs', 'buffer']
-  autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
-  autocmd FileType javascript.jsx nnoremap <silent> <buffer> gb :TernDef<CR>
+  let g:deoplete#sources#ternjs#depths = 1
+  let g:deoplete#sources#ternjs#filetypes = [
+  \ 'jsx',
+  \ 'javascript.jsx',
+  \ 'vue',
+  \ ]
 endif
 
 if has_key(g:plugs, 'tern_for_vim')
