@@ -20,8 +20,6 @@ if has_key(g:plugs, 'ultisnips')
 endif
 
 if has_key(g:plugs, 'deoplete.nvim')
-  " Enable deoplete when InsertEnter.
-  let g:deoplete#enable_at_startup = 0
   autocmd InsertEnter * call deoplete#enable()
   " Close the preview window automatically after completion is done
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
