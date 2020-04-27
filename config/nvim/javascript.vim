@@ -21,12 +21,9 @@ endif
 
 if has_key(g:plugs, 'deoplete.nvim')
   autocmd InsertEnter * call deoplete#enable()
-  " Close the preview window automatically after completion is done
-  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 endif
 
 if has_key(g:plugs, 'deoplete-ternjs')
-  let g:deoplete#sources#ternjs#depths = 1
   let g:deoplete#sources#ternjs#filetypes = [
   \ 'jsx',
   \ 'javascript.jsx',
@@ -46,10 +43,3 @@ if has_key(g:plugs, 'tern_for_vim')
   nnoremap <Leader>td :TernDoc<CR>
   nnoremap <Leader>tb :TernDocBrowse<CR>
 endif
-
-if has_key(g:plugs, 'supertab')
-  autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-  autocmd FileType javascript.jsx let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-endif
-
-nnoremap <Leader>js :set filetype=javascript<CR>
