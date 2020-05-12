@@ -70,7 +70,7 @@ imap <right> <nop>
 nnoremap <Leader>db :Breakpoint<CR>
 
 " Clear Buffer Quickly
-nnoremap <Leader>bc :BufOnly<CR>
+nnoremap <Leader>cb :BufOnly<CR>
 " Buffer Switching
 nnoremap <Leader>l :bnext<CR>
 nnoremap <Leader>h :bprevious<CR>
@@ -143,7 +143,7 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 
 nnoremap <Leader><Tab> :call TabToggle()<CR>
 nnoremap <Leader>wm :call WriteMode()<CR>
-nnoremap <Leader>bt :call BackgroundToggle()<CR>
+nnoremap <Leader>tb :call BackgroundToggle()<CR>
 nnoremap <Leader>pt :PencilToggle <CR>
 
 " Focus mode (like iaWriter)
