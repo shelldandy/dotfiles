@@ -52,7 +52,7 @@ if has_key(g:plugs, 'fzf.vim')
   nnoremap <Leader>p :Files<CR>
   nnoremap <Leader>f :Ag<space>
   nnoremap <Leader>h :History<CR>
-  nnoremap <Leader>b :Buffers<CR>
+  nnoremap <Leader>bb :Buffers<CR>
 endif
 
 " Disabling the directional keys
@@ -70,7 +70,7 @@ imap <right> <nop>
 nnoremap <Leader>db :Breakpoint<CR>
 
 " Clear Buffer Quickly
-nnoremap <Leader>cb :BufOnly<CR>
+nnoremap <Leader>bc :BufOnly<CR>
 " Buffer Switching
 nnoremap <Leader>l :bnext<CR>
 nnoremap <Leader>h :bprevious<CR>
