@@ -85,14 +85,13 @@ brew install 'watchman'                   # Watches files triggers actions
 brew install 'yarn' --without-node        # faster npm
 brew install 'source-highlight'           # to give less highlight powers
 brew install 'the_silver_searcher'        # ag (used in fzf-vim)
-brew install 'thefuck'                    # for when you fuck up
 
 ## Language
 brew install 'rust'
 brew install 'go'                         # gogogogogo
 
 # Casks
-brew cask install 'contexts'
+brew cask install 'balenaetcher'
 brew cask install 'dash'
 brew cask install 'dashlane'
 brew cask install 'docker'
@@ -101,7 +100,6 @@ brew cask install 'firefox'
 brew cask install 'figma'
 brew cask install 'focus'
 brew cask install 'google-chrome'
-brew cask install 'google-play-music-desktop-player'
 brew cask install 'iterm2-nightly'
 brew cask install 'rocket'
 brew cask install 'sketch'
@@ -110,5 +108,4 @@ brew cask install 'slack'
 brew cask install 'spotify'
 brew cask install 'subtitles'
 brew cask install 'telegram'
-brew cask install 'vanilla'
 brew cask install 'whatsapp'

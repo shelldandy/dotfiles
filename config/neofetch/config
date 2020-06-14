@@ -594,7 +594,7 @@ disk_display="off"
 # Default:  'ascii'
 # Values:   'ascii', 'caca', 'catimg', 'jp2a', 'iterm2', 'off', 'termpix', 'pixterm', 'tycat', 'w3m'
 # Flag:     --backend
-image_backend="iterm2"
+image_backend="w3m-img"
 
 # Image Source
 #
