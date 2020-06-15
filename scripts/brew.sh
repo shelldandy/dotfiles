@@ -89,9 +89,10 @@ brew install 'rust'
 brew install 'go'                         # gogogogogo
 
 # Casks
-brew cask install 'balenaetcher'
-brew cask install 'dash'
-brew cask install 'dashlane'
+brew cask install 'balenaetcher'          # Burn ISO images to USB Drives
+brew cask install 'contexts'              # Better cmd-tab
+brew cask install 'dash'                  # Docs
+brew cask install 'dashlane'              # Password manager
 brew cask install 'docker'
 brew cask install 'dropbox'
 brew cask install 'firefox'
@@ -106,4 +107,5 @@ brew cask install 'slack'
 brew cask install 'spotify'
 brew cask install 'subtitles'
 brew cask install 'telegram'
+brew cask install 'transmission'
 brew cask install 'whatsapp'
