@@ -8,11 +8,8 @@
 ##     ## ##    ##  ##       ##  ##  ##
 ########  ##     ## ########  ###  ###
 
-# Install RVM
-curl -sSL https://get.rvm.io | bash -s stable --ruby
-
 # Install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Taps
 brew tap 'neovim/neovim'
@@ -87,6 +84,7 @@ brew install 'source-highlight'           # to give less highlight powers
 brew install 'the_silver_searcher'        # ag (used in fzf-vim)
 
 ## Language
+brew install 'ruby'
 brew install 'rust'
 brew install 'go'                         # gogogogogo
 
