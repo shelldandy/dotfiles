@@ -91,6 +91,7 @@ Plug 'alvan/vim-closetag'                                           " Autoclose 
 Plug 'vim-airline/vim-airline'                                      " Vim Airline
 Plug 'scrooloose/nerdcommenter'                                     " Nerd Commenter
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-ragtag'                                             " Endings for html/xml
 Plug 'tpope/vim-surround'                                           " Quickly change parens quotes, etc
 Plug 'reedes/vim-pencil'                                            " Pencil / Write Mode
 Plug 'vim-scripts/BufOnly.vim'                                      " Clear buffers
@@ -110,6 +111,7 @@ Plug 'iamcco/markdown-preview.nvim', {
   \   }
 Plug 'mattn/emmet-vim'
 Plug 'godlygeek/tabular'
+Plug 'tpope/vim-sleuth'                                             " Detect indent style
 
 " Vim Ranger
 Plug 'rbgrouleff/bclose.vim'

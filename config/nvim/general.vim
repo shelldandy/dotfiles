@@ -19,6 +19,7 @@ set omnifunc=syntaxcomplete#Complete  " Addind omnifunc dics in general
 set encoding=utf8                     " Show all funky signs
 set backspace=indent,eol,start        " Make delete work on vim8
 " set shell=bash                        " Specify a POSIX shell since vim don't like 🐟
+set magic
 
 " Hidden Buffer files
 set hidden
