@@ -30,6 +30,12 @@ if has_key(g:plugs, 'supertab')
   let g:SuperTabDefaultCompletionType = "<c-n>"
 endif
 
+if has_key(g:plugs, 'vim-mucomplete')
+  set completeopt+=menuone
+  set completeopt+=noinsert
+  let g:mucomplete#enable_auto_at_startup = 1
+endif
+
 if has_key(g:plugs, 'ultisnips')
   let g:UltiSnipsExpandTrigger="<C-j>"
 endif

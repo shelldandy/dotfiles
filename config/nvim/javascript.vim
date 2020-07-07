@@ -19,18 +19,6 @@ if has_key(g:plugs, 'ultisnips')
   :imap ,uu <C-J>
 endif
 
-if has_key(g:plugs, 'deoplete.nvim')
-  autocmd InsertEnter * call deoplete#enable()
-endif
-
-if has_key(g:plugs, 'deoplete-ternjs')
-  let g:deoplete#sources#ternjs#filetypes = [
-  \ 'jsx',
-  \ 'javascript.jsx',
-  \ 'vue',
-  \ ]
-endif
-
 if has_key(g:plugs, 'tern_for_vim')
   let g:tern_request_timeout = 1
   let g:tern_show_signature_in_pum = 1
