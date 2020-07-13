@@ -77,6 +77,21 @@ function nvm-update
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 end
 
+# Update Yabai
+function up-yabai
+  # stop, upgrade, start yabai
+  brew services stop yabai
+  brew upgrade yabai
+  brew services start yabai
+
+  # reinstall the scripting addition
+  sudo yabai --uninstall-sa
+  sudo yabai --install-sa
+
+  # load the scripting addition
+  killall Dock
+end
+
 function update
   echo 'Updating homebrew stuff...' | cowsay | lolcat -t
   brew update
