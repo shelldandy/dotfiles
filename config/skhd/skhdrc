@@ -11,7 +11,10 @@
 ]
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-cmd - return : /Applications/iTerm.app
+cmd - return : /Applications/iTerm.app/Contents/MacOS/iTerm2 --single-instance -d
+
+# open terminal, blazingly fast compared to iTerm/Hyper
+cmd + shift - return : /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox --single-instance -d
 
 # focus window
 alt - h : yabai -m window --focus west
