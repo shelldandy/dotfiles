@@ -41,6 +41,8 @@ shift + cmd - n : yabai -m space --create && \
   yabai -m space --focus "${index}"
 
 # fast focus desktop
+cmd + shift - j : yabai -m space --focus next
+cmd + shift - k : yabai -m space --focus prev
 cmd + alt - x : yabai -m space --focus recent
 cmd + alt - 1 : yabai -m space --focus 1
 
