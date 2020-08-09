@@ -81,6 +81,7 @@ nnoremap <leader>bq :bp <BAR> bd #<CR>
 " Git Controls Flow
 if has_key(g:plugs, 'vim-fugitive')
   nnoremap <Leader>gaa :! git add .<CR>
+  nnoremap <Leader>gat :! git add %<CR>
   nnoremap <Leader>gc :Gcommit<CR>
   nnoremap <Leader>gp :Gpush<CR>
   nnoremap <Leader>gs :Gstatus<CR>

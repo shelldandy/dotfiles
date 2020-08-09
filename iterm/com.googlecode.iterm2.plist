@@ -4836,15 +4836,21 @@ Split Vertically with Current Profile</string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 708 400 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 511 620 392 0 0 1920 1057 </string>
+	<string>650 498 620 392 0 0 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>268 261 606 469 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>901 564 796 486 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>50 121 1457 912 0 0 1920 1057 </string>
+	<string>719 295 1079 665 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1496 165 404 361 0 0 1920 1057 </string>
+	<string>963 63 945 983 0 0 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>12 12 945 514 0 0 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>12 12 1896 1034 0 0 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>1438 12 470 1034 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_C41EA87F-76D4-4401-9B20-DB8833BE3028</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_C41EA87F-76D4-4401-9B20-DB8833BE3028_selection</key>
@@ -10207,7 +10213,9 @@ Split Vertically with Current Profile</string>
 		<string>3.3.20191108-nightly</string>
 		<string>3.3.20200515-nightly</string>
 		<string>3.3.20191112-nightly</string>
+		<string>3.4.20200709-nightly</string>
 		<string>3.3.20200403-nightly</string>
+		<string>3.4.20200713-nightly</string>
 		<string>3.3.20191202-nightly</string>
 		<string>3.3.20190729-nightly</string>
 		<string>3.3.20190930-nightly</string>
@@ -10234,6 +10242,7 @@ Split Vertically with Current Profile</string>
 		<string>3.3.20200402-nightly</string>
 		<string>3.3.20200205-nightly</string>
 		<string>3.4.20200627-nightly</string>
+		<string>3.4.20200712-nightly</string>
 		<string>3.3.20190719-nightly</string>
 		<string>3.3.20200122-nightly</string>
 		<string>3.3.20190920-nightly</string>
@@ -10264,6 +10273,7 @@ Split Vertically with Current Profile</string>
 		<string>3.3.20191106-nightly</string>
 		<string>3.3.20200513-nightly</string>
 		<string>3.3.20191110-nightly</string>
+		<string>3.4.20200707-nightly</string>
 		<string>3.3.20200204-nightly</string>
 		<string>3.4.20200630-nightly</string>
 		<string>3.3.20200121-nightly</string>
@@ -10294,6 +10304,7 @@ Split Vertically with Current Profile</string>
 		<string>3.3.20190829-nightly</string>
 		<string>3.3.20200203-nightly</string>
 		<string>3.4.20200706-nightly</string>
+		<string>3.4.20200710-nightly</string>
 		<string>3.3.20190914-nightly</string>
 		<string>3.3.20190717-nightly</string>
 		<string>3.3.20191226-nightly</string>
@@ -10359,7 +10370,7 @@ Split Vertically with Current Profile</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{837, 689}</string>
+		<string>{1069, 887}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -10372,7 +10383,7 @@ Split Vertically with Current Profile</string>
 	<key>NoSyncLastOSVersion</key>
 	<string>Version 10.15.5 (Build 19F101)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>603</integer>
+	<integer>626</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -11187,17 +11198,17 @@ Split Vertically with Current Profile</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-06T14:09:55Z</date>
+	<date>2020-07-17T14:18:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>277312043</integer>
+	<integer>3343096639</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
 	<key>ShowPaneTitles</key>
@@ -11245,7 +11256,7 @@ Split Vertically with Current Profile</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.4.20200706-nightly</string>
+	<string>3.4.20200713-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

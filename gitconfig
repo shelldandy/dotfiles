@@ -30,6 +30,8 @@
   history = !"git lg --follow -p --"
 [merge]
   ff = false
+[pull]
+  rebase = false
 [commit]
   gpgsign = true
 [push]

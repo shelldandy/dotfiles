@@ -20,6 +20,7 @@ abbr gl git lg
 abbr gd git diff
 abbr ll exa -lah
 abbr x exit
+abbr k kubectl
 
 abbr r ranger
 abbr f fuck
