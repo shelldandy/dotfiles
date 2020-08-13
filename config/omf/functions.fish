@@ -206,3 +206,7 @@ end
 function man
   command man $argv | bat
 end
+
+function my_ip
+  curl ifconfig.co
+end
