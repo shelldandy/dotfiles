@@ -4,7 +4,7 @@ source ~/.themes/gruvbox-dark.sh
 # Exports
 set -x EDITOR nvim
 set -x HOMEBREW_CASK_OPTS '--appdir=/Applications'
-set -x TERM xterm-256color-italic
+set -x TERM xterm-256color
 set -x GPG_TTY (tty)
 
 set -x LANGUAGE en_US.UTF8

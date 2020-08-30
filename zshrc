@@ -26,7 +26,7 @@ alias x='exit'
 alias df='cd ~/dotfiles'
 alias gf='cd ~/git'
 
-export TERM=xterm-256color-italic
+export TERM=xterm-256color
 export EDITOR='nvim'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
