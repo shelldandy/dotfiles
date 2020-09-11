@@ -92,10 +92,6 @@ if has_key(g:plugs, 'emmet-vim')
   autocmd FileType html,css,liquid,scss,javascript.jsx,javascript,htmldjango,less EmmetInstall
 endif
 
-if has_key(g:plugs, 'vim-polyglot')
-  let g:polyglot_disabled = ['markdown']
-endif
-
 if has_key(g:plugs, 'vim-localvimrc')
   " Don't ask me each time I load a lvimrc file
   let g:localvimrc_ask = 0
