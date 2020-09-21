@@ -60,7 +60,10 @@ Plug 'carlitux/deoplete-ternjs', {
   \   'do': 'yarn global add tern',
   \   'for': ['Javascript', 'javascript.jsx']
   \   }
-Plug 'heavenshell/vim-jsdoc'                                        " JSDocs on Demand
+Plug 'heavenshell/vim-jsdoc', {
+  \ 'for': ['javascript', 'javascript.jsx','typescript'],
+  \ 'do': 'make install'
+\}
 Plug 'rhysd/vim-fixjson'                                            " Autofix json
 Plug 'yardnsm/vim-import-cost', {
   \  'do': 'npm install'
