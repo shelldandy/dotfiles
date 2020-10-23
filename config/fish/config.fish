@@ -13,6 +13,7 @@ set -x LC_CTYPE en_US.UTF8
 set -x LC_TYPE en_US.UTF-8
 set -x LC_ALL en_US.UTF-8
 set -x NNN_USE_EDITOR '1'
+set -x COMPOSE_HTTP_TIMEOUT '180' # Docker lol
 
 set ANDROID_HOME $HOME/Library/Android/sdk
 test -d $ANDROID_HOME/tools ; and set PATH $ANDROID_HOME/tools $PATH

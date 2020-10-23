@@ -74,7 +74,7 @@ set tabstop=2                         " use two spaces for tabs
 " Folding
 set foldmethod=indent                 " The folds will happen by indentation like Atom
 set foldlevelstart=1                  " Start folding at the top of every function
-set foldnestmax=20                     " But just fold up to 20 levels
+set foldnestmax=40                     " But just fold up to 20 levels
 
 " text appearance
 set list                              " show invisible characters
