@@ -49,10 +49,20 @@ endif
 
 " FZF
 if has_key(g:plugs, 'fzf.vim')
-  nnoremap <Leader>p :Files<CR>
-  nnoremap <Leader>f :Ag<space>
-  nnoremap <Leader>h :History<CR>
-  nnoremap <Leader>bb :Buffers<CR>
+  nnoremap <Leader>p              :Files<CR>
+  nnoremap <Leader>f              :Ag<space>
+  nnoremap <Leader>h              :History<CR>
+  nnoremap <Leader>bb             :Buffers<CR>
+  nnoremap <silent> <Leader>ag    :Ag <C-R><C-W><CR>
+  nnoremap <silent> <Leader>AG    :Ag <C-R><C-A><CR>
+  xnoremap <silent> <Leader>ag    y:Ag <C-R>"<CR>
+  nnoremap <silent> <Leader>`     :Marks<CR>
+  inoremap <expr> <c-x><c-t> fzf#complete('tmuxwords.rb --all-but-current --scroll 500 --min 5')
+  imap <c-x><c-k> <plug>(fzf-complete-word)
+  imap <c-x><c-f> <plug>(fzf-complete-path)
+  inoremap <expr> <c-x><c-d> fzf#vim#complete#path('blsd')
+  imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+  imap <c-x><c-l> <plug>(fzf-complete-line)
 endif
 
 " Disabling the directional keys

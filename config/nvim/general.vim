@@ -134,6 +134,15 @@ augroup end
 " Sometimes deoplete dies on my MBP
 autocmd FileType vim call deoplete#custom#buffer_option('auto_complete', v:false)
 
+" Close preview window
+augroup vimrc
+  if exists('##CompleteDone')
+    au CompleteDone * pclose
+  else
+    au InsertLeave * if !pumvisible() && (!exists('*getcmdwintype') || empty(getcmdwintype())) | pclose | endif
+  endif
+augroup end
+
 " ==================================================================================================
 " Searching
 " ==================================================================================================
