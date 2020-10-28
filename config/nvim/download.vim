@@ -15,11 +15,9 @@ Plug 'junegunn/seoul256.vim'
 " Syntax Highlights
 let g:polyglot_disabled = ['markdown']
 Plug 'sheerun/vim-polyglot'                                         " Syntax Highlight and Snippets for tons of languages
-Plug 'godlygeek/tabular'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ap/vim-css-color'
-Plug 'shelldandy/kwm.vim'
-Plug 'shelldandy/shopify.vim'
+" Plug 'shelldandy/shopify.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'Quramy/vim-js-pretty-template'
@@ -34,13 +32,9 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
-Plug 'fszymanski/deoplete-emoji'
-Plug 'Shougo/neco-vim'
 Plug 'othree/csscomplete.vim'
-" Plug 'mhartington/nvim-typescript'
 
 " Javascript
-Plug 'styled-components/vim-styled-components'                      " Vim Styled Components
 Plug 'styled-components/vim-styled-components', {
   \   'branch': 'main'
   \   }
@@ -76,7 +70,6 @@ Plug 'jiangmiao/auto-pairs'                                         " Auto close
 Plug 'airblade/vim-gitgutter'                                       " Git Situation on my Lines like Atom
 Plug 'tpope/vim-fugitive'                                           " Vim Fugitive Awesome git shortcuts on vim
 Plug 'gregsexton/gitv', {'on': ['Gitv']}                            " Vim Fugitive Git Log Extension
-Plug 'tpope/vim-unimpaired'                                         " Quickly move around buffers etc
 Plug 'brooth/far.vim'                                               " Search and replace
 Plug 'valloric/matchtagalways'
 Plug 'christoomey/vim-tmux-navigator'

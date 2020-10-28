@@ -56,6 +56,9 @@ if has_key(g:plugs, 'fzf.vim')
   nnoremap <silent> <Leader>ag    :Ag <C-R><C-W><CR>
   nnoremap <silent> <Leader>AG    :Ag <C-R><C-A><CR>
   nnoremap <silent> <Leader>`     :Marks<CR>
+  " Autocomplete Paths
+  imap ,p <plug>(fzf-complete-file-ag)
+  imap <c-x><c-f> <plug>(fzf-complete-path)
 endif
 
 " Disabling the directional keys
@@ -140,10 +143,6 @@ if has_key(g:plugs, 'ranger.vim')
   let g:ranger_map_keys = 0
   map <leader>P :Ranger<CR>
 endif
-
-" Autocomplete Paths
-imap ,p <plug>(fzf-complete-file-ag)
-imap <c-x><c-f> <plug>(fzf-complete-path)
 
 nnoremap <Leader><Tab> :call TabToggle()<CR>
 nnoremap <Leader>wm :call WriteMode()<CR>

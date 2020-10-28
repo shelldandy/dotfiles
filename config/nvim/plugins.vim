@@ -28,6 +28,7 @@ endif
 
 if has_key(g:plugs, 'supertab')
   let g:SuperTabDefaultCompletionType = "<c-n>"
+  let g:SuperTabDefaultCompletionType = "context"
 endif
 
 if has_key(g:plugs, 'ultisnips')
