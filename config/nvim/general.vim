@@ -44,7 +44,7 @@ set number                            " show line numbers
 set relativenumber                    " show relative line numbers
 set ruler                             " show current position at bottom
 set scrolloff=5                       " keep at least 5 lines above/below
-set shortmess+=aAIsT                  " disable welcome screen and other messages
+set shortmess+=aAIsTc                 " disable welcome screen and other messages
 set showcmd                           " show any commands
 set sidescroll=1                      " smoother horizontal scrolling
 set sidescrolloff=5                   " keep at least 5 lines left/right
