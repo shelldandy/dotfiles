@@ -27,7 +27,6 @@ if has_key(g:plugs, 'ale')
 endif
 
 if has_key(g:plugs, 'supertab')
-  let g:SuperTabDefaultCompletionType = "<c-n>"
   let g:SuperTabDefaultCompletionType = "context"
 endif
 
@@ -114,4 +113,8 @@ if has_key(g:plugs, 'vim-pandoc-syntax')
     \ 'js=javascript',
     \ 'viml=vim',
   \]
+endif
+
+if has_key(g:plugs, 'deoplete.nvim')
+
 endif

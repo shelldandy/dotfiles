@@ -56,9 +56,6 @@ if has_key(g:plugs, 'fzf.vim')
   nnoremap <silent> <Leader>ag    :Ag <C-R><C-W><CR>
   nnoremap <silent> <Leader>AG    :Ag <C-R><C-A><CR>
   nnoremap <silent> <Leader>`     :Marks<CR>
-  " Autocomplete Paths
-  imap ,p <plug>(fzf-complete-file-ag)
-  imap <c-x><c-f> <plug>(fzf-complete-path)
 endif
 
 " Disabling the directional keys
