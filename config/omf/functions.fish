@@ -26,7 +26,7 @@ function ydl      ; youtube-dl $argv ; end
 # Fun
 
 function moo # Random cowsay
-  set cows_dir /usr/local/Cellar/cowsay/3.04/share/cows
+  set cows_dir /usr/local/Cellar/cowsay/3.04_1/share/cows
   set avatar (ls $cows_dir | gshuf -n1|cut -d'.' -f1)
   fortune | cowsay -f $avatar | lolcat -t
 end
