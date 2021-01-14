@@ -98,7 +98,7 @@ function update
   brew upgrade
   brew cleanup
   echo 'Updating casks' | cowsay | lolcat -t
-  brew cask upgrade
+  brew upgrade --cask
   echo 'Updating Neovim...' | cowsay | lolcat -t
   nvim -c 'PlugUpdate' -c 'qa'
   set currentPath (pwd)
