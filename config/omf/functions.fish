@@ -15,7 +15,6 @@ function g        ; git $argv ; end
 function dc       ; docker-compose $argv ; end
 function gs       ; git status ; end
 function gaa      ; git add . ; end
-function gh       ; git log --follow -p --stat --abbrev-commit --decorate -- $argv; end
 function oa       ; open -a $argv ; end
 function rm       ; trash $argv ; end
 
