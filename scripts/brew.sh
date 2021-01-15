@@ -29,6 +29,7 @@ brew install 'openssl@1.1'                # used for self-signed certificates
 brew install 'pinentry-mac'               # Nicer gpg password entry situation
 brew install 'glances'                    # A cooler top (to see which app is using resources)
 brew install 'htop'                       # top and nano finally together
+brew install 'gh'                         # Github from the CLI
 
 ## Commands
 brew install 'perl'
@@ -92,7 +93,6 @@ brew install 'go'                         # gogogogogo
 brew cask install 'balenaetcher'          # Burn ISO images to USB Drives
 brew cask install 'contexts'              # Better cmd-tab
 brew cask install 'dash'                  # Docs
-brew cask install 'dashlane'              # Password manager
 brew cask install 'docker'
 brew cask install 'dropbox'
 brew cask install 'firefox'
@@ -104,8 +104,6 @@ brew cask install 'rocket'
 brew cask install 'sketch'
 brew cask install 'skype'
 brew cask install 'slack'
-brew cask install 'spotify'
 brew cask install 'subtitles'
 brew cask install 'telegram'
 brew cask install 'transmission'
-brew cask install 'whatsapp'
