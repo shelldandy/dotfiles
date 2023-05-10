@@ -6,13 +6,13 @@ if [ ! -f $HOME/.hushlogin ]; then
 fi
 
 # prepare for vim
-source ./vim.sh
+#source ./vim.sh
 
 # install with brew
-source ./brew.sh
+#source ./brew.sh
 
 # install ruby gems
-source ./ruby.sh
+#source ./ruby.sh
 
 # install app store apps with mas
 while test $# -gt 0; do

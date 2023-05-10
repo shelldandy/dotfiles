@@ -11,13 +11,13 @@
 " =================================================================================================
 
 " Base Situation
-language en_US                        " Base Language
+" language en                         " Base Language
 set nocompatible                      " vim, not vi
 syntax on                             " syntax highlighting
 filetype plugin indent on             " try to recognise filetype and load plugins and indent files
 set encoding=utf8                     " Show all funky signs
 set backspace=indent,eol,start        " Make delete work on vim8
-" set shell=bash                        " Specify a POSIX shell since vim don't like 🐟
+set shell=zsh                         " Specify a POSIX shell since vim don't like 🐟
 set magic
 
 " Hidden Buffer files
@@ -26,13 +26,7 @@ set noswapfile
 set nobackup
 set nowb
 
-" Omni Completion" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-set completeopt=menuone,preview,noinsert
+set completeopt=menuone,preview,noinsert,noselect
 
 " interface
 syntax enable
@@ -44,7 +38,7 @@ set number                            " show line numbers
 set relativenumber                    " show relative line numbers
 set ruler                             " show current position at bottom
 set scrolloff=5                       " keep at least 5 lines above/below
-set shortmess+=aAIsTc                 " disable welcome screen and other messages
+set shortmess+=aAIsT                  " disable welcome screen and other messages
 set showcmd                           " show any commands
 set sidescroll=1                      " smoother horizontal scrolling
 set sidescrolloff=5                   " keep at least 5 lines left/right
@@ -80,7 +74,7 @@ set tabstop=2                         " use two spaces for tabs
 " Folding
 set foldmethod=indent                 " The folds will happen by indentation like Atom
 set foldlevelstart=1                  " Start folding at the top of every function
-set foldnestmax=40                     " But just fold up to 20 levels
+set foldnestmax=99                    " But just fold up to 20 levels
 
 " text appearance
 set list                              " show invisible characters
@@ -95,7 +89,7 @@ set exrc                              " Allow the use of per project .vimrc file
 set updatetime=250                    " timeout for plugins like gitgutter etc.
 set autoread                          " update file when changed outside of vim
 set autoindent                        " copy indentation from the previous line for new line
-set clipboard=unnamed                 " use native clipboard
+set clipboard+=unnamedplus            " use native clipboard
 set history=200                       " store last 200 commands as history
 set nobackup                          " don't save backups
 set noerrorbells visualbell t_vb=     " no error bells please
@@ -110,6 +104,25 @@ set undolevels=1000                   " store 1000 undos
 if !&readonly && &modifiable
   set fileencoding=utf-8              " the encoding written to file
 endif
+
+" Binary
+set wildignore+=*.aux,*.out,*.toc
+set wildignore+=*.o,*.obj,*.exe,*.dll,*.jar,*.pyc,*.rbc,*.class
+set wildignore+=*.ai,*.bmp,*.gif,*.ico,*.jpg,*.jpeg,*.png,*.psd,*.webp
+set wildignore+=*.avi,*.m4a,*.mp3,*.oga,*.ogg,*.wav,*.webm
+set wildignore+=*.eot,*.otf,*.ttf,*.woff
+set wildignore+=*.doc,*.pdf
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+" Cache
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*.gem
+set wildignore+=.sass-cache
+set wildignore+=npm-debug.log
+" Compiled
+set wildignore+=*.marko.js
+set wildignore+=*.min.*,*-min.*
+" Temp/System
+set wildignore+=*.*~,*~
+set wildignore+=*.swp,.lock,.DS_Store,._*,tags.lock
 
 " =================================================================================================
 " Autocommands
@@ -131,15 +144,6 @@ augroup vimrcEx
   autocmd InsertLeave * set cursorline
 augroup END
 
-augroup omnifuncs
-  autocmd!
-  autocmd FileType html,markdown,liquid setlocal omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS noci
-augroup end
-
-" Sometimes deoplete dies on my MBP
-autocmd FileType vim call deoplete#custom#buffer_option('auto_complete', v:false)
-
 " Close preview window
 augroup vimrc
   if exists('##CompleteDone')
@@ -148,21 +152,3 @@ augroup vimrc
     au InsertLeave * if !pumvisible() && (!exists('*getcmdwintype') || empty(getcmdwintype())) | pclose | endif
   endif
 augroup end
-
-" ==================================================================================================
-" Searching
-" ==================================================================================================
-
-if executable('ag')
-  " use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " define Ag command
-  command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-
-  " bind \ to grep shortcut
-  nnoremap \ :Ag<SPACE>
-endif
-
-let g:python_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'

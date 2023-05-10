@@ -42,3 +42,8 @@ Thumbs.db
 
 # NodeJS
 node_modules
+
+# Env #
+#######
+.env
+*.secret.*

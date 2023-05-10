@@ -21,29 +21,31 @@ console.log($0)
 endsnippet
 
 snippet stateless "A basic stateless placeholder" b
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const ${1:MyComponent} = () => (
-	${2:<div>$1</div>}
-);
+const ${1:MyComponent} = () => {
+	return (
+		${2:<div>$1</div>}
+	)
+}
 
-$1.propTypes = {};
+$1.propTypes = {}
 
-$1.defaultProps = {};
+$1.defaultProps = {}
 
-export default $1;
+export default $1
 endsnippet
 
 snippet react "Stateful react snippet" b
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class ${1:MyComponent} extends Component {
 	render () {
 		return (
 			${2:<h1>$1</h1>}
-		);
+		)
 	}
 
   static propTypes = {}
@@ -51,18 +53,18 @@ class ${1:MyComponent} extends Component {
   static defaultProps = {}
 }
 
-export default $1;
+export default $1
 endsnippet
 
 snippet pureReact "Pure react component snippet" b
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 
 class ${1:MyComponent} extends PureComponent {
 	render () {
 		return (
 			${2:<h1>$1</h1>}
-		);
+		)
 	}
 
   static propTypes = {}
@@ -70,7 +72,7 @@ class ${1:MyComponent} extends PureComponent {
   static defaultProps = {}
 }
 
-export default $1;
+export default $1
 endsnippet
 
 snippet sasstest "Sass Test with Jest" b
@@ -99,11 +101,11 @@ describe('$1 Component', () => {
 endsnippet
 
 snippet styled "Styled Component" b
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ${1:Component} = styled.${2:div}\`
 	$0
-\`;
+\`
 endsnippet
 
 snippet styled-test "Styled Component Test" b
@@ -134,29 +136,29 @@ export const ${1:Component} = styled.${2:div}\`
 endsnippet
 
 snippet im "import local"
-import ${1:Module} from './$1';
+import ${1:Module} from './$1'
 endsnippet
 
 snippet in "import named"
-import { ${1:Module} } from './$1';
+import { ${1:Module} } from './$1'
 endsnippet
 
 snippet eda "export default as"
-export { default as ${1:Module} } from './$1';
+export { default as ${1:Module} } from './$1'
 endsnippet
 
 snippet edf "export default from"
-export { default } from './$1';
+export { default } from './$1'
 endsnippet
 
 snippet ex "export default"
-export default $1;
+export default $1
 endsnippet
 
 snippet eo "export object"
 export {
 	$1
-};
+}
 endsnippet
 
 snippet mq "media query" w
@@ -165,31 +167,10 @@ snippet mq "media query" w
 }
 endsnippet
 
+snippet rc "react comment" w
+{/* $0 */}
+endsnippet
+
 snippet thp "theme prop" w
 ${({ ${1:someProp} }) => $1 $0}
-endsnippet
-
-# Work stuff
-snippet getColor "getColor"
-import { getColor, typeScale } from 'core/utils';
-endsnippet
-
-snippet lazyimg "LazyLoadedImg"
-import LazyLoadedImg from 'core/components/LazyLoadedImg';
-endsnippet
-
-snippet fancyimg "FancyHoverImg"
-import FancyHoverImg from 'core/components/FancyHoverImg';
-endsnippet
-
-snippet gc "quick getColor" w
-${getColor("$1")}
-endsnippet
-
-snippet ts "quick typeScale" w
-${typeScale($1)}
-endsnippet
-
-snippet rn "quick round" w
-${round($1)}
 endsnippet

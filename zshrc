@@ -10,6 +10,7 @@ export PATH="/usr/local/sbin:$PATH"
 # Android Tools for React Native
 # https://facebook.github.io/react-native/docs/getting-started.html
 export ANDROID_HOME=${HOME}/Library/Android/sdk
+export THEME_COLORS=gruvbox-dark
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
