@@ -1,4 +1,5 @@
 source ~/.zprezto/init.zsh
+source ~/.env.secret.zsh
 
 # Import all custom plugins and love
 for f in ~/.zsh/*
@@ -76,6 +77,13 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. /opt/homebrew/etc/profile.d/z.sh
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
+# Starship prompt
+eval "$(starship init zsh)"

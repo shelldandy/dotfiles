@@ -93,3 +93,6 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'sorin'
+
+# Z-Zsh
+zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
