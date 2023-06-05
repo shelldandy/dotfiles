@@ -1,4 +1,0 @@
-#!/bin/bash
-
-brew cask zap sketch
-brew cask install sketch

@@ -30,3 +30,7 @@ set -g fish_user_paths "/usr/local/opt/ruby/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 starship init fish | source
+
+# allow locally installed npm binaries to be executed;
+# added by `npm i -g add-local-binaries-to-path`
+set -gx PATH $PATH ./node_modules/.bin

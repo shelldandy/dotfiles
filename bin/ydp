@@ -1,0 +1,7 @@
+#!/bin/bash
+
+currentPath=$(pwd)
+url=$(pbpaste)
+cd ~/Downloads || exit
+youtube-dl "$url"
+cd "$currentPath" || exit

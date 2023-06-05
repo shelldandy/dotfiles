@@ -36,6 +36,12 @@ Plug 'heavenshell/vim-jsdoc', {
 \}
 Plug 'rhysd/vim-fixjson'                                            " Autofix json
 
+" Go
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'neovim/nvim-lspconfig'
+Plug 'ray-x/go.nvim'
+Plug 'ray-x/guihua.lua'
+
 " General/Movement
 Plug 'f-person/git-blame.nvim'                                      " Show blame next to the line we're at
 Plug 'kyazdani42/nvim-tree.lua'
@@ -63,7 +69,6 @@ Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Others
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'alvan/vim-closetag'                                           " Autoclose html tags
 Plug 'scrooloose/nerdcommenter'                                     " Nerd Commenter
 Plug 'tpope/vim-repeat'

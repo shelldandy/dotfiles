@@ -6,14 +6,10 @@ for f in ~/.zsh/*
   do source $f
 done
 
+export THEME_COLORS=gruvbox-dark
 # Zsh Files of Miguel Palau
 export PATH="/usr/local/sbin:$PATH"
-# Android Tools for React Native
-# https://facebook.github.io/react-native/docs/getting-started.html
-export ANDROID_HOME=${HOME}/Library/Android/sdk
-export THEME_COLORS=gruvbox-dark
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH="~/.bin:$PATH"
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
@@ -54,13 +50,20 @@ alias gc='git commit'
 alias gp='git push'
 alias gP='git pull'
 alias gr='git rebase'
+alias gd='git diff'
+alias gxo='git checkout'
 
 # Quick clear
 alias c='clear'
-
 alias ll='exa -lah'
-
 alias x='exit'
+
+# Movement
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
 
 # Fuck autocorrect in zsh...
 unsetopt correct
@@ -87,3 +90,7 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 
 # Starship prompt
 eval "$(starship init zsh)"
+
+# allow locally installed npm binaries to be executed;
+# added by `npm i -g add-local-binaries-to-path`
+export PATH="$PATH:./node_modules/.bin"
