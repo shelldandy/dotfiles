@@ -9,7 +9,7 @@ done
 export THEME_COLORS=gruvbox-dark
 # Zsh Files of Miguel Palau
 export PATH="/usr/local/sbin:$PATH"
-export PATH="~/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"

@@ -3,5 +3,6 @@
 currentPath=$(pwd)
 url=$(pbpaste)
 cd ~/Downloads || exit
-youtube-dl "$url"
+youtube-dl "$url" -v "$@"
+#yt-dlp "$url" -v "$@"
 cd "$currentPath" || exit
