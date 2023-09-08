@@ -41,6 +41,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'neovim/nvim-lspconfig'
 Plug 'ray-x/go.nvim'
 Plug 'ray-x/guihua.lua'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " General/Movement
 Plug 'f-person/git-blame.nvim'                                      " Show blame next to the line we're at

@@ -52,6 +52,8 @@ alias gP='git pull'
 alias gr='git rebase'
 alias gd='git diff'
 alias gxo='git checkout'
+alias gb='git branch'
+alias gbd='git branch -d'
 
 # Quick clear
 alias c='clear'
@@ -94,3 +96,4 @@ eval "$(starship init zsh)"
 # allow locally installed npm binaries to be executed;
 # added by `npm i -g add-local-binaries-to-path`
 export PATH="$PATH:./node_modules/.bin"
+export PATH="$HOME/go/bin:$PATH"
