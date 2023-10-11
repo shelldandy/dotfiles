@@ -8,6 +8,7 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [init]
   templatedir = ~/.git_template
+	defaultBranch = main
 [alias]
   lg = !"git lg1"
   lg1 = !"git lg1-specific --all"
