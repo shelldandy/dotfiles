@@ -3,5 +3,5 @@
 currentPath=$(pwd)
 url=$(pbpaste)
 cd ~/Downloads || exit
-yt-dlp "$url" -v "$@"
+yt-dlp "$url" -v -S "ext" "$@"
 cd "$currentPath" || exit
