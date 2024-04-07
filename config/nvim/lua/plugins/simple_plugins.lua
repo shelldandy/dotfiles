@@ -12,6 +12,11 @@ return {
     "tpope/vim-surround",
     event = "VeryLazy",
   },
+  -- Required for testing
+  {
+    "nvim-neotest/nvim-nio",
+    event = "VeryLazy",
+  },
   {
     "ruifm/gitlinker.nvim",
     event = "VeryLazy",
