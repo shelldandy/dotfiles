@@ -67,6 +67,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
+alias rm="trash"
+alias nuke_modules = "find . -name 'node_modules' -type d -prune -print -exec trash '{}' \;"
+
 # Fuck autocorrect in zsh...
 unsetopt correct
 setopt rm_star_silent
