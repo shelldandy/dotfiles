@@ -13,6 +13,7 @@ export PATH="$HOME/.bin:$PATH"
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
+export HOMEBREW_NO_ENV_HINTS=true
 
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
@@ -68,7 +69,7 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 alias rm="trash"
-alias nuke_modules = "find . -name 'node_modules' -type d -prune -print -exec trash '{}' \;"
+alias nuke_modules="find . -name 'node_modules' -type d -prune -print -exec trash '{}' \;"
 
 # Fuck autocorrect in zsh...
 unsetopt correct
@@ -83,7 +84,8 @@ export LESS=' -R -X -F '
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf completions
+eval "$(fzf --zsh)"
 
 . /opt/homebrew/etc/profile.d/z.sh
 
