@@ -1,5 +1,20 @@
-source ~/.zprezto/init.zsh
-source ~/.env.secret.zsh
+source_if_exists() {
+  for file in "$@"; do
+    if [ -f "$file" ]; then
+      source "$file"
+    fi
+  done
+}
+
+# Array of file paths
+files=(
+  "~/.zprezto/init.zsh"
+  "~/.env.secret.zsh"
+  "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+  "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+)
+
+source_if_exists "${files[@]}"
 
 # Import all custom plugins and love
 for f in ~/.zsh/*
@@ -87,13 +102,13 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # fzf completions
 eval "$(fzf --zsh)"
 
-. /opt/homebrew/etc/profile.d/z.sh
+. /usr/local/etc/profile.d/z.sh
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
-source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
+export GPG_TTY=$(tty)
 
 # Starship prompt
 eval "$(starship init zsh)"
