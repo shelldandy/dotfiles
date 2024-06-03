@@ -120,3 +120,4 @@ eval "$(starship init zsh)"
 # added by `npm i -g add-local-binaries-to-path`
 export PATH="$PATH:./node_modules/.bin"
 export PATH="$HOME/go/bin:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
