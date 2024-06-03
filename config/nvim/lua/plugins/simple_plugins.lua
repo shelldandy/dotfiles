@@ -12,6 +12,10 @@ return {
     "tpope/vim-surround",
     event = "VeryLazy",
   },
+  {
+    "prisma/vim-prisma",
+    event = "VeryLazy",
+  },
   -- Required for testing
   {
     "nvim-neotest/nvim-nio",
