@@ -105,7 +105,7 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # fzf completions
 eval "$(fzf --zsh)"
 
-. /opt/homebrew/etc/profile.d/z.sh
+. /usr/local/etc/profile.d/z.sh
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
