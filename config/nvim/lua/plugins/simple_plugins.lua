@@ -3,14 +3,13 @@ return {
   {
     "f-person/git-blame.nvim",
   },
-  {
-    "preservim/nerdcommenter",
-  },
-  {
-    "tpope/vim-surround",
-  },
+  -- Prisma DB syntax highlighting and LSP
   {
     "prisma/vim-prisma",
+  },
+  -- Update package.json dependencies
+  {
+    "vuki656/package-info.nvim",
   },
   -- Required for testing
   {
