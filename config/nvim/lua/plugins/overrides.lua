@@ -4,7 +4,7 @@ return {
     keys = {
       {
         "<leader>.",
-        LazyVim.telescope("files", { cwd = false }),
+        LazyVim.pick("files", { cwd = false }),
         desc = "Find Files",
       },
     },
