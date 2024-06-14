@@ -1,19 +1,10 @@
 return {
   -- Show git blame in the current line
-  {
-    "f-person/git-blame.nvim",
-    event = "VeryLazy",
-  },
+  { "f-person/git-blame.nvim" },
   -- Prisma DB syntax highlighting and LSP
-  {
-    "prisma/vim-prisma",
-    event = "VeryLazy",
-  },
+  { "prisma/vim-prisma" },
   -- Required for testing
-  {
-    "nvim-neotest/nvim-nio",
-    event = "VeryLazy",
-  },
+  { "nvim-neotest/nvim-nio" },
   {
     "ruifm/gitlinker.nvim",
     event = "VeryLazy",
@@ -21,5 +12,11 @@ return {
     opts = {
       mappings = "<leader>gy",
     },
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    config = function()
+      require("toggleterm").setup()
+    end,
   },
 }
