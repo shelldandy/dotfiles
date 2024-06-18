@@ -8,29 +8,33 @@ keymap.set("n", "<left>", "<c-w>5<", { silent = true })
 keymap.set("n", "<up>", "<c-w>5+", { silent = true })
 keymap.set("n", "<down>", "<c-w>5-", { silent = true })
 
-local set_keymap = vim.api.nvim_set_keymap
-
-set_keymap(
+keymap.set(
   "n",
   "<leader>cpt",
-  "<cmd>lua require('package-info').toggle()<cr>",
+  require('package-info').toggle,
   { silent = true, noremap = true, desc = "Toggle" }
 )
-set_keymap(
+keymap.set(
   "n",
   "<leader>cpd",
-  "<cmd>lua require('package-info').delete()<cr>",
+  require('package-info').delete,
   { silent = true, noremap = true, desc = "Delete package" }
 )
-set_keymap(
+keymap.set(
   "n",
   "<leader>cpu",
-  "<cmd>lua require('package-info').update()<cr>",
+  require('package-info').update,
   { silent = true, noremap = true, desc = "Update package" }
 )
-set_keymap(
+keymap.set(
   "n",
   "<leader>cpi",
-  "<cmd>lua require('package-info').install()<cr>",
+  require('package-info').install,
   { silent = true, noremap = true, desc = "Install package" }
+)
+keymap.set(
+  "n",
+  "<leader>cpv",
+  require('package-info').change_version,
+  { silent = true, noremap = true, desc = "Change version" }
 )
