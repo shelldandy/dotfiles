@@ -9,9 +9,9 @@ source ~/.config/omf/functions.fish
 
 # Abbreviations
 abbr gc git commit
-abbr gp git push
+abbr gP git push
 abbr gpt git push --tags
-abbr gP git pull
+abbr gp git pull
 abbr gb git branch
 abbr gco git checkout
 abbr gxo git checkout
