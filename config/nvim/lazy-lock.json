@@ -1,6 +1,6 @@
 {
   "CopilotChat.nvim": { "branch": "canary", "commit": "82923efe22b604cf9c0cad0bb2a74aa9247755ab" },
-  "LazyVim": { "branch": "main", "commit": "2a7ba6d09ce85fa752c25e68ca5287e24b8cee75" },
+  "LazyVim": { "branch": "main", "commit": "53f4595b4e7ee980e9446a9248862a40701959c1" },
   "LuaSnip": { "branch": "master", "commit": "03c8e67eb7293c404845b3982db895d59c0d1538" },
   "SchemaStore.nvim": { "branch": "main", "commit": "93ccaf12b9fb6df87d13da2782d83b34a3cbb893" },
   "bufferline.nvim": { "branch": "main", "commit": "99337f63f0a3c3ab9519f3d1da7618ca4f91cffe" },
@@ -25,7 +25,7 @@
   "headlines.nvim": { "branch": "master", "commit": "618ef1b2502c565c82254ef7d5b04402194d9ce3" },
   "inc-rename.nvim": { "branch": "main", "commit": "535b508c0cb14d00c1836ad901b3c531cb1152bb" },
   "indent-blankline.nvim": { "branch": "master", "commit": "4036c8ae9cc29faf8e6443fa5b23e679db055d24" },
-  "lazy.nvim": { "branch": "main", "commit": "2ca68f9979dca1a9911b0f7397550a06854ebb27" },
+  "lazy.nvim": { "branch": "main", "commit": "69041bccb70f68408633e93ed33012ee18889bb0" },
   "lazydev.nvim": { "branch": "main", "commit": "6184ebbbc8045d70077659b7d30c705a588dc62f" },
   "lualine.nvim": { "branch": "master", "commit": "0a5a66803c7407767b799067986b4dc3036e1983" },
   "luvit-meta": { "branch": "main", "commit": "ce76f6f6cdc9201523a5875a4471dcfe0186eb60" },
