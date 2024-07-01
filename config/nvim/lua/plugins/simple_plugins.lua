@@ -15,8 +15,8 @@ return {
   },
   {
     "akinsho/toggleterm.nvim",
-    config = function()
-      require("toggleterm").setup()
-    end,
+    keys = {
+      { "<leader>;", "<cmd>lua require('toggleterm').toggle()<CR>", desc = "Toggle terminal" },
+    },
   },
 }
