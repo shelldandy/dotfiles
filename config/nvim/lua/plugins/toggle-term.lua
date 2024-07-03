@@ -36,6 +36,7 @@ return {
       end
 
       -- Define keymaps
+      -- Init a terminal if not exist
       vim.keymap.set("n", "<leader>;;", function()
         vim.cmd([[ ToggleTermToggleAll ]])
 
