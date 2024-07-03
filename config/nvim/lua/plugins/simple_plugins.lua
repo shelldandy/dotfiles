@@ -13,10 +13,4 @@ return {
       mappings = "<leader>gy",
     },
   },
-  {
-    "akinsho/toggleterm.nvim",
-    keys = {
-      { "<leader>;", "<cmd>lua require('toggleterm').toggle()<CR>", desc = "Toggle terminal" },
-    },
-  },
 }
