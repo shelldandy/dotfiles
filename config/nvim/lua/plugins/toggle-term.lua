@@ -11,6 +11,7 @@ return {
         end
       end,
       open_mapping = [[<c-\>]],
+      direction = "horizontal", -- Default to float, but allow for splits
     },
     config = function(_, opts)
       require("toggleterm").setup(opts)
@@ -77,19 +78,19 @@ return {
       -- Add keymaps for the new commands
       vim.keymap.set(
         "n",
-        "<leader>;'",
+        "<leader>;]",
         ":NewTerm<CR>",
         { noremap = true, silent = true, desc = "Open new floating terminal" }
       )
       vim.keymap.set(
         "n",
-        '<leader>;"',
+        "<leader>;'",
         ":NewTermH<CR>",
         { noremap = true, silent = true, desc = "Open new horizontal terminal" }
       )
       vim.keymap.set(
         "n",
-        "<leader>;:",
+        "<leader>;[",
         ":NewTermV<CR>",
         { noremap = true, silent = true, desc = "Open new vertical terminal" }
       )
