@@ -124,3 +124,8 @@ export PATH="$HOME/go/bin:$PATH"
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Fix for running core grafana
+ulimit -f 2097152
+ulimit -c 2097152
+ulimit -n 2097152
