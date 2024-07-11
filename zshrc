@@ -1,8 +1,13 @@
-source_if_exists() {
-  for file in "$@"; do
-    if [ -f "$file" ]; then
-      source "$file"
+function source_if_exists() {
+    local file_path="$1"
+    if [ -f "$file_path" ]; then
+        . "$file_path"
     fi
+}
+
+function source_if_exists_many() {
+  for file in "$@"; do
+    source_if_exists "${file}"
   done
 }
 
@@ -11,13 +16,16 @@ files=(
   "~/.zprezto/init.zsh"
   "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
   "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+  '~/git/google-cloud-sdk/path.zsh.inc'
+  '~/git/google-cloud-sdk/completion.zsh.inc'
+  "$(brew --prefix)/etc/profile.d/z.sh"
 )
 
 env_file="$HOME/.env.secret.zsh"
 if [ -f "$env_file" ]; then
   source "$env_file"
 fi
-source_if_exists "${files[@]}"
+source_if_exists_many "${files[@]}"
 
 # Import all custom plugins and love
 for f in ~/.zsh/*
@@ -104,8 +112,6 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # fzf completions
 source <(fzf --zsh)
-
-. $HOMEBREW_PREFIX/etc/profile.d/z.sh
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
