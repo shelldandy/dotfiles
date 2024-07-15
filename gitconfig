@@ -32,7 +32,7 @@
 [merge]
   ff = false
 [pull]
-  rebase = false
+  rebase = true
 [commit]
   gpgsign = true
 [push]

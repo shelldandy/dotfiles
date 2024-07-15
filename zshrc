@@ -88,6 +88,9 @@ alias gd='git diff'
 alias gxo='git checkout'
 alias gb='git branch'
 alias gbd='git branch -d'
+alias gl='git lg'
+
+alias k='kubectl'
 
 # Quick clear
 alias c='clear'
