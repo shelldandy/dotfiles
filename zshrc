@@ -11,6 +11,13 @@ function source_if_exists_many() {
   done
 }
 
+function add_to_path_if_exists() {
+    local dir_path="$1"
+    if [ -d "$dir_path" ] && [[ ":$PATH:" != *":$dir_path:"* ]]; then
+        export PATH="$dir_path:$PATH"
+    fi
+}
+
 # Array of file paths
 files=(
   "~/.zprezto/init.zsh"
@@ -128,8 +135,8 @@ export PATH="$PATH:./node_modules/.bin"
 export PATH="$HOME/go/bin:$PATH"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH:$HOME/git/deployment_tools/scripts/gcom"
 
 # Fix for running core grafana
 ulimit -f 2097152
