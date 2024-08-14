@@ -17,26 +17,23 @@ fi
 # install app store apps with mas
 while test $# -gt 0; do
   case "$1" in
-    -m|--mas-install)
-      echo "Now installing purchased App Store Items"
-      source ./mas.sh
-      break
-      ;;
-    *)
-      echo "You're missing out App Store Goodies"
-      echo "Run"
-      echo "./install.sh --mas-install"
-      echo "To get them..."
-      break
-      ;;
+  -m | --mas-install)
+    echo "Now installing purchased App Store Items"
+    source ./mas.sh
+    break
+    ;;
+  *)
+    echo "You're missing out App Store Goodies"
+    echo "Run"
+    echo "./install.sh --mas-install"
+    echo "To get them..."
+    break
+    ;;
   esac
 done
 
 # update terminal
 source ./term.sh
-
-# install with curl
-source ./curl.sh
 
 # install npm packages
 source ./npm.sh
@@ -47,11 +44,5 @@ source ./yarn.sh
 # install python packages
 source ./pip.sh
 
-# Neovim
-source ./nvim.sh
-
 # install fish
 source ./fish.sh
-
-# Miscellaneus fixes
-source ./misc.sh
