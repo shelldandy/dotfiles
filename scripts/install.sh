@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # suppress welcome message
-if [ ! -f $HOME/.hushlogin ]; then
-  touch $HOME/.hushlogin
+if [ ! -f "$HOME"/.hushlogin ]; then
+  touch "$HOME"/.hushlogin
 fi
 
 # prepare for vim
