@@ -1,12 +1,12 @@
 # Shelldandy's Dotfiles :computer:
 
-![My current terminal setup](images/neofetch.png)
+![My current terminal setup.](images/neofetch.png)
 
 My current terminal setup
 
 Check more images in the images folder :nail_care:
 
-## Works best with...
+## Works best with
 
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
 
@@ -24,17 +24,17 @@ In my current setup I'm using some themes and plugins to make the whole experien
 - Now git clone the repo
 
 ```sh
-$ git clone https://github.com/mike3run/dotfiles.git
+git clone https://github.com/mike3run/dotfiles.git
 ```
 
 - Now cd into `scripts`
 
 ```sh
 $ chmod +x install.sh
-$ ./install.sh
+./install.sh
 # If you want my AppStore downloads
 # They only work if you had downloaded them too before
-$ ./install.sh --mas-install
+./install.sh --mas-install
 ```
 
 - Sit back and enjoy
@@ -44,7 +44,7 @@ $ ./install.sh --mas-install
 - Now cd outside of the dotfiles folder and run
 
 ```sh
-$ rcup -d dotfiles -v
+rcup -d dotfiles -v
 ```
 
 - That will sync the actual dotfiles in your system and you can git pull for life and be in sync.
