@@ -7,6 +7,7 @@ My current terminal setup
 Check more images in the images folder :nail_care:
 
 ## Works best with...
+
 In my current setup I'm using some themes and plugins to make the whole experience more enjoyable without adding weight to the startup.
 
 - iTerm configuration files for extra swag
@@ -49,7 +50,5 @@ $ rcup -d dotfiles -v
 - That will sync the actual dotfiles in your system and you can git pull for life and be in sync.
 
 - Enjoy
-
-- Remember to pull from time to time and in neovim run `:PlugUpdate`
 
 💕💕💕
