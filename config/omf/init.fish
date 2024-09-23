@@ -18,7 +18,7 @@ abbr gxo git checkout
 abbr gr git rebase
 abbr gl git lg
 abbr gd git diff
-abbr ll exa -lah
+abbr ll eza -lah
 abbr x exit
 abbr k kubectl
 

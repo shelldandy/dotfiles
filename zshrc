@@ -94,7 +94,7 @@ alias k='kubectl'
 
 # Quick clear
 alias c='clear'
-alias ll='exa -lah'
+alias ll='eza -lah'
 alias x='exit'
 
 # Movement
