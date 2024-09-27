@@ -4,6 +4,9 @@ return {
     dependencies = {
       "haydenmeade/neotest-jest",
       "marilari88/neotest-vitest",
+      -- playwright
+      "thenbe/neotest-playwright",
+      dependencies = "nvim-telescope/telescope.nvim",
     },
     keys = {
       {
@@ -39,6 +42,16 @@ return {
         })
       )
       table.insert(opts.adapters, require("neotest-vitest"))
+
+      table.insert(
+        opts.adapters,
+        require("neotest-playwright").adapter({
+          options = {
+            persist_project_selection = true,
+            enable_dynamic_test_discovery = true,
+          },
+        })
+      )
     end,
   },
 }
