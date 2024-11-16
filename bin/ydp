@@ -3,5 +3,12 @@
 currentPath=$(pwd)
 url=$(pbpaste)
 cd ~/Downloads || exit
-yt-dlp "$url" -v -S "ext" "$@"
+
+# Check for --audio argument
+if [[ "$1" == "--audio" ]]; then
+  yt-dlp -x --audio-format mp3 --audio-quality 0 "$url" -v -S "ext" "${@:2}"
+else
+  yt-dlp "$url" -v -S "ext" "$@"
+fi
+
 cd "$currentPath" || exit
