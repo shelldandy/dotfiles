@@ -53,7 +53,7 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 alias v='nvim'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias x='exit'
 alias df='cd ~/dotfiles'
 alias gf='cd ~/git'
@@ -145,3 +145,6 @@ export PATH="$PATH:$HOME/git/deployment_tools/scripts/gcom"
 ulimit -f 2097152
 ulimit -c 2097152
 ulimit -n 2097152
+
+# Created by `pipx` on 2025-01-01 05:56:43
+export PATH="$PATH:/Users/bowlinedandy/.local/bin"
