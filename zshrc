@@ -53,7 +53,7 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 alias v='nvim'
-alias dc='docker compose'
+alias dc='docker-compose'
 alias x='exit'
 alias df='cd ~/dotfiles'
 alias gf='cd ~/git'
