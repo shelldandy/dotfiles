@@ -97,6 +97,10 @@ alias c='clear'
 alias ll='eza -lah'
 alias x='exit'
 
+# SLO things for work
+alias trivyscan='trivy repo . -f table --scanners vuln'
+alias snykscan='snyk test'
+
 # Movement
 alias ..="cd .."
 alias ...="cd ../.."
