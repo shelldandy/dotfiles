@@ -89,6 +89,7 @@ alias gxo='git checkout'
 alias gb='git branch'
 alias gbd='git branch -d'
 alias gl='git lg'
+alias update_node='nvm install --reinstall-packages-from=default --latest-npm "lts/*"'
 
 alias k='kubectl'
 
