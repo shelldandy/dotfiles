@@ -3,31 +3,47 @@ return {
     "olimorris/codecompanion.nvim",
     event = "VeryLazy",
     keys = {
-      { "<leader>cc", "<cmd>CodeCompanionChat<cr>", desc = "Open CodeCompanion Chat" },
-      { "<leader>ca", "<cmd>CodeCompanionActions<cr>", desc = "Open CodeCompanion Actions" },
-      { "<leader>ct", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Toggle CodeCompanion Chat" },
-      { "<leader>cx", "<cmd>CodeCompanionChat Add<cr>", mode = { "n", "v" }, desc = "Add selection to chat" },
+      { "<leader>ac", "", desc = "+CodeCompanion", mode = { "n", "v" } },
+      {
+        "<leader>acc",
+        function()
+          return require("codecompanion").chat()
+        end,
+        desc = "Open CodeCompanion Chat",
+        mode = { "n", "v" },
+      },
+      {
+        "<leader>aca",
+        function()
+          return require("codecompanion").actions({ provider = { name = "snacks" } })
+        end,
+        desc = "Open CodeCompanion Actions",
+        mode = { "n", "v" },
+      },
+      {
+        "<leader>act",
+        function()
+          return require("codecompanion").toggle()
+        end,
+        desc = "Toggle CodeCompanion Chat",
+        mode = { "n", "v" },
+      },
+      {
+        "<leader>acv",
+        "<cmd>CodeCompanionChat Add<cr>",
+        desc = "Toggle CodeCompanion Chat",
+        mode = { "n", "v" },
+      },
     },
     opts = {
-      strategies = {
-        chat = {
-          adapter = function()
-            return require("codecompanion.adapters").extend("anthropic", {
-              env = {
-                api_key = "cmd:gpg --batch --quiet --decrypt ~/.claude.gpg 2>/dev/null || echo 'GPG_DECRYPT_FAILED'",
-              },
-            })
-          end,
-        },
-        inline = {
-          adapter = function()
-            return require("codecompanion.adapters").extend("anthropic", {
-              env = {
-                api_key = "cmd:gpg --batch --quiet --decrypt ~/.claude.gpg 2>/dev/null || echo 'GPG_DECRYPT_FAILED'",
-              },
-            })
-          end,
-        },
+      adapters = {
+        anthropic = function()
+          return require("codecompanion.adapters").extend("anthropic", {
+            env = {
+              api_key = "cmd:gpg --batch --quiet --decrypt ~/.claude.gpg 2>/dev/null || echo 'GPG_DECRYPT_FAILED'",
+            },
+          })
+        end,
       },
       display = {
         action_palette = {
@@ -41,25 +57,19 @@ return {
             height = 0.8,
           },
           show_settings = true,
+          diff = {
+            enabled = true,
+            close_chat_at = 240, -- Close an open chat buffer if the total columns of your display are less than...
+            layout = "vertical", -- vertical|horizontal split for default provider
+            opts = { "internal", "filler", "closeoff", "algorithm:patience", "followwrap", "linematch:120" },
+            provider = "mini_diff", -- default|mini_diff
+          },
         },
       },
       opts = {
         system_prompt = "You are an AI programming assistant. Be concise and helpful.",
-        log_level = "INFO",
+        log_level = "DEBUG",
       },
-    },
-    config = function(_, opts)
-      require("codecompanion").setup(opts)
-
-      -- Additional keymaps that might be useful
-      vim.keymap.set("v", "<leader>ce", "<cmd>CodeCompanionChat Explain<cr>", { desc = "Explain code" })
-      vim.keymap.set("v", "<leader>cf", "<cmd>CodeCompanionChat Fix<cr>", { desc = "Fix code" })
-      vim.keymap.set("n", "<leader>cq", "<cmd>CodeCompanionChat<cr>", { desc = "Quick chat" })
-    end,
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-      "hrsh7th/nvim-cmp", -- Optional: for better completion
     },
   },
   {
