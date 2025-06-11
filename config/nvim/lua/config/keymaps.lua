@@ -18,3 +18,15 @@ set("t", "<C-;>", function()
   vim.cmd("stopinsert")
   vim.cmd("close")
 end, { desc = "Close terminal and return to previous buffer" })
+
+-- copy current buffer path to clipboard
+set("n", "<leader>cb", function()
+  local buf_path = vim.api.nvim_buf_get_name(0)
+  if buf_path == "" then
+    vim.notify("No file associated with current buffer")
+    return
+  end
+  local relative_path = vim.fn.fnamemodify(buf_path, ":.")
+  vim.fn.setreg("+", relative_path)
+  vim.notify("Copied to clipboard: " .. relative_path)
+end, { desc = "Copy current buffer path to clipboard" })
