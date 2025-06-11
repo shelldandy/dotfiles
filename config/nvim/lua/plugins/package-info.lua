@@ -1,3 +1,6 @@
+if true then
+  return {}
+end
 return {
   {
     "vuki656/package-info.nvim",

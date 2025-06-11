@@ -31,3 +31,8 @@ starship init fish | source
 # allow locally installed npm binaries to be executed;
 # added by `npm i -g add-local-binaries-to-path`
 set -gx PATH $PATH ./node_modules/.bin
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/shelldandy/.lmstudio/bin
+# End of LM Studio CLI section
+

@@ -153,3 +153,8 @@ ulimit -n 2097152
 
 # Created by `pipx` on 2025-01-01 05:56:43
 export PATH="$PATH:/Users/bowlinedandy/.local/bin"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/shelldandy/.lmstudio/bin"
+# End of LM Studio CLI section
+
