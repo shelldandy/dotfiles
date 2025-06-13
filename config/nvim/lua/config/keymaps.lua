@@ -10,7 +10,11 @@ set("n", "<down>", "<c-w>5-", { silent = true, desc = "Decrease window height" }
 
 -- toggle floating terminal with claude
 set("n", "<C-;>", function()
-  Snacks.terminal("claude", { cwd = vim.fn.getcwd() })
+  Snacks.terminal.toggle("claude", { cwd = vim.fn.getcwd() })
+end, { desc = "Toggle Claude terminal" })
+-- toggle floating terminal with claude
+set("n", "<C-'>", function()
+  Snacks.terminal.toggle("claude -c", { cwd = vim.fn.getcwd() })
 end, { desc = "Toggle Claude terminal" })
 
 -- toggle out of terminal mode with ctrl+q in terminal
