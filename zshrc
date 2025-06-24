@@ -145,6 +145,7 @@ export PATH="$HOME/go/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$PATH:$HOME/git/deployment_tools/scripts/gcom"
+export PATH="$PATH:$HOME/.claude/local"
 
 # Fix for running core grafana
 ulimit -f 2097152
