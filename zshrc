@@ -43,6 +43,14 @@ export THEME_COLORS=gruvbox-dark
 # Zsh Files of Miguel Palau
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.bin:$PATH"
+# For working with Core Grafana
+export GOPROXY=off
+export GOSUMDB=off
+export GOPRIVATE="github.com/grafana/grafana/*"
+# Fix for running core grafana
+ulimit -f unlimited
+ulimit -c unlimited
+ulimit -n unlimited
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
@@ -147,15 +155,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$PATH:$HOME/git/deployment_tools/scripts/gcom"
 export PATH="$PATH:$HOME/.claude/local"
 
-# Fix for running core grafana
-ulimit -f 2097152
-ulimit -c 2097152
-ulimit -n 2097152
-
 # Created by `pipx` on 2025-01-01 05:56:43
 export PATH="$PATH:/Users/bowlinedandy/.local/bin"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/shelldandy/.lmstudio/bin"
 # End of LM Studio CLI section
-
