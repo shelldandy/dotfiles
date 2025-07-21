@@ -100,6 +100,7 @@ alias gl='git lg'
 alias update_node='nvm install --reinstall-packages-from=default --latest-npm "lts/*"'
 
 alias k='kubectl'
+alias cat='bat'
 
 # Quick clear
 alias c='clear'
