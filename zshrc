@@ -124,6 +124,9 @@ alias nuke_modules="find . -name 'node_modules' -type d -prune -print -exec tras
 unsetopt correct
 setopt rm_star_silent
 
+# Enable vim mode
+bindkey -v
+
 # Highlight stuff with less
 LESSPIPE=`which src-hilite-lesspipe.sh`
 export LESSOPEN="| ${LESSPIPE} %s"
@@ -161,3 +164,7 @@ export PATH="$PATH:/Users/bowlinedandy/.local/bin"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/shelldandy/.lmstudio/bin"
 # End of LM Studio CLI section
+
+
+# opencode
+export PATH=/Users/bowlinedandy/.opencode/bin:$PATH
