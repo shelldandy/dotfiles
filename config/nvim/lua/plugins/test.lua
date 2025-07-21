@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 return {
   {
     "nvim-neotest/neotest",
@@ -18,13 +20,15 @@ return {
       {
         "<leader>tL",
         function()
-          require("neotest").run.run_last({ strategy = "dap" })
+          require("neotest").run.run_last({ suite = false, strategy = "dap" })
         end,
         desc = "Debug Last Test",
       },
       {
         "<leader>tw",
-        "<cmd>lua require('neotest').run.run({ jestCommand = 'jest --watch ' })<cr>",
+        function()
+          require("neotest").run.run({ suite = false, extra_args = { "--watch" } })
+        end,
         desc = "Run Watch",
       },
       -- Fixed keybinding to use : syntax
@@ -39,7 +43,7 @@ return {
     },
     config = function(_, opts)
       local switcher = {
-        current = "jest",
+        current = "vitest",
 
         adapters = {
           jest = require("neotest-jest")({
@@ -65,7 +69,7 @@ return {
       end
 
       function switcher:switch_runner()
-        local runners = { "jest", "vitest", "playwright" }
+        local runners = { "vitest", "jest", "playwright" }
         local current = self.current
 
         vim.ui.select(runners, {
@@ -76,9 +80,9 @@ return {
         }, function(choice)
           if choice then
             self.current = choice
-            require("neotest").setup({
+            require("neotest").setup(vim.tbl_deep_extend("force", opts or {}, {
               adapters = { self.adapters[choice] },
-            })
+            }))
             vim.notify("Switched to " .. choice:upper(), vim.log.levels.INFO)
           end
         end)
