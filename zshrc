@@ -107,6 +107,8 @@ alias c='clear'
 alias ll='eza -lah'
 alias x='exit'
 
+alias ff='fastfetch --logo none'
+
 # SLO things for work
 alias trivyscan='trivy repo . -f table --scanners vuln'
 alias snykscan='snyk test'
