@@ -44,9 +44,9 @@ export THEME_COLORS=gruvbox-dark
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 # For working with Core Grafana
-export GOPROXY=off
-export GOSUMDB=off
-export GOPRIVATE="github.com/grafana/grafana/*"
+# export GOPROXY=off
+# export GOSUMDB=off
+# export GOPRIVATE="github.com/grafana/grafana/*"
 # Fix for running core grafana
 ulimit -f unlimited
 ulimit -c unlimited
@@ -80,6 +80,8 @@ alias npmS="npm i -S "
 # Open apps quickly from the terminal
 alias oa="open -a "
 
+alias lg="lazygit"
+
 # Yarn Baby!
 alias yS='yarn add '
 alias yD='yarn add --dev '
@@ -99,6 +101,10 @@ alias gbd='git branch -d'
 alias gl='git lg'
 alias update_node='nvm install --reinstall-packages-from=default --latest-npm "lts/*"'
 
+# https://github.com/miraclx/freyr-js
+# alias freyr='docker run -it --rm -v ~/Music/freyr:/data freyrcli/freyrjs'
+
+alias ff='fastfetch'
 alias k='kubectl'
 alias cat='bat'
 
@@ -171,3 +177,4 @@ export PATH="$PATH:/Users/shelldandy/.lmstudio/bin"
 
 # opencode
 export PATH=/Users/bowlinedandy/.opencode/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
