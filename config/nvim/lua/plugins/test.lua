@@ -4,7 +4,6 @@ return {
   {
     "nvim-neotest/neotest",
     dependencies = {
-      "haydenmeade/neotest-jest",
       "marilari88/neotest-vitest",
       "thenbe/neotest-playwright",
       dependencies = "nvim-telescope/telescope.nvim",
@@ -46,14 +45,6 @@ return {
         current = "vitest",
 
         adapters = {
-          jest = require("neotest-jest")({
-            jestCommand = "npm test --",
-            jestConfigFile = "custom.jest.config.ts",
-            env = { CI = true },
-            cwd = function()
-              return vim.fn.getcwd()
-            end,
-          }),
           vitest = require("neotest-vitest"),
           playwright = require("neotest-playwright").adapter({
             options = {
@@ -69,7 +60,7 @@ return {
       end
 
       function switcher:switch_runner()
-        local runners = { "vitest", "jest", "playwright" }
+        local runners = { "vitest", "playwright" }
         local current = self.current
 
         vim.ui.select(runners, {
