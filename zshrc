@@ -81,6 +81,9 @@ alias npmS="npm i -S "
 alias oa="open -a "
 
 alias lg="lazygit"
+alias ld="lazydocker"
+
+alias ssh='kitty +kitten ssh'
 
 # Yarn Baby!
 alias yS='yarn add '
