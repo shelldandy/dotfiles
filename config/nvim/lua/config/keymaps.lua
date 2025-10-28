@@ -20,6 +20,6 @@ set("n", "<leader>cb", function()
   vim.notify("Copied to clipboard: " .. relative_path)
 end, { desc = "Copy current buffer path to clipboard" })
 
--- ClaudeCode
-vim.keymap.set("n", "<leader>ac", "<cmd>ClaudeCode<CR>", { desc = "Toggle Claude Code" })
-vim.keymap.set("n", "<leader>aC", "<cmd>ClaudeCodeContinue<CR>", { desc = "Claude Code Continue" })
+-- -- ClaudeCode
+-- vim.keymap.set("n", "<leader>ac", "<cmd>ClaudeCode<CR>", { desc = "Toggle Claude Code" })
+-- vim.keymap.set("n", "<leader>aC", "<cmd>ClaudeCodeContinue<CR>", { desc = "Claude Code Continue" })
