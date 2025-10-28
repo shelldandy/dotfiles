@@ -89,6 +89,9 @@ alias ssh='kitty +kitten ssh'
 alias yS='yarn add '
 alias yD='yarn add --dev '
 
+# Display images with kitty
+alias icat="kitten icat"
+
 # Quick git status
 alias g='git '
 alias gs='git status'
