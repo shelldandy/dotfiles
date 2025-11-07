@@ -50,3 +50,6 @@ node_modules
 
 # Claude Code #
 .claude/*.local.*
+specs.local/*
+specs.md
+*.specs.md
