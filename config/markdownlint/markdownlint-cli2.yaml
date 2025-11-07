@@ -1,0 +1,21 @@
+# markdownlint-cli2 configuration
+# Reference: https://github.com/DavidAnson/markdownlint-cli2
+
+config:
+  # Enable all default rules
+  default: true
+
+  # MD013 - Line length
+  # Disabled: 80 character limit is too restrictive for modern documentation
+  MD013: false
+
+  # MD026/no-trailing-punctuation Trailing punctuation in heading
+  MD026: false
+
+  # MD033 - Inline HTML
+  # Disabled: Allow HTML elements like <br>, <details>, <kbd>, etc.
+  MD033: false
+
+  # MD041 - First line in file should be a top-level heading
+  # Disabled: Not all markdown files need to start with a heading
+  MD041: false
