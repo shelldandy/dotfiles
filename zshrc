@@ -184,3 +184,6 @@ export PATH="$PATH:/Users/shelldandy/.lmstudio/bin"
 # opencode
 export PATH=/Users/bowlinedandy/.opencode/bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
+
+# opencode
+export PATH=/Users/shelldandy/.opencode/bin:$PATH
