@@ -11,3 +11,5 @@ else
 fi
 
 read -n 1 -s -r
+
+exit $exit_code

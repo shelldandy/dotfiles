@@ -15,4 +15,4 @@ fi
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
-exec "$KITTY_BIN" --title="YDP Download" -e "$YDP_SCRIPT"
+exec "$KITTY_BIN" --single-instance=no --title="YDP Download" -e "$YDP_SCRIPT"
