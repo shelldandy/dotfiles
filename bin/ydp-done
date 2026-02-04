@@ -1,0 +1,13 @@
+#!/bin/bash
+
+exit_code=$1
+
+echo
+
+if [[ $exit_code -eq 0 ]]; then
+  echo "✓ Done! Press any key to close..."
+else
+  echo "✗ Download failed. Press any key to close..."
+fi
+
+read -n 1 -s -r

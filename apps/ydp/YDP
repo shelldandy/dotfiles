@@ -1,0 +1,18 @@
+#!/bin/bash
+
+KITTY_BIN="/opt/homebrew/bin/kitty"
+YDP_SCRIPT="$HOME/.bin/ydp"
+
+if [[ ! -f "$KITTY_BIN" ]]; then
+  osascript -e 'display notification "Kitty terminal not found. Please install via Homebrew." with title "YDP Error"'
+  exit 1
+fi
+
+if [[ ! -f "$YDP_SCRIPT" ]]; then
+  osascript -e 'display notification "ydp script not found at ~/.bin/ydp" with title "YDP Error"'
+  exit 1
+fi
+
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+exec "$KITTY_BIN" --title="YDP Download" -e "$YDP_SCRIPT"

@@ -46,3 +46,6 @@ source ./pip.sh
 
 # install fish
 source ./fish.sh
+
+# install YDP.app
+source ./install-ydp-app.sh

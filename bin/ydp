@@ -7,8 +7,12 @@ cd ~/Downloads || exit
 # Check for --audio argument
 if [[ "$1" == "--audio" ]]; then
   yt-dlp -x --audio-format mp3 --audio-quality 0 --replace-in-metadata "title" "^[\.\s]+$" "video" -o "%(title)s [%(id)s].%(ext)s" "$url" -v "${@:2}"
+  exit_code=$?
 else
   yt-dlp -f "bv*[vcodec~='^(avc|h264)']+ba[ext=m4a]/b[ext=mp4]/b" --merge-output-format mp4 --replace-in-metadata "title" "^[\.\s]+$" "video" -o "%(title)s [%(id)s].%(ext)s" "$url" -v "$@"
+  exit_code=$?
 fi
 
 cd "$currentPath" || exit
+
+ydp-done $exit_code
