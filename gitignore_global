@@ -50,6 +50,7 @@ node_modules
 
 # Claude Code #
 .claude/*.local.*
+.claude/settings.local.json
 .claude/commands
 .opencode/commands
 specs.local/*
