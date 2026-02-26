@@ -160,6 +160,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export GPG_TTY=$(tty)
 
+# Zoxide smart cd
+eval "$(zoxide init zsh)"
+
 # Starship prompt
 eval "$(starship init zsh)"
 

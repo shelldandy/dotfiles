@@ -21,6 +21,10 @@ brew tap 'homebrew/cask-fonts'
 brew install 'font-fira-code-nerd-font' --cask
 
 # Casks
+brew install 'sesh'
+brew install 'zoxide'
+
+# Casks
 brew install 'balenaetcher' --cask # Burn ISO images to USB Drives
 brew install 'docker' --cask
 brew install 'firefox' --cask
