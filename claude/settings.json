@@ -2,12 +2,12 @@
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "cleanupPeriodDays": 7,
   "includeCoAuthoredBy": false,
+  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "npx -y @owloops/claude-powerline@latest --style=powerline --theme=tokyo-night"
   },
   "feedbackSurveyState": {
     "lastShownTime": 1754010644707
-  },
-  "model": "opus"
+  }
 }

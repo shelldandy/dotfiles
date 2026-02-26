@@ -52,5 +52,6 @@ node_modules
 .claude/*.local.*
 .claude/settings.local.json
 .claude/commands
+.claude/skills
 .opencode/commands
 specs.local/*
