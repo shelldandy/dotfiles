@@ -15,6 +15,7 @@
 brew tap 'homebrew/cask'
 brew tap 'homebrew/cask-versions'
 brew tap 'homebrew/cask-fonts'
+brew tap 'colonyops/tap'
 
 # Installs
 ## System Tools
@@ -23,6 +24,7 @@ brew install 'font-fira-code-nerd-font' --cask
 # Casks
 brew install 'sesh'
 brew install 'zoxide'
+brew install 'colonyops/tap/hive'
 
 # Casks
 brew install 'balenaetcher' --cask # Burn ISO images to USB Drives

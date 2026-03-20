@@ -82,6 +82,7 @@ alias oa="open -a "
 
 alias lg="lazygit"
 alias ld="lazydocker"
+alias hv='tmux new-session -As hive hive'
 
 alias ssh='kitty +kitten ssh'
 
@@ -124,6 +125,8 @@ alias ff='fastfetch --logo none'
 # SLO things for work
 alias trivyscan='trivy repo . -f table --scanners vuln'
 alias snykscan='snyk test'
+
+alias cve_scan='trivyscan && snykscan'
 
 # Movement
 alias ..="cd .."
